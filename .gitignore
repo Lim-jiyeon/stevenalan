@@ -1,0 +1,19 @@
+# Ignore Project Specific
+
+
+# Ignore Project General
+/data
+/upload
+log
+
+# Codeigniter Specific
+/application/logs/*
+
+# Ignore Codekit's Personal Set & Sass Cache.
+config.codekit
+.codekit-cache
+.sass-cache
+
+# Ignore Intellij Env
+.idea
+*.iml
