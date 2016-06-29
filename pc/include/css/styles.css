@@ -489,13 +489,19 @@ textarea {
   box-sizing: border-box;
 }
 
-/* line 54, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 53, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 58, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 html {
   font-size: 10px;
   -webkit-tap-highlight-color: transparent;
 }
 
-/* line 59, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 63, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 body {
   font-family: "BentonSans", "notoSans", sans-serif;
   font-size: 12px;
@@ -504,7 +510,14 @@ body {
   background-color: #fff;
 }
 
-/* line 68, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 71, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+/* line 78, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 input,
 button,
 select,
@@ -514,36 +527,36 @@ textarea {
   line-height: inherit;
 }
 
-/* line 80, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 90, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 a {
   color: #858585;
   text-decoration: none;
 }
 
-/* line 84, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 94, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 a:hover, a:focus {
   color: #858585;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
-/* line 90, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 100, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 }
 
-/* line 95, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 105, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 figure {
   margin: 0;
 }
 
-/* line 99, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 109, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 img {
   vertical-align: middle;
 }
 
-/* line 103, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 113, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -551,7 +564,7 @@ hr {
   border-top: 1px solid #eee;
 }
 
-/* line 110, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 120, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -563,7 +576,7 @@ hr {
   border: 0;
 }
 
-/* line 122, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 132, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 .sr-only-focusable:active, .sr-only-focusable:focus {
   position: static;
   width: auto;
@@ -573,7 +586,7 @@ hr {
   clip: auto;
 }
 
-/* line 133, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
+/* line 143, /Users/jyeon/project/stevenalan/pc/include/scss/_scaffolding.scss */
 [role="button"] {
   cursor: pointer;
 }
@@ -1882,45 +1895,264 @@ input[type="search"] {
   color: #000;
 }
 
-/* line 1, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/**********************************************
+ Layout
+***********************************************/
+/* line 8, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .content {
   width: 1140px;
   margin: 0 auto;
+  padding-bottom: 60px;
 }
 
-/* line 5, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 13, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .container {
   width: 1140px !important;
 }
 
-/* line 9, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/**********************************************
+ Header
+***********************************************/
+/* line 20, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.header {
+  padding-bottom: 21px;
+  text-transform: uppercase;
+}
+
+/* line 24, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-brand {
+  margin-top: 73px;
+}
+
+/* line 26, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-brand a {
+  width: 180px;
+}
+
+/* line 30, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility {
+  padding: 10px 0;
+  background: url(../../images/washed-line.png) repeat-x 0 100%;
+  margin: -137px 0 135px;
+}
+
+/* line 14, /Users/jyeon/project/stevenalan/pc/include/scss/mixins/_clearfix.scss */
+.site-utility:before, .site-utility:after {
+  content: " ";
+  display: table;
+}
+
+/* line 19, /Users/jyeon/project/stevenalan/pc/include/scss/mixins/_clearfix.scss */
+.site-utility:after {
+  clear: both;
+}
+
+/* line 35, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility .link-sale {
+  float: left;
+}
+
+/* line 38, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility .link {
+  float: right;
+}
+
+/* line 40, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility .link .link-login {
+  float: left;
+}
+
+/* line 43, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility .link .menu-mypage {
+  position: relative;
+  float: left;
+  margin-left: 20px;
+}
+
+/* line 47, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility .link .menu-mypage .mypage-dropdown {
+  display: none;
+}
+
+/* line 51, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility .link .menu-mypage.open .link-mypage {
+  position: inherit;
+  z-index: 110;
+}
+
+/* line 55, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility .link .menu-mypage.open .mypage-dropdown {
+  display: block;
+  position: absolute;
+  top: -7px;
+  left: -10px;
+  z-index: 100;
+  width: 82px;
+  padding: 30px 0 6px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+}
+
+/* line 65, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility .link .menu-mypage.open .mypage-dropdown .mypage-item {
+  padding: 4px 10px;
+  list-style: none;
+  font-size: 11px;
+}
+
+/* line 69, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.site-utility .link .menu-mypage.open .mypage-dropdown .mypage-item:first-child {
+  padding-top: 11px;
+  border-top: 1px solid #ccc;
+}
+
+/* line 79, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.megaMenu {
+  margin: 0 -34px;
+  padding-left: 0;
+}
+
+/* line 82, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.megaMenu .megaMenu-item {
+  float: left;
+  padding: 0 34px;
+  list-style: none;
+}
+
+/* line 86, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.megaMenu .megaMenu-item a {
+  font-size: 14px;
+  color: #000;
+  letter-spacing: 2.25px;
+}
+
+/* line 92, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.megaMenu .megaMenu-item:hover a, .megaMenu .megaMenu-item.selected a {
+  padding-bottom: 1px;
+  border-bottom: 1px solid #004689;
+  color: #004689;
+}
+
+/**********************************************
+ Footer
+***********************************************/
+/* line 104, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.footer {
+  padding: 30px 0;
+  background: url(../../images/washed-line.png) repeat-x 0 0;
+  text-transform: uppercase;
+}
+
+/* line 110, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.footer-menu .footer-title {
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+/* line 116, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.footer-menu .footer-link li {
+  padding: 3px 0;
+  font-size: 10px;
+}
+
+/* line 122, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.footer-menu .footer-sharing-link li {
+  float: left;
+  font-size: 20px;
+}
+
+/* line 128, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.business-info {
+  margin: -3px 0 0 -20px;
+  font-size: 11px;
+  text-align: right;
+}
+
+/* line 132, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.business-info li {
+  padding: 3px 0;
+}
+
+/* line 135, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.business-info address {
+  display: inline-block;
+  font-style: normal;
+}
+
+/* line 139, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.business-info span:before, .business-info address:before {
+  display: inline-block;
+  width: 1px;
+  height: 10px;
+  margin: 0 6px;
+  background-color: #a6a6a6;
+  content: '';
+}
+
+/* line 147, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.business-info span:first-child:before {
+  width: 0;
+  margin: 0;
+}
+
+/* line 152, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.copyright {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ebebeb;
+  font-size: 10px;
+}
+
+/* line 157, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.copyright a {
+  margin-left: 15px;
+  text-transform: capitalize;
+}
+
+/* line 160, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.copyright a:first-child {
+  margin-left: 20px;
+}
+
+/**********************************************
+ Common
+***********************************************/
+/* line 169, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .box {
   padding: 30px 30px 117px;
   background-color: #f5f5f5;
 }
 
-/* line 12, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 172, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .box .box-title {
   margin: 0 0 39px;
   padding-bottom: 16px;
-  background: url(../../images/washed-line.png) no-repeat 0 100%;
+  background: url(../../images/box-washed-line.png) no-repeat 0 100%;
   font-size: 14px;
   color: #000;
   letter-spacing: 1px;
   text-align: center;
 }
 
-/* line 21, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.box .button {
-  display: block;
+/* line 182, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.box .box-explain + .form-group {
+  margin-top: 7px;
 }
 
-/* line 25, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 186, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.box .button {
+  display: block;
+  margin-top: 32px;
+}
+
+/* line 191, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .placeholder {
   position: relative;
 }
 
-/* line 27, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 193, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .placeholder label {
   position: absolute;
   top: 0;
@@ -1936,79 +2168,24 @@ input[type="search"] {
 }
 
 /**********************************************
- Header
-***********************************************/
-/* line 45, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.site-brand a {
-  width: 180px;
-}
-
-/* line 48, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.site-utility {
-  background-color: red;
-  margin-top: -80px;
-}
-
-/* line 14, /Users/jyeon/project/stevenalan/pc/include/scss/mixins/_clearfix.scss */
-.site-utility:before, .site-utility:after {
-  content: " ";
-  display: table;
-}
-
-/* line 19, /Users/jyeon/project/stevenalan/pc/include/scss/mixins/_clearfix.scss */
-.site-utility:after {
-  clear: both;
-}
-
-/* line 52, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.site-utility .link-sale {
-  float: left;
-}
-
-/* line 55, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.site-utility .link {
-  float: right;
-}
-
-/* line 58, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.site-utility .link-login {
-  float: left;
-}
-
-/* line 61, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.site-utility .link-mypage {
-  float: left;
-}
-
-/* line 63, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.site-utility .link-mypage .mypage-dropdown {
-  display: none;
-}
-
-/**********************************************
  Join
 ***********************************************/
-/* line 73, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 212, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login .box {
   height: 394px;
 }
 
-/* line 77, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 216, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login-banner {
   margin-bottom: 30px;
 }
 
-/* line 80, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.login-find {
-  margin-bottom: 32px;
-}
-
-/* line 82, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 220, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login-find .find-id {
   float: right;
 }
 
-/* line 84, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 222, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login-find .find-id:after {
   display: block;
   margin-top: -2px;
