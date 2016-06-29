@@ -1,0 +1,12 @@
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin border-side-radius($edge1, $edge2, $radius) {
+    border-#{$edge1}-#{$edge2}-radius: $radius;
+    -moz-border-radius-#{$edge1}#{$edge2}: $radius;
+    -webkit-border-#{$edge1}-#{$edge2}-radius: $radius;
+}

@@ -1,6 +1,20 @@
+// Styles
+// --------------------------------------------------
+
+
+// Project Config
 @import "variables";
+
+// Mixins & Dependenceis (Vendor & Plugins)
 @import "mixins/mixins";
 @import "nomalize";
 @import "scaffolding";
+
+// Core Components & +
+@import "utilities";
 @import "grid";
+@import "button";
+@import "form";
+
+// Custom Style
 @import "custom";

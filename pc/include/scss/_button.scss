@@ -1,0 +1,54 @@
+.button {
+    display: inline-block;
+    padding: 0 30px;
+    border: $border-size solid transparent;
+    @include border-radius(3px);
+    background-color: #ccc;
+    line-height: (($default-height - $border-size*2)/$font-size-base);
+    font-size: $font-size-base;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-appearance: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+/* Purpose Definition */
+.button-primary {
+    background-color: $brand-primary;
+    color: #fff;
+    &:hover,
+    &:focus {
+        color: #fff;
+    }
+}
+
+.button-secondary {
+    border-color: #f1f1f1;
+    background-color: $brand-secondary;
+    color: #333;
+}
+
+.button-danger {
+    background-color: $brand-danger;
+    color: #fff;
+}
+
+.button-group {
+    font-size: 0;
+    .button {
+        margin: 0;
+        @include border-radius(0);
+        &:first-child {
+            @include border-side-radius(top,left,3px);
+            @include border-side-radius(bottom,left,3px);
+        }
+        &:last-child {
+            @include border-side-radius(top,right,3px);
+            @include border-side-radius(bottom,right,3px);
+        }
+    }
+}
