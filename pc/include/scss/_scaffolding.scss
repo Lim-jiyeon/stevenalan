@@ -50,6 +50,10 @@
 
 
 // Body reset
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-size: 10px;
@@ -62,6 +66,12 @@ body {
   line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
 }
 
 // Reset fonts for relevant elements
