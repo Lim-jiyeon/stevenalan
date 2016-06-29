@@ -1,0 +1,1 @@
+$(document).ready(function(){$("#footer_accordion > li.enable h3").on("click",function(){function o(){$("#footer_accordion > li h3").removeClass("on").next().slideUp()}$(this).hasClass("on")?o():(o(),$(this).addClass("on").next().slideDown())})});

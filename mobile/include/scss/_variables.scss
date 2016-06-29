@@ -1,9 +1,33 @@
-$bootstrap-sass-asset-helper: false !default;
 //
 // Variables
 // --------------------------------------------------
 
 
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+$body-bg:               #fff !default;
+$text-color:            #000 !default;
+$link-color:            #000 !default;
+$link-hover-color:      #000 !default;
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+$font-family-sans-serif:  "BentonSans", Arial, sans-serif !default;
+$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-base:        $font-family-sans-serif !default;
+$font-size-base:          14px !default;
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base:        20/14 !default; // 20/14
 
 
 //== Media queries breakpoints
@@ -52,7 +76,7 @@ $screen-md-max:              ($screen-lg-min - 1) !default;
 //** Number of columns in the grid.
 $grid-columns:              12 !default;
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:         30px !default;
+$grid-gutter-width:         20px !default;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint:     $screen-sm-min !default;
@@ -78,3 +102,36 @@ $container-md:                 $container-desktop !default;
 $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 //** For `$screen-lg-min` and up.
 $container-lg:                 $container-large-desktop !default;
+
+
+
+/* FONT SIZE */
+$default-font-size: 14px;
+$large-font-size: 18px;
+$small-font-size: 12px;
+$xsmall-font-size: 10px;
+
+/* HEIGHT */
+$default-height: 35px;
+$large-height: 42px;
+$small-height: 28px;
+$xsmall-height: 18px;
+
+/* BORDER */
+$border-radius: 3px;
+$border-size: 1px;
+
+
+%border-radius {
+  -webkit-border-radius:$border-radius;
+  -moz-border-radius:$border-radius;
+  border-radius:$border-radius;
+}
+
+/* FORM */
+$form-control-font-size: 14px;
+$form-control-font-color: #333;
+
+$form-control-border-color: #d8d8d8;
+
+$form-control-height: 34px;
