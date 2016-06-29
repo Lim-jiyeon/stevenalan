@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <a href="./join/login.php">Login</a>
+                    <a href="pc/join/login.php">Login</a>
                 </div>
             </div>
         </div>

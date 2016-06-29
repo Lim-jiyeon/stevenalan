@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>stevenalan</title>
+    <link rel="stylesheet" href="../include/css/fontello.css">
     <link rel="stylesheet" href="../include/css/styles.css">
 </head>
 <body>
