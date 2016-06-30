@@ -8,6 +8,12 @@
                 <div class="col-xs-12">
                     <a href="pc/join/login.php">Login</a>
                 </div>
+                <div class="col-xs-12">
+                    <a href="pc/mypage/personal-support.php">1:1 문의 리스트</a>
+                </div>
+                <div class="col-xs-12">
+                    <a href="pc/mypage/personal-support-write.php">1:1 문의 쓰기</a>
+                </div>
             </div>
         </div>
     </div>
