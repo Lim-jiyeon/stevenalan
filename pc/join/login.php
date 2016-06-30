@@ -5,11 +5,12 @@
     <div class="content">
         <div class="container">
             <div class="login-banner">
-                <img src="../images/login-banner.jpg" alt="">
+                <img src="../images/join/login-banner.jpg" alt="">
             </div>
         </div>
         <div class="container">
             <div class="row login">
+                <!-- 로그인 -->
                 <div class="col-xs-4">
                     <div class="box">
                         <h3 class="box-title">로그인</h3>
@@ -22,12 +23,18 @@
                             <input type="password" id="password" class="form-control">
                         </div>
                         <div class="login-find">
-                            <label for="save-id" class="save-id"><input type="checkbox" id="save-id"> 아이디 저장</label>
+                            <div class="checkbox">
+                                <input type="checkbox" id="save-id" !checked>
+                                <label for="save-id" class="checkbox-display"></label>
+                                <label for="save-id" class="checkbox-label">아이디 저장</label>
+                            </div>
                             <a href="#" class="find-id">아이디/비밀번호 찾기</a>
                         </div>
                         <a href="#" class="button button-primary"><span>로그인</span></a>
                     </div>
                 </div>
+                <!-- 로그인 //end -->
+                <!-- 회원가입 -->
                 <div class="col-xs-4">
                     <div class="box">
                         <h3 class="box-title">회원가입</h3>
@@ -40,6 +47,8 @@
                         <a href="#" class="button button-primary"><span>회원가입</span></a>
                     </div>
                 </div>
+                <!-- 회원가입 //end -->
+                <!-- 비회원 주문 조회 -->
                 <div class="col-xs-4">
                     <div class="box">
                         <h3 class="box-title">비회원 주문 조회</h3>
@@ -55,6 +64,7 @@
                         <a href="#" class="button button-primary"><span>로그인</span></a>
                     </div>
                 </div>
+                <!-- 비회원 주문 조회 //end -->
             </div>
         </div>
     </div>

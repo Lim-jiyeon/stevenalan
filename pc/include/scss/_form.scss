@@ -122,54 +122,39 @@ input[type="search"] {
   margin-bottom: $form-group-margin-bottom;
 }
 
-
-// Checkboxes and radios
-.radio,
-.checkbox {
-  position: relative;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
-
-  label {
-    min-height: 20px; // Ensure the input doesn't jump when there is no text
-    padding-left: 20px;
-    margin-bottom: 0;
-    font-weight: normal;
-    cursor: pointer;
+// Checkbox, Radio
+.checkbox,
+.radio {
+  display: inline-block;
+  input[type="checkbox"],
+  input[type="radio"]{
+    position: fixed;
+    top: -9999px;
+    left: -9999px;
+    visibility: hidden;
+  }
+  .checkbox-display,
+  .radio-display{
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 3px 6px 5px 0;
+    background: url(../../images/common/form-checkbox.gif) 0 0;
+    vertical-align: middle;
+  }
+  input[type="checkbox"]:checked + .checkbox-display,
+  input[type="radio"]:checked + .radio-display{
+    background: url(../../images/common/form-checkbox-checked.gif) 0 0;
+    transition: all 0.3s ease;
+  }
+  .radio-display {
+    background-image: url(../../images/common/form-radio.png);
+  }
+  input[type="radio"]:checked + .radio-display {
+    background-image: url(../../images/common/form-radio-checked.png);
   }
 }
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
-.checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  margin-left: -20px;
-  margin-top: 4px \9;
-}
-
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: -5px; // Move up sibling radios or checkboxes for tighter spacing
-}
-
-// Radios and checkboxes on same line
-.radio-inline,
-.checkbox-inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-weight: normal;
-  cursor: pointer;
-}
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px; // space out consecutive inline controls
-}
-
 
 // Help text
 .help-block {

@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <title>stevenalan</title>
     <link rel="stylesheet" href="../include/css/fontello.css">
+    <script type="text/javascript" src="../include/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../include/js/custom.js"></script>
     <link rel="stylesheet" href="../include/css/styles.css">
 </head>
 <body>
 <div id="wrap">
     <div class="header">
         <h1 class="site-brand col-sx-12">
-            <a href="#" title="stevenalan" class="center-block"><img src="../images/brand-logo.png" alt="stevenalan"></a>
+            <a href="#" title="stevenalan" class="center-block"><img src="../images/common/brand-logo.png" alt="stevenalan"></a>
         </h1>
         <div class="site-utility">
             <div class="container">
                 <a href="#" class="link-sale">grand open! sale 30% <i class="icon-right-open-big"></i></a>
                 <div class="link">
                     <a href="#" class="link-login">login</a>
-                    <div class="menu-mypage open">
+                    <div class="menu-mypage">
                         <a href="#" class="link-mypage">mypage<i class="icon-down-dir"></i></a>
                         <ul class="mypage-dropdown">
                             <li class="mypage-item"><a href="#">주소록</a></li>

@@ -1833,61 +1833,59 @@ input[type="search"] {
   margin-bottom: 10px;
 }
 
-/* line 127, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
-.radio,
-.checkbox {
-  position: relative;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 10px;
+/* line 126, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+.checkbox,
+.radio {
+  display: inline-block;
 }
 
-/* line 134, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
-.radio label,
-.checkbox label {
-  min-height: 20px;
-  padding-left: 20px;
-  margin-bottom: 0;
-  font-weight: normal;
-  cursor: pointer;
-}
-
-/* line 142, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
-.radio input[type="radio"],
-.radio-inline input[type="radio"],
+/* line 129, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .checkbox input[type="checkbox"],
-.checkbox-inline input[type="checkbox"] {
-  position: absolute;
-  margin-left: -20px;
-  margin-top: 4px \9;
+.checkbox input[type="radio"],
+.radio input[type="checkbox"],
+.radio input[type="radio"] {
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden;
+}
+
+/* line 136, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+.checkbox .checkbox-display,
+.checkbox .radio-display,
+.radio .checkbox-display,
+.radio .radio-display {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 3px 6px 5px 0;
+  background: url(../../images/common/form-checkbox.gif) 0 0;
+  vertical-align: middle;
+}
+
+/* line 146, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+.checkbox input[type="checkbox"]:checked + .checkbox-display,
+.checkbox input[type="radio"]:checked + .radio-display,
+.radio input[type="checkbox"]:checked + .checkbox-display,
+.radio input[type="radio"]:checked + .radio-display {
+  background: url(../../images/common/form-checkbox-checked.gif) 0 0;
+  transition: all 0.3s ease;
 }
 
 /* line 151, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
-.radio + .radio,
-.checkbox + .checkbox {
-  margin-top: -5px;
+.checkbox .radio-display,
+.radio .radio-display {
+  background-image: url(../../images/common/form-radio.png);
 }
 
-/* line 157, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
-.radio-inline,
-.checkbox-inline {
-  position: relative;
-  display: inline-block;
-  padding-left: 20px;
-  margin-bottom: 0;
-  vertical-align: middle;
-  font-weight: normal;
-  cursor: pointer;
+/* line 154, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+.checkbox input[type="radio"]:checked + .radio-display,
+.radio input[type="radio"]:checked + .radio-display {
+  background-image: url(../../images/common/form-radio-checked.png);
 }
 
-/* line 167, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
-.radio-inline + .radio-inline,
-.checkbox-inline + .checkbox-inline {
-  margin-top: 0;
-  margin-left: 10px;
-}
-
-/* line 175, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 160, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .help-block {
   display: block;
   margin-top: 5px;
@@ -1932,7 +1930,7 @@ input[type="search"] {
 /* line 30, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .site-utility {
   padding: 10px 0;
-  background: url(../../images/washed-line.png) repeat-x 0 100%;
+  background: url(../../images/common/washed-line.png) repeat-x 0 100%;
   margin: -137px 0 135px;
 }
 
@@ -2040,7 +2038,7 @@ input[type="search"] {
 /* line 104, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .footer {
   padding: 30px 0;
-  background: url(../../images/washed-line.png) repeat-x 0 0;
+  background: url(../../images/common/washed-line.png) repeat-x 0 0;
   text-transform: uppercase;
 }
 
@@ -2129,7 +2127,7 @@ input[type="search"] {
 .box .box-title {
   margin: 0 0 39px;
   padding-bottom: 16px;
-  background: url(../../images/box-washed-line.png) no-repeat 0 100%;
+  background: url(../../images/common/box-washed-line.png) no-repeat 0 100%;
   font-size: 14px;
   color: #000;
   letter-spacing: 1px;
@@ -2167,28 +2165,65 @@ input[type="search"] {
   color: #8d8d8d;
 }
 
+/* line 207, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.warning {
+  color: #c20007;
+}
+
 /**********************************************
  Join
 ***********************************************/
-/* line 212, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 215, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login .box {
   height: 394px;
 }
 
-/* line 216, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 219, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login-banner {
   margin-bottom: 30px;
 }
 
-/* line 220, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 223, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login-find .find-id {
   float: right;
 }
 
-/* line 222, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 225, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login-find .find-id:after {
   display: block;
   margin-top: -2px;
   border-bottom: 1px solid #bdbdbd;
   content: '';
+}
+
+/* line 14, /Users/jyeon/project/stevenalan/pc/include/scss/mixins/_clearfix.scss */
+.forgot:before, .forgot:after {
+  content: " ";
+  display: table;
+}
+
+/* line 19, /Users/jyeon/project/stevenalan/pc/include/scss/mixins/_clearfix.scss */
+.forgot:after {
+  clear: both;
+}
+
+/* line 236, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.forgot .box {
+  height: 493px;
+}
+
+/* line 239, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.forgot .findId-phone,
+.forgot .findPassword-phone {
+  display: none;
+}
+
+/* line 243, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.forgot .find-box {
+  padding: 15px 0 10px;
+}
+
+/* line 245, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.forgot .find-box .radio:first-child {
+  margin-right: 30px;
 }

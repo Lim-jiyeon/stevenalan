@@ -1,5 +1,5 @@
 <?php
-    include '../header/header.php';
+    include './pc/header/header.php';
 ?>
 
     <div class="content">
@@ -16,5 +16,5 @@
     </div>
 
 <?php
-    include '../footer/footer.php';
+    include './pc/footer/footer.php';
 ?>

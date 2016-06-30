@@ -29,7 +29,7 @@
 }
 .site-utility {
     padding: 10px 0;
-    background: url(../../images/washed-line.png) repeat-x 0 100%;
+    background: url(../../images/common/washed-line.png) repeat-x 0 100%;
     margin: -137px 0 135px;
     @include clearfix;
     .link-sale {
@@ -103,7 +103,7 @@
 ***********************************************/
 .footer {
     padding: 30px 0;
-    background: url(../../images/washed-line.png) repeat-x 0 0;
+    background: url(../../images/common/washed-line.png) repeat-x 0 0;
     text-transform: uppercase;
 }
 .footer-menu {
@@ -172,7 +172,7 @@
     .box-title {
         margin: 0 0 39px;
         padding-bottom: 16px;
-        background: url(../../images/box-washed-line.png) no-repeat 0 100%;
+        background: url(../../images/common/box-washed-line.png) no-repeat 0 100%;
         font-size: 14px;
         color: #000;
         letter-spacing: 1px;
@@ -204,6 +204,9 @@
         color: #8d8d8d;
     }
 }
+.warning {
+    color: #c20007;
+}
 
 /**********************************************
  Join
@@ -224,6 +227,23 @@
             margin-top: -2px;
             border-bottom: 1px solid #bdbdbd;
             content: '';
+        }
+    }
+}
+
+.forgot {
+    @include clearfix;
+    .box {
+        height: 493px;
+    }
+    .findId-phone,
+    .findPassword-phone {
+        display: none;
+    }
+    .find-box {
+        padding: 15px 0 10px;
+        .radio:first-child {
+            margin-right: 30px;
         }
     }
 }

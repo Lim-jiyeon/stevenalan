@@ -13,7 +13,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xs-12">
-                    <img src="../images/login-banner.jpg" alt="로그인 배너 이미지">
+                    <img src="../images/join/login-banner.jpg" alt="로그인 배너 이미지">
                 </div>
             </div>
         </div>
