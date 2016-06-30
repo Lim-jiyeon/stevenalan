@@ -4,8 +4,8 @@
     border: $border-size solid transparent;
     @include border-radius(3px);
     background-color: #ccc;
-    line-height: (($default-height - $border-size*2)/$font-size-base);
-    font-size: $font-size-base;
+    line-height: (($default-height - $border-size*2)/$button-default-font-size);
+    font-size: $button-default-font-size;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -35,6 +35,10 @@
 .button-danger {
     background-color: $brand-danger;
     color: #fff;
+}
+
+.button-block{
+    width: 100%;
 }
 
 .button-group {
