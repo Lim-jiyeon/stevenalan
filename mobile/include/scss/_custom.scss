@@ -1,0 +1,236 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+a:link{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.a-center{
+  text-align: center;
+}
+.a-right{
+  text-align: right;
+}
+.a-left{
+  text-align: left;
+}
+
+
+/*
+==============================================================
+page
+==============================================================
+*/
+.pageTitle{
+  padding: 20px 0;
+}
+
+
+
+
+/*
+==============================================================
+header
+==============================================================
+*/
+header{
+  .userMenu{
+    padding: 10px;
+    background: url("../../images/common/bg_line.png") no-repeat bottom center;
+    background-size: contain;
+    text-align: right;
+    ul{
+      display: inline-block;
+      li{
+        float: left;
+        &:last-child{
+          margin-left: 25px;
+        }
+        a{
+          color: #858585;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+  .gnbWrap{
+    background: url("../../images/common/bg_line.png") no-repeat bottom center;
+    background-size: contain;
+    position: relative;
+    .container{
+      overflow: hidden;
+      i{
+        font-size: 16px;
+      }
+      .moMenu{
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -11px;
+      }
+      .logo{
+        width: 100%;
+        text-align: center;
+        h1{
+          margin: 0;
+          img{
+            width: 32.5%;
+          }
+        }
+      }
+      .search{
+        position: absolute;
+        top: 50%;
+        right: 14%;
+        margin-top: -11px;
+      }
+      .shoppingBag{
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -11px;
+      }
+    }
+
+  }
+  .topBanner{
+    border-bottom: 1px solid #d7d7d7;
+    color: #858585;
+    padding: 15px 0;
+  }
+}
+
+/*
+==============================================================
+Join - login
+==============================================================
+*/
+.bgSection{
+  background-color: #f5f5f5;
+  margin-bottom: 20px;
+  padding: 20px 20px 30px;
+  h3{
+    text-align: center;
+    padding-bottom: 20px;
+    background: url("../../images/common/bg_line.png") no-repeat bottom center;
+    background-size: contain;
+    margin-bottom: 20px;
+  }
+  p{
+    color: #4b4b4b;
+  }
+  .buttonWrap{
+    margin-top: 30px;
+  }
+  .checkboxWrap{
+    position: relative;
+    .findIdPw{
+      position: absolute;
+      top: 0;
+      right: 0;
+      a{
+        color: #858585;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+/*
+==============================================================
+footer
+==============================================================
+*/
+footer{
+  color: #858585;
+
+  .footerTop{
+    background: url("../../images/common/bg_line.png") no-repeat top center;
+    background-size: contain;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    #footer_accordion{
+      li.enable{
+        h3{
+          color: #000;
+          position: relative;
+          padding: 10px 0;
+          font-size: 12px;
+          &:after{
+            content:'\e807';
+            font-family: fontello;
+            position: absolute;
+            right: 0;
+          }
+          &.on:after{
+            content: '\e801';
+          }
+        }
+      }
+      li{
+        a{
+          color: #858585;
+          font-size: 11px;
+        }
+      }
+      li.last{
+        h3{
+          color: #000;
+          padding: 10px 0;
+          font-size: 12px;
+        }
+        .panel{
+          display: block !important;
+          li{
+            float: left;
+            i{
+              color: #000;
+              font-size: 16px;
+            }
+          }
+        }
+      }
+      .panel{
+        display: none;
+        li{
+          padding: 2px 0;
+        }
+      }
+    }
+  }
+
+  .footerBottom{
+    border-top: 2px solid #ebebeb;
+    padding: 20px 0 25px;
+    text-align: center;
+    font-size: 10px;
+    .copyright{
+      text-transform: uppercase;
+      padding-bottom: 17px;
+    }
+    ul{
+      display: inline-block;
+      list-style: none;
+      li{
+        float: left;
+        &:first-child{
+          margin-right:20px;
+        }
+        a{
+          color: #858585;
+        }
+      }
+    }
+  }
+}
+
+
