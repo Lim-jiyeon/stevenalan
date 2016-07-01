@@ -7,7 +7,7 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 $brand-primary:         #004689 !default;
-$brand-secondary:         #fff !default;
+$brand-secondary:         #000 !default;
 $brand-danger:          #611B06 !default;
 
 
@@ -26,6 +26,8 @@ $link-hover-color:      #858585 !default;
 //## Font, line-height, and color for body text, headings, and more.
 
 $font-family-base:        "BentonSans", "notoSans", sans-serif !default;
+$font-family-serif:       "Helvetica Neue", Helvetica, Arial, sans-serif;
+//$font-family-base:        "BentonSans", "notoSans", sans-serif !default;
 $font-size-base:          12px !default;
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        (20)/12 !default; // 20/14
@@ -131,16 +133,17 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Button Size
-$default-height: 36px;
+$default-height: 36px;//
 $large-height: 42px;
-$small-height: 28px;
+$small-height: 24px;//
 $xsmall-height: 18px;
 
 //Button Font Size
-$button-default-font-size: 16px;
+$button-default-size: 16px;//
+$button-small-size: 12px;//
 
 // Font Color
-$default-font-color: #333;
+$button-default-color: #333;
 
 $border-size: 1px;
 $border-color: #ccc;

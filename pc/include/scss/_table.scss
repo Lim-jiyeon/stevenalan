@@ -1,0 +1,36 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    col {
+        float: none;
+    }
+    th {
+        padding: 11px 0 9px;
+        border-top: 1px solid #e5e5e5;
+        background-color: #f5f5f5;
+        font-weight: normal;
+        color: $brand-secondary;
+    }
+    td {
+        padding: 15px 0;
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        background-color: #fff;
+        text-align: center;
+        vertical-align: top;
+        &.aline-left {
+            text-align: left;
+        }
+        &.aline-right {
+            text-align: right;
+        }
+    }
+}
+.table-help {
+    @include clearfix;
+    margin-bottom: 5px;
+    .help-text {
+        margin-top: -20px;
+        text-align: right;
+    }
+}

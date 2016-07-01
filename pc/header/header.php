@@ -38,7 +38,35 @@
                 <li class="megaMenu-item"><a href="#">women's</a></li>
                 <li class="megaMenu-item"><a href="#">men's</a></li>
                 <li class="megaMenu-item"><a href="#">watches</a></li>
-                <li class="megaMenu-item selected"><a href="#">jewelry</a></li>
+                <li class="megaMenu-item current">
+                    <a href="#">jewelry</a>
+                    <div >
+                        <div>
+                            <h3>designer</h3>
+                            <ul>
+                                <li>hortense</li>
+                                <li>jerry grant</li>
+                                <li>katie diamond</li>
+                                <li>kristen elspeth</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>shop</h3>
+                            <ul>
+                                <li>rings</li>
+                                <li>necklaces</li>
+                                <li>earrings</li>
+                                <li>bracelets</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3>watches</h3>
+                            <ul>
+                                <li>shop all</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
                 <li class="megaMenu-item"><a href="#">kid's</a></li>
                 <li class="megaMenu-item"><a href="#">home</a></li>
             </ul>
