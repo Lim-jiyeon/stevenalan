@@ -1,11 +1,13 @@
-.button {
+.button { //기본 버튼
     display: inline-block;
     padding: 0 30px;
-    border: $border-size solid transparent;
+    border: 1px solid transparent;
     @include border-radius(3px);
-    background-color: #ccc;
-    line-height: (($large-height - $border-size*2)/$button-default-font-size);
-    font-size: $button-default-font-size;
+    background-color: #000;
+    font-size: $button-default-size;
+    line-height: (($default-height - 2)/$button-default-size);
+    color: #fff;
+    letter-spacing: 2px;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -17,7 +19,7 @@
 }
 
 /* Purpose Definition */
-.button-primary {
+.button-primary { // 파란색 대표 버튼
     background-color: $brand-primary;
     color: #fff;
     &:hover,
@@ -25,30 +27,41 @@
         color: #fff;
     }
 }
-
-.button-secondary {
+.button-secondary { // 검정색 border, 하얀 bg 버튼
     border-color: #000;
-    background-color: $brand-secondary;
-    color: #fff;
+    background-color: #fff;
+    color: #000;
+}
+.button-danger { // 삭제 버튼
+    background-color: transparent;
+    color: #8d8d8d;
 }
 
-.button-danger {
-    background-color: $brand-danger;
-    color: #fff;
+.button-large { //
+    padding: 0 50px;
+    font-size: $font-size-base;
+    line-height: (($large-height - 2)/$font-size-base);
+}
+.button-small { // 게시판 용도
+    padding: 0 11px;
+    font-size: $font-size-base;
+    line-height: (($small-height - 2)/$font-size-base);
+}
+.button-link { // 링크 스타일 (삭제)
+    padding: 0 2px;
+    border-bottom: 1px solid #bdbdbd;
+    background-color: transparent;
+    font-size: $font-size-base;
+    line-height: ((18 - 2)/12);
+    letter-spacing: 1px;
 }
 
-.button-block{
+.button-block{ // 버튼 100%
+    display: block;
     width: 100%;
 }
 
-.button-small {
-    font-size:$button-small-font-size;
-    padding: 0 10px;
-    width: 80px;
-    line-height: (($default-height - $border-size*2)/$button-small-font-size);
-}
-
-.button-group {
+.button-group { // 붙어 있는 버튼 여러개
     font-size: 0;
     .button {
         margin: 0;
@@ -62,4 +75,11 @@
             @include border-side-radius(bottom,right,3px);
         }
     }
+}
+
+// Button Align
+.button-align-center { // 하단 가운데 버튼
+    margin-top: 20px;
+    text-align: center;
+    @include clearfix;
 }
