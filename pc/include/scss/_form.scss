@@ -75,7 +75,7 @@ output {
   display: block;
   padding-top: 7px;
   font-size: $font-size-base;
-  line-height: $line-height-base;
+  line-height: (($default-height - $border-size*2)/$button-small-font-size);
   color: $input-color;
 }
 
@@ -120,6 +120,130 @@ input[type="search"] {
 // Form groups
 .form-group {
   margin-bottom: $form-group-margin-bottom;
+}
+
+
+/* 인풋그룹 */
+.input-group {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  > div{
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .input-group-addon{
+    padding: 0 6px;
+    text-align: center;
+    &.blank{
+      padding: 0;
+      width: 5px;
+    }
+  }
+}
+
+.file_input_div{
+  position: relative;
+  width: 80px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  input{
+    border: 0 none;
+    padding: 0;
+    font-size: 29px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: alpha(opacity=0);
+    cursor: pointer;
+  }
+}
+.file_input_textbox{
+  padding: 0;
+  background-color: transparent;
+  border: 0 none;
+}
+
+// input, button group
+.input-button-group{
+  display: table;
+  width: 100%;
+  .form-control{
+    display: table-cell;
+    border-right: 0;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .button{
+    display: table-cell;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+//selectbox
+/********************* selectbox *******************/
+.selectbox{
+  display: inline-block;
+  select{
+    height: 34px;
+    background-color: #fff;
+    border: 1px solid #858585;
+    font-size: 14px;
+  }
+}
+.selectbox-style {
+  position: relative;
+  border: 1px solid $border-color;
+  @extend %border-radius;
+  select{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .selectbox-value {
+    line-height: (($default-height - $border-size*2)/$font-size-base);
+    font-size: $font-size-base;
+    position: relative;
+    padding: 0 10px;
+    padding-right: 30px;
+    font-weight: normal;
+    background-color: #fff;
+    &:after{
+      content:"";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #858585;
+      position: absolute;
+      top:0;
+      bottom:0;
+      right:10px;
+      margin: auto;
+    }
+  }
+}
+
+.selectbox-block{
+  .selectbox{
+    display: block;
+    width: 100%;
+  }
+  .selectbox-value{
+    display: block;
+  }
+  select{
+    width: 100%;
+  }
 }
 
 // Checkbox, Radio

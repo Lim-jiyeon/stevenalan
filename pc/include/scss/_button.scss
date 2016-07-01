@@ -4,7 +4,7 @@
     border: $border-size solid transparent;
     @include border-radius(3px);
     background-color: #ccc;
-    line-height: (($default-height - $border-size*2)/$button-default-font-size);
+    line-height: (($large-height - $border-size*2)/$button-default-font-size);
     font-size: $button-default-font-size;
     text-align: center;
     vertical-align: middle;
@@ -27,9 +27,9 @@
 }
 
 .button-secondary {
-    border-color: #f1f1f1;
+    border-color: #000;
     background-color: $brand-secondary;
-    color: #333;
+    color: #fff;
 }
 
 .button-danger {
@@ -39,6 +39,13 @@
 
 .button-block{
     width: 100%;
+}
+
+.button-small {
+    font-size:$button-small-font-size;
+    padding: 0 10px;
+    width: 80px;
+    line-height: (($default-height - $border-size*2)/$button-small-font-size);
 }
 
 .button-group {

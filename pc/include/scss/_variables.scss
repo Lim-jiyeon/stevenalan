@@ -7,7 +7,7 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 $brand-primary:         #004689 !default;
-$brand-secondary:         #fff !default;
+$brand-secondary:         #000 !default;
 $brand-danger:          #611B06 !default;
 
 
@@ -43,7 +43,7 @@ $input-bg-disabled:              #eee !default;
 //** Text color for `<input>`s
 $input-color:                    #555 !default;
 //** `<input>` border color
-$input-border:                   #ccc !default;
+$input-border:                   #d5d5d5 !default;
 //** Placeholder text color
 $input-color-placeholder:        #999 !default;
 //** `.form-group` margin
@@ -131,16 +131,17 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Button Size
-$default-height: 36px;
-$large-height: 42px;
-$small-height: 28px;
+$default-height: 30px;
+$large-height: 36px;
+$small-height: 24px;
 $xsmall-height: 18px;
 
 //Button Font Size
 $button-default-font-size: 16px;
+$button-small-font-size: 12px;
 
 // Font Color
 $default-font-color: #333;
 
 $border-size: 1px;
-$border-color: #ccc;
+$border-color: #d5d5d5;

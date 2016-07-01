@@ -10,7 +10,7 @@ include '../header/header.php';
         <div class="bgSection col-xs-10">
             <h4>1:1 문의</h4>
             <p>문의글을 등록하시면 빠른 시일 내에 답변 드리겠습니다.</p>
-            <table width="100%">
+            <table width="100%" class="personal-support-table">
                 <thead>
                     <tr>
                         <th>유형</th>

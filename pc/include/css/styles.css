@@ -1668,9 +1668,9 @@ hr {
 
 /* line 29, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
 .button-secondary {
-  border-color: #f1f1f1;
-  background-color: #fff;
-  color: #333;
+  border-color: #000;
+  background-color: #000;
+  color: #fff;
 }
 
 /* line 35, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
@@ -1685,11 +1685,19 @@ hr {
 }
 
 /* line 44, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
+.button-small {
+  font-size: 12px;
+  padding: 0 10px;
+  width: 80px;
+  line-height: 2.3333333333;
+}
+
+/* line 51, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
 .button-group {
   font-size: 0;
 }
 
-/* line 46, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
+/* line 53, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
 .button-group .button {
   margin: 0;
   -webkit-border-radius: 0;
@@ -1698,7 +1706,7 @@ hr {
   border-radius: 0;
 }
 
-/* line 49, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
+/* line 56, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
 .button-group .button:first-child {
   border-top-left-radius: 3px;
   -moz-border-radius-topleft: 3px;
@@ -1708,7 +1716,7 @@ hr {
   -webkit-border-bottom-left-radius: 3px;
 }
 
-/* line 53, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
+/* line 60, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_button.scss */
 .button-group .button:last-child {
   border-top-right-radius: 3px;
   -moz-border-radius-topright: 3px;
@@ -1793,7 +1801,7 @@ output {
   display: block;
   padding-top: 7px;
   font-size: 12px;
-  line-height: 1.6666666667;
+  line-height: 2.3333333333;
   color: #555;
 }
 
@@ -1801,14 +1809,14 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 36px;
+  height: 30px;
   padding: 0 10px;
   font-size: 12px;
   line-height: 1.6666666667;
   color: #555;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #ccc;
+  border: 1px solid #d5d5d5;
 }
 
 /* line 97, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
@@ -1839,13 +1847,164 @@ input[type="search"] {
   margin-bottom: 10px;
 }
 
-/* line 126, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+/* 인풋그룹 */
+/* line 127, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.input-group {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* line 131, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.input-group > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 135, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.input-group .input-group-addon {
+  padding: 0 6px;
+  text-align: center;
+}
+
+/* line 138, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.input-group .input-group-addon.blank {
+  padding: 0;
+  width: 5px;
+}
+
+/* line 145, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.file_input_div {
+  position: relative;
+  width: 80px;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+/* line 152, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.file_input_div input {
+  border: 0 none;
+  padding: 0;
+  font-size: 29px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -ms-filter: alpha(opacity=0);
+  cursor: pointer;
+}
+
+/* line 165, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.file_input_textbox {
+  padding: 0;
+  background-color: transparent;
+  border: 0 none;
+}
+
+/* line 172, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.input-button-group {
+  display: table;
+  width: 100%;
+}
+
+/* line 175, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.input-button-group .form-control {
+  display: table-cell;
+  border-right: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+/* line 181, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.input-button-group .button {
+  display: table-cell;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/********************* selectbox *******************/
+/* line 190, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.selectbox {
+  display: inline-block;
+}
+
+/* line 192, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.selectbox select {
+  height: 34px;
+  background-color: #fff;
+  border: 1px solid #858585;
+  font-size: 14px;
+}
+
+/* line 199, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.selectbox-style {
+  position: relative;
+  border: 1px solid #d5d5d5;
+}
+
+/* line 203, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.selectbox-style select {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 211, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.selectbox-style .selectbox-value {
+  line-height: 2.3333333333;
+  font-size: 12px;
+  position: relative;
+  padding: 0 10px;
+  padding-right: 30px;
+  font-weight: normal;
+  background-color: #fff;
+}
+
+/* line 219, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.selectbox-style .selectbox-value:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid #858585;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+}
+
+/* line 237, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.selectbox-block .selectbox {
+  display: block;
+  width: 100%;
+}
+
+/* line 241, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.selectbox-block .selectbox-value {
+  display: block;
+}
+
+/* line 244, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+.selectbox-block select {
+  width: 100%;
+}
+
+/* line 250, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
 .checkbox,
 .radio {
   display: inline-block;
 }
 
-/* line 129, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+/* line 253, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
 .checkbox input[type="checkbox"],
 .checkbox input[type="radio"],
 .radio input[type="checkbox"],
@@ -1856,7 +2015,7 @@ input[type="search"] {
   visibility: hidden;
 }
 
-/* line 136, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+/* line 260, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
 .checkbox .checkbox-display,
 .checkbox .radio-display,
 .radio .checkbox-display,
@@ -1870,7 +2029,7 @@ input[type="search"] {
   vertical-align: middle;
 }
 
-/* line 146, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+/* line 270, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
 .checkbox input[type="checkbox"]:checked + .checkbox-display,
 .checkbox input[type="radio"]:checked + .radio-display,
 .radio input[type="checkbox"]:checked + .checkbox-display,
@@ -1879,19 +2038,19 @@ input[type="search"] {
   transition: all 0.3s ease;
 }
 
-/* line 151, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+/* line 275, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
 .checkbox .radio-display,
 .radio .radio-display {
   background-image: url(../../images/common/form-radio.png);
 }
 
-/* line 154, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+/* line 278, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
 .checkbox input[type="radio"]:checked + .radio-display,
 .radio input[type="radio"]:checked + .radio-display {
   background-image: url(../../images/common/form-radio-checked.png);
 }
 
-/* line 160, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
+/* line 284, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_form.scss */
 .help-block {
   display: block;
   margin-top: 5px;
@@ -2235,7 +2394,7 @@ input[type="search"] {
 }
 
 /**********************************************
- Mypage - 1:1문의
+ Mypage - 1:1문의 리스트
 ***********************************************/
 /* line 256, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
 .personal-support-wrap {
@@ -2291,7 +2450,7 @@ input[type="search"] {
 .personal-support-wrap .bgSection h4 {
   color: #064787;
   font-size: 14px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 /* line 295, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
@@ -2302,12 +2461,12 @@ input[type="search"] {
 }
 
 /* line 300, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
-.personal-support-wrap .bgSection table {
+.personal-support-wrap .bgSection .personal-support-table {
   border-collapse: collapse;
 }
 
 /* line 302, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
-.personal-support-wrap .bgSection table th {
+.personal-support-wrap .bgSection .personal-support-table th {
   color: #000;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
@@ -2315,7 +2474,7 @@ input[type="search"] {
 }
 
 /* line 309, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
-.personal-support-wrap .bgSection table tr > td {
+.personal-support-wrap .bgSection .personal-support-table tr > td {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
   padding: 10px;
@@ -2411,4 +2570,55 @@ input[type="search"] {
 /* line 380, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
 .paging .pagingNum span.current {
   text-decoration: underline;
+}
+
+/**********************************************
+ Mypage - 1:1문의 쓰기 폼
+***********************************************/
+/* line 391, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
+.personal-support-write-wrap h4 {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* line 396, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
+.personal-support-write-wrap .personal-support-write-table tr > td {
+  padding: 7px 0;
+}
+
+/* line 399, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
+.personal-support-write-wrap .personal-support-write-table tr th {
+  padding: 7px 0;
+  text-align: left;
+  padding-left: 15px;
+  color: #000;
+}
+
+/* line 405, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
+.personal-support-write-wrap .personal-support-write-table tr .input-button-group {
+  max-width: 380px;
+}
+
+/* line 409, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
+.personal-support-write-wrap .personal-support-write-table .file_input_textbox {
+  width: 85%;
+}
+
+/* line 412, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
+.personal-support-write-wrap .personal-support-write-table .selectbox-block {
+  max-width: 145px;
+}
+
+/* line 415, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
+.personal-support-write-wrap .personal-support-write-table .email-wrap {
+  max-width: 500px;
+}
+
+/* line 419, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
+.personal-support-write-wrap .buttonWrap {
+  padding-top: 20px;
+}
+
+/* line 422, /Users/hanna/PhpstormProjects/stevenalan/pc/include/scss/_custom.scss */
+.personal-support-write-wrap #write-form-tel {
+  max-width: 300px;
 }

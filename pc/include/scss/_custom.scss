@@ -251,7 +251,7 @@
 
 
 /**********************************************
- Mypage - 1:1문의
+ Mypage - 1:1문의 리스트
 ***********************************************/
 .personal-support-wrap{
     display: inline-block;
@@ -290,14 +290,14 @@
         h4{
             color: #064787;
             font-size: 14px;
-            margin-bottom: 40px;
+            padding-bottom: 40px;
         }
         > p{
             font-size: 11px;
             color: #4b4b4b;
             margin-bottom: 10px;
         }
-        table{
+        .personal-support-table{
             border-collapse: collapse;
             th{
                 color: #000;
@@ -384,5 +384,42 @@
     }
 }
 
-
-
+/**********************************************
+ Mypage - 1:1문의 쓰기 폼
+***********************************************/
+.personal-support-write-wrap{
+    h4{
+        border-bottom: 1px solid #e5e5e5 ;
+    }
+    .personal-support-write-table{
+        tr{
+            > td{
+                padding: 7px 0;
+            }
+            th{
+                padding: 7px 0;
+                text-align: left;
+                padding-left: 15px;
+                color: #000;
+            }
+            .input-button-group{
+                max-width: 380px;
+            }
+        }
+        .file_input_textbox{
+            width: 85%;
+        }
+        .selectbox-block{
+            max-width: 145px;
+        }
+        .email-wrap{
+            max-width: 500px;
+        }
+    }
+    .buttonWrap{
+        padding-top: 20px;
+    }
+    #write-form-tel{
+        max-width: 300px;
+    }
+}
