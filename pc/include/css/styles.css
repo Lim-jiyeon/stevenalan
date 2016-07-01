@@ -1634,15 +1634,16 @@ hr {
 /* line 1, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button {
   display: inline-block;
-  padding: 0 50px;
+  padding: 0 30px;
   border: 1px solid transparent;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
   border-radius: 3px;
-  background-color: #ccc;
+  background-color: #000;
   font-size: 16px;
-  line-height: 2.125;
+  line-height: 1.75;
+  color: #fff;
   letter-spacing: 2px;
   text-align: center;
   vertical-align: middle;
@@ -1650,44 +1651,51 @@ hr {
   -webkit-appearance: none;
 }
 
-/* line 14, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 15, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button:hover, .button:focus {
   text-decoration: none;
 }
 
 /* Purpose Definition */
-/* line 21, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 22, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-primary {
   background-color: #004689;
   color: #fff;
 }
 
-/* line 24, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 25, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-primary:hover, .button-primary:focus {
   color: #fff;
 }
 
-/* line 29, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 30, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-secondary {
-  border-color: #f1f1f1;
-  background-color: #000;
-  color: #333;
+  border-color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
-/* line 34, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 35, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-danger {
   background-color: transparent;
   color: #8d8d8d;
 }
 
-/* line 39, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 40, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+.button-large {
+  padding: 0 50px;
+  font-size: 12px;
+  line-height: 2.8333333333;
+}
+
+/* line 45, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-small {
   padding: 0 11px;
   font-size: 12px;
   line-height: 1.8333333333;
 }
 
-/* line 44, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 50, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-link {
   padding: 0 2px;
   border-bottom: 1px solid #bdbdbd;
@@ -1697,18 +1705,18 @@ hr {
   letter-spacing: 1px;
 }
 
-/* line 53, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 59, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-block {
   display: block;
   width: 100%;
 }
 
-/* line 58, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 64, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-group {
   font-size: 0;
 }
 
-/* line 60, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 66, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-group .button {
   margin: 0;
   -webkit-border-radius: 0;
@@ -1717,7 +1725,7 @@ hr {
   border-radius: 0;
 }
 
-/* line 63, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 69, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-group .button:first-child {
   border-top-left-radius: 3px;
   -moz-border-radius-topleft: 3px;
@@ -1727,7 +1735,7 @@ hr {
   -webkit-border-bottom-left-radius: 3px;
 }
 
-/* line 67, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 73, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-group .button:last-child {
   border-top-right-radius: 3px;
   -moz-border-radius-topright: 3px;
@@ -1737,7 +1745,7 @@ hr {
   -webkit-border-bottom-right-radius: 3px;
 }
 
-/* line 75, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 81, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-align-center {
   margin-top: 20px;
   text-align: center;
@@ -1837,7 +1845,7 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 36px;
+  height: 30px;
   padding: 0 10px;
   font-size: 12px;
   line-height: 1.6666666667;

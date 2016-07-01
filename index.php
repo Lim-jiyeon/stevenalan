@@ -10,6 +10,7 @@
                         <li><a href="pc/mypage/wishlist.php">위시리스트</a></li>
                         <li><a href="pc/mypage/personal-support.php">1:1 문의 리스트</a></li>
                         <li><a href="pc/mypage/personal-support-write.php">1:1 문의 쓰기</a></li>
+                        <li><a href="pc/mypage/coupon.php">Coupon</a></li>
                     </ul>
 
                     <hr>

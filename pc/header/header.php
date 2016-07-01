@@ -40,7 +40,7 @@
                 <li class="megaMenu-item"><a href="#">watches</a></li>
                 <li class="megaMenu-item current">
                     <a href="#">jewelry</a>
-                    <div >
+                    <div style="display: none;">
                         <div>
                             <h3>designer</h3>
                             <ul>
