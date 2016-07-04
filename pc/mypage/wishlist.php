@@ -6,7 +6,7 @@
                 <?php include './mypage-left-menu.php'; ?>
                 <div class="col-xs-10">
                     <div class="box wishlist">
-                        <h2 class="page-title">위시리스트</h2>
+                        <h2 class="box-page-title">위시리스트</h2>
                         <div class="wishlist-list">
                             <div class="table-help">
                                 <p class="amount">종 2 개의 상품</p>
@@ -61,9 +61,9 @@
                                 <tr>
                                     <td>
                                         <div class="checkbox">
-                                            <input type="checkbox" id="product-select">
-                                            <label for="product-select" class="checkbox-display"></label>
-                                            <label for="product-select" class="checkbox-label sr-only">상품선택</label>
+                                            <input type="checkbox" id="product-select2">
+                                            <label for="product-select2" class="checkbox-display"></label>
+                                            <label for="product-select2" class="checkbox-label sr-only">상품선택</label>
                                         </div>
                                     </td>
                                     <td class="product-info aline-left">
@@ -99,7 +99,7 @@
                         </div>
                         <div class="button-align-center">
                             <a href="#" class="button button-large button-primary"><span>선택상품 쇼핑백 담기</span></a>
-                            <p class="wishlist-cancel"><a href="#" class="button button-link"><span>선택삭제</span></a></p>
+                            <p class="wishlist-cancel"><a href="#" class="button button-danger button-link"><span>선택삭제</span></a></p>
                         </div>
                     </div>
                 </div>

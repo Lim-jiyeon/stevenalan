@@ -8,14 +8,14 @@ include '../header/header.php';
             <?php include 'mypage-left-menu.php'?>
 
             <div class="bgSection col-xs-10">
-                <h4>1:1 문의</h4>
+                <h2 class="box-page-title">1:1 문의</h2>
                 <table width="100%" class="personal-support-write-table">
                     <tbody>
                         <tr>
                             <th>유형*</th>
                             <td>
                                 <form class="selectbox-block">
-                                    <div class="selectbox selectbox-style">
+                                    <div class="selectbox">
                                         <strong class="selectbox-value">문의 유형</strong>
                                         <select onchange="selectboxEvent(this);">
                                             <option value="선택하세요">선택하세요</option>
@@ -35,7 +35,7 @@ include '../header/header.php';
                                 <div class="form-group">
                                     <div class="input-button-group">
                                         <input type="text" class="form-control"/>
-                                        <a href="#" class="button button-small button-secondary">주문조회</a>
+                                        <a href="#" class="button">주문조회</a>
                                     </div>
                                 </div>
                             </td>
@@ -60,7 +60,7 @@ include '../header/header.php';
                             <th>파일첨부</th>
                             <td>
                                 <div class="file_input_div">
-                                    <a href="#" class="button button-secondary button-small file_input_img_btn">파일 첨부</a>
+                                    <a href="#" class="button button-input file_input_img_btn">파일첨부</a>
                                     <input type="file" name="addfile" class="file_input_hidden" onchange="javascript: document.getElementById('fileName').value = this.value">
                                 </div>
                                 <input type="text" name="fileName" id="fileName" class="file_input_textbox phototext" readonly="">
@@ -81,16 +81,16 @@ include '../header/header.php';
                                     <div><input type="text" class="form-control"/></div>
                                     <div>
                                         <form class="selectbox-block">
-                                            <div class="selectbox selectbox-style">
-                                                    <strong class="selectbox-value">직접입력</strong>
-                                                    <select onchange="selectboxEvent(this);">
-                                                        <option value="선택하세요">선택하세요</option>
-                                                        <option value="선택1">선택1</option>
-                                                        <option value="선택2">선택2</option>
-                                                        <option value="선택3">선택3</option>
-                                                        <option value="선택4">선택4</option>
-                                                        <option value="선택5">선택5</option>
-                                                    </select>
+                                            <div class="selectbox">
+                                                <strong class="selectbox-value">직접입력</strong>
+                                                <select onchange="selectboxEvent(this);">
+                                                    <option value="선택하세요">선택하세요</option>
+                                                    <option value="선택1">선택1</option>
+                                                    <option value="선택2">선택2</option>
+                                                    <option value="선택3">선택3</option>
+                                                    <option value="선택4">선택4</option>
+                                                    <option value="선택5">선택5</option>
+                                                </select>
                                             </div>
                                         </form>
                                     </div>
@@ -101,7 +101,7 @@ include '../header/header.php';
                 </table>
 
                 <div class="buttonWrap">
-                    <a href="#" class="button button-primary">등록</a>
+                    <a href="#" class="button button-large button-primary">등록</a>
                 </div>
             </div><!-- bgSection // end -->
         </div>

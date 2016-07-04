@@ -53,7 +53,7 @@
                         </div>
                         <!-- 아이디 찾기 : 휴대폰 번호 //end -->
                         <p class="warning"><i class="icon-attention"></i> 아이디를 찾을 수 없습니다. 정확히 입력해 주세요.</p>
-                        <a href="#" class="button button-primary button-block"><span>확인</span></a>
+                        <a href="#" class="button button-large button-primary button-block"><span>확인</span></a>
                     </div>
                 </div>
                 <!-- 아이디 찾기 //end -->
@@ -110,7 +110,7 @@
                         </div>
                         <!-- 비밀번호 찾기 : 핸드폰 번호 //end -->
                         <p class="warning"><i class="icon-attention"></i> 아이디를 찾을 수 없습니다. 정확히 입력해 주세요.</p>
-                        <a href="#" class="button button-primary button-block"><span>확인</span></a>
+                        <a href="#" class="button button-large button-primary button-block"><span>확인</span></a>
                     </div>
                 </div>
                 <!-- 비밀번호 찾기 //end -->

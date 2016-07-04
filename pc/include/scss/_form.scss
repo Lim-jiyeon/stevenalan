@@ -8,22 +8,22 @@
 // Restyle and baseline non-control form elements.
 
 fieldset {
+  min-width: 0;
   padding: 0;
   margin: 0;
   border: 0;
-  min-width: 0;
 }
 
 legend {
   display: block;
   width: 100%;
-  padding: 0;
   margin-bottom: 20px;
+  padding: 0;
+  border: 0;
+  border-bottom: 1px solid #e5e5e5;
   font-size: ($font-size-base * 1.5);
   line-height: inherit;
   color: #333;
-  border: 0;
-  border-bottom: 1px solid #e5e5e5;
 }
 
 label {
@@ -75,7 +75,7 @@ output {
   display: block;
   padding-top: 7px;
   font-size: $font-size-base;
-  line-height: (($default-height - $border-size*2)/$button-small-font-size);
+  line-height: (($default-height - $border-size*2)/$font-size-base);
   color: $input-color;
 }
 
@@ -86,12 +86,12 @@ output {
   width: 100%;
   height: $default-height;
   padding: 0 10px;
+  border: 1px solid $input-border;
+  background-color: $input-bg;
+  background-image: none;
   font-size: $font-size-base;
   line-height: $line-height-base;
   color: $input-color;
-  background-color: $input-bg;
-  background-image: none;
-  border: 1px solid $input-border;
 
   // Disabled and read-only inputs
   &[disabled],
@@ -123,11 +123,11 @@ input[type="search"] {
 }
 
 
-/* 인풋그룹 */
+// Input Group
 .input-group {
+  border-collapse: collapse;
   display: table;
   width: 100%;
-  border-collapse: collapse;
   > div{
     display: table-cell;
     vertical-align: middle;
@@ -136,26 +136,26 @@ input[type="search"] {
     padding: 0 6px;
     text-align: center;
     &.blank{
-      padding: 0;
       width: 5px;
+      padding: 0;
     }
   }
 }
 
+// Input File
 .file_input_div{
   position: relative;
-  width: 80px;
   overflow: hidden;
   display: inline-block;
-  vertical-align: middle;
   margin-right: 10px;
+  vertical-align: middle;
   input{
-    border: 0 none;
-    padding: 0;
-    font-size: 29px;
     position: absolute;
     right: 0px;
     top: 0px;
+    padding: 0;
+    border: 0 none;
+    font-size: 29px;
     opacity: 0;
     filter: alpha(opacity=0);
     -ms-filter: alpha(opacity=0);
@@ -164,71 +164,62 @@ input[type="search"] {
 }
 .file_input_textbox{
   padding: 0;
-  background-color: transparent;
   border: 0 none;
+  background-color: transparent;
 }
 
-// input, button group
+// Input & Button Group
 .input-button-group{
   display: table;
   width: 100%;
   .form-control{
     display: table-cell;
     border-right: 0;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    @include border-side-radius(top,right,0);
+    @include border-side-radius(bottom,right,0);
   }
   .button{
     display: table-cell;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    padding: 0;
+    @include border-side-radius(top,left,0);
+    @include border-side-radius(bottom,left,0);
   }
 }
 
-//selectbox
-/********************* selectbox *******************/
-.selectbox{
-  display: inline-block;
-  select{
-    height: 34px;
-    background-color: #fff;
-    border: 1px solid #858585;
-    font-size: 14px;
-  }
-}
-.selectbox-style {
+// Select Box
+.selectbox {
   position: relative;
+  display: inline-block;
   border: 1px solid $border-color;
-  @extend %border-radius;
-  select{
-    opacity: 0;
+  select {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
   }
   .selectbox-value {
-    line-height: (($default-height - $border-size*2)/$font-size-base);
-    font-size: $font-size-base;
     position: relative;
-    padding: 0 10px;
-    padding-right: 30px;
-    font-weight: normal;
+    padding: 0 30px 0 10px;
     background-color: #fff;
-    &:after{
-      content:"";
+    font-weight: normal;
+    font-size: $font-size-base;
+    line-height: (($default-height - $border-size*2)/$font-size-base);
+    font-family: $font-family-ko;
+    &:after {
       display: inline-block;
-      width: 0;
-      height: 0;
-      border-left: 5px solid transparent;
-      border-right: 5px solid transparent;
-      border-top: 5px solid #858585;
       position: absolute;
       top:0;
       bottom:0;
       right:10px;
+      width: 0;
+      height: 0;
       margin: auto;
+      border: 5px solid transparent;
+      border-width: 5px 5px 0;
+      border-top-color: #858585;
+      content:"";
     }
   }
 }

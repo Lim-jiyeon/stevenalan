@@ -1,11 +1,13 @@
 .button { //기본 버튼
+    position: relative;
     display: inline-block;
     padding: 0 30px;
     border: 1px solid transparent;
     @include border-radius(3px);
     background-color: #000;
-    font-size: $button-default-size;
-    line-height: (($default-height - 2)/$button-default-size);
+    font-size: $font-size-base;
+    line-height: (($default-height - 2)/$font-size-base);
+    font-family: $font-family-ko;
     color: #fff;
     letter-spacing: 2px;
     text-align: center;
@@ -14,54 +16,64 @@
     -webkit-appearance: none;
     &:hover,
     &:focus {
+        color: #fff;
         text-decoration: none;
     }
 }
 
 /* Purpose Definition */
-.button-primary { // 파란색 대표 버튼
-    background-color: $brand-primary;
-    color: #fff;
-    &:hover,
-    &:focus {
-        color: #fff;
-    }
-}
-.button-secondary { // 검정색 border, 하얀 bg 버튼
-    border-color: #000;
-    background-color: #fff;
-    color: #000;
-}
-.button-danger { // 삭제 버튼
-    background-color: transparent;
-    color: #8d8d8d;
-}
-
+// Button Size
 .button-large { //
     padding: 0 50px;
-    font-size: $font-size-base;
-    line-height: (($large-height - 2)/$font-size-base);
+    font-size: $button-large-size;
+    line-height: (($large-height - 2)/$button-large-size);
 }
 .button-small { // 게시판 용도
     padding: 0 11px;
-    font-size: $font-size-base;
-    line-height: (($small-height - 2)/$font-size-base);
+    font-size: $button-small-size;
+    line-height: (($small-height - 2)/$button-small-size);
+    letter-spacing: 1px;
 }
 .button-link { // 링크 스타일 (삭제)
     padding: 0 2px;
     border-bottom: 1px solid #bdbdbd;
-    background-color: transparent;
     font-size: $font-size-base;
     line-height: ((18 - 2)/12);
     letter-spacing: 1px;
 }
+.button-input {
+    padding: 0 15px;
+}
 
+// Button Color
+.button-primary { // 파란색 대표 버튼
+    background-color: $brand-primary;
+}
+.button-secondary { // 검정색 border 버튼
+    border-color: #000;
+    background-color: transparent;
+    color: #000;
+    &:hover,
+    &:focus {
+        color: #000;
+    }
+}
+.button-danger { // 삭제 버튼
+    background-color: transparent;
+    color: #8d8d8d;
+    &:hover,
+    &:focus {
+        color: #8d8d8d;
+    }
+}
+
+// Button Layout
 .button-block{ // 버튼 100%
     display: block;
     width: 100%;
 }
 
-.button-group { // 붙어 있는 버튼 여러개
+.button-group { // 다수버튼이 붙어 있는 경우
     font-size: 0;
     .button {
         margin: 0;

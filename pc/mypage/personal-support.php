@@ -8,8 +8,10 @@ include '../header/header.php';
         <?php include 'mypage-left-menu.php'?>
 
         <div class="bgSection col-xs-10">
-            <h4>1:1 문의</h4>
-            <p>문의글을 등록하시면 빠른 시일 내에 답변 드리겠습니다.</p>
+            <h2 class="box-page-title">1:1 문의</h2>
+            <div class="table-help">
+                <p class="help-info">문의글을 등록하시면 빠른 시일 내에 답변 드리겠습니다.</p>
+            </div>
             <table width="100%" class="personal-support-table">
                 <thead>
                     <tr>
@@ -95,7 +97,7 @@ include '../header/header.php';
             </table>
 
             <div class="paging">
-                <a href="#" class="prev"><i class="icon-left"></i></a>
+                <a href="#" class="prev disabled"><i class="icon-left"></i></a>
                 <span class="pagingNum">
                     <span class="current"><a href="#">1</a></span>
                     <span><a href="#">2</a></span>
@@ -106,7 +108,7 @@ include '../header/header.php';
             </div>
 
             <div class="buttonWrap">
-                <a class="button button-primary button-small" href="#" role="button">문의하기</a>
+                <a class="button button-large button-primary" href="#" role="button">문의하기</a>
             </div>
         </div><!-- bgSection // end -->
     </div>

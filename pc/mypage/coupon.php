@@ -5,15 +5,27 @@
             <div class="row">
                 <?php include './mypage-left-menu.php'; ?>
                 <div class="col-xs-10">
-                    <div class="box wishlist">
-                        <h2 class="page-title">쿠폰</h2>
-                        <div class="wishlist-list">
-                            <div></div>
-                            <div>
-                                <div class="button-group">
-                                    <a href="#" class="button">사용 가능 쿠폰</a>
-                                    <a href="#" class="button">지난 쿠폰 내역</a>
+                    <div class="box">
+                        <h2 class="box-page-title">쿠폰</h2>
+                        <div class="coupon">
+                            <!-- 쿠폰 등록 -->
+                            <div class="coupon-register">
+                                <div class="row">
+                                    <strong class="col-xs-2">쿠폰등록</strong>
+                                    <div class="col-xs-6">
+                                        <div class="input-button-group placeholder">
+                                            <label for="coupon-register">쿠폰에 기재된 일련번호 입력</label>
+                                            <input type="text" id="coupon-register" class="form-control"/>
+                                            <a href="#" class="button">등록</a>
+                                        </div>
+                                    </div>
                                 </div>
+                            </div>
+                            <!-- 쿠폰 등록 //end -->
+                            <!-- 쿠폰 내역 리스트 -->
+                            <div class="button-group">
+                                <a href="#" class="button">사용 가능 쿠폰</a>
+                                <a href="#" class="button button-secondary">지난 쿠폰 내역</a>
                             </div>
                             <table class="table table-list">
                                 <caption class="sr-only">보유 쿠폰 목록</caption>
@@ -34,10 +46,10 @@
                                 <tbody>
                                 <tr>
                                     <td>
-                                        <span class="coupon">15,000원</span>
-                                        C37688839857
+                                        <span class="coupon-type"><em>15,000</em>원</span>
+                                        <span class="coupon-num">C37688839857</span>
                                     </td>
-                                    <td>
+                                    <td class="coupon-purpose">
                                         <strong>Steven alan 상품 추가 할인</strong>
                                         <span>50,000원 이상 구매</span>
                                     </td>
@@ -47,9 +59,37 @@
                                         10일 (247시간) 남음
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>
+                                        <span class="coupon-type"><em>5%</em></span>
+                                        <span class="coupon-num">C37688839857</span>
+                                    </td>
+                                    <td class="coupon-purpose">
+                                        <strong>배송비 할인</strong>
+                                        <span>제한없음</span>
+                                    </td>
+                                    <td>
+                                        <div class="selectbox">
+                                            <strong class="selectbox-value">적용대상보기</strong>
+                                            <select onchange="selectboxEvent(this);">
+                                                <option value="선택하세요">적용대상보기</option>
+                                                <option value="선택1">brand 1</option>
+                                                <option value="선택2">brand 2</option>
+                                                <option value="선택3">brand 3</option>
+                                                <option value="선택4">brand 4</option>
+                                                <option value="선택5">brand 5</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        2016.06.01 ~ 2016.06.30<br>
+                                        10일 (247시간) 남음
+                                    </td>
+                                </tr>
                                 </tbody>
                             </table>
-                            <ul>
+                            <!-- 쿠폰 내역 리스트 //end -->
+                            <ul class="table-caution">
                                 <li>- 쿠폰의 적용대상은 쿠폰마다 다르며, 대상 상품은 변경될 수 있습니다.</li>
                                 <li>- 쿠폰은 한 주문당 한 가지 상품, 수량 1개에 한해 적용이 가능합니다.​​​​​​​</li>
                                 <li>- 유효기간이 경과했거나, 한번 사용했던 쿠폰은 재발급되지 않으므로 주문 취소나 반품시에도 돌려 받을 수 없습니다.</li>

@@ -28,7 +28,7 @@
                             </div>
                             <a href="#" class="find-id">아이디/비밀번호 찾기</a>
                         </div>
-                        <a href="#" class="button button-primary button-block"><span>로그인</span></a>
+                        <a href="#" class="button button-large button-primary button-block"><span>로그인</span></a>
                     </div>
                 </div>
                 <!-- 로그인 //end -->
@@ -42,7 +42,7 @@
                             혜택을 받으실 수 있고,<br>
                             서비스를 안전하고 간편하게 이용 가능합니다.
                         </p>
-                        <a href="#" class="button button-primary button-block"><span>회원가입</span></a>
+                        <a href="#" class="button button-large button-primary button-block"><span>회원가입</span></a>
                     </div>
                 </div>
                 <!-- 회원가입 //end -->
@@ -59,7 +59,7 @@
                             <label for="order-name">주문자명</label>
                             <input type="password" id="order-name" class="form-control">
                         </div>
-                        <a href="#" class="button button-primary button-block"><span>로그인</span></a>
+                        <a href="#" class="button button-large button-primary button-block"><span>로그인</span></a>
                     </div>
                 </div>
                 <!-- 비회원 주문 조회 //end -->

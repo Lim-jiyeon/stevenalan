@@ -179,7 +179,7 @@
         text-align: center;
     }
 }
-.page-title {
+.box-page-title {
     margin-bottom: 30px;
     font-size: 14px;
     color: $brand-primary;
@@ -193,11 +193,12 @@
         right: 0;
         bottom: 0;
         left: 0;
-        height: 50%;
         margin: auto;
         padding: 0 10px;
         font-weight: normal;
         font-size: 12px;
+        line-height: (30/12);
+        font-family: $font-family-ko;
         color: #8d8d8d;
     }
 }
@@ -206,8 +207,9 @@
 }
 // Paging
 .paging{
-    text-align: center;
+    margin-right: 5px;
     padding: 15px 0;
+    text-align: center;
     .prev{
         margin-right: 30px;
     }
@@ -262,9 +264,9 @@
             margin-bottom: 6px;
             padding: 0 10px;
             border: 1px solid $brand-secondary;
-            font-family: $font-family-serif;
             font-size: 10px;
             line-height: (16-2)/10;
+            font-family: $font-family-serif;
             color: $brand-secondary;
         }
         .item-brand {
@@ -374,12 +376,15 @@
     .wishlist-list {
         border-bottom: 1px solid #e5e5e5;
     }
+    .table td {
+        vertical-align: top;
+    }
     .discount, .price {
         display: block;
     }
     .order-button {
         .button-block {
-            margin-bottom: 10px;
+            margin-bottom: 9px;
         }
     }
     .wishlist-cancel {
@@ -390,7 +395,7 @@
 }
 
 /**********************************************
- Mypage - 1:1문의 리스트
+ My Page - 1:1문의 리스트
 ***********************************************/
 .personal-support-wrap{
     display: inline-block;
@@ -403,11 +408,6 @@
             color: #064787;
             font-size: 14px;
             padding-bottom: 40px;
-        }
-        > p{
-            font-size: 11px;
-            color: #4b4b4b;
-            margin-bottom: 10px;
         }
         .personal-support-table{
             border-collapse: collapse;
@@ -470,7 +470,7 @@
 }
 
 /**********************************************
- Mypage - 1:1문의 쓰기 폼
+ My Page - 1:1문의 쓰기 폼
 ***********************************************/
 .personal-support-write-wrap{
     h4{
@@ -482,9 +482,8 @@
                 padding: 7px 0;
             }
             th{
-                padding: 7px 0;
+                padding: 7px 0 7px 15px;
                 text-align: left;
-                padding-left: 15px;
                 color: #000;
             }
             .input-button-group{
@@ -506,5 +505,51 @@
     }
     #write-form-tel{
         max-width: 300px;
+    }
+}
+
+/**********************************************
+ My Page - Coupon
+***********************************************/
+.coupon {
+    .coupon-register {
+        padding: 20px;
+        border-top: 1px solid #e5e5e5;
+        strong {
+            margin-bottom: 0;
+            line-height: (30/12);
+        }
+    }
+    .button-group {
+        padding: 40px 0 20px;
+        border-top: 1px solid #e5e5e5;
+        text-align: center;
+    }
+}
+.coupon-type {
+    display: inline-block;
+    width: 110px;
+    border: 2px solid $brand-primary;
+    @include border-radius(3px);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: ((43-4)/16);
+    font-family: $font-family-ko;
+    color: $brand-primary;
+    text-align: center;
+    em {
+        font-style: normal;
+        font-family: $font-family-en;
+    }
+}
+.coupon-num {
+    display: block;
+    margin-top: 8px;
+}
+.coupon-purpose {
+    strong {
+        display: block;
+        font-weight: 400;
+        color: #000;
     }
 }
