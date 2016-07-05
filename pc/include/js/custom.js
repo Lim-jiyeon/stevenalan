@@ -32,11 +32,12 @@ $(document).ready(function() {
 
 });
 
-/* 셀렉트박스 값 변경하는 함수 */
-function  selectboxEvent(target){
+
+// Select Box
+function selectboxEvent(target){
     var $this = $(target),
-    str = $this.val();
-    $this.parent().children('.selectbox-value').text(str);
+        str = $this.val();
+    $this.parent().children(".selectbox-value").text(str);
 }
 
 function modalOpen(modal) {

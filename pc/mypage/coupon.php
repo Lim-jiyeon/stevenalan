@@ -12,11 +12,13 @@
                             <div class="coupon-register">
                                 <div class="row">
                                     <strong class="col-xs-2">쿠폰등록</strong>
-                                    <div class="col-xs-6">
-                                        <div class="input-button-group placeholder">
-                                            <label for="coupon-register">쿠폰에 기재된 일련번호 입력</label>
-                                            <input type="text" id="coupon-register" class="form-control"/>
-                                            <a href="#" class="button">등록</a>
+                                    <div class="col-xs-7">
+                                        <div class="input-button-group">
+                                            <div class="form-group placeholder">
+                                                <label for="coupon-register">쿠폰에 기재된 일련번호 입력</label>
+                                                <input type="text" id="coupon-register" class="form-control"/>
+                                                <a href="#" class="button">등록</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -72,12 +74,12 @@
                                         <div class="selectbox">
                                             <strong class="selectbox-value">적용대상보기</strong>
                                             <select onchange="selectboxEvent(this);">
-                                                <option value="선택하세요">적용대상보기</option>
-                                                <option value="선택1">brand 1</option>
-                                                <option value="선택2">brand 2</option>
-                                                <option value="선택3">brand 3</option>
-                                                <option value="선택4">brand 4</option>
-                                                <option value="선택5">brand 5</option>
+                                                <option value="적용대상보기">적용대상보기</option>
+                                                <option value="brand 1">brand 1</option>
+                                                <option value="선택2">선택2</option>
+                                                <option value="선택3">선택3</option>
+                                                <option value="선택4">선택4</option>
+                                                <option value="선택5">선택5</option>
                                             </select>
                                         </div>
                                     </td>
