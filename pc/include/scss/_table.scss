@@ -20,7 +20,7 @@
     }
 }
 
-.table-list {
+.table-list { // Head Align Horizontal
     th {
         padding: 11px 0 9px;
         border-top: 1px solid #e5e5e5;
@@ -34,19 +34,32 @@
     }
 }
 
-.table-help {
+.table-row-list { // Head Align Vertical
+    th {
+        padding: 8px 0;
+        text-align: left;
+        vertical-align: top;
+    }
+    td {
+        padding: 4px 0;
+        text-align: left;
+        vertical-align: middle;
+    }
+}
+
+.table-help { // 테이블 상단 메세지
     @include clearfix;
     margin-bottom: 5px;
     font-size: 11px;
-    .help-info {
+    .help-info { // 테이블 정보
         color: #4b4b4b;
     }
-    .help-text {
+    .help-text { // 테이블 안내문구
         margin-top: -20px;
         text-align: right;
     }
 }
 
-.table-caution {
+.table-caution { // 테이블 하단 유의사
     margin-top: 20px;
 }
