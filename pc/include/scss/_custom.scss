@@ -411,10 +411,62 @@
 .personal-support-wrap{
     display: inline-block;
     width: 100%;
+    .modal{
+        .bgSection{
+            float: none;
+            margin-top: 20px;
+            .selWrap{
+                display: inline-block;
+                width: 100%;
+                .monthSel{
+                    float: left;
+                    ul{
+                        display: inline-block;
+                        li{
+                            border-top: 1px solid #000;
+                            border-bottom: 1px solid #000;
+                            border-right: 1px solid #000;
+                            width: 80px;
+                            height: 30px;
+                            line-height: (($default-height - $border-size*2)/$font-size-base);
+                            text-align: center;
+                            float: left;
+                            a{
+                                color: #000;
+                            }
+                            &:first-child{
+                                border-top-left-radius: 3px;
+                                border-bottom-left-radius: 3px;
+                                border-left: 1px solid #000;
+                            }
+                            &:last-child{
+                                border-top-right-radius: 3px;
+                                border-bottom-right-radius: 3px;
+                            }
+                            &.current{
+                                background-color: #000;
+                                a{
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+                }
+                .dateSel{
+                    float: right;
+                }
+            }
+            .buttonWrap{
+                border-top: 0;
+                padding-top: 0;
+             }
+        }
+    }
     .bgSection{
         float: right;
         background-color: #f5f5f5;
         padding: 30px;
+        position: relative;
         h4{
             color: #064787;
             font-size: 14px;
@@ -469,6 +521,36 @@
                 }
             }
         }
+        .modalWrap{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 740px;
+            .table-list{
+                margin-top: 20px;
+                td{
+                    vertical-align: top;
+                    padding-top: 15px;
+                    &:first-child{
+                        p:last-child{
+                            margin-top: 10px;
+                            a{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                    &:nth-child(4){
+                        color: #000;
+                    }
+                    &:last-child span{
+                        color: #004689;
+                    }
+                }
+            }
+            .paging{
+                border-bottom: 1px solid #e5e5e5;
+            }
+        }
     }
     .buttonWrap{
         text-align: center;
@@ -484,16 +566,15 @@
  My Page - 1:1문의 쓰기 폼
 ***********************************************/
 .personal-support-write-wrap{
-    h4{
-        border-bottom: 1px solid #e5e5e5 ;
-    }
     .personal-support-write-table{
+        border-top: 1px solid #e5e5e5;
+        padding-top: 13px;
         tr{
             > td{
                 padding: 7px 0;
             }
             th{
-                padding: 7px 0 7px 15px;
+                padding-left: 15px;
                 text-align: left;
                 color: #000;
             }
@@ -508,7 +589,15 @@
             max-width: 145px;
         }
         .email-wrap{
-            max-width: 500px;
+            .input-group{
+                max-width: 565px;
+                .selectbox-block{
+                    margin-left: 10px;
+                }
+            }
+        }
+        .form-group{
+            margin-bottom: 0;
         }
     }
     .buttonWrap{
@@ -516,6 +605,81 @@
     }
     #write-form-tel{
         max-width: 300px;
+    }
+}
+
+
+/**********************************************
+ My Page - modal
+***********************************************/
+.modalWrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    .modal{
+        border: 1px solid #858585;
+        background-color: #fff;
+        padding: 50px 30px;
+        z-index: 99;
+        position: relative;
+        .in_modal{
+            position: relative;
+            .bgSection{
+                padding: 20px;
+            }
+            .modalTitle{
+                text-align: center;
+                color: #000;
+                font-weight: bold;
+                padding: 15px 0;
+                position: relative;
+                &:before{
+                    content: '';
+                    background: url("../../images/common/box-washed-line.png") no-repeat;
+                    background-size: contain;
+                    height: 1px;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                }
+                &:after{
+                    content: '';
+                    background: url("../../images/common/box-washed-line.png") no-repeat;
+                    background-size: contain;
+                    height: 1px;
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+        }
+        .closeModalBtn{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #cccdcb;
+            i{
+                border: 1px solid #cccdcb;
+                &:before{
+                    margin: -2px;
+                    vertical-align: middle;
+                    font-size: 15px;
+                }
+            }
+
+        }
+    }
+    .overlay{
+        background: #fff;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
     }
 }
 
