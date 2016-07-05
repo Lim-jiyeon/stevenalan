@@ -214,6 +214,23 @@
         letter-spacing: 2px;
     }
 }
+.order-button {
+    .form-group {
+        display: inline-block;
+        margin-bottom: 9px;
+        .form-control {
+            width: 40px;
+            text-align: center;
+        }
+    }
+    .button-block {
+        margin-bottom: 9px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
 // Paging
 .paging{
     margin-right: 5px;
@@ -277,6 +294,10 @@
             line-height: (16-2)/10;
             font-family: $font-family-serif;
             color: $brand-secondary;
+            &.item-badge-secondary {
+                background-color: $brand-secondary;
+                color: #fff;
+            }
         }
         .item-brand {
             display: block;
@@ -295,60 +316,78 @@
         }
     }
 }
-
-/**********************************************
- Join
-***********************************************/
-.login-banner {
-    margin: -40px 0 30px;
-}
-.login {
-    .box {
-        height: 394px;
-        .box-explain {
-            & + .form-group {
-                margin-top: 7px;
+.payment-totals {
+    padding-right: 16px;
+    text-align: right;
+    li {
+        padding: 5px 0;
+        font-family: $font-family-ko;
+        @include clearfix;
+        .total-label {
+            text-align: left;
+        }
+        .total-price {
+            font-weight: 400;
+            color: #000;
+            em {
+                font-family: $font-family-en;
+                font-style: normal;
             }
         }
-        .button {
-            margin-top: 32px;
+    }
+    .total {
+        .total-label {
+            padding-top: 2px;
         }
-    }
-}
-.login-find {
-    .find-id {
-        float: right;
-        &:after {
-            display: block;
-            margin-top: -2px;
-            border-bottom: 1px solid #bdbdbd;
-            content: '';
+        .total-price {
+            font-size: 18px;
+            line-height: (22/18);
+            color: $brand-primary;
+            em {
+                font-weight: 700;
+            }
         }
-    }
-}
-
-.forgot {
-    @include clearfix;
-    .box {
-        height: 493px;
-    }
-    .findId-phone,
-    .findPassword-phone {
-        display: none;
-    }
-    .find-box {
-        padding: 15px 0 10px;
-        .radio:first-child {
-            margin-right: 30px;
-        }
-    }
-    .button {
-        margin-top: 32px;
     }
 }
 
 /**********************************************
- My Page Left Menu
+ Order
+***********************************************/
+.order-process {
+    margin-bottom: 6px;
+    @include clearfix;
+    li {
+        float: left;
+        font-size: 24px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        &:after {
+            display: inline-block;
+            padding: 0 123px;
+            font-family: "fontello";
+            font-size: 19px;
+            vertical-align: 2px;
+            content: '\e80f';
+        }
+        &:last-child:after {
+            padding: 0;
+            content: '';
+        }
+        &.current {
+            color: #064787;
+        }
+    }
+}
+
+/**********************************************
+ Order - Shopping Bag
+***********************************************/
+.shoppingbag-list {
+    margin-bottom: 55px;
+}
+
+/**********************************************
+ My Page - Left Menu
 ***********************************************/
 .leftMenu{
     float: left;
@@ -385,23 +424,12 @@
     .wishlist-list {
         border-bottom: 1px solid #e5e5e5;
     }
-    .table td {
-        vertical-align: top;
-    }
     .discount, .price {
         display: block;
-    }
-    .order-button {
-        .button-block {
-            margin-bottom: 9px;
-        }
     }
     .wishlist-cancel {
         margin-top: -30px;
         text-align: right;
-        .button {
-            font-size: 14px;
-        }
     }
 }
 
@@ -762,9 +790,6 @@
     .privacy-modify-cancel {
         margin-top: -30px;
         text-align: right;
-        .button {
-            font-size: 14px;
-        }
     }
 }
 
@@ -881,5 +906,56 @@
         display: block;
         font-weight: 400;
         color: #000;
+    }
+}
+
+/**********************************************
+ Join
+***********************************************/
+.login-banner {
+    margin: -40px 0 30px;
+}
+.login {
+    .box {
+        height: 394px;
+        .box-explain {
+            & + .form-group {
+                margin-top: 7px;
+            }
+        }
+        .button {
+            margin-top: 32px;
+        }
+    }
+}
+.login-find {
+    .find-id {
+        float: right;
+        &:after {
+            display: block;
+            margin-top: -2px;
+            border-bottom: 1px solid #bdbdbd;
+            content: '';
+        }
+    }
+}
+
+.forgot {
+    @include clearfix;
+    .box {
+        height: 493px;
+    }
+    .findId-phone,
+    .findPassword-phone {
+        display: none;
+    }
+    .find-box {
+        padding: 15px 0 10px;
+        .radio:first-child {
+            margin-right: 30px;
+        }
+    }
+    .button {
+        margin-top: 32px;
     }
 }

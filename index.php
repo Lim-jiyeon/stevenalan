@@ -27,10 +27,18 @@
                 <div class="col-xs-12">
                     <h2>마크업 리스트</h2>
 
+                    <h3>2. Shopping Bag &amp; Checkout</h3>
+                    <ul>
+                        <li><a href="./pc/order/shoppingbag.php">쇼핑백</a></li>
+                        <li><a href="./pc/order/shoppingbag-empty.php">쇼핑백에 상품이 없을 경우</a></li>
+                    </ul>
+
+                    <hr>
+
                     <h3>3. My Page</h3>
                     <ul>
-                        <li><a href="./pc/mypage/wishlist.php" target="_blank">위시리스트</a></li>
-                        <li><a href="./pc/mypage/coupon.php" target="_blank">Coupon</a></li>
+                        <li><a href="./pc/mypage/wishlist.php">위시리스트</a></li>
+                        <li><a href="./pc/mypage/coupon.php">Coupon</a></li>
                         <li><a href="./pc/mypage/quit.php">회원탈퇴</a></li>
                         <li><a href="./pc/mypage/privacy.php">회원 정보 수정</a></li>
                     </ul>
@@ -39,8 +47,8 @@
 
                     <h3>4. Login &amp; Sign Up</h3>
                     <ul>
-                        <li><a href="./pc/join/login.php" target="_blank">Login</a></li>
-                        <li><a href="./pc/join/forgot.php" target="_blank">아이디 / 비밀번호 찾기</a></li>
+                        <li><a href="./pc/join/login.php">Login</a></li>
+                        <li><a href="./pc/join/forgot.php">아이디 / 비밀번호 찾기</a></li>
                     </ul>
                 </div>
             </div>

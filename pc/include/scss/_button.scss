@@ -5,7 +5,7 @@
     padding: 0 30px;
     border: 1px solid transparent;
     @include border-radius(3px);
-    background-color: #000;
+    background-color: #898989;
     font-size: $font-size-base;
     line-height: (($default-height - 2)/$font-size-base);
     font-family: $font-family-ko;
@@ -47,6 +47,9 @@
     font-size: $font-size-base;
     line-height: ((18 - 2)/12);
     letter-spacing: 1px;
+}
+.button-link-large {
+    font-size: 14px;
 }
 .button-input {
     padding: 0 15px;
@@ -100,6 +103,17 @@
 }
 
 // Button Align
+.button-align { // 하단 양쪽 사이드 버튼
+    margin-top: 20px;
+    text-align: center;
+    @include clearfix;
+    .button-left {
+        float: left;
+    }
+    .button-right {
+        float: right;
+    }
+}
 .button-align-center { // 하단 가운데 버튼
     margin-top: 20px;
     text-align: center;
