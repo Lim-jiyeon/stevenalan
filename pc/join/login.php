@@ -59,7 +59,7 @@
                             <label for="order-name">주문자명</label>
                             <input type="password" id="order-name" class="form-control">
                         </div>
-                        <a href="#" class="button button-large button-primary button-block"><span>로그인</span></a>
+                        <a href="#" class="button button-large button-primary button-block"><span>주문 조회</span></a>
                     </div>
                 </div>
                 <!-- 비회원 주문 조회 //end -->

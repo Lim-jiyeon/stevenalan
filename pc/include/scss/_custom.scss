@@ -58,7 +58,7 @@
                     top: -7px;
                     left: -10px;
                     z-index: 100;
-                    width: 82px;
+                    width: 90px;
                     padding: 30px 0 6px;
                     background-color: #fff;
                     @include box-shadow(0 0 14px rgba(0,0,0,.1));
@@ -204,6 +204,15 @@
 }
 .warning {
     color: #c20007;
+}
+.caption {
+    margin-top: 30px;
+    dt {
+        margin-bottom: 5px;
+        font-weight: 700;
+        color: #000;
+        letter-spacing: 2px;
+    }
 }
 // Paging
 .paging{
@@ -389,8 +398,10 @@
     }
     .wishlist-cancel {
         margin-top: -30px;
-        font-size: 14px;
         text-align: right;
+        .button {
+            font-size: 14px;
+        }
     }
 }
 
@@ -508,6 +519,161 @@
     }
 }
 
+/**********************************************
+ My Page - 회원정보수정
+***********************************************/
+.table-title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: $font-family-ko;
+    color: #000;
+}
+.help-group {
+    @include clearfix;
+    .input-button-group {
+        float: left;
+    }
+    .help-box {
+        position: relative;
+        float: left;
+        padding: 5px 0 0 9px;
+        .icon-help {
+            cursor: help;
+        }
+        .help-layer {
+            display: none;
+            position: absolute;
+            top: -100%;
+            left: 35px;
+            width: 320px;
+            padding: 15px 15px 13px;
+            border: 1px solid #858585;
+            @include border-radius(3px);
+            background-color: #fff;
+        }
+    }
+    .help-box {
+        .icon-help:hover {
+             & + .help-layer {
+                display: block;
+            }
+        }
+    }
+}
+.privacy-modify {
+    .member-privacy {
+        margin-top: -10px;
+        padding: 25px 20px 0;
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        .table {
+            margin-bottom: 60px;
+            td {
+                color: #4b4b4b;
+            }
+        }
+    }
+    label, .form-group {
+        margin-bottom: 0;
+    }
+    .form-control {
+        width: 300px;
+    }
+    .selectbox {
+        width: 105px;
+    }
+    .checkbox, .radio {
+        margin-right: 60px;
+    }
+    .member-email {
+        position: relative;
+        .help-inline {
+            position: absolute;
+            top: 9px;
+            left: 303px;
+        }
+    }
+    .privacy-modify-cancel {
+        margin-top: -30px;
+        text-align: right;
+        .button {
+            font-size: 14px;
+        }
+    }
+}
+
+/**********************************************
+ My Page - 회원탈퇴
+***********************************************/
+.member-quit {
+    margin-top: -10px;
+    padding: 40px 20px;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    .selectbox {
+        width: 334px;
+    }
+}
+.member-quit-input {
+    margin-top: 35px;
+    dt {
+        margin-bottom: 15px;
+    }
+    textarea.form-control {
+        width: 700px;
+    }
+}
+
+/**********************************************
+ My Page - Coupon
+***********************************************/
+.coupon {
+    .coupon-register {
+        padding: 20px;
+        border-top: 1px solid #e5e5e5;
+        strong {
+            margin-bottom: 0;
+            line-height: (30/12);
+        }
+        .form-group .form-control {
+            width: 400px;
+        }
+    }
+    .button-group {
+        padding: 40px 0 20px;
+        border-top: 1px solid #e5e5e5;
+        text-align: center;
+    }
+}
+.coupon-type {
+    display: inline-block;
+    width: 110px;
+    border: 2px solid $brand-primary;
+    @include border-radius(3px);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: ((43-4)/16);
+    font-family: $font-family-ko;
+    color: $brand-primary;
+    text-align: center;
+    em {
+        font-style: normal;
+        font-family: $font-family-en;
+    }
+}
+.coupon-num {
+    display: block;
+    margin-top: 8px;
+}
+.coupon-purpose {
+    strong {
+        display: block;
+        font-weight: 400;
+        color: #000;
+    }
+}
 /**********************************************
  My Page - Coupon
 ***********************************************/
