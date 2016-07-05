@@ -38,3 +38,14 @@ function  selectboxEvent(target){
     str = $this.val();
     $this.parent().children('.selectbox-value').text(str);
 }
+
+function modalOpen(modal) {
+    var $this = $(modal);
+    $this.show();
+    return false;
+}
+function modalClose(modal) {
+    var $this = $(modal);
+    $this.parent().parent('.modalWrap').hide();
+    return false;
+}
