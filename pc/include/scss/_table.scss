@@ -17,6 +17,9 @@
         &.aline-right {
             text-align: right;
         }
+        &.valign-top {
+            vertical-align: top;
+        }
     }
 }
 
@@ -47,6 +50,12 @@
     }
 }
 
+.table-empty { // 테이블 내용 없을 때
+    td {
+        padding: 60px 0;
+    }
+}
+
 .table-help { // 테이블 상단 메세지
     @include clearfix;
     margin-bottom: 5px;
@@ -57,6 +66,13 @@
     .help-text { // 테이블 안내문구
         margin-top: -20px;
         text-align: right;
+    }
+    .table-title { // 테이블 제목
+        margin-bottom: 0;
+        padding-bottom: 3px;
+        & + .help-text {
+            padding-bottom: 10px;
+        }
     }
 }
 

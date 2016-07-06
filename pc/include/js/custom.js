@@ -40,6 +40,14 @@ function selectboxEvent(target){
     $this.parent().children(".selectbox-value").text(str);
 }
 
+// Shopping Bag Option Change
+//function itemOptionChange() {
+//    var $this = $(".item-info .button");
+//    $this.parents("tr").next().addClass("open").toggle();
+//    return false;
+//}
+
+// Modal
 function modalOpen(modal) {
     var $this = $(modal);
     $this.show();

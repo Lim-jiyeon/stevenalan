@@ -183,7 +183,7 @@
                         </div>
                         <div class="button-align-center">
                             <a href="#" class="button button-large button-primary"><span>정보수정</span></a>
-                            <p class="privacy-modify-cancel"><a href="#" class="button button-link button-danger"><span>회원탈퇴</span></a></p>
+                            <p class="privacy-modify-cancel"><a href="#" class="button button-danger button-link button-link-large"><span>회원탈퇴</span></a></p>
                         </div>
                     </div>
                 </div>
