@@ -89,6 +89,7 @@ output {
   height: $default-height;
   padding: 0 10px;
   border: 1px solid $input-border;
+  @include border-radius(2px);
   background-color: $input-bg;
   background-image: none;
   font-size: $font-size-base;
@@ -221,6 +222,7 @@ input[type="search"] {
   position: relative;
   display: inline-block;
   border: 1px solid $border-color;
+  @include border-radius(2px);
   background-color: #fff;
   select {
     position: absolute;

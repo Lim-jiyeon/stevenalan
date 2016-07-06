@@ -5,7 +5,7 @@
     padding: 0 30px;
     border: 1px solid transparent;
     @include border-radius(3px);
-    background-color: #000;
+    background-color: #898989;
     font-size: $font-size-base;
     line-height: (($default-height - 2)/$font-size-base);
     font-family: $font-family-ko;
@@ -41,12 +41,15 @@
     line-height: (($small-height - 2)/$button-small-size);
     letter-spacing: 1px;
 }
-.button-link { // 링크 스타일 (삭제)
+.button-link { // 링크 스타일 (삭제, 변경)
     padding: 0 2px;
     border-bottom: 1px solid #bdbdbd;
     font-size: $font-size-base;
     line-height: ((18 - 2)/12);
     letter-spacing: 1px;
+}
+.button-link-large {
+    font-size: 14px;
 }
 .button-input {
     padding: 0 15px;
@@ -65,10 +68,10 @@
         color: #000;
     }
 }
-.button-warning { // 회색 버튼 (취소)
-    background-color: #898989;
-}
-.button-danger { // 삭제 버튼
+//.button-warning { // 회색 버튼 (취소)
+//    background-color: #898989;
+//}
+.button-danger { // 삭제, 변경 버튼
     background-color: transparent;
     color: #8d8d8d;
     &:hover,
@@ -100,6 +103,17 @@
 }
 
 // Button Align
+.button-align { // 하단 양쪽 사이드 버튼
+    margin-top: 20px;
+    text-align: center;
+    @include clearfix;
+    .button-left {
+        float: left;
+    }
+    .button-right {
+        float: right;
+    }
+}
 .button-align-center { // 하단 가운데 버튼
     margin-top: 20px;
     text-align: center;
