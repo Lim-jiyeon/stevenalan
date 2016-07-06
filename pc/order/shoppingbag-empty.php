@@ -19,8 +19,7 @@
                         <caption class="sr-only">쇼핑백에 담은 국내 배송 상품 목록</caption>
                         <colgroup>
                             <col class="col-xs-1">
-                            <col class="col-xs-6">
-                            <col class="col-xs-1">
+                            <col class="col-xs-7">
                             <col class="col-xs-1">
                             <col class="col-xs-1">
                             <col class="col-xs-1">
@@ -30,7 +29,6 @@
                         <tr>
                             <th scope="col">선택</th>
                             <th scope="col">상품정보</th>
-                            <th scope="col">옵션</th>
                             <th scope="col">수량</th>
                             <th scope="col">상품금액</th>
                             <th scope="col">주문금액</th>
@@ -39,7 +37,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td colspan="7">쇼핑백에 담긴 상품이 없습니다</td>
+                            <td colspan="6">쇼핑백에 담긴 상품이 없습니다</td>
                         </tr>
                         </tbody>
                     </table>
@@ -58,8 +56,7 @@
                         <caption class="sr-only">쇼핑백에 담은 해외 배송 상품 목록</caption>
                         <colgroup>
                             <col class="col-xs-1">
-                            <col class="col-xs-6">
-                            <col class="col-xs-1">
+                            <col class="col-xs-7">
                             <col class="col-xs-1">
                             <col class="col-xs-1">
                             <col class="col-xs-1">
@@ -69,7 +66,6 @@
                         <tr>
                             <th scope="col">선택</th>
                             <th scope="col">상품정보</th>
-                            <th scope="col">옵션</th>
                             <th scope="col">수량</th>
                             <th scope="col">상품금액</th>
                             <th scope="col">주문금액</th>
@@ -78,7 +74,7 @@
                         </thead>
                         <tbody>
                         <tr>
-                            <td colspan="7">쇼핑백에 담긴 상품이 없습니다</td>
+                            <td colspan="6">쇼핑백에 담긴 상품이 없습니다</td>
                         </tr>
                         </tbody>
                     </table>

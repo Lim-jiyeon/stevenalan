@@ -41,7 +41,7 @@
     line-height: (($small-height - 2)/$button-small-size);
     letter-spacing: 1px;
 }
-.button-link { // 링크 스타일 (삭제)
+.button-link { // 링크 스타일 (삭제, 변경)
     padding: 0 2px;
     border-bottom: 1px solid #bdbdbd;
     font-size: $font-size-base;
@@ -68,10 +68,10 @@
         color: #000;
     }
 }
-.button-warning { // 회색 버튼 (취소)
-    background-color: #898989;
-}
-.button-danger { // 삭제 버튼
+//.button-warning { // 회색 버튼 (취소)
+//    background-color: #898989;
+//}
+.button-danger { // 삭제, 변경 버튼
     background-color: transparent;
     color: #8d8d8d;
     &:hover,
