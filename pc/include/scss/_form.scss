@@ -210,6 +210,7 @@ input[type="search"] {
     }
     .button {
       float: left;
+      margin: 0;
       padding: 0 15px;
       @include border-side-radius(top, left, 0);
       @include border-side-radius(bottom, left, 0);

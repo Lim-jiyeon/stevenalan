@@ -32,6 +32,7 @@
                         <li><a href="./pc/order/shoppingbag.php">쇼핑백</a></li>
                         <li><a href="./pc/order/shoppingbag-empty.php">쇼핑백에 상품이 없을 경우</a></li>
                         <li><a href="./pc/order/checkout.php">주문/결제</a></li>
+                        <li><a href="./pc/order/summary.php">주문 완료/요약</a></li>
                     </ul>
 
                     <hr>

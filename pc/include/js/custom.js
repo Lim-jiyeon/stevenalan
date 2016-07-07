@@ -66,7 +66,7 @@ function modalClose(modal) {
 }
 
 
-// Shopping Bag Option Change
+// Checkout My Coupon View
 function couponOpen(coupon) {
     var $this = $(coupon);
     $this.parents(".apply-coupon").next().addClass("open").toggle();

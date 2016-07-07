@@ -26,7 +26,7 @@
                             <!-- 쿠폰 등록 //end -->
                             <!-- 쿠폰 내역 리스트 -->
                             <div class="button-group">
-                                <a href="#" class="button">사용 가능 쿠폰</a>
+                                <a href="#" class="button button-third">사용 가능 쿠폰</a>
                                 <a href="#" class="button button-secondary">지난 쿠폰 내역</a>
                             </div>
                             <table class="table table-list">
@@ -48,23 +48,23 @@
                                 <tbody>
                                 <tr>
                                     <td>
-                                        <span class="coupon-type"><em>15,000</em>원</span>
-                                        <span class="coupon-num">C37688839857</span>
+                                        <span class="coupon-type"><em class="benton">15,000</em>원</span>
+                                        <span class="coupon-num"><em class="benton">C37688839857</em></span>
                                     </td>
                                     <td class="coupon-purpose">
                                         <strong>Steven alan 상품 추가 할인</strong>
-                                        <span>50,000원 이상 구매</span>
+                                        <span><em class="benton">50,000</em>원 이상 구매</span>
                                     </td>
                                     <td>전체 상품</td>
                                     <td>
-                                        2016.06.01 ~ 2016.06.30<br>
-                                        10일 (247시간) 남음
+                                        <em class="benton">2016.06.01 ~ 2016.06.30<br>
+                                        10일 (247시간) 남음</em>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <span class="coupon-type"><em>5%</em></span>
-                                        <span class="coupon-num">C37688839857</span>
+                                        <span class="coupon-type"><em class="benton">5%</em></span>
+                                        <span class="coupon-num"><em class="benton">C37688839857</em></span>
                                     </td>
                                     <td class="coupon-purpose">
                                         <strong>배송비 할인</strong>
@@ -84,8 +84,8 @@
                                         </div>
                                     </td>
                                     <td>
-                                        2016.06.01 ~ 2016.06.30<br>
-                                        10일 (247시간) 남음
+                                        <em class="benton">2016.06.01 ~ 2016.06.30<br>
+                                        10일 (247시간)</em> 남음
                                     </td>
                                 </tr>
                                 </tbody>

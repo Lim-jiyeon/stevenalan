@@ -13,9 +13,7 @@
                         <h2 class="box-page-title">주문 결제</h2>
                         <!-- 주문 상품 확인 -->
                         <div class="checkout confirm-order-product">
-                            <div class="table-help">
-                                <h3 class="table-title">주문 상품 확인</h3>
-                            </div>
+                            <h3 class="table-title">주문 상품 확인</h3>
                             <table class="table table-list">
                                 <caption class="sr-only">결제하는 주문 상품 확인 목록</caption>
                                 <colgroup>
@@ -94,9 +92,7 @@
                         <!-- 주문 상품 확인 //end -->
                         <!-- 주문자 정보 -->
                         <div class="checkout checkout-input">
-                            <div class="table-help">
-                                <h3 class="table-title">주문자 정보</h3>
-                            </div>
+                            <h3 class="table-title">주문자 정보</h3>
                             <table class="table table-row-list">
                                 <caption class="sr-only">주문자 정보를 입력하는 목록</caption>
                                 <colgroup>
@@ -152,9 +148,7 @@
                         <!-- 주문자 정보 //end -->
                         <!-- 배송지 정보 -->
                         <div class="checkout checkout-input">
-                            <div class="table-help">
-                                <h3 class="table-title">배송지 정보</h3>
-                            </div>
+                            <h3 class="table-title">배송지 정보</h3>
                             <table class="table table-row-list">
                                 <caption class="sr-only">배송지 정보를 입력하는 목록</caption>
                                 <colgroup>
@@ -241,18 +235,16 @@
                         <!-- 배송지 정보 //end -->
                         <!-- 할인 정보 -->
                         <div class="checkout coupon-info">
-                            <div class="table-help">
-                                <h3 class="table-title">할인 정보</h3>
-                            </div>
+                            <h3 class="table-title">할인 정보</h3>
                             <div class="inner-box">
                                 <ul class="apply-coupon">
                                     <li>
                                         <span>상품금액</span>
-                                        <strong><em>350,000</em>원</strong>
+                                        <strong><em class="benton">350,000</em>원</strong>
                                     </li>
                                     <li>
                                         <span>할인쿠폰</span>
-                                        <strong><em>-3,555</em>원</strong>
+                                        <strong><em class="benton">-3,555</em>원</strong>
                                         <a href="#none" class="button button-small button-primary" onclick="couponOpen(this);">쿠폰 적용하기 - 2장 보유중</a>
                                     </li>
                                 </ul>
@@ -278,8 +270,8 @@
                                         <tbody>
                                         <tr>
                                             <td class="aline-left">Belted Long Shirtdress</td>
-                                            <td>1</td>
-                                            <td>200,000</td>
+                                            <td><em class="benton">1</em></td>
+                                            <td><em class="benton">200,000</em></td>
                                             <td>
                                                 <div class="selectbox">
                                                     <strong class="selectbox-value">사용 가능한 쿠폰이 없습니다.</strong>
@@ -293,12 +285,12 @@
                                                     </select>
                                                 </div>
                                             </td>
-                                            <td>3,555</td>
+                                            <td><em class="benton">3,555</em></td>
                                         </tr>
                                         <tr>
                                             <td class="aline-left">Belted Long Shirtdress</td>
-                                            <td>1</td>
-                                            <td>200,000</td>
+                                            <td><em class="benton">1</em></td>
+                                            <td><em class="benton">200,000</em></td>
                                             <td>
                                                 <div class="selectbox">
                                                     <strong class="selectbox-value">[C376888392813] 5% 추가할인 쿠폰</strong>
@@ -312,7 +304,7 @@
                                                     </select>
                                                 </div>
                                             </td>
-                                            <td>3,555</td>
+                                            <td><em class="benton">3,555</em></td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -322,9 +314,7 @@
                         <!-- 할인 정보 //end -->
                         <!-- 결제 정보 -->
                         <div class="checkout payment-info">
-                            <div class="table-help">
-                                <h3 class="table-title">결제 정보</h3>
-                            </div>
+                            <h3 class="table-title">결제 정보</h3>
                             <div class="inner-box">
                                 <ul class="tabs payment-type">
                                     <!-- 신용카드 - 안심클릭결제 -->
@@ -440,9 +430,10 @@
                     </div>
                 </div>
                 <div class="col-xs-3">
+                    <!-- 최종 결제 금액 -->
                     <div class="payment-box">
                         <div class="border-box checkout-payment-totals">
-                            <h3 class="border-box-title">최종 결제 금액</h3>
+                            <h3 class="washed-line-title">최종 결제 금액</h3>
                             <dl class="checkout-amount">
                                 <dt>총 상품금액</dt>
                                 <dd><em>1,000,000</em>원</dd>
@@ -463,6 +454,7 @@
                             <a href="#" class="button button-large button-primary button-block">결제하기</a>
                         </div>
                     </div>
+                    <!-- 최종 결제 금액 //end -->
                 </div>
             </div>
         </div>

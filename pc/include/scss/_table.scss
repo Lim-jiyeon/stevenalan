@@ -55,6 +55,25 @@
     }
 }
 
+.table-condensed {
+    th, td {
+        padding: 17px 0 17px 20px;
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        background-color: #fff;
+        text-align: left;
+    }
+    th {
+        color: $text-color;
+        &.border-left {
+            border-left-width: 1px;
+        }
+    }
+    td {
+        color: $brand-secondary;
+    }
+}
+
 .table-empty { // 테이블 내용 없을 때
     td {
         padding: 60px 0;
@@ -81,6 +100,6 @@
     }
 }
 
-.table-caution { // 테이블 하단 유의사
+.table-caution { // 테이블 하단 유의사항
     margin-top: 20px;
 }
