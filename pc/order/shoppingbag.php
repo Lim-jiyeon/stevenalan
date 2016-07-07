@@ -74,7 +74,7 @@
                                         <li>Color : INDIGO</li>
                                         <li>Size : P</li>
                                     </ul>
-                                    <a href="#" class="button button-small" onclick="itemOptionChange();">옵션변경</a>
+                                    <a href="#none" class="button button-small" onclick="itemOptionChange(this);">옵션변경</a>
                                 </div>
                             </td>
                             <td class="order-button">
@@ -145,7 +145,7 @@
                                     <ul class="item-option">
                                         <li>Size : P</li>
                                     </ul>
-                                    <a href="#" class="button button-small" onclick="itemOptionChange();">옵션변경</a>
+                                    <a href="#none" class="button button-small" onclick="itemOptionChange(this);">옵션변경</a>
                                 </div>
                             </td>
                             <td class="order-button">
@@ -279,7 +279,7 @@
                                         <li>Color : INDIGO</li>
                                         <li>Size : P</li>
                                     </ul>
-                                    <a href="#" class="button button-small">옵션변경</a>
+                                    <a href="#none" class="button button-small" onclick="itemOptionChange(this);">옵션변경</a>
                                 </div>
                             </td>
                             <td class="order-button">
@@ -300,6 +300,40 @@
                                 <span class="button-block"><a href="#" class="button button-link button-danger"><span>삭제</span></a></span>
                             </td>
                         </tr>
+                        <tr class="item-option-change">
+                            <td colspan="6">
+                                <div class="col-xs-6 col-xs-push-2 item-option-box">
+                                    <div class="form-group">
+                                        <label for="order-number">Color</label>
+                                        <div class="selectbox">
+                                            <strong class="selectbox-value">선택하세요</strong>
+                                            <select onchange="selectboxEvent(this);">
+                                                <option value="선택하세요">선택하세요</option>
+                                                <option value="선택1">선택1</option>
+                                                <option value="선택2">선택2</option>
+                                                <option value="선택3">선택3</option>
+                                                <option value="선택4">선택4</option>
+                                                <option value="선택5">선택5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="order-number">Size</label>
+                                        <div class="selectbox">
+                                            <strong class="selectbox-value">선택하세요</strong>
+                                            <select onchange="selectboxEvent(this);">
+                                                <option value="선택하세요">선택하세요</option>
+                                                <option value="선택1">선택1</option>
+                                                <option value="선택2">선택2</option>
+                                                <option value="선택3">선택3</option>
+                                                <option value="선택4">선택4</option>
+                                                <option value="선택5">선택5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
                         <tr>
                             <td class="valign-top">
                                 <div class="checkbox">
@@ -316,7 +350,7 @@
                                     <ul class="item-option">
                                         <li>Size : P</li>
                                     </ul>
-                                    <a href="#" class="button button-small">옵션변경</a>
+                                    <a href="#none" class="button button-small" onclick="itemOptionChange(this);">옵션변경</a>
                                 </div>
                             </td>
                             <td class="order-button">
@@ -335,6 +369,40 @@
                             <td class="order-button">
                                 <span class="button-block"><a href="#" class="button button-small button-primary"><span>바로주문</span></a></span>
                                 <span class="button-block"><a href="#" class="button button-link button-danger"><span>삭제</span></a></span>
+                            </td>
+                        </tr>
+                        <tr class="item-option-change">
+                            <td colspan="6">
+                                <div class="col-xs-6 col-xs-push-2 item-option-box">
+                                    <div class="form-group">
+                                        <label for="order-number">Color</label>
+                                        <div class="selectbox">
+                                            <strong class="selectbox-value">선택하세요</strong>
+                                            <select onchange="selectboxEvent(this);">
+                                                <option value="선택하세요">선택하세요</option>
+                                                <option value="선택1">선택1</option>
+                                                <option value="선택2">선택2</option>
+                                                <option value="선택3">선택3</option>
+                                                <option value="선택4">선택4</option>
+                                                <option value="선택5">선택5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="order-number">Size</label>
+                                        <div class="selectbox">
+                                            <strong class="selectbox-value">선택하세요</strong>
+                                            <select onchange="selectboxEvent(this);">
+                                                <option value="선택하세요">선택하세요</option>
+                                                <option value="선택1">선택1</option>
+                                                <option value="선택2">선택2</option>
+                                                <option value="선택3">선택3</option>
+                                                <option value="선택4">선택4</option>
+                                                <option value="선택5">선택5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                         </tbody>

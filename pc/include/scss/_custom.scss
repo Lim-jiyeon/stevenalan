@@ -179,11 +179,41 @@
         text-align: center;
     }
 }
+.box-small {
+    padding: 20px;
+}
+.inner-box {
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    background-color: #fff;
+}
 .box-page-title {
     margin-bottom: 30px;
     font-size: 14px;
     color: $brand-primary;
     letter-spacing: 1px;
+}
+.border-box {
+    padding: 20px;
+    border: 1px solid #000;
+    .border-box-title {
+        position: relative;
+        margin: -10px 0;
+        font-weight: bold;
+        color: #000;
+        letter-spacing: 2px;
+        text-align: center;
+        &:before,
+        &:after{
+            display: block;
+            margin: 10px 0;
+            background: url(../../images/common/box-washed-line.png) repeat-x;
+            width: 100%;
+            height: 1px;
+            content: '';
+        }
+    }
 }
 .placeholder {
     position: relative;
@@ -221,6 +251,9 @@
         .form-control {
             width: 40px;
             text-align: center;
+        }
+        + .button-block {
+            margin-top: 9px;
         }
     }
     .button-block {
@@ -271,6 +304,7 @@
  Product Style
 ***********************************************/
 .discount {
+    display: block;
     font-style: normal;
     text-decoration: line-through;
 }
@@ -387,6 +421,7 @@
     li {
         float: left;
         font-size: 24px;
+        font-family: $font-family-en;
         letter-spacing: 5px;
         text-transform: uppercase;
         &:after {
@@ -412,6 +447,166 @@
 ***********************************************/
 .shoppingbag-list {
     margin-bottom: 55px;
+}
+
+/**********************************************
+ Order - Checkout
+***********************************************/
+.checkout {
+    margin-top: 50px;
+    &.confirm-order-product {
+        margin-top: 0;
+    }
+}
+.checkout-input {
+    .table {
+        th, td {
+            padding: 0 0 15px 0;
+        }
+        tr:first-child th,
+        tr:first-child td {
+            padding-top: 25px;
+            border-top: 1px solid #e5e5e5;
+        }
+        tr:last-child th,
+        tr:last-child td {
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .form-control {
+            width: 300px;
+        }
+        .input-button-group {
+            .form-control {
+                width: 206px;
+            }
+        }
+    }
+    .international-shipping {
+        th, td {
+            padding-top: 15px;
+            border-top: 1px solid #e5e5e5;
+        }
+    }
+    .select-shippingAddress {
+        .radio {
+            margin-right: 25px;
+        }
+    }
+    .shipping-memo-input {
+        .checkbox {
+            margin-top: 10px;
+        }
+    }
+}
+.coupon-info {
+    .selectbox {
+        width: 100%;
+    }
+    .apply-coupon {
+        margin: -7px 0;
+        font-family: $font-family-ko;
+        li {
+            padding: 7px 0;
+            span {
+                display: inline-block;
+                width: 50px;
+            }
+            strong {
+                display: inline-block;
+                width: 200px;
+                font-weight: 400;
+                color: #000;
+                text-align: right;
+                em {
+                    font-family: $font-family-en;
+                    font-style: normal;
+                }
+            }
+            .button {
+                margin-left: 8px;
+            }
+        }
+    }
+    .coupon-list {
+        display: none;
+        margin-top: 20px;
+        td {
+            color: #000;
+        }
+    }
+}
+.payment-type {
+    &.tabs {
+        min-height: 230px;
+        .tab {
+            label {
+                height: 47px;
+            }
+        }
+    }
+    .payment-choice {
+        margin-bottom: 15px;
+        .choice-card-label {
+            display: inline-block;
+            width: 140px;
+            font-weight: 400;
+            color: #000;
+        }
+        .selectbox {
+            width: 95px;
+            margin-right: 5px;
+            &.choice-card {
+                width: 205px;
+            }
+        }
+    }
+}
+.payment-box {
+    .checkout-amount {
+        margin-top: 25px;
+        @include clearfix;
+        dt {
+            clear: both;
+            float: left;
+            width: 40%;
+            padding: 7px 0;
+            &.checkout-total {
+                padding-top: 25px;
+            }
+        }
+        dd {
+            float: right;
+            width: 60%;
+            padding: 7px 0;
+            color: #333;
+            text-align: right;
+            em {
+                font-family: $font-family-en;
+                font-style: normal;
+            }
+            &.checkout-total {
+                font-size: 18px;
+                color: $brand-primary;
+            }
+        }
+        .checkout-total {
+            margin-top: 15px;
+            padding-top: 20px;
+            background: url(../../images/common/box-washed-line.png) repeat-x 0 0;
+        }
+    }
+    .checkout-payment {
+        margin-top: 17px;
+        .checkbox {
+            label {
+                vertical-align: top;
+            }
+        }
+        .button {
+            margin-top: 15px;
+        }
+    }
 }
 
 /**********************************************

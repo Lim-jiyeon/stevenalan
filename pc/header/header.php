@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>stevenalan</title>
     <link rel="stylesheet" href="../include/css/fontello.css">
-    <script type="text/javascript" src="../include/js/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../include/js/min/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../include/js/min/jquery.sticky.min.js"></script>
     <script type="text/javascript" src="../include/js/custom.js"></script>
     <link rel="stylesheet" href="../include/css/styles.css">
 </head>

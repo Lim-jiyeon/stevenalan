@@ -32,6 +32,7 @@
 // Button Size
 .button-large { //
     padding: 0 50px;
+    @include border-radius(5px);
     font-size: $button-large-size;
     line-height: (($large-height - 2)/$button-large-size);
 }
