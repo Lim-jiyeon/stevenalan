@@ -179,24 +179,6 @@ input[type="search"] {
   background-color: transparent;
 }
 
-// Input & Button Group
-//.input-button-group{
-//  display: table;
-//  width: 100%;
-//  .form-control {
-//    display: table-cell;
-//    border-right: 0;
-//    @include border-side-radius(top, right, 0);
-//    @include border-side-radius(bottom, right, 0);
-//  }
-//  .button {
-//    display: table-cell;
-//    padding: 0;
-//    @include border-side-radius(top, left, 0);
-//    @include border-side-radius(bottom, left, 0);
-//  }
-//}
-
 .input-button-group{
   @include clearfix;
   .form-group {
@@ -215,6 +197,25 @@ input[type="search"] {
       @include border-side-radius(top, left, 0);
       @include border-side-radius(bottom, left, 0);
     }
+  }
+}
+
+// Input 의 Placeholder 정의 (custom.js)
+.placeholder {
+  position: relative;
+  label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 0 10px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: (30/12);
+    font-family: $font-family-ko;
+    color: #8d8d8d;
   }
 }
 
@@ -259,7 +260,6 @@ input[type="search"] {
     }
   }
 }
-
 .selectbox-block{
   .selectbox{
     display: block;
@@ -272,8 +272,7 @@ input[type="search"] {
     width: 100%;
   }
 }
-
-.selectbox-group {
+.selectbox-group { // 붙어 있는 Select Box (생년월일)
   font-size: 0;
   .selectbox {
     margin-right: -1px;
@@ -313,19 +312,34 @@ input[type="search"] {
     background-image: url(../../images/common/form-radio-checked.png);
   }
 }
+.checkbox-block { // 동의 체크박스
+  display: block;
+  margin-top: 10px;
+}
+.radio-group { // 한줄로 나열되는 라디오버튼
+  .radio {
+    margin-right: 25px;
+  }
+}
 
-// Help text
+// Input Help text
 .help-inline {
   display: inline-block;
   margin-left: 10px;
   color: #858585;
-  &.help-danger {
-    color: #c20007
-  }
 }
 .help-block {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
   color: #858585;
+}
+.help-success {
+  color: #004689;
+}
+.help-info {
+  color: #197b30;
+}
+.help-danger {
+  color: #c20007;
 }
