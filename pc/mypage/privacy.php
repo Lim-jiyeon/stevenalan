@@ -18,9 +18,9 @@
                                 </colgroup>
                                 <tbody>
                                 <tr>
-                                    <th scope="row">아이디(Email)*</th>
+                                    <th scope="row">아이디<em class="benton">(Email)</em>*</th>
                                     <td class="member-email">
-                                        test@gmail.com
+                                        <em class="benton">test@gmail.com</em>
                                         <span class="help-inline">아이디는 변경이 불가합니다.</span>
                                     </td>
                                 </tr>

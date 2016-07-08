@@ -175,6 +175,10 @@
 .align-left{
     text-align: left !important;
 }
+.benton { // 영문, 숫자 정의
+    font-family: $font-family-en;
+    font-style: normal;
+}
 .box {
     padding: 30px 30px 55px;
     background-color: #f5f5f5;
@@ -188,11 +192,49 @@
         text-align: center;
     }
 }
+.box-small {
+    padding: 20px;
+}
+.inner-box {
+    padding: 20px;
+    border: 1px solid #e5e5e5;
+    border-width: 1px 0;
+    background-color: #fff;
+}
 .box-page-title {
     margin-bottom: 30px;
     font-size: 14px;
     color: $brand-primary;
     letter-spacing: 1px;
+}
+.border-box {
+    padding: 20px;
+    border: 1px solid #000;
+}
+.washed-line-title {
+    display: block;
+    margin: -10px 0;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 2px;
+    text-align: center;
+    &:before,
+    &:after{
+        display: block;
+        margin: 10px 0;
+        background: url(../../images/common/box-washed-line.png) repeat-x;
+        width: 100%;
+        height: 1px;
+        content: '';
+    }
+}
+.table-title {
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: $font-family-ko;
+    color: #000;
 }
 .placeholder {
     position: relative;
@@ -230,6 +272,9 @@
         .form-control {
             width: 40px;
             text-align: center;
+        }
+        + .button-block {
+            margin-top: 9px;
         }
     }
     .button-block {
@@ -275,16 +320,43 @@
         }
     }
 }
+.delimiter {
+    li {
+        display: inline-block;
+        &:before {
+            display: inline-block;
+            width: 2px;
+            height: 11px;
+            margin: 0 6px 0 4px;
+            border-left: 1px solid #dbdbdb;
+            background-color: #858585;
+            vertical-align: -1px;
+            content: '';
+        }
+        &:first-child:before {
+            width: 0;
+            margin: 0;
+            border-left: 0;
+            content: '';
+        }
+    }
+}
+.link-line {
+    border-bottom: 1px solid #bdbdbd;
+}
 
 /**********************************************
  Product Style
 ***********************************************/
 .discount {
+    display: block;
+    font-family: $font-family-en;
     font-style: normal;
     text-decoration: line-through;
 }
 .price {
     font-weight: 400;
+    font-family: $font-family-en;
     color: $brand-secondary;
 }
 .product-info {
@@ -325,6 +397,7 @@
             li {
                 margin-top: -2px;
                 font-size: 10px;
+                font-family: $font-family-en;
             }
         }
         .button {
@@ -386,6 +459,9 @@
         }
     }
 }
+.ordered-price {
+    color: $brand-primary;
+}
 
 /**********************************************
  Order
@@ -396,11 +472,12 @@
     li {
         float: left;
         font-size: 24px;
+        font-family: $font-family-en;
         letter-spacing: 5px;
         text-transform: uppercase;
         &:after {
             display: inline-block;
-            padding: 0 123px;
+            padding: 0 123px 0 124px;
             font-family: "fontello";
             font-size: 19px;
             vertical-align: 2px;
@@ -421,6 +498,206 @@
 ***********************************************/
 .shoppingbag-list {
     margin-bottom: 55px;
+}
+
+/**********************************************
+ Order - Checkout
+***********************************************/
+.checkout {
+    margin-top: 50px;
+    &.confirm-order-product {
+        margin-top: 0;
+    }
+}
+.checkout-input {
+    .table {
+        th, td {
+            padding: 0 0 15px 0;
+        }
+        tr:first-child th,
+        tr:first-child td {
+            padding-top: 25px;
+            border-top: 1px solid #e5e5e5;
+        }
+        tr:last-child th,
+        tr:last-child td {
+            padding-bottom: 25px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+        .form-control {
+            width: 300px;
+        }
+        .input-button-group {
+            .form-control {
+                width: 206px;
+            }
+        }
+    }
+    .international-shipping {
+        th, td {
+            padding-top: 15px;
+            border-top: 1px solid #e5e5e5;
+        }
+    }
+    .select-shippingAddress {
+        .radio {
+            margin-right: 25px;
+        }
+    }
+    .shipping-memo-input {
+        .checkbox {
+            margin-top: 10px;
+        }
+    }
+}
+.coupon-info {
+    .selectbox {
+        width: 100%;
+    }
+    .apply-coupon {
+        margin: -7px 0;
+        font-family: $font-family-ko;
+        li {
+            padding: 7px 0;
+            span {
+                display: inline-block;
+                width: 50px;
+            }
+            strong {
+                display: inline-block;
+                width: 200px;
+                font-weight: 400;
+                color: #000;
+                text-align: right;
+            }
+            .button {
+                margin-left: 8px;
+            }
+        }
+    }
+    .coupon-list {
+        display: none;
+        margin-top: 20px;
+        td {
+            color: #000;
+        }
+    }
+}
+.payment-type {
+    &.tabs {
+        min-height: 230px;
+        .tab {
+            label {
+                height: 47px;
+            }
+        }
+    }
+    .payment-choice {
+        margin-bottom: 15px;
+        .choice-card-label {
+            display: inline-block;
+            width: 140px;
+            font-weight: 400;
+            color: #000;
+        }
+        .selectbox {
+            width: 95px;
+            margin-right: 5px;
+            &.choice-card {
+                width: 205px;
+            }
+        }
+    }
+}
+.payment-box {
+    .checkout-amount {
+        margin-top: 25px;
+        @include clearfix;
+        dt {
+            clear: both;
+            float: left;
+            width: 40%;
+            padding: 7px 0;
+            &.checkout-total {
+                padding-top: 25px;
+            }
+        }
+        dd {
+            float: right;
+            width: 60%;
+            padding: 7px 0;
+            color: #333;
+            text-align: right;
+            em {
+                font-family: $font-family-en;
+                font-style: normal;
+            }
+            &.checkout-total {
+                font-size: 18px;
+                color: $brand-primary;
+            }
+        }
+        .checkout-total {
+            margin-top: 15px;
+            padding-top: 20px;
+            background: url(../../images/common/box-washed-line.png) repeat-x 0 0;
+        }
+    }
+    .checkout-payment {
+        margin-top: 17px;
+        .checkbox {
+            label {
+                vertical-align: top;
+            }
+        }
+        .button {
+            margin-top: 15px;
+        }
+    }
+}
+
+/**********************************************
+ Order - Summary
+***********************************************/
+.ordered-check {
+    padding: 20px 20px 50px;
+    background-color: #fff;
+    text-align: center;
+    .thankYou {
+        font-weight: 400;
+        font-size: 32px;
+        font-family: $font-family-en;
+        color: $brand-primary;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+    }
+    .ordered-confirm-message {
+        display: block;
+        margin: 35px 0 7px;
+        font-weight: 400;
+        font-size: 18px;
+        color: $brand-secondary;
+    }
+    .ordered-info {
+        margin-top: 35px;
+        li {
+            font-size: 13px;
+            color: #4b4b4b;
+        }
+        .ordered-num {
+            font-weight: 400;
+            border-bottom: 1px solid #555;
+        }
+    }
+}
+.summary {
+    margin-top: 50px;
+}
+.virtual-account-info {
+    li:before {
+        border-left-color: #eee;
+        background-color: #555;
+    }
 }
 
 /**********************************************
@@ -783,14 +1060,6 @@
 /**********************************************
  My Page - 회원정보수정
 ***********************************************/
-.table-title {
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-family: $font-family-ko;
-    color: #000;
-}
 .help-group {
     @include clearfix;
     .input-button-group {
@@ -916,10 +1185,6 @@
     font-family: $font-family-ko;
     color: $brand-primary;
     text-align: center;
-    em {
-        font-style: normal;
-        font-family: $font-family-en;
-    }
 }
 .coupon-num {
     display: block;

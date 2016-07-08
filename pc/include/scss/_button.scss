@@ -30,8 +30,9 @@
 
 /* Purpose Definition */
 // Button Size
-.button-large { //
+.button-large { // 하단 Submit 버튼
     padding: 0 50px;
+    @include border-radius(5px);
     font-size: $button-large-size;
     line-height: (($large-height - 2)/$button-large-size);
 }
@@ -68,11 +69,9 @@
         color: #000;
     }
 }
-.button-black{
-    color: #fff;
-    background-color: #000;
+.button-third { // 검정색 bg 버튼
+    background-color: $brand-secondary;
 }
-
 //.button-warning { // 회색 버튼 (취소)
 //    background-color: #898989;
 //}

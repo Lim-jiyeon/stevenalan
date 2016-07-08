@@ -12,13 +12,18 @@
         text-align: center;
         vertical-align: middle;
         &.aline-left {
+            padding-left: 15px;
             text-align: left;
         }
         &.aline-right {
+            padding-right: 15px;
             text-align: right;
         }
         &.valign-top {
             vertical-align: top;
+        }
+        .form-group {
+            margin-bottom: 0;
         }
     }
 }
@@ -39,14 +44,33 @@
 
 .table-row-list { // Head Align Vertical
     th {
-        padding: 8px 0;
+        padding: 7px 0;
         text-align: left;
         vertical-align: top;
     }
     td {
-        padding: 4px 0;
+        padding: 7px 0;
         text-align: left;
         vertical-align: middle;
+    }
+}
+
+.table-condensed {
+    th, td {
+        padding: 17px 0 17px 20px;
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        background-color: #fff;
+        text-align: left;
+    }
+    th {
+        color: $text-color;
+        &.border-left {
+            border-left-width: 1px;
+        }
+    }
+    td {
+        color: $brand-secondary;
     }
 }
 
@@ -76,6 +100,6 @@
     }
 }
 
-.table-caution { // 테이블 하단 유의사
+.table-caution { // 테이블 하단 유의사항
     margin-top: 20px;
 }

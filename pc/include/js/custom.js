@@ -45,6 +45,10 @@ $(document).ready(function() {
     });
 
 
+
+    // Checkout Final Payment Amount Scroll
+    $(".payment-box").sticky({ topSpacing: 50 });
+
 });
 
 
@@ -56,11 +60,12 @@ function selectboxEvent(target){
 }
 
 // Shopping Bag Option Change
-//function itemOptionChange() {
-//    var $this = $(".item-info .button");
-//    $this.parents("tr").next().addClass("open").toggle();
-//    return false;
-//}
+function itemOptionChange(item) {
+    var $this = $(item);
+    $this.parents("tr").next(".item-option-change").addClass("open").toggle();
+    return false;
+}
+
 
 // Modal
 function modalOpen(modal) {
@@ -71,5 +76,13 @@ function modalOpen(modal) {
 function modalClose(modal) {
     var $this = $(modal);
     $this.parent().parent('.modalWrap').hide();
+    return false;
+}
+
+
+// Checkout My Coupon View
+function couponOpen(coupon) {
+    var $this = $(coupon);
+    $this.parents(".apply-coupon").next().addClass("open").toggle();
     return false;
 }
