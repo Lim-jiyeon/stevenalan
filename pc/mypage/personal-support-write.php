@@ -32,10 +32,10 @@ include '../header/header.php';
                         <tr>
                             <th>주문번호 조회</th>
                             <td>
-                                <div class="form-group">
-                                    <div class="input-button-group">
-                                        <input type="text" class="form-control"/>
-                                        <a href="#none" class="button" onclick="modalOpen('.orderList_modal');">주문조회</a>
+                                <div class="input-button-group">
+                                    <div class="form-group placeholder">
+                                        <input type="text" id="orderNumSearch" class="form-control" onclick="modalOpen('.orderList_modal'); return false;"/>
+                                        <a href="#" class="button" onclick="modalOpen('.orderList_modal'); return false;">주문조회</a>
                                     </div>
                                 </div>
                             </td>
