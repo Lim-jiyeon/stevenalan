@@ -41,6 +41,9 @@
                         <li><a href="./pc/mypage/coupon.php">Coupon</a></li>
                         <li><a href="./pc/mypage/quit.php">회원탈퇴</a></li>
                         <li><a href="./pc/mypage/privacy.php">회원 정보 수정</a></li>
+                        <li><a href="./pc/mypage/personal-support.php">1:1 문의</a></li>
+                        <li><a href="./pc/mypage/personal-support-write.php">1:1 문의 쓰기</a></li>
+                        <li><a href="./pc/mypage/address.php">배송지관리</a></li>
                     </ul>
 
                     <hr>

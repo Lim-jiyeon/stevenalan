@@ -30,6 +30,21 @@ $(document).ready(function() {
         $('.'+$(this).val()).show();
     });
 
+    // Accordion Table
+    $(".folding-table tr.master").click(function(){
+
+        var slaveDisplay = $(this).next("tr.slave").css("display");
+
+        if(slaveDisplay == "none"){
+            $(this).parent().find("tr.slave").hide();
+            $(this).next("tr.slave").show();
+        }else{
+            $(this).next("tr.slave").hide();
+
+        }
+    });
+
+
 });
 
 
