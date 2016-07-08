@@ -1,43 +1,66 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>stevenalan</title>
-    <script src="http://www.w3schools.com/lib/w3data.js"></script>
-    <link rel="stylesheet" href="../include/css/styles.css">
-</head>
-<body>
-<div id="wrap">
-    <div w3-include-html="../header/header.html"></div>
-    <div id="content">
+<?php include '../header/header.php'; ?>
+
+    <div class="content main">
         <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <img src="../images/join/login-banner.jpg" alt="로그인 배너 이미지">
+            <div class="main-banner">
+                <div><a href="#"><img src="../images/main/main-banner.jpg" alt=""></a></div>
+                <div><a href="#"><img src="../images/main/main-banner.jpg" alt=""></a></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row second-banners">
+                <div class="col-xs-4">
+                    <a href="#">
+                        <img src="../images/main/second-banners1.jpg" alt="">
+                        <span class="main-product-title">WOMEN'S SHORTS</span>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#">
+                        <img src="../images/main/second-banners2.jpg" alt="">
+                        <span class="main-product-title">MANSUR GAVRIEL</span>
+                    </a>
+                </div>
+                <div class="col-xs-4">
+                    <a href="#">
+                        <img src="../images/main/second-banners3.jpg" alt="">
+                        <span class="main-product-title">STEVEN ALAN X ALEXANDER YAMAGUCHI</span>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="shop-banner">
+                <a href="#"><img src="../images/main/shop-banner.jpg" alt=""></a>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="shop-collection-title">THE STEVEN ALAN COLLECTION</h3>
+            <div class="row shop-collection">
                 <div class="col-xs-4">
-                    <div></div>
-                    로그인
+                    <a href="#">
+                        <img src="../images/main/shop-collection1.jpg" alt="">
+                        <span class="main-product-title">WOMEN'S</span>
+                    </a>
                 </div>
                 <div class="col-xs-4">
-                    회원가입
+                    <a href="#">
+                        <img src="../images/main/shop-collection2.jpg" alt="">
+                        <span class="main-product-title">MEN'S</span>
+                    </a>
                 </div>
-                <div class="col-xs-4">
-                    비회원 주문조회
+                <div class="col-xs-4 bisection">
+                    <a href="#">
+                        <img src="../images/main/shop-collection3.jpg" alt="">
+                        <span class="main-product-title">OPTICAL</span>
+                    </a>
+                    <a href="#">
+                        <img src="../images/main/shop-collection4.jpg" alt="">
+                        <span class="main-product-title">ACCESSORIES</span>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-    <div w3-include-html="../footer/footer.html"></div>
-</div>
-<script>
-    w3IncludeHTML();
-</script>
-<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-<script src="include/js/custom.js"></script>
-</body>
-</html>
+
+<?php include '../footer/footer.php'; ?>

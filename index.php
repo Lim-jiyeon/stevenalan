@@ -27,31 +27,52 @@
                 <div class="col-xs-12">
                     <h2>마크업 리스트</h2>
 
+                    <h3>1. Store &amp; Contents</h3>
+                    <ul>
+                        <li>1.1 <a href="./pc/main/main.php">Main</a></li>
+                    </ul>
+
+                    <hr>
+
                     <h3>2. Shopping Bag &amp; Checkout</h3>
                     <ul>
-                        <li><a href="./pc/order/shoppingbag.php">쇼핑백</a></li>
-                        <li><a href="./pc/order/shoppingbag-empty.php">쇼핑백에 상품이 없을 경우</a></li>
-                        <li><a href="./pc/order/checkout.php">주문/결제</a></li>
-                        <li><a href="./pc/order/summary.php">주문 완료/요약</a></li>
+                        <li>2.1 <a href="./pc/order/shoppingbag.php">쇼핑백</a></li>
+                        <li>2.1 <a href="./pc/order/shoppingbag-empty.php">쇼핑백에 상품이 없을 경우</a></li>
+                        <li>2.2 <a href="./pc/order/checkout.php">주문/결제</a></li>
+                        <li>2.3 <a href="./pc/order/summary.php">주문 완료/요약</a></li>
                     </ul>
 
                     <hr>
 
                     <h3>3. My Page</h3>
                     <ul>
-                        <li><a href="./pc/mypage/wishlist.php">위시리스트</a></li>
-                        <li><a href="./pc/mypage/coupon.php">Coupon</a></li>
-                        <li><a href="./pc/mypage/quit.php">회원탈퇴</a></li>
-                        <li><a href="./pc/mypage/privacy.php">회원 정보 수정</a></li>
+                        <li>3.3 <a href="./pc/mypage/wishlist.php">위시리스트</a></li>
+                        <li>3.4.1 <a href="./pc/mypage/personal-support-write.php">1:1 문의하기 - Write</a></li>
+                        <li>3.4.2 <a href="./pc/mypage/personal-support.php">1:1 문의하기 - View</a></li>
+                        <li>3.7 <a href="./pc/mypage/coupon.php">Coupon</a></li>
+                        <li>3.5 <a href="./pc/mypage/privacy.php">회원 정보 수정</a></li>
+                        <li>3.5.1 <a href="./pc/mypage/quit.php">회원탈퇴</a></li>
                     </ul>
 
                     <hr>
 
                     <h3>4. Login &amp; Sign Up</h3>
                     <ul>
-                        <li><a href="./pc/join/login.php">Login</a></li>
-                        <li><a href="./pc/join/forgot.php">아이디 / 비밀번호 찾기</a></li>
+                        <li>4.1 <a href="./pc/join/login.php">Login</a></li>
+                        <li>4.2 <a href="./pc/join/signup.php">회원가입</a></li>
+                        <li>4.3 <a href="./pc/join/signup-complete.php">회원가입 완료</a></li>
+                        <li>4.4 <a href="./pc/join/forgot.php">아이디 / 비밀번호 찾기</a></li>
                     </ul>
+
+                    <hr>
+
+                    <h3>5. Etc.</h3>
+                    <ul>
+                        <li>5.2 <a href="./pc/join/guest-login.php">비회원 주문 로그인</a></li>
+                        <li>5.2.1 <a href="./pc/order/guest-checkout.php">비회원 주문/결제</a></li>
+                        <li>5.2.2 <a href="./pc/order/guest-summary.php">비회원 주문 완료/요약</a></li>
+                    </ul>
+
                 </div>
             </div>
         </div>

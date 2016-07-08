@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    // Main Slick Slider
+    $(".main-banner").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        arrows: false
+    });
+
     // Placeholder
     $(".placeholder input").focusin(function() {
         $(this).siblings("label").hide();
@@ -37,22 +45,6 @@ $(document).ready(function() {
 });
 
 
-// Select Box
-function selectboxEvent(target){
-    var $this = $(target),
-        str = $this.val();
-    $this.parent().children(".selectbox-value").text(str);
-}
-
-
-// Shopping Bag Option Change
-function itemOptionChange(item) {
-    var $this = $(item);
-    $this.parents("tr").next(".item-option-change").addClass("open").toggle();
-    return false;
-}
-
-
 // Modal
 function modalOpen(modal) {
     var $this = $(modal);
@@ -62,6 +54,30 @@ function modalOpen(modal) {
 function modalClose(modal) {
     var $this = $(modal);
     $this.parent().parent('.modalWrap').hide();
+    return false;
+}
+
+
+// Select Box
+function selectboxEvent(target){
+    var $this = $(target),
+        str = $this.val();
+    $this.parent().children(".selectbox-value").text(str);
+}
+
+
+// Sign Up Agree Box View
+function agreeOpen(view) {
+    var $this = $(view);
+    $this.parents(".signup-agree-title").next(".agree-box").addClass("open").toggle();
+    return false;
+}
+
+
+// Shopping Bag Option Change
+function itemOptionChange(item) {
+    var $this = $(item);
+    $this.parents("tr").next(".item-option-change").addClass("open").toggle();
     return false;
 }
 
