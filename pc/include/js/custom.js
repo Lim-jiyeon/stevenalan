@@ -65,7 +65,7 @@ function selectboxEvent(target){
 // Modal
 function modalOpen(modal) {
     var $this = $(modal);
-    $this.show();
+    $this.parent('.modalWrap').show();
     return false;
 }
 function modalClose(modal) {

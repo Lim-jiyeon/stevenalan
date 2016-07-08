@@ -105,8 +105,8 @@ include '../header/header.php';
                 </div>
 
                 <!-- 주문내역 레이어 팝업 -->
-                <div class="modalWrap orderList_modal">
-                    <div class="modal">
+                <div class="modalWrap ">
+                    <div class="modal orderList_modal">
                         <div class="in_modal">
                             <h3 class="modalTitle">주문 내역</h3>
                             <div class="bgSection">
