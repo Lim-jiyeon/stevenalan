@@ -158,21 +158,23 @@
                                 <tbody>
                                 <tr>
                                     <th scope="row">배송지 선택*</th>
-                                    <td class="select-shippingAddress">
-                                        <div class="radio">
-                                            <input type="radio" name="shippingAddress" id="roderer-address" checked>
-                                            <label for="roderer-address" class="radio-display"></label>
-                                            <label for="roderer-address" class="radio-label">주문자 주소</label>
-                                        </div>
-                                        <div class="radio">
-                                            <input type="radio" name="shippingAddress" id="new-address">
-                                            <label for="new-address" class="radio-display"></label>
-                                            <label for="new-address" class="radio-label">신규 주소</label>
-                                        </div>
-                                        <div class="radio">
-                                            <input type="radio" name="shippingAddress" id="address-list">
-                                            <label for="address-list" class="radio-display"></label>
-                                            <label for="address-list" class="radio-label">배송지 목록</label>
+                                    <td>
+                                        <div class="radio-group">
+                                            <div class="radio">
+                                                <input type="radio" name="shippingAddress" id="roderer-address" checked>
+                                                <label for="roderer-address" class="radio-display"></label>
+                                                <label for="roderer-address" class="radio-label">주문자 주소</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="shippingAddress" id="new-address">
+                                                <label for="new-address" class="radio-display"></label>
+                                                <label for="new-address" class="radio-label">신규 주소</label>
+                                            </div>
+                                            <div class="radio">
+                                                <input type="radio" name="shippingAddress" id="address-list">
+                                                <label for="address-list" class="radio-display"></label>
+                                                <label for="address-list" class="radio-label">배송지 목록</label>
+                                            </div>
                                         </div>
                                     </td>
                                 </tr>
@@ -215,14 +217,14 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr class="shipping-memo-input">
+                                <tr>
                                     <th scope="row"><label for="shipping-memo">배송 메모*</label></th>
                                     <td>
                                         <div class="form-group form-block placeholder">
                                             <label for="shipping-memo">한글 20자, 영문 40자 이내</label>
                                             <input type="text" id="shipping-memo" class="form-control"/>
                                         </div>
-                                        <div class="checkbox">
+                                        <div class="checkbox checkbox-block">
                                             <input type="checkbox" id="update-address" checked="checked">
                                             <label for="update-address" class="checkbox-display"></label>
                                             <label for="update-address" class="checkbox-label">주문자 주소 업데이트</label>

@@ -10,9 +10,9 @@
             <div class="box">
                 <h2 class="box-page-title">주문 완료/요약</h2>
                 <!-- 주문 완료 확인 -->
-                <div class="ordered-check">
-                    <span class="washed-line-title thankYou">thankyou</span>
-                    <strong class="ordered-confirm-message">홍길동 님의 주문이 확인되었습니다.</strong>
+                <div class="complete-box ordered-check">
+                    <span class="washed-line-title">thankyou</span>
+                    <strong class="confirm-message">홍길동 님의 주문이 확인되었습니다.</strong>
                     <p>주문 현황은 <a href="#" class="link-line">마이페이지&gt;주문/배송 조회</a>에서 확인하실 수 있습니다.</p>
                     <ul class="ordered-info delimiter">
                         <li>주문일자 2016-05-03</li>
@@ -126,7 +126,7 @@
                             <td><em class="benton">02-444-1234 / 010-1234-1234</em></td>
                         </tr>
                         <tr>
-                            <th scope="row">배송비</th>
+                            <th scope="row">배송지</th>
                             <td><em class="benton">[04778]</em> 서울특별시 성동구 뚝섬로1길 25(성수동1가, 서울숲 한라에코밸리)  B105</td>
                         </tr>
                         <tr>

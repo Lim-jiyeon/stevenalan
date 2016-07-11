@@ -179,39 +179,48 @@
     font-family: $font-family-en;
     font-style: normal;
 }
-.box {
+.box { // 회색 박스
     padding: 30px 30px 55px;
     background-color: #f5f5f5;
-    .box-title {
-        margin: 0 0 39px;
-        padding-bottom: 16px;
-        background: url(../../images/common/box-washed-line.png) no-repeat 0 100%;
-        font-size: 14px;
-        color: $brand-secondary;
-        letter-spacing: 1px;
-        text-align: center;
-    }
 }
-.box-small {
+.box-small { // 패딩값이 다른 회색 박스 .box와 같이 씀
     padding: 20px;
 }
-.inner-box {
+.inner-box { // 회색 박스 안에 회색 border가 있는 하얀색 박스
     padding: 20px;
     border: 1px solid #e5e5e5;
     border-width: 1px 0;
     background-color: #fff;
 }
-.box-page-title {
+.border-box { // 검정색 border 박스
+    padding: 20px;
+    border: 1px solid #000;
+}
+.page-title { // 페이지 큰 타이틀
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 24px;
+    color: $brand-primary;
+    font-family: $font-family-en;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.box-page-title { // 백스 안의 파란색 타이틀
     margin-bottom: 30px;
     font-size: 14px;
     color: $brand-primary;
     letter-spacing: 1px;
 }
-.border-box {
-    padding: 20px;
-    border: 1px solid #000;
+.box-title { // 워싱 라인이 아래쪽에 들어간 타이틀
+    margin: 0 0 39px;
+    padding-bottom: 16px;
+    background: url(../../images/common/box-washed-line.png) no-repeat 0 100%;
+    font-size: 14px;
+    color: $brand-secondary;
+    letter-spacing: 1px;
+    text-align: center;
 }
-.washed-line-title {
+.washed-line-title { // 워싱 라인이 위아래쪽에 들어간 타이틀
     display: block;
     margin: -10px 0;
     font-weight: bold;
@@ -228,7 +237,7 @@
         content: '';
     }
 }
-.table-title {
+.table-title { // 테이블 위에 있는 검정색 타이틀
     margin-bottom: 15px;
     font-weight: 700;
     font-size: 12px;
@@ -236,27 +245,30 @@
     font-family: $font-family-ko;
     color: #000;
 }
-.placeholder {
-    position: relative;
-    label {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: auto;
-        padding: 0 10px;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: (30/12);
-        font-family: $font-family-ko;
-        color: #8d8d8d;
+.complete-box { // 완료된 페이지에서 사용되는 박스 (워싱이 들어간 위아래 타이틀 포함)
+    padding: 20px 20px 50px;
+    background-color: #fff;
+    text-align: center;
+    .washed-line-title {
+        font-weight: 400;
+        font-size: 32px;
+        font-family: $font-family-en;
+        color: $brand-primary;
+        letter-spacing: 6px;
+        text-transform: uppercase;
+    }
+    .confirm-message {
+        display: block;
+        margin: 35px 0 7px;
+        font-weight: 400;
+        font-size: 18px;
+        color: $brand-secondary;
     }
 }
-.warning {
-    color: #c20007;
+.warning { // 경고 및 주의 Color
+    color: $brand-danger;
 }
-.caption {
+.caption { // 제목이 있는 유의사항 리스트
     margin-top: 30px;
     dt {
         margin-bottom: 5px;
@@ -265,26 +277,39 @@
         letter-spacing: 2px;
     }
 }
-.order-button {
-    .form-group {
-        display: inline-block;
-        margin-bottom: 9px;
-        .form-control {
-            width: 40px;
-            text-align: center;
+.help-group { // 도움말이 Input 옆에 위치 할때
+    @include clearfix;
+    .input-button-group {
+        float: left;
+    }
+    .help-box {
+        position: relative;
+        float: left;
+        padding: 5px 0 0 9px;
+        .icon-help {
+            cursor: help;
+            color: $text-color;
         }
-        + .button-block {
-            margin-top: 9px;
+        .help-layer {
+            display: none;
+            position: absolute;
+            top: -100%;
+            left: 35px;
+            width: 320px;
+            padding: 15px 15px 13px;
+            border: 1px solid #858585;
+            @include border-radius(3px);
+            background-color: #fff;
         }
     }
-    .button-block {
-        margin-bottom: 9px;
-        &:last-child {
-            margin-bottom: 0;
+    .help-box {
+        .icon-help:hover {
+            & + .help-layer {
+                display: block;
+            }
         }
     }
 }
-
 // Paging
 .paging{
     margin-right: 5px;
@@ -315,12 +340,12 @@
                 margin-right: 0;
             }
             &.current{
-                text-decoration: underline;
+                border-bottom: 1px solid $brand-secondary;
             }
         }
     }
 }
-.delimiter {
+.delimiter { // 텍스트 사이 구분자
     li {
         display: inline-block;
         &:before {
@@ -341,25 +366,28 @@
         }
     }
 }
-.link-line {
+.link-line { // 텍스트 링크 스타일
     border-bottom: 1px solid #bdbdbd;
+}
+.scroll { // 스크롤
+    overflow-y: scroll;
 }
 
 /**********************************************
  Product Style
 ***********************************************/
-.discount {
+.discount { // 가격 할인
     display: block;
     font-family: $font-family-en;
     font-style: normal;
     text-decoration: line-through;
 }
-.price {
+.price { // 원 가격
     font-weight: 400;
     font-family: $font-family-en;
     color: $brand-secondary;
 }
-.product-info {
+.product-info { // 상품 정보
     .product-image {
         float: left;
         img {
@@ -405,16 +433,17 @@
         }
     }
 }
-.item-option-change {
+.item-option-change { // 다른영역으로 나오는 옵션 변경 영역
     display: none;
     td {
-        padding-bottom: 5px;
+        padding-bottom: 0;
         background-color: #f5f5f5;
     }
     .item-option-box {
         padding-left: 30px;
         text-align: left;
         .form-group {
+            margin-bottom: 15px;
             label {
                 width: 140px;
                 color: $brand-secondary;
@@ -426,7 +455,26 @@
         }
     }
 }
-.payment-totals {
+.order-button { // 테이블 내 버튼이 위아래
+    .form-group {
+        display: inline-block;
+        margin-bottom: 9px;
+        .form-control {
+            width: 40px;
+            text-align: center;
+        }
+        + .button-block {
+            margin-top: 9px;
+        }
+    }
+    .button-block {
+        margin-bottom: 9px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+.payment-totals { // 총 결제 금액
     padding-right: 16px;
     text-align: right;
     li {
@@ -459,8 +507,54 @@
         }
     }
 }
-.ordered-price {
+.ordered-price { // 총 가격 Color
     color: $brand-primary;
+}
+
+/**********************************************
+ Main
+***********************************************/
+.main {
+    img {
+        width: 100%;
+    }
+    a {
+        display: block;
+    }
+    .container {
+        margin-bottom: 20px;
+    }
+    .bisection a {
+        margin-bottom: 20px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .main-product-title {
+        display: block;
+        width: 100%;
+        height: 50px;
+        font-size: 13px;
+        line-height: (50/13);
+        font-family: $font-family-en;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .shop-collection {
+        .main-product-title {
+            background-color: #e5e5e5;
+        }
+    }
+    .shop-collection-title {
+        margin: 32px 0 16px;
+        font-weight: 400;
+        font-size: 24px;
+        color: $brand-primary;
+        font-family: $font-family-en;
+        letter-spacing: 4px;
+        text-align: center;
+        text-transform: uppercase;
+    }
 }
 
 /**********************************************
@@ -537,16 +631,6 @@
         th, td {
             padding-top: 15px;
             border-top: 1px solid #e5e5e5;
-        }
-    }
-    .select-shippingAddress {
-        .radio {
-            margin-right: 25px;
-        }
-    }
-    .shipping-memo-input {
-        .checkbox {
-            margin-top: 10px;
         }
     }
 }
@@ -660,24 +744,6 @@
  Order - Summary
 ***********************************************/
 .ordered-check {
-    padding: 20px 20px 50px;
-    background-color: #fff;
-    text-align: center;
-    .thankYou {
-        font-weight: 400;
-        font-size: 32px;
-        font-family: $font-family-en;
-        color: $brand-primary;
-        letter-spacing: 6px;
-        text-transform: uppercase;
-    }
-    .ordered-confirm-message {
-        display: block;
-        margin: 35px 0 7px;
-        font-weight: 400;
-        font-size: 18px;
-        color: $brand-secondary;
-    }
     .ordered-info {
         margin-top: 35px;
         li {
@@ -946,19 +1012,24 @@
                 color: #000;
             }
             .input-button-group{
-                max-width: 380px;
+                .form-control {
+                    width: 300px;
+                }
             }
+        }
+        .selectbox{
+            width: 150px;
         }
         .file_input_textbox{
             width: 85%;
         }
-        .selectbox-block{
-            max-width: 145px;
-        }
         .email-wrap{
             .input-group{
                 max-width: 565px;
-                .selectbox-block{
+                .form-control {
+                    width: 190px;
+                }
+                .selectbox{
                     margin-left: 10px;
                 }
             }
@@ -1034,13 +1105,11 @@
             top: 20px;
             right: 20px;
             color: #cccdcb;
-            i{
+            i:before{
+                margin: -2px;
                 border: 1px solid #cccdcb;
-                &:before{
-                    margin: -2px;
-                    vertical-align: middle;
-                    font-size: 15px;
-                }
+                vertical-align: middle;
+                font-size: 15px;
             }
 
         }
@@ -1060,38 +1129,6 @@
 /**********************************************
  My Page - 회원정보수정
 ***********************************************/
-.help-group {
-    @include clearfix;
-    .input-button-group {
-        float: left;
-    }
-    .help-box {
-        position: relative;
-        float: left;
-        padding: 5px 0 0 9px;
-        .icon-help {
-            cursor: help;
-        }
-        .help-layer {
-            display: none;
-            position: absolute;
-            top: -100%;
-            left: 35px;
-            width: 320px;
-            padding: 15px 15px 13px;
-            border: 1px solid #858585;
-            @include border-radius(3px);
-            background-color: #fff;
-        }
-    }
-    .help-box {
-        .icon-help:hover {
-             & + .help-layer {
-                display: block;
-            }
-        }
-    }
-}
 .privacy-modify {
     .member-privacy {
         margin-top: -10px;
@@ -1333,7 +1370,7 @@
 }
 
 /**********************************************
- Join
+ Join - Login
 ***********************************************/
 .login-banner {
     margin: -40px 0 30px;
@@ -1381,4 +1418,36 @@
     .button {
         margin-top: 32px;
     }
+}
+
+/**********************************************
+ Join - Sign Up
+***********************************************/
+.signup-agree {
+    margin-bottom: 20px;
+    .signup-agree-title {
+        font-weight: 400;
+        @include clearfix;
+        .checkbox {
+            float: left;
+        }
+        .button {
+            float: right;
+        }
+        + .agree-box {
+            display: none;
+            margin-top: 20px;
+        }
+    }
+}
+
+/**********************************************
+ Agree
+***********************************************/
+.agree-box {
+    height: 200px;
+    padding: 16px 21px;
+    border: 1px solid #d5d5d5;
+    @include border-radius(2px);
+    background-color: #fff;
 }
