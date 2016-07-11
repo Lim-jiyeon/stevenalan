@@ -25,71 +25,107 @@
                             </div>
                             <!-- 쿠폰 등록 //end -->
                             <!-- 쿠폰 내역 리스트 -->
-                            <div class="button-group">
+                            <div class="button-group coupon-button">
                                 <a href="#" class="button button-third">사용 가능 쿠폰</a>
                                 <a href="#" class="button button-secondary">지난 쿠폰 내역</a>
                             </div>
-                            <table class="table table-list">
-                                <caption class="sr-only">보유 쿠폰 목록</caption>
-                                <colgroup>
-                                    <col class="col-xs-3">
-                                    <col class="col-xs-3">
-                                    <col class="col-xs-3">
-                                    <col class="col-xs-3">
-                                </colgroup>
-                                <thead>
-                                <tr>
-                                    <th scope="col">쿠폰번호</th>
-                                    <th scope="col">쿠폰정보</th>
-                                    <th scope="col">적용대상</th>
-                                    <th scope="col">유효기간</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <span class="coupon-type"><em class="benton">15,000</em>원</span>
-                                        <span class="coupon-num"><em class="benton">C37688839857</em></span>
-                                    </td>
-                                    <td class="coupon-purpose">
-                                        <strong>Steven alan 상품 추가 할인</strong>
-                                        <span><em class="benton">50,000</em>원 이상 구매</span>
-                                    </td>
-                                    <td>전체 상품</td>
-                                    <td>
-                                        <em class="benton">2016.06.01 ~ 2016.06.30<br>
-                                        10일 (247시간) 남음</em>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <span class="coupon-type"><em class="benton">5%</em></span>
-                                        <span class="coupon-num"><em class="benton">C37688839857</em></span>
-                                    </td>
-                                    <td class="coupon-purpose">
-                                        <strong>배송비 할인</strong>
-                                        <span>제한없음</span>
-                                    </td>
-                                    <td>
-                                        <div class="selectbox">
-                                            <strong class="selectbox-value">적용대상보기</strong>
-                                            <select onchange="selectboxEvent(this);">
-                                                <option value="적용대상보기">적용대상보기</option>
-                                                <option value="brand 1">brand 1</option>
-                                                <option value="선택2">선택2</option>
-                                                <option value="선택3">선택3</option>
-                                                <option value="선택4">선택4</option>
-                                                <option value="선택5">선택5</option>
-                                            </select>
-                                        </div>
-                                    </td>
-                                    <td>
-                                        <em class="benton">2016.06.01 ~ 2016.06.30<br>
-                                        10일 (247시간)</em> 남음
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
+                            <div class="coupon-content coupon-list2">
+                                <table class="table table-list">
+                                    <caption class="sr-only">사용 가능한 보유 쿠폰 목록</caption>
+                                    <colgroup>
+                                        <col class="col-xs-3">
+                                        <col class="col-xs-3">
+                                        <col class="col-xs-3">
+                                        <col class="col-xs-3">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">쿠폰번호</th>
+                                        <th scope="col">쿠폰정보</th>
+                                        <th scope="col">적용대상</th>
+                                        <th scope="col">유효기간</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="coupon-type"><em class="benton">15,000</em>원</span>
+                                            <span class="coupon-num"><em class="benton">C37688839857</em></span>
+                                        </td>
+                                        <td class="coupon-purpose">
+                                            <strong>Steven alan 상품 추가 할인</strong>
+                                            <span><em class="benton">50,000</em>원 이상 구매</span>
+                                        </td>
+                                        <td>전체 상품</td>
+                                        <td>
+                                            <em class="benton">2016.06.01 ~ 2016.06.30<br>
+                                            10일 (247시간) 남음</em>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span class="coupon-type"><em class="benton">5%</em></span>
+                                            <span class="coupon-num"><em class="benton">C37688839857</em></span>
+                                        </td>
+                                        <td class="coupon-purpose">
+                                            <strong>배송비 할인</strong>
+                                            <span>제한없음</span>
+                                        </td>
+                                        <td>
+                                            <div class="selectbox">
+                                                <strong class="selectbox-value">적용대상보기</strong>
+                                                <select onchange="selectboxEvent(this);">
+                                                    <option value="적용대상보기">적용대상보기</option>
+                                                    <option value="brand 1">brand 1</option>
+                                                    <option value="선택2">선택2</option>
+                                                    <option value="선택3">선택3</option>
+                                                    <option value="선택4">선택4</option>
+                                                    <option value="선택5">선택5</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <em class="benton">2016.06.01 ~ 2016.06.30<br>
+                                            10일 (247시간)</em> 남음
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="coupon-content coupon-list1">
+                                <table class="table table-list">
+                                    <caption class="sr-only">지난 쿠폰 내역</caption>
+                                    <colgroup>
+                                        <col class="col-xs-3">
+                                        <col class="col-xs-3">
+                                        <col class="col-xs-3">
+                                        <col class="col-xs-3">
+                                    </colgroup>
+                                    <thead>
+                                    <tr>
+                                        <th scope="col">쿠폰번호</th>
+                                        <th scope="col">쿠폰정보</th>
+                                        <th scope="col">적용대상</th>
+                                        <th scope="col">사용일</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <span class="coupon-num"><em class="benton">C37688839857</em></span>
+                                        </td>
+                                        <td class="coupon-purpose">
+                                            <strong>Steven alan 상품 추가 할인</strong>
+                                            <span><em class="benton">50,000</em>원 이상 구매</span>
+                                        </td>
+                                        <td>전체 상품</td>
+                                        <td>
+                                            <em class="benton">2016.06.01</em>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <!-- 쿠폰 내역 리스트 //end -->
                             <ul class="table-caution">
                                 <li>- 쿠폰의 적용대상은 쿠폰마다 다르며, 대상 상품은 변경될 수 있습니다.</li>
