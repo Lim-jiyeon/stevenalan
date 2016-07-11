@@ -31,6 +31,13 @@
                         </ul>
                     </div>
                 </div>
+                <div class="quick-access">
+                    <a href="#" class="head-search"><i class="icon-search"></i></a>
+                    <a href="#" class="link-shoppingbag">
+                        <i class="icon-shoppingbag"></i>
+                        <span class="total-badge">3</span>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="container">

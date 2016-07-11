@@ -435,7 +435,7 @@
                     <!-- 최종 결제 금액 -->
                     <div class="payment-box">
                         <div class="border-box checkout-payment-totals">
-                            <h3 class="washed-line-title">최종 결제 금액</h3>
+                            <h3 class="washed-line-text">최종 결제 금액</h3>
                             <dl class="checkout-amount">
                                 <dt>총 상품금액</dt>
                                 <dd><em>1,000,000</em>원</dd>

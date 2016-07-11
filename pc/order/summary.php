@@ -11,7 +11,7 @@
                 <h2 class="box-page-title">주문 완료/요약</h2>
                 <!-- 주문 완료 확인 -->
                 <div class="complete-box ordered-check">
-                    <span class="washed-line-title">thankyou</span>
+                    <span class="washed-line-text">thankyou</span>
                     <strong class="confirm-message">홍길동 님의 주문이 확인되었습니다.</strong>
                     <p>주문 현황은 <a href="#" class="link-line">마이페이지&gt;주문/배송 조회</a>에서 확인하실 수 있습니다.</p>
                     <ul class="ordered-info delimiter">

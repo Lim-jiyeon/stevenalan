@@ -32,6 +32,9 @@
     background: url(../../images/common/washed-line.png) repeat-x 0 100%;
     margin: -137px 0 135px;
     @include clearfix;
+    .container {
+        position: relative;
+    }
     .link-sale {
         float: left;
     }
@@ -75,18 +78,45 @@
             }
         }
     }
+    .quick-access {
+        position: absolute;
+        top: 85px;
+        right: 33px;
+        .link-shoppingbag {
+            margin-left: 12px;
+            .total-badge {
+                position: absolute;
+                top: 4px;
+                right: -6px;
+                display: block;
+                width: 15px;
+                height: 15px;
+                padding-left: 1px;
+                @include border-radius(50%);
+                background-color: $brand-primary;
+                font-size: 10px;
+                line-height: 14px;
+                color: #fff;
+                text-align: center;
+            }
+        }
+        i:before {
+            font-size: 20px;
+            color: #1b1b1b;
+        }
+    }
 }
 .megaMenu {
     margin: 0 -34px;
     padding-left: 0;
     .megaMenu-item {
         float: left;
-        padding: 0 34px;
+        padding: 0 35px;
         list-style: none;
         a {
             font-size: 14px;
             color: $brand-secondary;
-            letter-spacing: 2.25px;
+            letter-spacing: 2.45px;
         }
         &:hover, &.current {
             a {
@@ -233,7 +263,15 @@
     letter-spacing: 1px;
     text-align: center;
 }
-.washed-line-title { // 워싱 라인이 위아래쪽에 들어간 타이틀
+.table-title { // 테이블 위에 있는 검정색 타이틀
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-family: $font-family-ko;
+    color: #000;
+}
+.washed-line-text { // 워싱 라인이 위아래에 있는 텍스트
     display: block;
     margin: -10px 0;
     font-weight: bold;
@@ -250,25 +288,23 @@
         content: '';
     }
 }
-.table-title { // 테이블 위에 있는 검정색 타이틀
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: 2px;
-    font-family: $font-family-ko;
-    color: #000;
-}
 .complete-box { // 완료된 페이지에서 사용되는 박스 (워싱이 들어간 위아래 타이틀 포함)
     padding: 20px 20px 50px;
     background-color: #fff;
     text-align: center;
-    .washed-line-title {
+    .washed-line-text {
         font-weight: 400;
         font-size: 32px;
         font-family: $font-family-en;
         color: $brand-primary;
         letter-spacing: 6px;
         text-transform: uppercase;
+        &:before {
+            margin-bottom: 13px;
+        }
+        &:after {
+            margin-top: 5px;
+        }
     }
     .confirm-message {
         display: block;
@@ -1560,4 +1596,36 @@
     .button {
         margin-top: 32px;
     }
+}
+
+/**********************************************
+ Join - Sign Up
+***********************************************/
+.signup-agree {
+    margin-bottom: 20px;
+        .signup-agree-title {
+            font-weight: 400;
+            @include clearfix;
+                .checkbox {
+                    float: left;
+                }
+                .button {
+                    float: right;
+                }
+                + .agree-box {
+                    display: none;
+                    margin-top: 20px;
+                }
+        }
+}
+
+/**********************************************
+ Agree
+***********************************************/
+.agree-box {
+    height: 200px;
+    padding: 16px 21px;
+    border: 1px solid #d5d5d5;
+    @include border-radius(2px);
+    background-color: #fff;
 }

@@ -38,6 +38,15 @@ $(document).ready(function() {
     });
 
 
+    //$('#open-search, #open-search-pc').on('click', function() {
+    //    $('html').toggleClass('search-open');
+    //    $('#search').focus();
+    //});
+    //$('#search').blur(function() {
+    //    $('html').toggleClass('search-open');
+    //})
+
+
     // Forgot id, password Select Tab
     $('.find-box input[name=findId]').change(function () {
         $('.findId-input').hide();
@@ -65,7 +74,10 @@ $(document).ready(function() {
 
 
     // Checkout Final Payment Amount Scroll
-    $(".payment-box").sticky({ topSpacing: 50 });
+    $(".payment-box").sticky({
+        topSpacing: 50,
+        bottomSpacing: 300
+    });
 
 
     // Coupon Tab
