@@ -30,6 +30,7 @@
                     <h3>1. Store &amp; Contents</h3>
                     <ul>
                         <li>1.1 <a href="./pc/main/main.php">Main</a></li>
+                        <li>1.2 <a href="./pc/shop/catalog.php">Product List</a></li>
                     </ul>
 
                     <hr>

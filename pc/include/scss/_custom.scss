@@ -166,6 +166,19 @@
 /**********************************************
  Common
 ***********************************************/
+.breadcrumb {
+    margin-bottom: 20px;
+    font-family: $font-family-en;
+    font-size: 10px;
+    a:after {
+        margin: 0 7px 0 9px;
+        content: '/';
+    }
+    a:last-child:after {
+        margin: 0;
+        content: '';
+    }
+}
 .align-center{
     text-align: center !important;
 }
@@ -554,6 +567,129 @@
         letter-spacing: 4px;
         text-align: center;
         text-transform: uppercase;
+    }
+}
+
+/**********************************************
+ Category List - Menu
+***********************************************/
+.category-left {
+    font-family: $font-family-en;
+    h2 {
+        font-size: 18px;
+        letter-spacing: 2px;
+        color: $brand-primary;
+        text-transform: uppercase;
+    }
+}
+.category-menu {
+    margin-top: 36px;
+    .item-list {
+        display: none;
+        padding-bottom: 30px;
+        letter-spacing: 1px;
+        a {
+            color: $brand-secondary;
+            &.current,
+            &:hover {
+                padding-bottom: 1px;
+                border-bottom: 1px solid #000;
+            }
+        }
+    }
+    .item-title {
+        margin-bottom: 10px;
+        a {
+            position: relative;
+            display: block;
+            font-size: 12px;
+            letter-spacing: 1px;
+            color: #000;
+            &:after {
+                position: absolute;
+                top: -2px;
+                right: 25px;
+                font-family: "fontello";
+                content: '\e802';
+            }
+        }
+        &.open {
+            a:after {
+                content: '\e803';
+            }
+            //+ .item-list {
+            //    display: block;
+            //}
+        }
+    }
+    .default-item {
+        .item-list {
+            display: block;
+        }
+    }
+}
+
+/**********************************************
+ Category List
+***********************************************/
+.result-options {
+    .sort-by {
+        .selectbox {
+            width: 100%;
+        }
+    }
+    .results-hits {
+        text-align: right;
+    }
+}
+.category-list {
+    margin-top: 20px;
+    .item {
+        position: relative;
+        height: 309px;
+        margin-bottom: 10px;
+        &:after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: url(../../images/common/box-washed-line.png) repeat-x 0 0;
+            content: '';
+        }
+    }
+    .product-info {
+        padding-top: 16px;
+        font-family: $font-family-en;
+        .brand-name {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 700;
+            line-height: 14px;
+            text-transform: uppercase;
+        }
+        .product-name {
+            display: block;
+            font-weight: 400;
+        }
+        .product-price {
+            margin-top: 2px;
+            .discount {
+                display: inline-block;
+                font-size: 10px;
+            }
+            .price {
+                display: inline-block;
+                color: $brand-secondary;
+            }
+        }
+    }
+    .more-color {
+        display: inline-block;
+        margin-top: 10px;
+        border-bottom: 1px solid #bfbfbf;
+        line-height: 11px;
+        color: #000;
     }
 }
 
@@ -1209,6 +1345,12 @@
         padding: 40px 0 20px;
         border-top: 1px solid #e5e5e5;
         text-align: center;
+    }
+}
+.coupon-content {
+    display: none;
+    &.coupon-list2 {
+        display: block;
     }
 }
 .coupon-type {
