@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+    // Category List Menu
+    $(".item-title").on("click", function() {
+        $(this).siblings().removeClass("open").next().slideUp();
+        $(this).toggleClass("open").next().slideToggle();
+        $(this).parent().siblings().children().removeClass("open").next().slideUp();
+        return false;
+    });
+
+
     // Main Slick Slider
     $(".main-banner").slick({
         dots: true,
@@ -57,6 +66,17 @@ $(document).ready(function() {
 
     // Checkout Final Payment Amount Scroll
     $(".payment-box").sticky({ topSpacing: 50 });
+
+
+    // Coupon Tab
+    $(".coupon-button .button").on("click",function(){
+        var index = $(this).siblings().index() + 1;
+        $(".coupon-content").hide();
+        $(".coupon-list"+ index).show();
+        $(".coupon-button .button").removeClass("button-third").addClass("button-secondary");
+        $(this).removeClass("button-secondary").addClass("button-third");
+        return false;
+    });
 
 });
 
