@@ -29,7 +29,7 @@
                             <div class="input-button-group">
                                 <div class="form-group">
                                     <input type="text" class="form-control">
-                                    <a href="#none" class="button" onclick="modalOpen('.orderList_modal');">주문조회</a>
+                                    <a href="#none" class="button" onclick="modalOpen('.modalWrap');">주문조회</a>
                                 </div>
                             </div>
                         </td>
@@ -91,11 +91,9 @@
                     </tr>
                     </tbody>
                 </table>
-
                 <div class="buttonWrap">
                     <a href="#" class="button button-large button-primary">등록</a>
                 </div>
-
                 <!-- 주문내역 레이어 팝업 -->
                 <div class="modalWrap ">
                     <div class="modal orderList_modal">
@@ -119,13 +117,13 @@
                                     </div>
                                 </div>
                                 <div class="form-group placeholder">
-                                    <input type="text" id="write-form-title" class="form-control" placeholder="주문 상품명 입력">
+                                    <label for="order-product-input">주문 상품명 입력</label>
+                                    <input type="text" id="order-product-input" class="form-control">
                                 </div>
                                 <div class="buttonWrap">
                                     <a href="#" class="button button-large button-primary">조회하기</a>
                                 </div>
                             </div>
-
                             <table class="table table-list">
                                 <caption class="sr-only">관심 상품 목록</caption>
                                 <colgroup>
@@ -219,12 +217,12 @@
                                 <a href="#" class="next"><i class="icon-right"></i></a>
                             </div>
                             <!-- paging //end -->
-
                         </div>
                         <a href="#none" class="closeModalBtn" onclick="modalClose(this);"><i class="icon-cancel"></i></a>
                     </div>
                     <div class="overlay"></div>
                 </div>
+                <!-- 주문내역 레이어 팝업 //end -->
             </div><!-- bgSection // end -->
         </div>
     </div>

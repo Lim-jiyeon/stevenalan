@@ -52,6 +52,7 @@
                         <li>3.7 <a href="./pc/mypage/coupon.php">Coupon</a></li>
                         <li>3.5 <a href="./pc/mypage/privacy.php">회원 정보 수정</a></li>
                         <li>3.5.1 <a href="./pc/mypage/quit.php">회원탈퇴</a></li>
+                        <li>3.5.1 <a href="./pc/mypage/address.php">배송지 관리</a></li>
                     </ul>
 
                     <hr>

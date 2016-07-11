@@ -8,6 +8,7 @@ $(document).ready(function() {
         arrows: false
     });
 
+
     // Placeholder
     $(".placeholder input").focusin(function() {
         $(this).siblings("label").hide();
@@ -38,6 +39,7 @@ $(document).ready(function() {
         $('.'+$(this).val()).show();
     });
 
+
     // Accordion Table
     $(".folding-table tr.master").click(function(){
 
@@ -51,7 +53,6 @@ $(document).ready(function() {
 
         }
     });
-
 
 
     // Checkout Final Payment Amount Scroll
@@ -69,6 +70,7 @@ function modalOpen(modal) {
 function modalClose(modal) {
     var $this = $(modal);
     $this.parent().parent('.modalWrap').hide();
+
     return false;
 }
 

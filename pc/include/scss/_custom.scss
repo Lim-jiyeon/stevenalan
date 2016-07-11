@@ -1419,35 +1419,3 @@
         margin-top: 32px;
     }
 }
-
-/**********************************************
- Join - Sign Up
-***********************************************/
-.signup-agree {
-    margin-bottom: 20px;
-    .signup-agree-title {
-        font-weight: 400;
-        @include clearfix;
-        .checkbox {
-            float: left;
-        }
-        .button {
-            float: right;
-        }
-        + .agree-box {
-            display: none;
-            margin-top: 20px;
-        }
-    }
-}
-
-/**********************************************
- Agree
-***********************************************/
-.agree-box {
-    height: 200px;
-    padding: 16px 21px;
-    border: 1px solid #d5d5d5;
-    @include border-radius(2px);
-    background-color: #fff;
-}
