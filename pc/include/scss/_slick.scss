@@ -119,3 +119,41 @@
         }
     }
 }
+
+
+// Arrow
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 33px;
+    height: 33px;
+    margin-top: -16px;
+    padding: 0 11px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: transparent;
+    cursor: pointer;
+    text-align: center;
+    &:before {
+        font-family: 'fontello';
+        font-size: 20px;
+        color: #000;
+    }
+    &.slick-disabled:before {
+        opacity: .5;
+    }
+}
+.slick-prev {
+    left: 0;
+    &:before {
+        content: '\e812';
+    }
+}
+.slick-next {
+    right: 0;
+    &:before {
+        content: '\e801';
+    }
+}

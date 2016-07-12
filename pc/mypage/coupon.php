@@ -15,9 +15,11 @@
                                     <div class="col-xs-7">
                                         <div class="input-button-group">
                                             <div class="form-group placeholder">
-                                                <label for="coupon-register">쿠폰에 기재된 일련번호 입력</label>
-                                                <input type="text" id="coupon-register" class="form-control"/>
-                                                <a href="#" class="button">등록</a>
+                                                <div>
+                                                    <label for="coupon-register">쿠폰에 기재된 일련번호 입력</label>
+                                                    <input type="text" id="coupon-register" class="form-control"/>
+                                                </div>
+                                                <div><a href="#" class="button">등록</a></div>
                                             </div>
                                         </div>
                                     </div>

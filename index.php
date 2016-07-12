@@ -31,6 +31,7 @@
                     <ul>
                         <li>1.1 <a href="./pc/main/main.php">Main</a></li>
                         <li>1.2 <a href="./pc/shop/catalog.php">Product List</a></li>
+                        <li>1.3 <a href="./pc/shop/catalog-view.php">Product View</a></li>
                     </ul>
 
                     <hr>

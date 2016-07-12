@@ -120,6 +120,11 @@ input[type="search"] {
   -webkit-appearance: none;
 }
 
+.form-large {
+  height: $large-height;
+  line-height: $line-height-large;
+}
+
 // Form groups
 .form-group {
   margin-bottom: $form-group-margin-bottom;
@@ -182,20 +187,27 @@ input[type="search"] {
 .input-button-group{
   @include clearfix;
   .form-group {
-    width: 100%;
-    .form-control {
+    div {
       float: left;
-      width: auto;
-      border-right: 0;
-      @include border-side-radius(top, right, 0);
-      @include border-side-radius(bottom, right, 0);
+      .form-control {
+        width: auto;
+        @include border-radius(0);
+      }
+      .button {
+        margin: 0;
+        padding: 0 15px;
+        @include border-radius(0);
+      }
     }
-    .button {
-      float: left;
-      margin: 0;
-      padding: 0 15px;
-      @include border-side-radius(top, left, 0);
-      @include border-side-radius(bottom, left, 0);
+    div:first-child * {
+      margin-right: -1px;
+      @include border-side-radius(top, left, 2px);
+      @include border-side-radius(bottom, left, 2px);
+    }
+    div:last-child * {
+      margin-left: -1px;
+      @include border-side-radius(top, right, 2px);
+      @include border-side-radius(bottom, right, 2px);
     }
   }
 }

@@ -126,8 +126,8 @@
                                         <div class="help-group">
                                             <div class="input-button-group">
                                                 <div class="form-group form-inline">
-                                                    <input type="text" id="international-shipping-input" class="form-control"/>
-                                                    <a href="#" class="button">조회/발급</a>
+                                                    <div><input type="text" id="international-shipping-input" class="form-control"/></div>
+                                                    <div><a href="#" class="button">조회/발급</a></div>
                                                 </div>
                                             </div>
                                             <div class="help-box">
@@ -191,8 +191,8 @@
                                     <td>
                                         <div class="input-button-group">
                                             <div class="form-group form-inline">
-                                                <input type="text" id="address" class="form-control"/>
-                                                <a href="#" class="button button-input">우편번호 찾기</a>
+                                                <div><input type="text" id="address" class="form-control"/></div>
+                                                <div><a href="#" class="button button-input">우편번호 찾기</a></div>
                                             </div>
                                         </div>
                                         <div class="form-group form-inline">

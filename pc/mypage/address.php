@@ -111,8 +111,8 @@
                                         <td class="address-modify-add-table-address">
                                             <div class="input-button-group">
                                                 <div class="form-group placeholder">
-                                                    <input type="text" class="form-control"/>
-                                                    <a href="#" class="button button-black">우편번호 찾기</a>
+                                                    <div><input type="text" class="form-control"/></div>
+                                                    <div><a href="#" class="button button-black">우편번호 찾기</a></div>
                                                 </div>
                                             </div>
                                             <div class="input-group">

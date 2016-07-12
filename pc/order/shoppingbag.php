@@ -59,9 +59,9 @@
                         <tr>
                             <td class="valign-top">
                                 <div class="checkbox">
-                                    <input type="checkbox" id="local-product-select">
-                                    <label for="local-product-select" class="checkbox-display"></label>
-                                    <label for="local-product-select" class="checkbox-label sr-only">상품선택</label>
+                                    <input type="checkbox" id="local_product_select">
+                                    <label for="local_product_select" class="checkbox-display"></label>
+                                    <label for="local_product_select" class="checkbox-label sr-only">상품선택</label>
                                 </div>
                             </td>
                             <td class="product-info aline-left">
@@ -132,9 +132,9 @@
                         <tr>
                             <td class="valign-top">
                                 <div class="checkbox">
-                                    <input type="checkbox" id="local-product-select2">
-                                    <label for="local-product-select2" class="checkbox-display"></label>
-                                    <label for="local-product-select2" class="checkbox-label sr-only">상품선택</label>
+                                    <input type="checkbox" id="local_product_select2">
+                                    <label for="local_product_select2" class="checkbox-display"></label>
+                                    <label for="local_product_select2" class="checkbox-label sr-only">상품선택</label>
                                 </div>
                             </td>
                             <td class="product-info aline-left">
@@ -263,9 +263,9 @@
                         <tr>
                             <td class="valign-top">
                                 <div class="checkbox">
-                                    <input type="checkbox" id="local-product-select">
-                                    <label for="local-product-select" class="checkbox-display"></label>
-                                    <label for="local-product-select" class="checkbox-label sr-only">상품선택</label>
+                                    <input type="checkbox" id="overseas-product-select">
+                                    <label for="overseas-product-select" class="checkbox-display"></label>
+                                    <label for="overseas-product-select" class="checkbox-label sr-only">상품선택</label>
                                 </div>
                             </td>
                             <td class="product-info aline-left">
@@ -337,9 +337,9 @@
                         <tr>
                             <td class="valign-top">
                                 <div class="checkbox">
-                                    <input type="checkbox" id="local-product-select2">
-                                    <label for="local-product-select2" class="checkbox-display"></label>
-                                    <label for="local-product-select2" class="checkbox-label sr-only">상품선택</label>
+                                    <input type="checkbox" id="overseas-product-select2">
+                                    <label for="overseas-product-select2" class="checkbox-display"></label>
+                                    <label for="overseas-product-select2" class="checkbox-label sr-only">상품선택</label>
                                 </div>
                             </td>
                             <td class="product-info aline-left">

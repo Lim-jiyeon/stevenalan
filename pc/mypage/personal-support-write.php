@@ -28,8 +28,8 @@
                         <td>
                             <div class="input-button-group">
                                 <div class="form-group">
-                                    <input type="text" class="form-control">
-                                    <a href="#none" class="button" onclick="modalOpen('.modalWrap');">주문조회</a>
+                                    <div><input type="text" class="form-control"></div>
+                                    <div><a href="#none" class="button" onclick="modalOpen('.modalWrap');">주문조회</a></div>
                                 </div>
                             </div>
                         </td>

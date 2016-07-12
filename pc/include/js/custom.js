@@ -1,34 +1,5 @@
 $(document).ready(function() {
 
-    // Category List Menu
-    $(".item-title").on("click", function() {
-        $(this).siblings().removeClass("open").next().slideUp();
-        $(this).toggleClass("open").next().slideToggle();
-        $(this).parent().siblings().children().removeClass("open").next().slideUp();
-        return false;
-    });
-
-
-    // Main Slick Slider
-    $(".main-banner").slick({
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        arrows: false
-    });
-
-
-    // Placeholder
-    $(".placeholder input").focusin(function() {
-        $(this).siblings("label").hide();
-    });
-    $(".placeholder input").blur(function() {
-        if($(this).val() == ''){
-            $(this).siblings("label").show();
-        }
-    });
-
-
     // Header My Page Dropdown
     $(".link-mypage").on("mouseenter", function() {
         $(this).parent(".menu-mypage").addClass("open");
@@ -44,7 +15,59 @@ $(document).ready(function() {
     //});
     //$('#search').blur(function() {
     //    $('html').toggleClass('search-open');
-    //})
+    //});
+
+
+    // Main Slick Slider
+    $(".main-banner").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        arrows: false
+    });
+
+
+    // Category List Menu
+    $(".item-title").on("click", function() {
+        $(this).siblings().removeClass("open").next().slideUp();
+        $(this).toggleClass("open").next().slideToggle();
+        $(this).parent().siblings().children().removeClass("open").next().slideUp();
+        return false;
+    });
+
+
+    $('.product-images-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        dots: false,
+        fade: true,
+        asNavFor: '.thumbnail-nav'
+    });
+    $('.thumbnail-nav').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        arrows: true,
+        //centerPadding: '80px',
+        asNavFor: '.product-images-for',
+        //centerMode: true,
+        focusOnSelect: true
+    });
+
+
+    // Placeholder
+    $(".placeholder input").focusin(function() {
+        $(this).siblings("label").hide();
+    });
+    $(".placeholder input").blur(function() {
+        if($(this).val() == ''){
+            $(this).siblings("label").show();
+        }
+    });
 
 
     // Forgot id, password Select Tab
