@@ -50,8 +50,12 @@
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row">이름*</th>
-                            <td>이영애</td>
+                            <th scope="row"><label for="name">이름*</label></th>
+                            <td>
+                                <div class="form-group form-inline">
+                                    <input type="text" id="name" class="form-control">
+                                </div>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="row"><label for="cellphone">휴대폰번호*</label></th>
@@ -89,34 +93,6 @@
                                 </div>
                             </td>
                         </tr>
-                        <tr>
-                            <th scope="row">정보 수신 여부*</th>
-                            <td>
-                                <div class="checkbox">
-                                    <input type="checkbox" id="receive-email" name="receive-info" checked>
-                                    <label for="receive-email" class="checkbox-display"></label>
-                                    <label for="receive-email" class="checkbox-label">이메일 수신</label>
-                                </div>
-                                <div class="checkbox">
-                                    <input type="checkbox" id="receive-sms" name="receive-info">
-                                    <label for="receive-sms" class="checkbox-display"></label>
-                                    <label for="receive-sms" class="checkbox-label">SMS 수신</label>
-                                </div>
-                                <p class="help-block">상품 구매 정보는 수신 동의 여부와 관계없이 발송됩니다.</p>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <!-- 회원 로그인 및 필수 정보 입력 //end -->
-                    <!-- 회원 선택 정보 입력 -->
-                    <h4 class="table-title">선택 정보</h4>
-                    <table class="table table-row-list">
-                        <caption class="sr-only">회원 선택 정보를 입력하는 목록</caption>
-                        <colgroup>
-                            <col class="col-xs-2">
-                            <col class="col-xs-10">
-                        </colgroup>
-                        <tbody>
                         <tr>
                             <th scope="row"><label for="birth-date">생년월일</label></th>
                             <td>
@@ -157,6 +133,34 @@
                                 </div>
                             </td>
                         </tr>
+                        <tr>
+                            <th scope="row">정보 수신 여부*</th>
+                            <td>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="receive-email" name="receive-info" checked>
+                                    <label for="receive-email" class="checkbox-display"></label>
+                                    <label for="receive-email" class="checkbox-label">이메일 수신</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="receive-sms" name="receive-info">
+                                    <label for="receive-sms" class="checkbox-display"></label>
+                                    <label for="receive-sms" class="checkbox-label">SMS 수신</label>
+                                </div>
+                                <p class="help-block">상품 구매 정보는 수신 동의 여부와 관계없이 발송됩니다.</p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- 회원 로그인 및 필수 정보 입력 //end -->
+                    <!-- 회원 선택 정보 입력 -->
+                    <h4 class="table-title">선택 정보</h4>
+                    <table class="table table-row-list">
+                        <caption class="sr-only">회원 선택 정보를 입력하는 목록</caption>
+                        <colgroup>
+                            <col class="col-xs-2">
+                            <col class="col-xs-10">
+                        </colgroup>
+                        <tbody>
                         <tr>
                             <th scope="row">성별</th>
                             <td>

@@ -273,8 +273,9 @@ input[type="search"] {
   }
 }
 .selectbox-group { // 붙어 있는 Select Box (생년월일)
-  font-size: 0;
+  @include clearfix;
   .selectbox {
+    float: left;
     margin-right: -1px;
   }
 }

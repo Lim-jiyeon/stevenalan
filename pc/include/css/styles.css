@@ -2314,23 +2314,30 @@ input[type="search"] {
   width: 100%;
 }
 
-/* line 275, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
-.selectbox-group {
-  font-size: 0;
+/* line 14, /Users/jyeon/project/stevenalan/pc/include/scss/mixins/_clearfix.scss */
+.selectbox-group:before, .selectbox-group:after {
+  content: " ";
+  display: table;
+}
+
+/* line 19, /Users/jyeon/project/stevenalan/pc/include/scss/mixins/_clearfix.scss */
+.selectbox-group:after {
+  clear: both;
 }
 
 /* line 277, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .selectbox-group .selectbox {
+  float: left;
   margin-right: -1px;
 }
 
-/* line 283, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 284, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .checkbox,
 .radio {
   display: inline-block;
 }
 
-/* line 286, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 287, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .checkbox input[type="checkbox"],
 .checkbox input[type="radio"],
 .radio input[type="checkbox"],
@@ -2341,7 +2348,7 @@ input[type="search"] {
   visibility: hidden;
 }
 
-/* line 293, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 294, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .checkbox .checkbox-display,
 .checkbox .radio-display,
 .radio .checkbox-display,
@@ -2355,7 +2362,7 @@ input[type="search"] {
   vertical-align: middle;
 }
 
-/* line 303, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 304, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .checkbox input[type="checkbox"]:checked + .checkbox-display,
 .checkbox input[type="radio"]:checked + .radio-display,
 .radio input[type="checkbox"]:checked + .checkbox-display,
@@ -2364,37 +2371,37 @@ input[type="search"] {
   transition: all 0.3s ease;
 }
 
-/* line 308, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 309, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .checkbox .radio-display,
 .radio .radio-display {
   background-image: url(../../images/common/form-radio.png);
 }
 
-/* line 311, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 312, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .checkbox input[type="radio"]:checked + .radio-display,
 .radio input[type="radio"]:checked + .radio-display {
   background-image: url(../../images/common/form-radio-checked.png);
 }
 
-/* line 315, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 316, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .checkbox-block {
   display: block;
   margin-top: 10px;
 }
 
-/* line 320, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 321, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .radio-group .radio {
   margin-right: 25px;
 }
 
-/* line 326, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 327, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .help-inline {
   display: inline-block;
   margin-left: 10px;
   color: #858585;
 }
 
-/* line 331, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 332, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .help-block {
   display: block;
   margin-top: 5px;
@@ -2402,17 +2409,17 @@ input[type="search"] {
   color: #858585;
 }
 
-/* line 337, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 338, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .help-success {
   color: #004689;
 }
 
-/* line 340, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 341, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .help-info {
   color: #197b30;
 }
 
-/* line 343, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
+/* line 344, /Users/jyeon/project/stevenalan/pc/include/scss/_form.scss */
 .help-danger {
   color: #c20007;
 }
