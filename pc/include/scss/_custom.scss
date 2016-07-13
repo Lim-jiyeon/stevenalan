@@ -280,6 +280,15 @@
     font-family: $font-family-ko;
     color: #000;
 }
+.title-group {
+    @include clearfix;
+    .title {
+        float: left;
+    }
+    .button {
+        float: right;
+    }
+}
 .washed-line-text { // 워싱 라인이 위아래에 있는 텍스트
     display: block;
     margin: -10px 0;
@@ -736,6 +745,22 @@
         line-height: 11px;
         color: #000;
     }
+    &.list5 {
+        .col-xs-2 {
+            width: 20%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    &.noLine {
+        .item {
+            height: auto;
+            &:after {
+                background: none;
+            }
+        }
+    }
 }
 
 /**********************************************
@@ -931,26 +956,15 @@
         }
     }
 }
-.you-like-list {
-    .you-like-title {
-        margin: 57px 0 16px;
-        font-weight: 400;
-        font-size: 24px;
-        color: $brand-secondary;
-        font-family: $font-family-en;
-        letter-spacing: 3px;
-        text-align: center;
-        text-transform: uppercase;
-    }
-    .col-xs-2 {
-        width: 20%;
-        img {
-            width: 208px;
-        }
-        .item:after {
-            background: none;
-        }
-    }
+.you-like-title {
+    margin: 57px 0 16px;
+    font-weight: 400;
+    font-size: 24px;
+    color: $brand-secondary;
+    font-family: $font-family-en;
+    letter-spacing: 3px;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 /**********************************************
@@ -1188,6 +1202,62 @@
             &.current a{
                 text-decoration: underline;
                 font-weight: bold;
+            }
+        }
+    }
+}
+
+/**********************************************
+ My Page - Dashboard
+***********************************************/
+.dashboard {
+    .mypage-info {
+        padding: 35px 20px 30px;
+        .member-name {
+            font-size: 18px;
+            color: $brand-primary;
+            letter-spacing: 2px;
+            .email {
+                display: block;
+                margin-top: 4px;
+                font-family: $font-family-en;
+                font-size: 14px;
+            }
+        }
+        .member-info {
+            li {
+                border-left: 1px solid #e5e5e5;
+                text-align: center;
+                color: $brand-secondary;
+                letter-spacing: 1.5px;
+                &:first-child {
+                    border-left: 0;
+                }
+                b {
+                    display: block;
+                    font-family: $font-family-en;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    .recent-order-list {
+        .col-xs-1 {
+            width: 11%;
+        }
+        .col-xs-6 {
+            width: 34%;
+        }
+        .state {
+            color: $brand-primary;
+        }
+    }
+    .recent-order-list,
+    .dashboard-list {
+        margin-top: 45px;
+        .title-group {
+            .button {
+                background-color: #acacac;
             }
         }
     }
