@@ -2,7 +2,7 @@
 // Tabs
 // --------------------------------------------------
 
-// Tab Style
+// Tab Style CSS Only - height 지정해줘야 함
 .tabs {
     clear: both;
     position: relative;
@@ -47,7 +47,10 @@
     right: 0;
     bottom: 0;
     padding-top: 20px;
-    background-color: #fff;
+    background: #fff url("../../../white.jpg");
+    background-size: cover;
+    width: 100%;
+    padding-bottom: 60%;
     overflow: hidden;
 }
 .tab-content > * {

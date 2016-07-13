@@ -72,6 +72,14 @@
     td {
         color: $brand-secondary;
     }
+    &.color-invert {
+        th {
+            color: $brand-secondary;
+        }
+        td {
+            color: $text-color;
+        }
+    }
 }
 
 .table-empty { // 테이블 내용 없을 때

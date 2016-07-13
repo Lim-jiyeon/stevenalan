@@ -892,12 +892,63 @@
     }
 }
 .detail-contents {
-    &.tabs {
-        min-height: 230px;
-        .tab {
-            label {
-                height: 40px;
+    margin-top: 60px;
+    .detail-info-menu {
+        margin-bottom: 20px;
+        font-size: 0;
+        text-align: center;
+        li {
+            display: inline-block;
+            margin-left: -1px;
+            font-size: $font-size-base;
+            .button {
+                padding: 0 70px;
+                border: 1px solid #d5d5d5;
+                @include border-radius(0);
+                background-color: transparent;
+                line-height: (40-2)/12;
+                color: $text-color;
+                letter-spacing: 0;
             }
+            &:hover,
+            &.seleted {
+                .button {
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+    .detail-info-content {
+        display: none;
+        padding: 30px;
+        border: 1px solid #d5d5d5;
+        &.detail-info-box1 {
+            display: block;
+        }
+        .table-title {
+            display: block;
+            margin-top: 35px;
+        }
+    }
+}
+.you-like-list {
+    .you-like-title {
+        margin: 57px 0 16px;
+        font-weight: 400;
+        font-size: 24px;
+        color: $brand-secondary;
+        font-family: $font-family-en;
+        letter-spacing: 3px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .col-xs-2 {
+        width: 20%;
+        img {
+            width: 208px;
+        }
+        .item:after {
+            background: none;
         }
     }
 }

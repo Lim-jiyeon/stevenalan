@@ -36,6 +36,7 @@ $(document).ready(function() {
     });
 
 
+    // Detail slider
     $('.product-images-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -52,10 +53,17 @@ $(document).ready(function() {
         infinite: true,
         speed: 500,
         arrows: true,
-        //centerPadding: '80px',
         asNavFor: '.product-images-for',
-        //centerMode: true,
         focusOnSelect: true
+    });
+    // Detail Tab
+    $(".detail-info-menu li").on("click", function() {
+        var index = $(this).index() + 1;
+        $(this).siblings("li").removeClass("seleted");
+        $(this).addClass("seleted");
+        $(".detail-info-content").hide();
+        $(".detail-info-box" + index).show();
+        return false;
     });
 
 

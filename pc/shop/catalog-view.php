@@ -112,37 +112,155 @@
         <!-- 상품 상세 //end -->
         <!-- 상품 상세 정보 컨텐츠 -->
         <div class="container">
-            <ul class="tabs detail-contents">
+            <div class="detail-contents">
+                <ul class="detail-info-menu">
+                    <li class="seleted"><a href="#" class="button">상품상세</a></li>
+                    <li><a href="#" class="button">배송 및 교환</a></li>
+                    <li><a href="#" class="button">사이즈 가이드</a></li>
+                </ul>
                 <!-- 상품상세 -->
-                <li class="tab">
-                    <input type="radio" id="detail_content" name="detail_tab_group" checked="">
-                    <label for="detail_content">상품상세</label>
-                    <div class="tab-content">
-                        111111
-                    </div>
-                </li>
+                <div class="detail-info-content detail-info-box1">
+                    <p>A crisp poplin dress with a V neckline, kimono-style sleeves and an interwoven cord that cinches and<br> gathers the waist.<br><br></p>
+                    <p><img src="../images/temp/temp-product.jpg" alt=""><br><br></p>
+                    <p>
+                        • cord ties at back<br>
+                        • unlined<br>
+                        • 100% cotton<br>
+                        • wash cold<br>
+                        • imported
+                    </p>
+                    <strong class="table-title">상품 정보</strong>
+                    <table class="table table-condensed color-invert">
+                        <caption class="sr-only">상품에 대한 상세 정보</caption>
+                        <colgroup>
+                            <col class="col-xs-2">
+                            <col class="col-xs-10">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">소재</th>
+                            <td>Cotton 100%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">제조사/원산지</th>
+                            <td>NOHANT / KOREA</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">사이즈 정보</th>
+                            <td>
+                                - M: 어깨너비 59cm / 가슴 59cm / 소매 24cm / 총길이 66cm<br>
+                                - L: 어깨너비 60cm / 가슴 62.5cm / 소매 25cm / 총길이 70cm<br><br>
+                                ※ 측정 방법에 따라 약간의 오차가 있을 수 있습니다.
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <!-- 상품상세 //end -->
                 <!-- 배송 및 교환 -->
-                <li class="tab">
-                    <input type="radio" id="detail_refund" name="detail_tab_group">
-                    <label for="detail_refund">배송 및 교환</label>
-                    <div class="tab-content">
-                        22222222
-                    </div>
-                </li>
+                <div class="detail-info-content detail-info-box2">
+                    배송 및 교환<br>배송 및 교환<br>
+                </div>
                 <!-- 배송 및 교환 //end -->
-                <!-- 사이즈 사이드 -->
-                <li class="tab">
-                    <input type="radio" id="detail_sizeGuide" name="detail_tab_group">
-                    <label for="detail_sizeGuide">사이즈 사이드</label>
-                    <div class="tab-content">
-                        33333333
-                    </div>
-                </li>
+                <!-- 사이즈 가이드 -->
+                <div class="detail-info-content detail-info-box3">
+                    사이즈 가이드<br>사이즈 가이드<br>
+                </div>
                 <!-- 사이즈 가이드 //end -->
-            </ul>
+            </div>
         </div>
         <!-- 상품 상세 정보 컨텐츠 //end -->
+        <!-- You May Also Like -->
+        <div class="container">
+            <div class="you-like-list">
+                <h3 class="you-like-title">You May Also Like</h3>
+                <ul class="row category-list">
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
+                                </div>
+                                <div class="product-info">
+                                    <span class="brand-name">STEVEN ALAN</span>
+                                    <strong class="product-name">Shirred Skirt</strong>
+                                    <div class="product-price">
+                                        <span class="price">380,000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category.jpg" alt="상품이미지">
+                                </div>
+                                <div class="product-info">
+                                    <span class="brand-name">COMM DES COMM DES GARÇONS PLAY</span>
+                                    <strong class="product-name">Farrah Dress</strong>
+                                    <div class="product-price">
+                                        <em class="discount">298,000</em>
+                                        <span class="price">380,000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
+                                </div>
+                                <div class="product-info">
+                                    <span class="brand-name">STEVEN ALAN</span>
+                                    <strong class="product-name">Farrah Dress</strong>
+                                    <div class="product-price">
+                                        <em class="discount">298,000</em>
+                                        <span class="price">380,000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
+                                </div>
+                                <div class="product-info">
+                                    <span class="brand-name">STEVEN ALAN</span>
+                                    <strong class="product-name">Shirred Skirt</strong>
+                                    <div class="product-price">
+                                        <span class="price">380,000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
+                                </div>
+                                <div class="product-info">
+                                    <span class="brand-name">STEVEN ALAN</span>
+                                    <strong class="product-name">Shirred Skirt</strong>
+                                    <div class="product-price">
+                                        <span class="price">380,000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- You May Also Like //end -->
     </div>
 
 <?php include '../footer/footer.php'; ?>
