@@ -49,6 +49,7 @@
                     <h3>3. My Page</h3>
                     <ul>
                         <li>3.0 <a href="./pc/mypage/dashboard.php">대시보드</a></li>
+                        <li>3.1 <a href="./pc/mypage/order-track.php">주문/배송 조회</a></li>
                         <li>3.3 <a href="./pc/mypage/wishlist.php">위시리스트</a></li>
                         <li>3.4.1 <a href="./pc/mypage/personal-support-write.php">1:1 문의하기 - Write</a></li>
                         <li>3.4.2 <a href="./pc/mypage/personal-support.php">1:1 문의하기 - View</a></li>

@@ -1264,6 +1264,63 @@
 }
 
 /**********************************************
+ My Page - Order Track
+***********************************************/
+.order-search {
+    display: table;
+    width: 100%;
+    border: 0;
+    .button-group {
+        .button {
+            padding: 0 27px;
+            border-color: #acacac;
+            background-color: transparent;
+            color: #acacac;
+            &.selected {
+                background-color: #acacac;
+                color: #fff;
+            }
+        }
+    }
+    .input-button-group {
+        display: table;
+        width: 100%;
+        > div {
+            display: table-cell;
+            width: auto;
+            vertical-align: middle;
+            &.input-group-addon {
+                padding: 0 7px 0 0;
+            }
+            .button {
+                background-color: #acacac;
+            }
+        }
+    }
+    > div {
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+.order-track-list {
+    margin-top: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    .col-xs-1 {
+        width: 11%;
+    }
+    .col-xs-6 {
+        width: 34%;
+    }
+    .state {
+        color: $brand-primary;
+    }
+    .product-image img {
+        width: 65px;
+        height: 65px;
+    }
+}
+
+/**********************************************
  My Page - Wish list
 ***********************************************/
 .wishlist {
@@ -1545,24 +1602,22 @@
                 padding: 15px 0;
                 position: relative;
                 &:before{
-                    content: '';
-                    background: url("../../images/common/box-washed-line.png") no-repeat;
-                    background-size: contain;
-                    height: 1px;
-                    width: 100%;
                     position: absolute;
                     top: 0;
                     left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: url("../../images/common/box-washed-line.png") repeat-x;
+                    content: '';
                 }
                 &:after{
-                    content: '';
-                    background: url("../../images/common/box-washed-line.png") no-repeat;
-                    background-size: contain;
-                    height: 1px;
-                    width: 100%;
                     position: absolute;
                     bottom: 0;
                     left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: url("../../images/common/box-washed-line.png") repeat-x;
+                    content: '';
                 }
             }
         }
