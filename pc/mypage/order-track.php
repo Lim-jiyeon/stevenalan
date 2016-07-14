@@ -41,8 +41,7 @@
                                 <caption class="sr-only">주문한 상품 목록</caption>
                                 <colgroup>
                                     <col class="col-xs-1">
-                                    <col class="col-xs-6">
-                                    <col class="col-xs-1">
+                                    <col class="col-xs-7">
                                     <col class="col-xs-1">
                                     <col class="col-xs-1">
                                     <col class="col-xs-1">
@@ -56,7 +55,6 @@
                                     <th scope="col">결제금액</th>
                                     <th scope="col">배송구분</th>
                                     <th scope="col">주문상태</th>
-                                    <th scope="col">비고</th>
                                 </tr>
                                 </thead>
                                 <tbody>
@@ -80,8 +78,7 @@
                                     <td>1</td>
                                     <td class="price">299,000</td>
                                     <td>해외배송</td>
-                                    <td class="state">해외물류센터입고</td>
-                                    <td></td>
+                                    <td class="primary">해외물류센터입고</td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2" class="valign-top benton">
@@ -102,8 +99,7 @@
                                     <td>1</td>
                                     <td class="price">299,000</td>
                                     <td>해외배송</td>
-                                    <td class="state">배송중</td>
-                                    <td></td>
+                                    <td class="primary">배송중</td>
                                 </tr>
                                 <tr>
                                     <td class="product-info aline-left">
@@ -120,8 +116,7 @@
                                     <td>1</td>
                                     <td class="price">299,000</td>
                                     <td>해외배송</td>
-                                    <td class="state">배송중</td>
-                                    <td></td>
+                                    <td class="primary">배송중</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -135,7 +130,7 @@
                                     <span><a href="#">4</a></span>
                                 </span>
                                 <a href="#" class="next"><i class="icon-right"></i></a>
-
+                            </div>
                             <!-- paging //end -->
                         </div>
                         <!-- 주문 내역 //end -->

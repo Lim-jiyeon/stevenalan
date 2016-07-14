@@ -50,6 +50,9 @@
                     <ul>
                         <li>3.0 <a href="./pc/mypage/dashboard.php">대시보드</a></li>
                         <li>3.1 <a href="./pc/mypage/order-track.php">주문/배송 조회</a></li>
+                        <li>3.1.1 <a href="./pc/mypage/order-track-view.php">주문/배송 조회 - 주문 상세</a></li>
+                        <li>3.1.2 <a href="./pc/mypage/order-track-popup.php">[팝업1] 영수증 발급 - 현금영수증(신청이 필요한 경우)</a></li>
+                        <li>3.1.2 <a href="./pc/mypage/order-track-popup2.php">[팝업2] 영수증 발급</a></li>
                         <li>3.3 <a href="./pc/mypage/wishlist.php">위시리스트</a></li>
                         <li>3.4.1 <a href="./pc/mypage/personal-support-write.php">1:1 문의하기 - Write</a></li>
                         <li>3.4.2 <a href="./pc/mypage/personal-support.php">1:1 문의하기 - View</a></li>
@@ -76,6 +79,7 @@
                         <li>5.2 <a href="./pc/join/guest-login.php">비회원 주문 로그인</a></li>
                         <li>5.2.1 <a href="./pc/order/guest-checkout.php">비회원 주문/결제</a></li>
                         <li>5.2.2 <a href="./pc/order/guest-summary.php">비회원 주문 완료/요약</a></li>
+                        <li>5.2.3 <a href="./pc/mypage/guest-order-track.php">비회원 주문/배송 조회</a></li>
                     </ul>
 
                 </div>

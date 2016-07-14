@@ -68,9 +68,9 @@
                 <!-- 주문 상품 정보 //end -->
                 <!-- 결제 정보 -->
                 <div class="summary">
-                    <h3 class="table-title">주문 상품 정보</h3>
+                    <h3 class="table-title">결제 정보</h3>
                     <table class="table table-condensed">
-                        <caption class="sr-only">주문한 상품 정보의 목록</caption>
+                        <caption class="sr-only">주문시 결제에 대한 정보의 목록</caption>
                         <colgroup>
                             <col class="col-xs-2">
                             <col class="col-xs-2">

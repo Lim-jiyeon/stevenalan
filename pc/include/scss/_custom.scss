@@ -293,6 +293,7 @@
     display: block;
     margin: -10px 0;
     font-weight: bold;
+    font-size: 14px;
     color: #000;
     letter-spacing: 2px;
     text-align: center;
@@ -331,6 +332,9 @@
         font-size: 18px;
         color: $brand-secondary;
     }
+}
+.primary {
+    color: $brand-primary;
 }
 .warning { // 경고 및 주의 Color
     color: $brand-danger;
@@ -1305,18 +1309,48 @@
 .order-track-list {
     margin-top: 20px;
     border-bottom: 1px solid #e5e5e5;
+    &.guest {
+        border-bottom: 0;
+    }
     .col-xs-1 {
-        width: 11%;
+        width: 12%;
     }
-    .col-xs-6 {
-        width: 34%;
-    }
-    .state {
-        color: $brand-primary;
+    .col-xs-7 {
+        width: 40%;
     }
     .product-image img {
         width: 65px;
         height: 65px;
+    }
+}
+// Order Track View
+.order-number {
+    padding: 40px 0;
+    border-width: 0;
+    text-align: center;
+    li {
+        display: inline-block;
+        font-size: 18px;
+        &:before {
+            height: 15px;
+        }
+    }
+}
+.order-track-view {
+    margin-top: 50px;
+    .button {
+        vertical-align: initial;
+    }
+}
+.shipping-process {
+    padding-top: 50px;
+}
+// Cash Receipt
+.cash-receipt-issue-box {
+    display: table;
+    width: 100%;
+    > div {
+        display: table-cell;
     }
 }
 
@@ -1572,78 +1606,6 @@
     }
     #write-form-tel{
         max-width: 300px;
-    }
-}
-
-
-/**********************************************
- My Page - modal
-***********************************************/
-.modalWrap{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    .modal{
-        border: 1px solid #858585;
-        background-color: #fff;
-        padding: 50px 30px;
-        z-index: 99;
-        position: relative;
-        .in_modal{
-            position: relative;
-            .bgSection{
-                padding: 20px;
-            }
-            .modalTitle{
-                text-align: center;
-                color: #000;
-                font-weight: bold;
-                padding: 15px 0;
-                position: relative;
-                &:before{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 1px;
-                    background: url("../../images/common/box-washed-line.png") repeat-x;
-                    content: '';
-                }
-                &:after{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 1px;
-                    background: url("../../images/common/box-washed-line.png") repeat-x;
-                    content: '';
-                }
-            }
-        }
-        .closeModalBtn{
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            color: #cccdcb;
-            i:before{
-                margin: -2px;
-                border: 1px solid #cccdcb;
-                vertical-align: middle;
-                font-size: 15px;
-            }
-
-        }
-    }
-    .overlay{
-        background: #fff;
-        opacity: 0.7;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9;
     }
 }
 
@@ -1977,4 +1939,119 @@
     border: 1px solid #d5d5d5;
     @include border-radius(2px);
     background-color: #fff;
+}
+
+/**********************************************
+ Popup - modal
+***********************************************/
+.modalWrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    .modal{
+        border: 1px solid #858585;
+        background-color: #fff;
+        padding: 50px 30px;
+        z-index: 99;
+        position: relative;
+        .in_modal{
+            position: relative;
+            .bgSection{
+                padding: 20px;
+            }
+            .modalTitle{
+                text-align: center;
+                color: #000;
+                font-weight: bold;
+                padding: 15px 0;
+                position: relative;
+                &:before{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: url("../../images/common/box-washed-line.png") repeat-x;
+                    content: '';
+                }
+                &:after{
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: url("../../images/common/box-washed-line.png") repeat-x;
+                    content: '';
+                }
+            }
+        }
+        .closeModalBtn{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #cccdcb;
+            i:before{
+                margin: -2px;
+                border: 1px solid #cccdcb;
+                vertical-align: middle;
+                font-size: 15px;
+            }
+
+        }
+    }
+    .overlay{
+        background: #fff;
+        opacity: 0.7;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+    }
+}
+
+/**********************************************
+ Popup - New Window
+***********************************************/
+#wrap_popup {
+    padding: 20px;
+    .container {
+        width: 100% !important;
+    }
+    .table-caution {
+        margin-top: 50px;
+    }
+}
+// Cash Receipt
+.cash-receipt {
+    width: 500px;
+    .cash-receipt-type {
+        margin-top: 40px;
+    }
+    .cash-receipt-issue {
+        margin-top: 35px;
+    }
+}
+.cash-receipt-confirm {
+    width: 700px;
+    .cash-receipt-list {
+        margin-top: 40px;
+        th {
+            background-color: #fff;
+        }
+        .col-xs-8 {
+            width: 64%;
+        }
+        .col-xs-2 {
+            width: 18%;
+        }
+        .price .button {
+            margin-top: 5px;
+        }
+    }
+    .line-left {
+        border-left: 1px solid #e5e5e5;
+    }
 }
