@@ -123,3 +123,9 @@
     text-align: center;
     @include clearfix;
 }
+
+// ETC
+.button-calendar {
+    padding: 0 8px !important;
+    background-color: #acacac;
+}

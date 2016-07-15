@@ -6,7 +6,7 @@
             <div class="box">
                 <!-- 주문 완료 확인 -->
                 <div class="complete-box">
-                    <span class="washed-line-title thankYou">welcome</span>
+                    <span class="washed-line-text">welcome</span>
                     <strong class="confirm-message">Steven Alan의 회원이 되신 것을 환영합니다.</strong>
                     <p>Steven Alan 회원가입이 완료되었습니다. 본인인증 확인 요청 메일이 발송되었습니다.<br>
                         메일을 통해 인증 절차를 거친 후 로그인이 가능합니다.</p>

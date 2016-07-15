@@ -40,6 +40,15 @@
         border-width: 1px 0;
         background-color: #fff;
     }
+    .table-row-list {
+        margin: -7px 0;
+        th, td {
+            padding: 7px 15px;
+            border-width: 0;
+            background-color: #fff;
+            text-align: left;
+        }
+    }
 }
 
 .table-row-list { // Head Align Vertical
@@ -109,5 +118,9 @@
 }
 
 .table-caution { // 테이블 하단 유의사항
-    margin-top: 20px;
+    margin-top: 30px;
+    padding-left: 7px;
+    li {
+        text-indent: -7px;
+    }
 }

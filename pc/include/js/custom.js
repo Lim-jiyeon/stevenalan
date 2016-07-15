@@ -78,7 +78,7 @@ $(document).ready(function() {
     });
 
 
-    // Forgot id, password Select Tab
+    // Forgot id, password Input[Radio] Select Tab
     $('.find-box input[name=findId]').change(function () {
         $('.findId-input').hide();
         $('.'+$(this).val()).show();
@@ -108,6 +108,22 @@ $(document).ready(function() {
     $(".payment-box").sticky({
         topSpacing: 50,
         bottomSpacing: 300
+    });
+
+
+    // Return / Refund / Exchange Tab
+    $(".return-button .button").on("click",function(){
+        var index = $(this).index() + 1;
+        $(".return-content").hide();
+        $(".return-list"+ index).show();
+        $(".return-button .button").removeClass("button-third").addClass("button-secondary");
+        $(this).removeClass("button-secondary").addClass("button-third");
+        return false;
+    });
+    // Return Input[Radio] Select Tab
+    $('.return-info input[name=return_type_select]').change(function () {
+        $('.return-select-box').hide();
+        $('.'+$(this).val()).show();
     });
 
 

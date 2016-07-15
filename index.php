@@ -53,13 +53,21 @@
                         <li>3.1.1 <a href="./pc/mypage/order-track-view.php">주문/배송 조회 - 주문 상세</a></li>
                         <li>3.1.2 <a href="./pc/mypage/order-track-popup.php">[팝업1] 영수증 발급 - 현금영수증(신청이 필요한 경우)</a></li>
                         <li>3.1.2 <a href="./pc/mypage/order-track-popup2.php">[팝업2] 영수증 발급</a></li>
+                        <li>3.2/3.2.3/3.2.9 <a href="./pc/mypage/return-refund-exchange.php">취소/교환/반품 현황</a></li>
+                        <li>3.2.1 <a href="./pc/mypage/refund-view.php">취소 신청</a></li>
+                        <li>3.2.2 <a href="./pc/mypage/refund-complete.php">취소 신청 완료</a></li>
+                        <li>3.2.4 <a href="./pc/mypage/exchange-view.php">교환 신청</a></li>
+                        <li>3.2.5 <a href="./pc/mypage/exchange-complete.php">교환 신청 완료</a></li>
+                        <li>3.2.6 <a href="./pc/mypage/return-view-step1.php">반품 신청 - 사유 선택</a></li>
+                        <li>3.2.7 <a href="./pc/mypage/return-view-step2.php">반품 신청 - 정보 입력</a></li>
+                        <li>3.2.8 <a href="./pc/mypage/return-complete.php">반품 신청 완료</a></li>
                         <li>3.3 <a href="./pc/mypage/wishlist.php">위시리스트</a></li>
                         <li>3.4.1 <a href="./pc/mypage/personal-support-write.php">1:1 문의하기 - Write</a></li>
                         <li>3.4.2 <a href="./pc/mypage/personal-support.php">1:1 문의하기 - View</a></li>
-                        <li>3.7 <a href="./pc/mypage/coupon.php">Coupon</a></li>
                         <li>3.5 <a href="./pc/mypage/privacy.php">회원 정보 수정</a></li>
                         <li>3.5.1 <a href="./pc/mypage/quit.php">회원탈퇴</a></li>
-                        <li>3.5.1 <a href="./pc/mypage/address.php">배송지 관리</a></li>
+                        <li>3.6 <a href="./pc/mypage/address.php">배송지 관리</a></li>
+                        <li>3.7 <a href="./pc/mypage/coupon.php">Coupon</a></li>
                     </ul>
 
                     <hr>
