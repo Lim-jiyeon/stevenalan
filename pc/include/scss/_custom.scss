@@ -618,7 +618,7 @@
 ***********************************************/
 .category-left {
     font-family: $font-family-en;
-    h2 {
+    .category-menu-title {
         font-size: 18px;
         letter-spacing: 2px;
         color: $brand-primary;
@@ -1218,6 +1218,178 @@
 }
 
 /**********************************************
+  My Page - Return / Refund / Exchange
+ ***********************************************/
+.return-refund-exchange {
+    .return-button {
+        padding-top: 20px;
+        text-align: center;
+    }
+}
+.return-content {
+    display: none;
+    margin-top: 20px;
+    border-bottom: 1px solid #e5e5e5;
+    &.return-list1 {
+        display: block;
+        .col-xs-1 {
+            width: 11%;
+        }
+        .col-xs-6 {
+            width: 34%;
+        }
+        .button-link {
+            margin: 0;
+        }
+    }
+    &.return-list2,
+    &.return-list3 {
+        .order-search {
+            margin-bottom: 20px;
+        }
+        .col-xs-1 {
+            width: 12%;
+        }
+        .col-xs-7 {
+            width: 40%;
+        }
+    }
+}
+.private-option {
+    .col-xs-1 {
+        width: 11%;
+    }
+    .col-xs-6 {
+        width: 39.3333333333%
+    }
+    .col-xs-8 {
+        width: 56%;
+    }
+    .product-option {
+        .selectbox {
+            margin: 5px 0;
+        }
+    }
+    .order-button {
+        .form-control {
+            width: 30px;
+        }
+    }
+    .private-detail-reasons {
+        .selectbox {
+            width: 150px;
+        }
+        textarea.form-control {
+            width: 600px;
+        }
+    }
+}
+.private-info {
+    margin-top: 45px;
+    .table-row-list {
+        tr:first-child th,
+        tr:first-child td {
+            padding-top: 15px;
+            border-top: 1px solid #e5e5e5;
+        }
+        tr:last-child th,
+        tr:last-child td {
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+    .form-control {
+        width: 300px;
+    }
+    .selectbox {
+        width: 170px;    }
+    span + .selectbox {
+        margin-left: 20px;
+    }
+}
+// Refund View
+.refund-amount {
+    padding: 0;
+    @include clearfix;
+    .amount-box {
+        position: relative;
+        float: left;
+        width: 50%;
+        padding: 10px 20px;
+            .refund-label,
+        .refund-price {
+            padding: 6px 0;
+        }
+        .refund-label {
+            clear: both;
+            float: left;
+        }
+        .refund-price {
+            float: right;
+            color: $brand-secondary;
+        }
+        .total-price {
+            font-size: 18px;
+            color: $brand-primary;
+            &:before {
+                position: absolute;
+                top: 52px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #e5e5e5;
+                content: '';
+            }
+        }
+        .total-label,
+        .total-price {
+            padding-top: 25px;
+
+        }
+        .refund-text {
+            clear: both;
+            padding-top: 12px;
+        }
+        &.left {
+            border-right: 1px solid #e5e5e5;
+        }
+    }
+}
+.form-control {
+    &.account-number {
+        width: 200px;
+    }
+    &.account-holder {
+        width: 130px;
+    }
+}
+// Return View
+.return-select-box {
+    display: none;
+    th, td {
+        padding: 7px 20px !important;
+        border: 0 !important;
+    }
+    .form-control {
+        width: 170px;
+    }
+    .input-button-group .form-group div .form-control {
+        width: 139px;
+    }
+    .information {
+        margin: 0 -20px 10px;
+    }
+    &.return-no {
+        .form-control[disabled] {
+            width: 600px;
+        }
+        .form-control[disabled].return-name {
+            width: 200px;
+        }
+    }
+}
+
+/**********************************************
  My Page - Wish list
 ***********************************************/
 .wishlist {
@@ -1799,6 +1971,15 @@
     background-color: #fff;
 }
 
+/**********************************************
+ Brand - View
+***********************************************/
+.brand-view-left {
+    padding-top: 4px;
+}
+.brand-view-list {
+    padding-top: 40px;
+}
 
 /**********************************************
  Popup - modal

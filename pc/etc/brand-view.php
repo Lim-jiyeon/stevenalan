@@ -2,17 +2,32 @@
 
     <div class="content">
         <div class="container">
+            <h2 class="page-title">DEMYLEE</h2>
+            <div><img src="../images/etc/brand-banner.jpg" alt="Brand Banner"></div>
+        </div>
+        <div class="container brand-view">
             <div class="row">
                 <!-- Category List Menu -->
-                <div class="col-xs-3 category-left">
-                    <h2 class="category-menu-title">women's</h2>
+                <div class="col-xs-3 category-left brand-view-left">
                     <ul class="category-menu">
                         <li class="category-menu-item default-item">
                             <h3 class="item-title open"><a href="#">DESIGNERS A-Z</a></h3>
                             <ul class="item-list">
-                                <li><a href="#" class="current">STEVEN ALAN</a></li>
-                                <li><a href="#">ACNE STUDIOS</a></li>
-                                <li><a href="#">A.P.C.</a></li>
+                                <li><a href="#" class="current">ALL</a></li>
+                                <li>
+                                    <a href="#">WOMEN (26)</a>
+                                    <ul class="item-list-child">
+                                        <li>- <a href="#">CLOTHING (23)</a></li>
+                                        <li>- <a href="#">BAGS (23)</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">A.P.C.</a>
+                                    <ul class="item-list-child">
+                                        <li>- <a href="#">CLOTHING (23)</a></li>
+                                        <li>- <a href="#">BAGS (23)</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="#">BLACK CRANE</a></li>
                                 <li><a href="#">BUILDING BLOCK</a></li>
                                 <li><a href="#">CLARE V.</a></li>
@@ -44,15 +59,10 @@
                             </ul>
                         </li>
                     </ul>
+                    <a href="#" class="item-view-more">VIEW MORE</a>
                 </div>
                 <!-- Category List Menu //end -->
-                <div class="col-xs-9">
-                    <!-- breadcrumb -->
-                    <div class="breadcrumb">
-                        <a href="#">HOME</a>
-                        <a href="#">WOMEN</a>
-                    </div>
-                    <!-- breadcrumb //end -->
+                <div class="col-xs-9 brand-view-list">
                     <div class="row result-options">
                         <div class="col-xs-2 sort-by">
                             <div class="selectbox">
