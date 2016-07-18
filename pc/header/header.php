@@ -77,6 +77,7 @@
                 </li>
                 <li class="megaMenu-item"><a href="#">kid's</a></li>
                 <li class="megaMenu-item"><a href="#">home</a></li>
+                <li class="megaMenu-item"><a href="#">brand</a></li>
             </ul>
         </div>
     </div>

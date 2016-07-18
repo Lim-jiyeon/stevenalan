@@ -80,12 +80,12 @@
                         </tbody>-->
                     </table>
                     <div class="button-align-center">
-                        <a href="#" class="button button-large button-primary" onclick="modalOpen('.modalWrap');">배송지 추가</a>
+                        <a href="#" class="button button-large button-primary" onclick="modalOpen('.address_modify_add_modal');">배송지 추가</a>
                     </div>
                 </div>
                 <!-- 배송지 수정 / 추가 팝업 -->
-                <div class="modalWrap">
-                    <div class="modal address_modal address_modify_add_modal">
+                <div class="modalWrap address_modify_add_modal">
+                    <div class="modal address_modal">
                         <div class="in_modal">
                             <h3 class="modalTitle">배송 주소록</h3>
                             <table width="100%" class="address-modify-add-table">
@@ -142,7 +142,7 @@
                             </table>
                             <div class="buttonWrap align-center">
                                 <a href="#" class="button button-large button-primary" onclick="modalClose(this);">확인</a>
-                                <a href="#" class="button button-large" onclick="$('.address_modify_add_modal').parent().hide();modalOpen('.address_list_modal');">배송지목록</a>
+                                <a href="#" class="button button-large" onclick="$('.address_modify_add_modal').hide();modalOpen('.address_list_modal');">배송지목록</a>
                             </div>
                         </div>
                         <a href="#none" class="closeModalBtn" onclick="modalClose(this);"><i class="icon-cancel"></i></a>
@@ -151,8 +151,8 @@
                 </div>
                 <!-- 배송지 수정 / 추가 팝업 //end -->
                 <!-- 배송지 목록 팝업 -->
-                <div class="modalWrap">
-                    <div class="modal address_modal address_list_modal">
+                <div class="modalWrap address_list_modal">
+                    <div class="modal address_modal">
                         <div class="in_modal">
                             <h3 class="modalTitle">배송 주소록</h3>
                             <table class="table table-list address-manage-table">
@@ -220,7 +220,7 @@
                                 </tr>
                                 </tbody>
                             </table>
-                            <div class="buttonWrap align-center">
+                            <div class="button-align-center">
                                 <a href="#" class="button button-large button-primary">배송지 추가</a>
                             </div>
                         </div>

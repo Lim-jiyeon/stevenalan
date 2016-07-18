@@ -187,19 +187,9 @@
                                     <td>
                                         <div class="radio-group">
                                             <div class="radio">
-                                                <input type="radio" name="shippingAddress" id="roderer-address" checked>
-                                                <label for="roderer-address" class="radio-display"></label>
-                                                <label for="roderer-address" class="radio-label">주문자 주소</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="shippingAddress" id="new-address">
-                                                <label for="new-address" class="radio-display"></label>
-                                                <label for="new-address" class="radio-label">신규 주소</label>
-                                            </div>
-                                            <div class="radio">
-                                                <input type="radio" name="shippingAddress" id="address-list">
-                                                <label for="address-list" class="radio-display"></label>
-                                                <label for="address-list" class="radio-label">배송지 목록</label>
+                                                <input type="radio" name="shippingAddress" id="orderer-address" checked>
+                                                <label for="orderer-address" class="radio-display"></label>
+                                                <label for="orderer-address" class="radio-label">주문자 주소</label>
                                             </div>
                                         </div>
                                     </td>

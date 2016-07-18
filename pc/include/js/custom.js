@@ -149,7 +149,6 @@ function modalOpen(modal) {
 function modalClose(modal) {
     var $this = $(modal);
     $this.parent().parent('.modalWrap').hide();
-
     return false;
 }
 
@@ -174,6 +173,11 @@ function agreeOpen(view) {
 function itemOptionChange(item) {
     var $this = $(item);
     $this.parents("tr").next(".item-option-change").addClass("open").toggle();
+    return false;
+}
+function itemOptionClose(item) {
+    var $this = $(item);
+    $this.parents(".item-option-change").removeClass("open").hide();
     return false;
 }
 
