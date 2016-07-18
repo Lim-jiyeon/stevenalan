@@ -450,7 +450,7 @@
         <div class="modalWrap address_modify_add_modal">
             <div class="modal address_modal">
                 <div class="in_modal">
-                    <h3 class="washed-line-text">배송 주소록</h3>
+                    <h3 class="modalTitle">배송 주소록</h3>
                     <table width="100%" class="address-modify-add-table">
                         <tbody>
                         <tr>
@@ -473,9 +473,9 @@
                             <th>주소</th>
                             <td class="address-modify-add-table-address">
                                 <div class="input-button-group">
-                                    <div class="form-group placeholder">
-                                        <input type="text" class="form-control"/>
-                                        <a href="#" class="button button-black">우편번호 찾기</a>
+                                    <div class="form-group">
+                                        <div><input type="text" class="form-control"/></div>
+                                        <div><a href="#" class="button button-black">우편번호 찾기</a></div>
                                     </div>
                                 </div>
                                 <div class="input-group">
@@ -504,8 +504,8 @@
                         </tbody>
                     </table>
                     <div class="buttonWrap align-center">
-                        <a href="#" class="button button-large button-primary" onclick="modalClose(this);">확인</a>
-                        <a href="#" class="button button-large" onclick="$('.address_modify_add_modal').hide();modalOpen('.address_list_modal');">배송지목록</a>
+                        <a href="#none" class="button button-large button-primary" onclick="modalClose(this);">확인</a>
+                        <a href="#none" class="button button-large" onclick="$('.address_modify_add_modal').hide();modalOpen('.address_list_modal');">배송지목록</a>
                     </div>
                 </div>
                 <a href="#none" class="closeModalBtn" onclick="modalClose(this);"><i class="icon-cancel"></i></a>
@@ -584,7 +584,7 @@
                         </tbody>
                     </table>
                     <div class="button-align-center">
-                        <a href="#" class="button button-large button-primary">배송지 추가</a>
+                        <a href="#none" class="button button-large button-primary" onclick="$('.address_list_modal').hide();modalOpen('.address_modify_add_modal');">배송지 추가</a>
                     </div>
                 </div>
                 <a href="#none" class="closeModalBtn" onclick="modalClose(this);"><i class="icon-cancel"></i></a>

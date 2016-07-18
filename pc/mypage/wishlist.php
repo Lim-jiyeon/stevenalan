@@ -22,7 +22,13 @@
                                 </colgroup>
                                 <thead>
                                 <tr>
-                                    <th scope="col">선택</th>
+                                    <th scope="col">
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="product-select">
+                                            <label for="product-select" class="checkbox-display"></label>
+                                            <label for="product-select" class="checkbox-label sr-only">상품선택</label>
+                                        </div>
+                                    </th>
                                     <th scope="col">상품정보</th>
                                     <th scope="col">가격</th>
                                     <th scope="col">주문</th>
@@ -32,9 +38,9 @@
                                 <tr>
                                     <td class="valign-top">
                                         <div class="checkbox">
-                                            <input type="checkbox" id="product-select">
-                                            <label for="product-select" class="checkbox-display"></label>
-                                            <label for="product-select" class="checkbox-label sr-only">상품선택</label>
+                                            <input type="checkbox" id="product-select1">
+                                            <label for="product-select1" class="checkbox-display"></label>
+                                            <label for="product-select1" class="checkbox-label sr-only">상품선택</label>
                                         </div>
                                     </td>
                                     <td class="product-info aline-left">

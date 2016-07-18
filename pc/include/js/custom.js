@@ -91,15 +91,12 @@ $(document).ready(function() {
 
     // Accordion Table
     $(".folding-table tr.master").click(function(){
-
         var slaveDisplay = $(this).next("tr.slave").css("display");
-
         if(slaveDisplay == "none"){
             $(this).parent().find("tr.slave").hide();
             $(this).next("tr.slave").show();
         }else{
             $(this).next("tr.slave").hide();
-
         }
     });
 
@@ -129,7 +126,7 @@ $(document).ready(function() {
 
     // Coupon Tab
     $(".coupon-button .button").on("click",function(){
-        var index = $(this).siblings().index() + 1;
+        var index = $(this).index() + 1;
         $(".coupon-content").hide();
         $(".coupon-list"+ index).show();
         $(".coupon-button .button").removeClass("button-third").addClass("button-secondary");
@@ -143,7 +140,7 @@ $(document).ready(function() {
 // Modal
 function modalOpen(modal) {
     var $this = $(modal);
-    $this.show();
+    $this.css("top", Math.max(0, $(window).scrollTop() + 50) + "px").show();
     return false;
 }
 function modalClose(modal) {

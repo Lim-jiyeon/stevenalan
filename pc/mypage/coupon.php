@@ -29,9 +29,9 @@
                             <!-- 쿠폰 내역 리스트 -->
                             <div class="button-group coupon-button">
                                 <a href="#" class="button button-third">사용 가능 쿠폰</a>
-                                <a href="#" class="button button-secondary">지난 쿠폰 내역</a>
+                                <a href="#" class="button button-secondary">사용 완료 쿠폰</a>
                             </div>
-                            <div class="coupon-content coupon-list2">
+                            <div class="coupon-content coupon-list1">
                                 <table class="table table-list">
                                     <caption class="sr-only">사용 가능한 보유 쿠폰 목록</caption>
                                     <colgroup>
@@ -94,9 +94,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="coupon-content coupon-list1">
+                            <div class="coupon-content coupon-list2">
                                 <table class="table table-list">
-                                    <caption class="sr-only">지난 쿠폰 내역</caption>
+                                    <caption class="sr-only">사용 완료 쿠폰</caption>
                                     <colgroup>
                                         <col class="col-xs-3">
                                         <col class="col-xs-3">

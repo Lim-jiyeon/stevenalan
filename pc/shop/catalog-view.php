@@ -47,8 +47,8 @@
                             <h2 class="product-name">Oversized Stand Collar Dress</h2>
                             <span class="sku-number">#ES0232311</span>
                             <div class="product-price">
-                                <em class="discount">₩498,000</em>
-                                <strong class="price">₩380,000</strong>
+                                <em class="discount">498,000원</em>
+                                <strong class="price">380,000원</strong>
                             </div>
                             <div class="shipping-type-group">
                                 <span class="shipping-type"><i class="icon-plane"></i>해외배송</span>
@@ -92,7 +92,7 @@
                         <div class="detail-button-group">
                             <div class="button-group">
                                 <div><a href="#" class="button button-large button-primary">buy now</a></div>
-                                <div><a href="#" class="button button-large">add to cart</a></div>
+                                <div><a href="#" class="button button-large">Add to Bag</a></div>
                             </div>
                             <div class="Sharing-group">
                                 <div class="sns-link">
@@ -172,91 +172,93 @@
         <!-- 상품 상세 정보 컨텐츠 //end -->
         <!-- You May Also Like -->
         <div class="container">
-            <h3 class="you-like-title">You May Also Like</h3>
-            <ul class="row category-list list5 noLine">
-                <li class="col-xs-2">
-                    <div class="item">
-                        <a href="#">
-                            <div class="product-thumbnail">
-                                <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
-                            </div>
-                            <div class="product-info">
-                                <span class="brand-name">STEVEN ALAN</span>
-                                <strong class="product-name">Shirred Skirt</strong>
-                                <div class="product-price">
-                                    <span class="price">380,000</span>
+            <div class="you-like-list">
+                <h3 class="you-like-title">You May Also Like</h3>
+                <ul class="row category-list list5 noLine">
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li class="col-xs-2">
-                    <div class="item">
-                        <a href="#">
-                            <div class="product-thumbnail">
-                                <img src="../images/temp/temp-category.jpg" alt="상품이미지">
-                            </div>
-                            <div class="product-info">
-                                <span class="brand-name">COMM DES COMM DES GARÇONS PLAY</span>
-                                <strong class="product-name">Farrah Dress</strong>
-                                <div class="product-price">
-                                    <em class="discount">298,000</em>
-                                    <span class="price">380,000</span>
+                                <div class="product-info">
+                                    <span class="brand-name">STEVEN ALAN</span>
+                                    <strong class="product-name">Shirred Skirt</strong>
+                                    <div class="product-price">
+                                        <span class="price">380,000</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li class="col-xs-2">
-                    <div class="item">
-                        <a href="#">
-                            <div class="product-thumbnail">
-                                <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
-                            </div>
-                            <div class="product-info">
-                                <span class="brand-name">STEVEN ALAN</span>
-                                <strong class="product-name">Farrah Dress</strong>
-                                <div class="product-price">
-                                    <em class="discount">298,000</em>
-                                    <span class="price">380,000</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category.jpg" alt="상품이미지">
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li class="col-xs-2">
-                    <div class="item">
-                        <a href="#">
-                            <div class="product-thumbnail">
-                                <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
-                            </div>
-                            <div class="product-info">
-                                <span class="brand-name">STEVEN ALAN</span>
-                                <strong class="product-name">Shirred Skirt</strong>
-                                <div class="product-price">
-                                    <span class="price">380,000</span>
+                                <div class="product-info">
+                                    <span class="brand-name">COMM DES COMM DES GARÇONS PLAY</span>
+                                    <strong class="product-name">Farrah Dress</strong>
+                                    <div class="product-price">
+                                        <em class="discount">298,000</em>
+                                        <span class="price">380,000</span>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-                <li class="col-xs-2">
-                    <div class="item">
-                        <a href="#">
-                            <div class="product-thumbnail">
-                                <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
-                            </div>
-                            <div class="product-info">
-                                <span class="brand-name">STEVEN ALAN</span>
-                                <strong class="product-name">Shirred Skirt</strong>
-                                <div class="product-price">
-                                    <span class="price">380,000</span>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
                                 </div>
-                            </div>
-                        </a>
-                    </div>
-                </li>
-            </ul>
+                                <div class="product-info">
+                                    <span class="brand-name">STEVEN ALAN</span>
+                                    <strong class="product-name">Farrah Dress</strong>
+                                    <div class="product-price">
+                                        <em class="discount">298,000</em>
+                                        <span class="price">380,000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
+                                </div>
+                                <div class="product-info">
+                                    <span class="brand-name">STEVEN ALAN</span>
+                                    <strong class="product-name">Shirred Skirt</strong>
+                                    <div class="product-price">
+                                        <span class="price">380,000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="col-xs-2">
+                        <div class="item">
+                            <a href="#">
+                                <div class="product-thumbnail">
+                                    <img src="../images/temp/temp-category2.jpg" alt="상품이미지">
+                                </div>
+                                <div class="product-info">
+                                    <span class="brand-name">STEVEN ALAN</span>
+                                    <strong class="product-name">Shirred Skirt</strong>
+                                    <div class="product-price">
+                                        <span class="price">380,000</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <!-- You May Also Like //end -->
     </div>
