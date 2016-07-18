@@ -25,7 +25,6 @@
                         <a href="#" class="link-mypage">mypage<i class="icon-down-dir"></i></a>
                         <ul class="mypage-dropdown">
                             <li class="mypage-item"><a href="#">주문/배송 조회</a></li>
-                            <li class="mypage-item"><a href="#">주문조회</a></li>
                             <li class="mypage-item"><a href="#">위시리스트</a></li>
                             <li class="mypage-item"><a href="#">1:1문의</a></li>
                         </ul>
@@ -78,6 +77,7 @@
                 </li>
                 <li class="megaMenu-item"><a href="#">kid's</a></li>
                 <li class="megaMenu-item"><a href="#">home</a></li>
+                <li class="megaMenu-item"><a href="#">brand</a></li>
             </ul>
         </div>
     </div>

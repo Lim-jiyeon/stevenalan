@@ -111,7 +111,7 @@
     padding-left: 0;
     .megaMenu-item {
         float: left;
-        padding: 0 35px;
+        padding: 0 27.8px;
         list-style: none;
         a {
             font-size: 14px;
@@ -501,6 +501,13 @@
             .selectbox {
                 width: 328px;
             }
+        }
+    }
+    .item-option-change-button {
+        padding-top: 48px;
+        .button {
+            margin: 0;
+            vertical-align: bottom;
         }
     }
 }
@@ -1229,16 +1236,16 @@
  My Page - modal
 ***********************************************/
 .modalWrap{
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
-    display: none;
     .modal{
+        position: relative;
+        z-index: 99;
+        padding: 50px 30px;
         border: 1px solid #858585;
         background-color: #fff;
-        padding: 50px 30px;
-        z-index: 99;
-        position: relative;
         .in_modal{
             position: relative;
             .bgSection{
@@ -1485,66 +1492,62 @@
         margin-top: 20px;
     }
 }
-.address_modal{
+.address_modify_add_modal {
     width: 740px;
-    &.address_modify_add_modal{
-        input{
-            width: 180px;
-        }
-        .address-modify-add-table{
-            padding: 30px 0;
-            margin-top: 20px;
-            border-top: 1px solid #e5e5e5;
-            tr{
-                th{
-                    text-align: left;
-                    width: 23%;
-                    color: #000;
-                    font-weight: normal;
-                }
-                td{
-                    padding-bottom: 15px;
-                    &.address-modify-add-table-address{
-                        .input-group{
-                            input{
-                                width: 100%;
-                            }
+    input {
+        width: 180px;
+    }
+    .address-modify-add-table {
+        padding: 30px 0;
+        margin-top: 20px;
+        border-top: 1px solid #e5e5e5;
+        tr {
+            th {
+                text-align: left;
+                width: 23%;
+                color: #000;
+                font-weight: normal;
+            }
+            td {
+                padding-bottom: 15px;
+                &.address-modify-add-table-address {
+                    .input-group {
+                        input {
+                            width: 100%;
                         }
                     }
                 }
-                &:last-child td{
-                    padding-bottom: 0;
-                }
-                .form-group{
-                    margin-bottom: 0;
-                }
+            }
+            &:last-child td {
+                padding-bottom: 0;
+            }
+            .form-group {
+                margin-bottom: 0;
             }
         }
-        .buttonWrap{
-            padding-top: 20px;
-            border-top: 1px solid #e5e5e5;
-        }
     }
-    &.address_list_modal{
-        .modalTitle{
-            margin-bottom: 20px;
-        }
-        .table{
-            tr{
-                th{
-                    background-color: #fff;
-                }
-                td{
-                    color: #000;
-                }
+    .buttonWrap {
+        padding-top: 20px;
+        border-top: 1px solid #e5e5e5;
+    }
+}
+.address_list_modal{
+    .modalTitle{
+        margin-bottom: 20px;
+    }
+    .table{
+        tr{
+            th{
+                background-color: #fff;
+            }
+            td{
+                color: #000;
             }
         }
-        .buttonWrap{
-            padding-top: 20px;
-        }
     }
-
-
+    .buttonWrap{
+        padding-top: 20px;
+    }
 }
 
 /**********************************************

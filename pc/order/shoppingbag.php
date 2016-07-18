@@ -127,6 +127,10 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-xs-1 col-xs-push-2 item-option-change-button">
+                                    <a href="#" class="button button-link button-danger">변경</a>
+                                    <a href="#none" class="button button-link button-danger" onclick="itemOptionClose(this);">취소</a>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -197,6 +201,10 @@
                                             </select>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-xs-1 col-xs-push-2 item-option-change-button">
+                                    <a href="#" class="button button-link button-danger">변경</a>
+                                    <a href="#none" class="button button-link button-danger" onclick="itemOptionClose(this);">취소</a>
                                 </div>
                             </td>
                         </tr>
@@ -332,6 +340,10 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-xs-1 col-xs-push-2 item-option-change-button">
+                                    <a href="#" class="button button-link button-danger">변경</a>
+                                    <a href="#none" class="button button-link button-danger" onclick="itemOptionClose(this);">취소</a>
+                                </div>
                             </td>
                         </tr>
                         <tr>
@@ -402,6 +414,10 @@
                                             </select>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-xs-1 col-xs-push-2 item-option-change-button">
+                                    <a href="#" class="button button-link button-danger">변경</a>
+                                    <a href="#none" class="button button-link button-danger" onclick="itemOptionClose(this);">취소</a>
                                 </div>
                             </td>
                         </tr>
