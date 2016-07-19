@@ -159,9 +159,9 @@
                                 <tr>
                                     <th scope="row">배송지 선택*</th>
                                     <td>
-                                        <a href="#" class="button button-small">주문자 주소</a>
-                                        <a href="#" class="button button-small">신규 주소</a>
-                                        <a href="#none" class="button button-small" onclick="modalOpen('.address_list_modal'); return false;">배송지 목록</a>
+                                        <a href="#" class="button button-small button-secondary">주문자 주소</a>
+                                        <a href="#" class="button button-small button-secondary">신규 주소</a>
+                                        <a href="#none" class="button button-small button-secondary" onclick="modalOpen('.address_list_modal'); return false;">배송지 목록</a>
                                     </td>
                                 </tr>
                                 <tr>

@@ -96,8 +96,8 @@
                             </div>
                             <div class="Sharing-group">
                                 <div class="sns-link">
-                                    <a href="#"><i class="icon-facebook-circled"></i></a>
-                                    <a href="#"><i class="icon-twitter-circled"></i></a>
+                                    <a href="#"><i class="icon-facebook-rect"></i></a>
+                                    <a href="#"><i class="icon-twitter-squared"></i></a>
                                 </div>
                                 <div class="wishlist-link">
                                     <a href="#" class="button button-link button-link-large button-danger">위시리스트 담기</a>

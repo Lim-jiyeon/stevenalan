@@ -216,7 +216,7 @@
                             <a href="#" class="button button-danger button-link button-link-large"><span>쇼핑 계속하기</span></a>
                         </div>
                         <div class="button-right">
-                            <a href="#" class="button button-large button-primary"><span>선택상품 쇼핑백 담기</span></a>
+                            <a href="#" class="button button-large button-primary"><span>선택상품 주문하기</span></a>
                         </div>
                     </div>
                 </div>
@@ -429,7 +429,7 @@
                             <a href="#" class="button button-danger button-link button-link-large"><span>쇼핑 계속하기</span></a>
                         </div>
                         <div class="button-right">
-                            <a href="#" class="button button-large button-primary"><span>선택상품 쇼핑백 담기</span></a>
+                            <a href="#" class="button button-large button-primary"><span>선택상품 주문하기</span></a>
                         </div>
                     </div>
                 </div>

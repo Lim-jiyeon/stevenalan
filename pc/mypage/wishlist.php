@@ -105,7 +105,6 @@
                         </div>
                         <div class="button-align-center">
                             <a href="#" class="button button-large button-primary"><span>선택상품 쇼핑백 담기</span></a>
-                            <p class="wishlist-cancel"><a href="#" class="button button-danger button-link button-link-large"><span>선택삭제</span></a></p>
                         </div>
                     </div>
                 </div>
