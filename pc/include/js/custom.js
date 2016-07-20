@@ -34,6 +34,55 @@ $(document).ready(function() {
         $(this).parent().siblings().children().removeClass("open").next().slideUp();
         return false;
     });
+    // + Brand Category List Menu
+    $(".item-child-title").on("click", function() {
+        $(this).siblings().removeClass("open").next().slideUp();
+        $(this).toggleClass("open").next().slideToggle();
+        $(this).parent().siblings().children().removeClass("open").next().slideUp();
+        return false;
+    });
+    $(".category-all").on("click", function() {
+        $(this).parent().siblings().find(".item-child-title").addClass("open").next().slideDown();
+        return false;
+    });
+    // Category View More Button
+    var sizeItem = $(".category-left .item-list > li").size();
+    var item = 5;
+    $('.category-left .item-list > li:lt('+item+')').show();
+    $('.category-left .item-view-more').click(function () {
+        var x = (item+20 <= sizeItem) ? item+20 : sizeItem;
+        $('.category-left .item-list > li:lt('+x+')').show();
+        return false;
+    });
+    //$('.item-view-less').click(function () {
+    //    x=(x-5<0) ? 3 : x-5;
+    //    $('.item-list > li').not(':lt('+x+')').hide();
+    //});
+    // 리스트가 5개 이하일 경우 Category View More Button 감추기
+    var categorySizeItem = $(".search-category .item-list > li").size();
+    var categoryMore = $('.search-category .item-view-more');
+    if( categorySizeItem <= item ) {
+        categoryMore.hide();
+    } else {
+        categoryMore.show();
+    }
+    // Search Brand Category View More Button
+    //var brandSizeItem = $(".search-brand .item-list > li").size();
+    //var brandItem = 6;
+    //$('.search-brand .item-list > li:lt('+brandItem+')').show();
+    //$('.search-brand .item-view-more').click(function () {
+    //    var x = (brandItem+20 <= sizeItem) ? brandItem+20 : brandSizeItem;
+    //    $('.search-brand .item-list > li:lt('+x+')').show();
+    //    return false;
+    //});
+    //// 리스트가 5개 이하일 경우 Search Brand Category View More Button 감추기
+    //var brandSizeItem = $(".search-brand .item-list > li").size();
+    //var brandMore = $('.search-brand .item-view-more');
+    //if( brandSizeItem <= brandItem ) {
+    //    brandMore.hide();
+    //} else {
+    //    brandMore.show();
+    //}
 
 
     // Detail slider
@@ -132,6 +181,16 @@ $(document).ready(function() {
         $(".coupon-button .button").removeClass("button-third").addClass("button-secondary");
         $(this).removeClass("button-secondary").addClass("button-third");
         return false;
+    });
+
+
+    // Brand Banner
+    $(".brand-banner").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true
     });
 
 });

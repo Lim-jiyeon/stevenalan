@@ -2,40 +2,53 @@
 
     <div class="content">
         <div class="container">
+            <h2 class="page-title">search</h2>
+            <!-- 검색영역 -->
+            <div class="box search-box">
+                <div class="input-button-group">
+                    <div class="form-group">
+                        <div><input type="text" class="form-control" value="Comm des Gar"></div>
+                        <div><a href="#" class="button"><i class="icon-search-bold"></i></a></div>
+                    </div>
+                </div>
+                <div class="checkbox checkbox-block">
+                    <input type="checkbox" id="save-id" checked="checked">
+                    <label for="save-id" class="checkbox-display"></label>
+                    <label for="save-id" class="checkbox-label">결과 내 재검색</label>
+                </div>
+                <div class="search-result">
+                    &#39;Comm des gar&#39; 검색 결과 <strong>총 23 개</strong> 상품이 검색되었습니다.
+                </div>
+            </div>
+            <!-- 검색영역 //end -->
+        </div>
+        <div class="container brand-view">
             <div class="row">
-                <!-- Category List Menu -->
-                <div class="col-xs-3">
-                    <div class="category-left">
-                        <h2 class="category-menu-title">women's</h2>
-                        <!-- [D] 하위카테고리 오픈시 class="item-title" 부분에 open 클래스 추가,
-                                해당 카테고리 선택시 a 태그에 class="current" 추가 -->
-                        <!-- [D] 항상 상위카테고리 펼쳐질 경우 class="category-menu-item" 부분에 default-item 클래스 추가,
-                                class="item-title" 부분에 open 클래스 추가 -->
+                <!-- Search Category List Menu -->
+                <div class="col-xs-3 search-category-left">
+                    <!-- Category List Menu -->
+                    <div class="category-left search-category">
                         <ul class="category-menu">
-                            <li class="category-menu-item default-item">
-                                <h3 class="item-title open"><a href="#">DESIGNERS A-Z</a></h3>
-                                <ul class="item-list">
-                                    <li><a href="#" class="current">STEVEN ALAN</a></li>
-                                    <li><a href="#">ACNE STUDIOS</a></li>
-                                    <li><a href="#">A.P.C.</a></li>
-                                    <li><a href="#">BLACK CRANE</a></li>
-                                    <li><a href="#">BUILDING BLOCK</a></li>
-                                    <li><a href="#">CLARE V.</a></li>
-                                    <li><a href="#">DEMYLEE</a></li>
-                                    <li><a href="#">HOPE</a></li>
-                                    <li><a href="#">MANSUR GAVRIEL</a></li>
-                                    <li><a href="#">NO.6</a></li>
-                                    <li><a href="#">RACHEL COMEY</a></li>
-                                    <li><a href="#">ULLA JOHNSON</a></li>
-                                    <li><a href="#">VIEW ALL WOMEN'S DESIGNERS</a></li>
-                                </ul>
-                            </li>
                             <li class="category-menu-item">
-                                <h3 class="item-title"><a href="#">CLOTHING</a></h3>
+                                <h3 class="item-title open"><a href="#">category</a></h3>
+                                <!-- [D] 하위카테고리 오픈시 class="item-child-title" 부분에 open 클래스 추가,
+                                        해당 카테고리 선택시 a 태그에 class="current" 추가 -->
                                 <ul class="item-list">
-                                    <li><a href="#">STEVEN ALAN</a></li>
-                                    <li><a href="#">ACNE STUDIOS</a></li>
-                                    <li><a href="#">A.P.C.</a></li>
+                                    <li><a href="#" class="category-all">ALL</a></li>
+                                    <li>
+                                        <a href="#" class="item-child-title open">WOMEN (26)</a>
+                                        <ul class="item-list-child" style="display:block;"><!-- [D] style은 마크업 확인용으로 개발시 삭제 -->
+                                            <li><a href="#" class="current">CLOTHING (23)</a></li>
+                                            <li><a href="#">BAGS (23)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-child-title">A.P.C.</a>
+                                        <ul class="item-list-child">
+                                            <li><a href="#">CLOTHING (23)</a></li>
+                                            <li><a href="#">BAGS (23)</a></li>
+                                        </ul>
+                                    </li>
                                     <li><a href="#">BLACK CRANE</a></li>
                                     <li><a href="#">BUILDING BLOCK</a></li>
                                     <li><a href="#">CLARE V.</a></li>
@@ -49,16 +62,91 @@
                                 </ul>
                             </li>
                         </ul>
+                        <a href="#" class="item-view-more">VIEW MORE</a>
                     </div>
+                    <!-- Category List Menu //end -->
+                    <!-- Brand List -->
+                    <div class="search-brand">
+                        <ul class="category-menu">
+                            <li class="category-menu-item">
+                                <h3 class="item-title open"><a href="#">brand</a></h3>
+                                <ul class="item-list">
+                                    <li><a href="#" class="brand-all">ALL</a></li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand_stevenAlan">
+                                            <label for="brand_stevenAlan" class="checkbox-display"></label>
+                                            <label for="brand_stevenAlan" class="checkbox-label">STEVEN ALAN (22)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand_acneStudios">
+                                            <label for="brand_acneStudios" class="checkbox-display"></label>
+                                            <label for="brand_acneStudios" class="checkbox-label">ACNE STUDIOS (22)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand_blackCrane">
+                                            <label for="brand_blackCrane" class="checkbox-display"></label>
+                                            <label for="brand_blackCrane" class="checkbox-label">BLACK CRANE (5)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand_demylee">
+                                            <label for="brand_demylee" class="checkbox-display"></label>
+                                            <label for="brand_demylee" class="checkbox-label">DEMYLEE (5)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand_no6">
+                                            <label for="brand_no6" class="checkbox-display"></label>
+                                            <label for="brand_no6" class="checkbox-label">NO.6 (3)</label>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="checkbox">
+                                            <input type="checkbox" id="brand_raquelAllegra">
+                                            <label for="brand_raquelAllegra" class="checkbox-display"></label>
+                                            <label for="brand_raquelAllegra" class="checkbox-label">RAQUEL ALLEGRA</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="item-view-more">close</a>
+                    </div>
+                    <!-- Brand List //end -->
+                    <!-- Price List -->
+                    <div class="search-price">
+                        <ul class="category-menu">
+                            <li class="category-menu-item">
+                                <h3 class="item-title open"><a href="#">price</a></h3>
+                                <div class="input-button-group">
+                                    <div class="form-group form-inline">
+                                        <div class="placeholder">
+                                            <label for="minimum_price">가격</label>
+                                            <input type="text" id="minimum_price" class="form-control">
+                                        </div>
+                                        <div class="placeholder">
+                                            <label for="maximum_price">가격</label>
+                                            <input type="text" id="maximum_price" class="form-control">
+                                        </div>
+                                        <div><a href="#" class="button"><i class="icon-search-bold"></i></a></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <a href="#" class="item-view-more">reset</a>
+                    </div>
+                    <!-- Price List //end -->
                 </div>
-                <!-- Category List Menu //end -->
-                <div class="col-xs-9">
-                    <!-- breadcrumb -->
-                    <div class="breadcrumb">
-                        <a href="#">HOME</a>
-                        <a href="#">WOMEN</a>
-                    </div>
-                    <!-- breadcrumb //end -->
+                <!-- Search Category List Menu //end -->
+                <!-- Search Item List -->
+                <div class="col-xs-9 search-view-list">
                     <div class="row result-options">
                         <div class="col-xs-2 sort-by">
                             <div class="selectbox">
@@ -126,7 +214,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="more-color">more color</a>
+                                <a href="#" class="more-color">more colors</a>
                             </div>
                         </li>
                         <li class="col-xs-3">
@@ -192,7 +280,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="more-color">more color</a>
+                                <a href="#" class="more-color">more colors</a>
                             </div>
                         </li>
                         <li class="col-xs-3">
@@ -258,7 +346,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="more-color">more color</a>
+                                <a href="#" class="more-color">more colors</a>
                             </div>
                         </li>
                         <li class="col-xs-3">
@@ -291,7 +379,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="more-color">more color</a>
+                                <a href="#" class="more-color">more colors</a>
                             </div>
                         </li>
                         <li class="col-xs-3">
@@ -313,6 +401,7 @@
                     </ul>
                     <!-- Category List //end -->
                 </div>
+                <!-- Search Item List //end -->
             </div>
         </div>
     </div>

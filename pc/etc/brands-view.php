@@ -8,61 +8,48 @@
         <div class="container brand-view">
             <div class="row">
                 <!-- Category List Menu -->
-                <div class="col-xs-3 category-left brand-view-left">
-                    <ul class="category-menu">
-                        <li class="category-menu-item default-item">
-                            <h3 class="item-title open"><a href="#">DESIGNERS A-Z</a></h3>
-                            <ul class="item-list">
-                                <li><a href="#" class="current">ALL</a></li>
-                                <li>
-                                    <a href="#">WOMEN (26)</a>
-                                    <ul class="item-list-child">
-                                        <li>- <a href="#">CLOTHING (23)</a></li>
-                                        <li>- <a href="#">BAGS (23)</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="#">A.P.C.</a>
-                                    <ul class="item-list-child">
-                                        <li>- <a href="#">CLOTHING (23)</a></li>
-                                        <li>- <a href="#">BAGS (23)</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">BLACK CRANE</a></li>
-                                <li><a href="#">BUILDING BLOCK</a></li>
-                                <li><a href="#">CLARE V.</a></li>
-                                <li><a href="#">DEMYLEE</a></li>
-                                <li><a href="#">HOPE</a></li>
-                                <li><a href="#">MANSUR GAVRIEL</a></li>
-                                <li><a href="#">NO.6</a></li>
-                                <li><a href="#">RACHEL COMEY</a></li>
-                                <li><a href="#">ULLA JOHNSON</a></li>
-                                <li><a href="#">VIEW ALL WOMEN'S DESIGNERS</a></li>
-                            </ul>
-                        </li>
-                        <li class="category-menu-item">
-                            <h3 class="item-title"><a href="#">CLOTHING</a></h3>
-                            <ul class="item-list">
-                                <li><a href="#">STEVEN ALAN</a></li>
-                                <li><a href="#">ACNE STUDIOS</a></li>
-                                <li><a href="#">A.P.C.</a></li>
-                                <li><a href="#">BLACK CRANE</a></li>
-                                <li><a href="#">BUILDING BLOCK</a></li>
-                                <li><a href="#">CLARE V.</a></li>
-                                <li><a href="#">DEMYLEE</a></li>
-                                <li><a href="#">HOPE</a></li>
-                                <li><a href="#">MANSUR GAVRIEL</a></li>
-                                <li><a href="#">NO.6</a></li>
-                                <li><a href="#">RACHEL COMEY</a></li>
-                                <li><a href="#">ULLA JOHNSON</a></li>
-                                <li><a href="#">VIEW ALL WOMEN'S DESIGNERS</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <a href="#" class="item-view-more">VIEW MORE</a>
+                <div class="col-xs-3">
+                    <div class="category-left brand-view-left">
+                        <ul class="category-menu">
+                            <li class="category-menu-item">
+                                <h3 class="item-title open"><a href="#">category</a></h3>
+                                <!-- [D] 하위카테고리 오픈시 class="item-child-title" 부분에 open 클래스 추가,
+                                        해당 카테고리 선택시 a 태그에 class="current" 추가 -->
+                                <ul class="item-list">
+                                    <li><a href="#" class="category-all">ALL</a></li>
+                                    <li>
+                                        <a href="#" class="item-child-title open">WOMEN (26)</a>
+                                        <ul class="item-list-child" style="display:block;"><!-- [D] style은 마크업 확인용으로 개발시 삭제 -->
+                                            <li><a href="#" class="current">CLOTHING (23)</a></li>
+                                            <li><a href="#">BAGS (23)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="item-child-title">A.P.C.</a>
+                                        <ul class="item-list-child">
+                                            <li><a href="#">CLOTHING (23)</a></li>
+                                            <li><a href="#">BAGS (23)</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">BLACK CRANE</a></li>
+                                    <li><a href="#">BUILDING BLOCK</a></li>
+                                    <li><a href="#">CLARE V.</a></li>
+                                    <li><a href="#">DEMYLEE</a></li>
+                                    <li><a href="#">HOPE</a></li>
+                                    <li><a href="#">MANSUR GAVRIEL</a></li>
+                                    <li><a href="#">NO.6</a></li>
+                                    <li><a href="#">RACHEL COMEY</a></li>
+                                    <li><a href="#">ULLA JOHNSON</a></li>
+                                    <li><a href="#">VIEW ALL WOMEN'S DESIGNERS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="item-view-more">VIEW MORE</a>
+                    </div>
                 </div>
                 <!-- Category List Menu //end -->
-                <div class="col-xs-9 brand-view-list">
+                <!-- Search Item List -->
+                <div class="col-xs-9 search-view-list">
                     <div class="row result-options">
                         <div class="col-xs-2 sort-by">
                             <div class="selectbox">
@@ -130,7 +117,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="more-color">more color</a>
+                                <a href="#" class="more-color">more colors</a>
                             </div>
                         </li>
                         <li class="col-xs-3">
@@ -196,7 +183,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="more-color">more color</a>
+                                <a href="#" class="more-color">more colors</a>
                             </div>
                         </li>
                         <li class="col-xs-3">
@@ -262,7 +249,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="more-color">more color</a>
+                                <a href="#" class="more-color">more colors</a>
                             </div>
                         </li>
                         <li class="col-xs-3">
@@ -295,7 +282,7 @@
                                         </div>
                                     </div>
                                 </a>
-                                <a href="#" class="more-color">more color</a>
+                                <a href="#" class="more-color">more colors</a>
                             </div>
                         </li>
                         <li class="col-xs-3">
@@ -317,6 +304,7 @@
                     </ul>
                     <!-- Category List //end -->
                 </div>
+                <!-- Search Item List //end -->
             </div>
         </div>
     </div>

@@ -84,11 +84,14 @@
 
                     <h3>5. Etc.</h3>
                     <ul>
-                        <li>5.1.1 <a href="./pc/etc/brand-view.php">브랜드 상세</a></li>
+                        <li>5.1 <a href="./pc/etc/brands.php">브랜드</a></li>
+                        <li>5.1.1 <a href="./pc/etc/brands-view.php">브랜드 상세</a></li>
                         <li>5.2 <a href="./pc/join/guest-login.php">비회원 주문 로그인</a></li>
                         <li>5.2.1 <a href="./pc/order/guest-checkout.php">비회원 주문/결제</a></li>
                         <li>5.2.2 <a href="./pc/order/guest-summary.php">비회원 주문 완료/요약</a></li>
                         <li>5.2.3 <a href="./pc/mypage/guest-order-track.php">비회원 주문/배송 조회</a></li>
+                        <li>5.4 <a href="./pc/etc/search.php">검색 결과</a></li>
+                        <li>5.4.1 <a href="./pc/etc/search-empty.php">검색 결과 없을 경우</a></li>
                     </ul>
 
                 </div>

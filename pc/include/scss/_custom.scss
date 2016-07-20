@@ -647,6 +647,7 @@
  Category List - Menu
 ***********************************************/
 .category-left {
+    margin-right: 35px;
     font-family: $font-family-en;
     .category-menu-title {
         font-size: 18px;
@@ -657,17 +658,29 @@
 }
 .category-menu {
     margin-top: 36px;
+    text-transform: uppercase;
     .item-list {
         display: none;
         padding-bottom: 30px;
         letter-spacing: 1px;
         a {
+            font-size: 11px;
             color: $brand-secondary;
             &.current,
             &:hover {
                 padding-bottom: 1px;
                 border-bottom: 1px solid #000;
             }
+            &.item-child-title {
+                &.current,
+                &:hover {
+                    padding-bottom: 0;
+                    border-bottom: 0;
+                }
+            }
+        }
+        &:last-child {
+            padding-bottom: 10px;
         }
     }
     .item-title {
@@ -681,7 +694,7 @@
             &:after {
                 position: absolute;
                 top: -2px;
-                right: 25px;
+                right: 5px;
                 font-family: "fontello";
                 content: '\e816';
             }
@@ -700,6 +713,59 @@
             display: block;
         }
     }
+    .item-list-child {
+        display: none;
+        padding: 7px 0;
+        li {
+            padding-left: 9px;
+            a {
+                color: $text-color;
+                &.current,
+                &:hover {
+                    padding-bottom: 1px;
+                    border-bottom: 1px solid $text-color;
+                }
+            }
+            &:before {
+                margin-right: 3px;
+                font-family: "fontello";
+                font-size: 10px;
+                vertical-align: 0.8px;
+                content: '\e803';
+            }
+        }
+    }
+    .item-child-title {
+        position: relative;
+        display: inline-block;
+        color: #000;
+        &:after {
+            position: absolute;
+            top: -2px;
+            right: -16px;
+            font-family: "fontello";
+            font-size: 13px;
+            content: '\e819';
+        }
+        &.open {
+            &:after {
+                content: '\e818';
+            }
+            //+ .item-list-child {
+            //    display: block;
+            //}
+        }
+    }
+}
+.item-view-more {
+    display: block;
+    margin-top: 3px;
+    padding-top: 13px;
+    border-top: 1px solid $brand-secondary;
+    font-family: $font-family-en;
+    font-size: 11px;
+    color: $brand-secondary;
+    text-transform: uppercase;
 }
 
 /**********************************************
@@ -968,7 +1034,7 @@
                 letter-spacing: 0;
             }
             &:hover,
-            &.seleted {
+            &.selected {
                 .button {
                     color: $brand-primary;
                 }
@@ -2137,13 +2203,189 @@
 }
 
 /**********************************************
+ Search
+***********************************************/
+.search-box {
+    padding-top: 40px;
+    text-align: center;
+    .input-button-group {
+        display: inline-block;
+        div .form-control {
+            width: 490px;
+            height: 50px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .button {
+            line-height: (50-2)/12;
+            .icon-search-bold:before {
+                font-size: 20px;
+            }
+        }
+    }
+    .checkbox-block {
+        margin-top: 5px;
+    }
+}
+.search-result {
+    margin-top: 30px;
+    padding-top: 35px;
+    background: url(../../images/common/box-washed-line.png) repeat-x 0 0;
+    font-size: 18px;
+    color: $brand-secondary;
+    strong {
+        color: $brand-primary;
+    }
+}
+.search-category-left {
+    padding-top: 4px;
+    .item-list {
+        display: block;
+        > li {
+            display: none;
+        }
+    }
+    .category-left,
+    .search-brand,
+    .search-price {
+        margin-right: 35px;
+        padding-bottom: 11px;
+        border-bottom: 1px solid #d5d5d5;
+    }
+    .search-brand {
+        .item-list > li {
+            display: block;
+        }
+        .checkbox-display,
+        .checkbox-label {
+            margin-bottom: 0;
+            font-size: 11px;
+        }
+    }
+    .search-price {
+        .input-button-group {
+            padding: 5px 0;
+            .form-group {
+                display: table;
+                width: 100%;
+                > div {
+                    float: none;
+                    display: table-cell;
+                    vertical-align: top;
+                    .form-control {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+.search-view-list {
+    padding-top: 40px;
+}
+// 일치하는 검색정보가 없는 경우
+.search-result-empty {
+    margin-top: 5px;
+    font-size: 12px;
+    color: $text-color;
+}
+
+/**********************************************
+ Brand
+***********************************************/
+// 상단 롤링 배너
+.brand-banner {
+    padding: 20px 10px 40px;
+    background-color: #f5f5f5;
+    .slick-slide {
+        padding: 0 10px;
+    }
+    .slick-arrow {
+        background-color: rgba(230,231,238,.5);
+    }
+    .slick-dots {
+        bottom: 17px;
+    }
+}
+.brand-search {
+    margin-top: 60px;
+    font-family: $font-family-en;
+}
+.brand-category {
+    padding: 36px 0 27px;
+    text-align: center;
+    li {
+        display: inline-block;
+        padding: 0 20px;
+        a {
+            font-size: 14px;
+            text-transform: uppercase;
+            &:hover,
+            &.selected {
+                padding-bottom: 1px;
+                border-bottom: 1px solid $brand-primary;
+                color: $brand-primary;
+            }
+        }
+    }
+}
+.brand-alphabet {
+    border: 1px solid #d5d5d5;
+    border-width: 1px 0;
+    @include clearfix;
+    li {
+        display: block;
+        float: left;
+        width: 3.7037037037037%;
+        padding: 0 12px;
+        text-align: center;
+        a {
+            display: block;
+            padding: 15px 0 16px;
+            font-size: 16px;
+            &:hover,
+            &.selected {
+                padding-bottom: 1px;
+                border-bottom: 1px solid $brand-primary;
+                color: $brand-primary;
+            }
+        }
+    }
+}
+.brand-search-result {
+    padding: 15px 0 16px;
+    background-color: #f5f5f5;
+    font-family: $font-family-ko;
+    color: $brand-secondary;
+    text-align: center;
+}
+.brand-list-box {
+    margin-top: 30px;
+    font-family: $font-family-en;
+    .brand-title {
+        margin-bottom: 5px;
+        font-size: 24px;
+        color: $brand-secondary;
+    }
+    .brand-list {
+        letter-spacing: 2px;
+        .selected {
+            color: $brand-primary;
+        }
+    }
+}
+
+/**********************************************
  Brand - View
 ***********************************************/
 .brand-view-left {
     padding-top: 4px;
-}
-.brand-view-list {
-    padding-top: 40px;
+    .item-list {
+        display: block;
+        > li {
+            display: none;
+        }
+    }
 }
 
 /**********************************************

@@ -192,6 +192,7 @@ input[type="search"] {
       float: left;
       .form-control {
         width: auto;
+        border-right: 0;
         @include border-radius(0);
       }
       .button {
@@ -311,12 +312,12 @@ input[type="search"] {
     width: 16px;
     height: 16px;
     margin: 3px 6px 5px 0;
-    background: url(../../images/common/form-checkbox.gif) 0 0;
+    background: url(../../images/common/form-checkbox.png) 0 0;
     vertical-align: middle;
   }
   input[type="checkbox"]:checked + .checkbox-display,
   input[type="radio"]:checked + .radio-display{
-    background: url(../../images/common/form-checkbox-checked.gif) 0 0;
+    background: url(../../images/common/form-checkbox-checked.png) 0 0;
     transition: all 0.3s ease;
   }
   .radio-display {

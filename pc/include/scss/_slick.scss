@@ -64,6 +64,7 @@
     }
     img {
         display: block;
+        width: 100%;
     }
     &.slick-loading img {
         display: none;
@@ -125,6 +126,7 @@
 .slick-arrow {
     position: absolute;
     top: 50%;
+    z-index: 10;
     display: block;
     width: 33px;
     height: 33px;
