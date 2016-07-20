@@ -2389,6 +2389,35 @@
 }
 
 /**********************************************
+ News
+***********************************************/
+.news {
+    .news-contents {
+        border-bottom: 1px solid #e5e5e5;
+        .news-help-text {
+            margin-bottom: 10px;
+        }
+        .align-left {
+            color: $brand-secondary;
+        }
+        .news-content {
+            padding: 30px;
+            text-align: left;
+        }
+    }
+    .search-word-box {
+        .form-group div.placeholder {
+            label {
+                text-align: left;
+            }
+            .form-control {
+                width: 270px;
+            }
+        }
+    }
+}
+
+/**********************************************
  Popup - modal
 ***********************************************/
 .modalWrap{
