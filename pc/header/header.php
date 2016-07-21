@@ -40,44 +40,63 @@
             </div>
         </div>
         <div class="container">
+            <!-- [D] 해당 메뉴 선택시 class="megaMenu-item" 부분에 current 클래스 추가 -->
             <ul class="megaMenu">
-                <li class="megaMenu-item"><a href="#">collection</a></li>
-                <li class="megaMenu-item"><a href="#">new arrivals</a></li>
-                <li class="megaMenu-item"><a href="#">women's</a></li>
-                <li class="megaMenu-item"><a href="#">men's</a></li>
-                <li class="megaMenu-item"><a href="#">watches</a></li>
-                <li class="megaMenu-item current">
-                    <a href="#">jewelry</a>
-                    <div style="display: none;">
-                        <div>
-                            <h3>designer</h3>
-                            <ul>
-                                <li>hortense</li>
-                                <li>jerry grant</li>
-                                <li>katie diamond</li>
-                                <li>kristen elspeth</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>shop</h3>
-                            <ul>
-                                <li>rings</li>
-                                <li>necklaces</li>
-                                <li>earrings</li>
-                                <li>bracelets</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h3>watches</h3>
-                            <ul>
-                                <li>shop all</li>
-                            </ul>
-                        </div>
+                <li class="megaMenu-item">
+                    <h2 class="menu-item-title"><a href="#">collection</a></h2>
+                </li>
+                <li class="megaMenu-item">
+                    <h2 class="menu-item-title"><a href="#">new arrivals</a></h2>
+                </li>
+                <li class="megaMenu-item">
+                    <h2 class="menu-item-title"><a href="#">women's</a></h2>
+                </li>
+                <li class="megaMenu-item">
+                    <h2 class="menu-item-title"><a href="#">men's</a></h2>
+                </li>
+                <li class="megaMenu-item">
+                    <h2 class="menu-item-title"><a href="#">watches</a></h2>
+                </li>
+                <li class="megaMenu-item">
+                    <h2 class="menu-item-title"><a href="#">jewelry</a></h2>
+                    <div class="menu-child-box menu-jewelry">
+                        <ul class="menu-item-list">
+                            <li>
+                                <h3 class="menu-item-child-title"><a href="#">designer a-z</a></h3>
+                                <ul class="menu-item-list-child">
+                                    <li><a href="#">hortense</a></li>
+                                    <li><a href="#">jerry grant</a></li>
+                                    <li><a href="#">katie diamond</a></li>
+                                    <li><a href="#">kristen elspeth</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="menu-item-child-title"><a href="#">shop</a></h3>
+                                <ul class="menu-item-list-child">
+                                    <li><a href="#">rings</a></li>
+                                    <li><a href="#">necklaces</a></li>
+                                    <li><a href="#">earrings</a></li>
+                                    <li><a href="#">bracelets</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="menu-item-child-title"><a href="#">watches</a></h3>
+                                <ul class="menu-item-list-child">
+                                    <li><a href="#">shop all</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
                 </li>
-                <li class="megaMenu-item"><a href="#">kid's</a></li>
-                <li class="megaMenu-item"><a href="#">home</a></li>
-                <li class="megaMenu-item"><a href="#">brand</a></li>
+                <li class="megaMenu-item">
+                    <h2 class="menu-item-title"><a href="#">kid's</a></h2>
+                </li>
+                <li class="megaMenu-item">
+                    <h2 class="menu-item-title"><a href="#">home</a></h2>
+                </li>
+                <li class="megaMenu-item">
+                    <h2 class="menu-item-title"><a href="#">brand</a></h2>
+                </li>
             </ul>
         </div>
     </div>

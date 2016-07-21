@@ -18,6 +18,29 @@ $(document).ready(function() {
     //});
 
 
+    // Menu
+    $(".menu-item-title").on({
+        'mouseenter focusin': function() {
+            $(this).closest("li").siblings().find('.open').stop().stop().stop().fadeTo(50, 0, function() {
+                $(this).hide().removeClass('open');
+            });
+            $(this).siblings('.menu-child-box').show().addClass('open').stop().stop().fadeTo(100, 1);
+        },
+        'focusout mouseleave': function() {
+            $(this).siblings('.menu-child-box').fadeTo(50, 0, function() {
+                $(this).hide().removeClass('open');
+            });
+        }
+    });
+    $(document)
+        .on('mouseenter', '.menu-child-box.open', function(){
+            $(this).stop().stop().fadeTo(50, 1);
+        })
+        .on('mouseleave', '.menu-child-box.open', function(){
+            $(this).fadeTo(50, 0, function(){ $(this).hide().removeClass('open');});
+        });
+
+
     // Main Slick Slider
     $(".main-banner").slick({
         dots: true,

@@ -107,22 +107,65 @@
     }
 }
 .megaMenu {
-    margin: 0 -34px;
+    margin: 0 -25.4px;
     padding-left: 0;
+    font-family: $font-family-en;
     .megaMenu-item {
+        position: relative;
         float: left;
-        padding: 0 27.8px;
+        padding: 0 25.4px;
         list-style: none;
-        a {
-            font-size: 14px;
-            color: $brand-secondary;
-            letter-spacing: 2.45px;
+        .menu-item-title {
+            font-weight: 400;
+            a {
+                font-size: 14px;
+                color: $brand-secondary;
+                letter-spacing: 2.45px;
+            }
         }
         &:hover, &.current {
-            a {
+            .menu-item-title a {
                 padding-bottom: 1px;
                 border-bottom: 1px solid $brand-primary;
                 color: $brand-primary;
+            }
+        }
+    }
+    .menu-child-box {
+        display: none;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        z-index: 10;
+        width: 1200px;
+        &.menu-jewelry {
+            left: -210px;
+        }
+    }
+    .menu-item-list {
+        display: inline-block;
+        padding: 15px 20px 20px;
+        background-color: #fff;
+        @include box-shadow(0 0 16px rgba(0,0,0,.1));
+        > li {
+            display: inline-block;
+            width: 200px;
+            vertical-align: top;
+            a {
+                color: $brand-secondary;
+            }
+        }
+        .menu-item-child-title {
+            margin-bottom: 10px;
+            a {
+                font-size: 12px;
+                letter-spacing: 2px;
+            }
+        }
+        .menu-item-list-child {
+            a {
+                font-size: 11px;
+                letter-spacing: 0.5px;
             }
         }
     }
