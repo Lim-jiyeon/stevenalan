@@ -1485,6 +1485,9 @@
             border-bottom: 1px solid #e5e5e5;
         }
     }
+    .form-inline .placeholder {
+        display: inline-block;
+    }
     .form-control {
         width: 300px;
     }
@@ -1774,9 +1777,6 @@
         text-align: center;
         padding-top: 20px;
         border-top: 1px solid #e5e5e5;
-        .button{
-            width: 170px;
-        }
     }
 }
 .orderList_modal{
@@ -1827,6 +1827,15 @@
                 }
                 .dateSel{
                     float: right;
+                    .input-button-group .form-group div {
+                        float: none;
+                        .form-control {
+                            width: 100px;
+                        }
+                        .button {
+                            padding: 0 10px;
+                        }
+                    }
                 }
             }
         }

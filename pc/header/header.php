@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>stevenalan</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="../include/css/fontello.css">
     <script type="text/javascript" src="../include/js/min/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../include/js/min/jquery.sticky.min.js"></script>

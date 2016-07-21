@@ -111,10 +111,14 @@
                                 </ul>
                             </div>
                             <div class="dateSel">
-                                <div class="input-group">
-                                    <div><input type="text" id="write-form-email" class="form-control" value="2016-06-17"/></div>
-                                    <div class="input-group-addon">~</div>
-                                    <div><input type="text" class="form-control" value="2016-06-18"/></div>
+                                <div class="input-button-group">
+                                    <div class="form-group input-group">
+                                        <div><input type="text" class="form-control" value="2016-06-17"></div>
+                                        <div><a href="#" class="button"><i class="icon-calendar"></i></a></div>
+                                        <div class="input-group-addon">~</div>
+                                        <div><input type="text" class="form-control" value="2016-06-18"></div>
+                                        <div><a href="#" class="button"><i class="icon-calendar"></i></a></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>

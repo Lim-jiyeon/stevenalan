@@ -134,8 +134,14 @@
                                     <th scope="row"><label for="pickup_contact_number">연락처</label></th>
                                     <td>
                                         <div class="form-group form-inline">
-                                            <input type="text" id="pickup_contact_number" class="form-control">
-                                            <input type="text" class="form-control">
+                                            <div class="placeholder">
+                                                <label for="pickup_contact_number">핸드폰 번호</label>
+                                                <input type="text" id="pickup_contact_number" class="form-control">
+                                            </div>
+                                            <div class="placeholder">
+                                                <label for="pickup_contact_number_add">추가 연락처</label>
+                                                <input type="text" id="pickup_contact_number_add" class="form-control">
+                                            </div>
                                         </div>
                                     </td>
                                 </tr>
@@ -179,8 +185,14 @@
                                     <th scope="row"><label for="exchange_contact_number">연락처</label></th>
                                     <td>
                                         <div class="form-group form-inline">
-                                            <input type="text" id="exchange_contact_number" class="form-control">
-                                            <input type="text" class="form-control">
+                                            <div class="placeholder">
+                                                <label for="exchange_contact_number">핸드폰 번호</label>
+                                                <input type="text" id="exchange_contact_number" class="form-control">
+                                            </div>
+                                            <div class="placeholder">
+                                                <label for="exchange_contact_number_add">추가 연락처</label>
+                                                <input type="text" id="exchange_contact_number_add" class="form-control">
+                                            </div>
                                         </div>
                                     </td>
                                 </tr>
