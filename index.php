@@ -53,6 +53,8 @@
                         <li>3.1.1 <a href="./pc/mypage/order-track-view.php">주문/배송 조회 - 주문 상세</a></li>
                         <li>3.1.2 <a href="./pc/mypage/order-track-popup.php">[팝업1] 영수증 발급 - 현금영수증(신청이 필요한 경우)</a></li>
                         <li>3.1.2 <a href="./pc/mypage/order-track-popup2.php">[팝업2] 영수증 발급</a></li>
+                        <li>3.1.2 <a href="./pc/mypage/order-track-popup3.php">[팝업3] 팝업2에서 카드영수증 버튼 클릭 시 나오는 팝업</a></li>
+                        <li>3.1.2 <a href="./pc/mypage/order-track-popup4.php">[팝업4] 팝업2에서 현금영수증 버튼 클릭 시 나오는 팝업</a></li>
                         <li>3.2/3.2.3/3.2.9 <a href="./pc/mypage/return-refund-exchange.php">취소/교환/반품 현황</a></li>
                         <li>3.2.1 <a href="./pc/mypage/refund-view.php">취소 신청</a></li>
                         <li>3.2.2 <a href="./pc/mypage/refund-complete.php">취소 신청 완료</a></li>

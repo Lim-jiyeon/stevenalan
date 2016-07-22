@@ -2546,7 +2546,7 @@
  Popup - New Window
 ***********************************************/
 #wrap_popup {
-    padding: 20px;
+    padding: 20px 15px;
     .container {
         width: 100% !important;
     }
@@ -2556,7 +2556,7 @@
 }
 // Cash Receipt
 .cash-receipt {
-    width: 500px;
+    width: 460px;
     .cash-receipt-type {
         margin-top: 40px;
     }
@@ -2565,7 +2565,7 @@
     }
 }
 .cash-receipt-confirm {
-    width: 700px;
+    width: 660px;
     .cash-receipt-list {
         margin-top: 40px;
         th {
@@ -2583,5 +2583,46 @@
     }
     .line-left {
         border-left: 1px solid #e5e5e5;
+    }
+}
+.receipt-table {
+    width: 460px;
+    .table {
+        margin-top: 40px;
+        border: 1px solid #acacac;
+        .col-xs-1 {
+            width: 6.249999999975%;
+        }
+        th,
+        td {
+            padding: 5px 0 5px 10px;
+            border: 1px solid #acacac;
+            border-width: 1px 1px 0;
+            background-color: #fff;
+            color: #000;
+            text-align: left;
+        }
+        thead {
+            th {
+                background-color: #f5f5f5;
+            }
+        }
+        tbody {
+            th {
+                background-color: #e5ecf3;
+            }
+        }
+        .amount {
+            &.head td {
+                color: $text-color;
+            }
+            td {
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+    }
+    .button-align-center {
+        margin-top: 40px;
     }
 }
