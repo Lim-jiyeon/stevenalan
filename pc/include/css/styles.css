@@ -1962,14 +1962,15 @@ hr {
 .button-block {
   display: block;
   width: 100%;
+  margin: 0;
 }
 
-/* line 93, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 94, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-group {
   font-size: 0;
 }
 
-/* line 95, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 96, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-group .button {
   margin: 0 0 0 -1px;
   -webkit-border-radius: 0;
@@ -1978,7 +1979,7 @@ hr {
   border-radius: 0;
 }
 
-/* line 98, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 99, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-group .button:first-child {
   border-top-left-radius: 3px;
   -moz-border-radius-topleft: 3px;
@@ -1988,7 +1989,7 @@ hr {
   -webkit-border-bottom-left-radius: 3px;
 }
 
-/* line 102, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 103, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-group .button:last-child {
   border-top-right-radius: 3px;
   -moz-border-radius-topright: 3px;
@@ -1998,7 +1999,7 @@ hr {
   -webkit-border-bottom-right-radius: 3px;
 }
 
-/* line 110, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 111, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-align {
   margin-top: 20px;
   text-align: center;
@@ -2015,17 +2016,17 @@ hr {
   clear: both;
 }
 
-/* line 114, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 115, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-align .button-left {
   float: left;
 }
 
-/* line 117, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 118, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-align .button-right {
   float: right;
 }
 
-/* line 121, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 122, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-align-center {
   margin-top: 20px;
   text-align: center;
@@ -2042,7 +2043,7 @@ hr {
   clear: both;
 }
 
-/* line 128, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
+/* line 129, /Users/jyeon/project/stevenalan/pc/include/scss/_button.scss */
 .button-calendar {
   padding: 0 8px !important;
   background-color: #acacac;
@@ -5497,6 +5498,16 @@ input[type="search"] {
 }
 
 /* line 2000, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.privacy-modify .phone-group {
+  width: 300px;
+}
+
+/* line 2002, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.privacy-modify .phone-group .form-control {
+  width: 100%;
+}
+
+/* line 2006, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .privacy-modify .privacy-modify-cancel {
   margin-top: -30px;
   text-align: right;
@@ -5505,7 +5516,7 @@ input[type="search"] {
 /**********************************************
  My Page - 회원탈퇴
 ***********************************************/
-/* line 2009, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2015, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .member-quit {
   margin-top: -10px;
   padding: 40px 20px;
@@ -5513,22 +5524,22 @@ input[type="search"] {
   border-width: 1px 0;
 }
 
-/* line 2014, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2020, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .member-quit .selectbox {
   width: 334px;
 }
 
-/* line 2018, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2024, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .member-quit-input {
   margin-top: 35px;
 }
 
-/* line 2020, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2026, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .member-quit-input dt {
   margin-bottom: 15px;
 }
 
-/* line 2023, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2029, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .member-quit-input textarea.form-control {
   width: 700px;
 }
@@ -5536,41 +5547,41 @@ input[type="search"] {
 /**********************************************
  My Page - Coupon
 ***********************************************/
-/* line 2032, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2038, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon .coupon-register {
   padding: 20px;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 2035, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2041, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon .coupon-register strong {
   margin-bottom: 0;
   line-height: 2.5;
 }
 
-/* line 2039, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2045, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon .coupon-register .form-group .form-control {
   width: 400px;
 }
 
-/* line 2043, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2049, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon .button-group {
   padding: 40px 0 20px;
   border-top: 1px solid #e5e5e5;
   text-align: center;
 }
 
-/* line 2049, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2055, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon-content {
   display: none;
 }
 
-/* line 2051, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2057, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon-content.coupon-list1 {
   display: block;
 }
 
-/* line 2055, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2061, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon-type {
   display: inline-block;
   width: 110px;
@@ -5587,13 +5598,13 @@ input[type="search"] {
   text-align: center;
 }
 
-/* line 2067, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2073, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon-num {
   display: block;
   margin-top: 8px;
 }
 
-/* line 2072, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2078, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon-purpose strong {
   display: block;
   font-weight: 400;
@@ -5603,26 +5614,26 @@ input[type="search"] {
 /**********************************************
  My Page - Coupon
 ***********************************************/
-/* line 2082, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2088, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon .coupon-register {
   padding: 20px;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 2085, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2091, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon .coupon-register strong {
   margin-bottom: 0;
   line-height: 2.5;
 }
 
-/* line 2090, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2096, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon .button-group {
   padding: 40px 0 20px;
   border-top: 1px solid #e5e5e5;
   text-align: center;
 }
 
-/* line 2096, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2102, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon-type {
   display: inline-block;
   width: 110px;
@@ -5639,19 +5650,19 @@ input[type="search"] {
   text-align: center;
 }
 
-/* line 2107, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2113, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon-type em {
   font-style: normal;
   font-family: "BentonSans", sans-serif;
 }
 
-/* line 2112, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2118, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon-num {
   display: block;
   margin-top: 8px;
 }
 
-/* line 2117, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2123, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .coupon-purpose strong {
   display: block;
   font-weight: 400;
@@ -5661,51 +5672,51 @@ input[type="search"] {
 /**********************************************
  My Page - AddressBook
 ***********************************************/
-/* line 2127, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2133, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .bgSection {
   background-color: #f5f5f5;
   padding: 30px 30px 60px 30px;
 }
 
-/* line 2132, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2138, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address-manage-wrap > p {
   margin-bottom: 10px;
 }
 
-/* line 2136, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2142, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address-manage-wrap .address-manage-table td {
   color: #000;
 }
 
-/* line 2141, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2147, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address-manage-wrap .address-manage-table .order-button .button-block:first-child .button {
   width: 54px;
 }
 
-/* line 2147, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2153, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address-manage-wrap .buttonWrap {
   margin-top: 20px;
 }
 
-/* line 2151, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2157, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_modify_add_modal {
   width: 740px;
 }
 
-/* line 2153, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2159, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_modify_add_modal input {
   display: inline-block;
   width: 180px;
 }
 
-/* line 2157, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2163, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_modify_add_modal .address-modify-add-table {
   padding: 30px 0;
   margin-top: 20px;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 2162, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2168, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_modify_add_modal .address-modify-add-table tr th {
   text-align: left;
   width: 23%;
@@ -5713,53 +5724,53 @@ input[type="search"] {
   font-weight: normal;
 }
 
-/* line 2168, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2174, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_modify_add_modal .address-modify-add-table tr td {
   padding-bottom: 15px;
 }
 
-/* line 2172, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2178, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_modify_add_modal .address-modify-add-table tr td.address-modify-add-table-address .input-group input {
   width: 100%;
 }
 
-/* line 2178, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2184, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_modify_add_modal .address-modify-add-table tr:last-child td {
   padding-bottom: 0;
 }
 
-/* line 2181, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2187, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_modify_add_modal .address-modify-add-table tr .form-group {
   margin-bottom: 0;
 }
 
-/* line 2186, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2192, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_modify_add_modal .buttonWrap {
   padding-top: 20px;
   border-top: 1px solid #e5e5e5;
 }
 
-/* line 2191, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2197, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_list_modal {
   width: 740px;
 }
 
-/* line 2193, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2199, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_list_modal .modalTitle {
   margin-bottom: 20px;
 }
 
-/* line 2198, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2204, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_list_modal .table tr th {
   background-color: #fff;
 }
 
-/* line 2201, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2207, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_list_modal .table tr td {
   color: #000;
 }
 
-/* line 2206, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2212, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .address_list_modal .buttonWrap {
   padding-top: 20px;
 }
@@ -5767,32 +5778,37 @@ input[type="search"] {
 /**********************************************
  Join - Login
 ***********************************************/
-/* line 2214, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2220, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login-banner {
   margin: -40px 0 30px;
 }
 
-/* line 2218, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2224, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login .box {
+  position: relative;
   height: 394px;
 }
 
-/* line 2221, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2228, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login .box .box-explain + .form-group {
   margin-top: 7px;
 }
 
-/* line 2225, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.login .box .button {
-  margin-top: 32px;
+/* line 2232, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.login .box .button-align {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  padding: 0 30px;
 }
 
-/* line 2231, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2242, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login-find .find-id {
   float: right;
 }
 
-/* line 2233, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2244, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .login-find .find-id:after {
   display: block;
   margin-top: -2px;
@@ -5811,41 +5827,46 @@ input[type="search"] {
   clear: both;
 }
 
-/* line 2244, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2255, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .forgot .box {
+  position: relative;
   height: 493px;
 }
 
-/* line 2247, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2259, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .forgot .findId-phone,
 .forgot .findPassword-phone {
   display: none;
 }
 
-/* line 2251, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2263, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .forgot .find-box {
   padding: 15px 0 10px;
 }
 
-/* line 2253, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2265, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .forgot .find-box .radio:first-child {
   margin-right: 30px;
 }
 
-/* line 2257, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
-.forgot .button {
-  margin-top: 32px;
+/* line 2269, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.forgot .button-align {
+  position: absolute;
+  left: 0;
+  bottom: 40px;
+  width: 100%;
+  padding: 0 30px;
 }
 
 /**********************************************
  Join - Sign Up
 ***********************************************/
-/* line 2265, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2281, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .signup-agree {
   margin-bottom: 20px;
 }
 
-/* line 2267, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2283, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .signup-agree .signup-agree-title {
   font-weight: 400;
 }
@@ -5861,17 +5882,17 @@ input[type="search"] {
   clear: both;
 }
 
-/* line 2270, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2286, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .signup-agree .signup-agree-title .checkbox {
   float: left;
 }
 
-/* line 2273, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2289, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .signup-agree .signup-agree-title .button {
   float: right;
 }
 
-/* line 2276, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2292, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .signup-agree .signup-agree-title + .agree-box {
   display: none;
   margin-top: 20px;
@@ -5880,7 +5901,7 @@ input[type="search"] {
 /**********************************************
  Agree
 ***********************************************/
-/* line 2286, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2302, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .agree-box {
   height: 200px;
   padding: 16px 21px;
@@ -5895,18 +5916,18 @@ input[type="search"] {
 /**********************************************
  Search
 ***********************************************/
-/* line 2297, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2313, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-box {
   padding-top: 40px;
   text-align: center;
 }
 
-/* line 2300, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2316, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-box .input-button-group {
   display: inline-block;
 }
 
-/* line 2302, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2318, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-box .input-button-group div .form-control {
   width: 490px;
   height: 50px;
@@ -5914,22 +5935,22 @@ input[type="search"] {
   text-align: center;
 }
 
-/* line 2308, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2324, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-box .input-button-group .button {
   line-height: 4;
 }
 
-/* line 2310, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2326, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-box .input-button-group .button .icon-search-bold:before {
   font-size: 20px;
 }
 
-/* line 2315, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2331, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-box .checkbox-block {
   margin-top: 5px;
 }
 
-/* line 2319, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2335, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-result {
   margin-top: 30px;
   padding-top: 35px;
@@ -5938,27 +5959,27 @@ input[type="search"] {
   color: #000;
 }
 
-/* line 2325, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2341, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-result strong {
   color: #004689;
 }
 
-/* line 2329, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2345, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left {
   padding-top: 4px;
 }
 
-/* line 2331, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2347, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left .item-list {
   display: block;
 }
 
-/* line 2333, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2349, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left .item-list > li {
   display: none;
 }
 
-/* line 2337, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2353, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left .category-left,
 .search-category-left .search-brand,
 .search-category-left .search-price {
@@ -5967,47 +5988,47 @@ input[type="search"] {
   border-bottom: 1px solid #d5d5d5;
 }
 
-/* line 2345, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2361, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left .search-brand .item-list > li {
   display: block;
 }
 
-/* line 2348, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2364, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left .search-brand .checkbox-display,
 .search-category-left .search-brand .checkbox-label {
   margin-bottom: 0;
   font-size: 11px;
 }
 
-/* line 2355, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2371, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left .search-price .input-button-group {
   padding: 5px 0;
 }
 
-/* line 2357, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2373, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left .search-price .input-button-group .form-group {
   display: table;
   width: 100%;
 }
 
-/* line 2360, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2376, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left .search-price .input-button-group .form-group > div {
   float: none;
   display: table-cell;
   vertical-align: top;
 }
 
-/* line 2364, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2380, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-category-left .search-price .input-button-group .form-group > div .form-control {
   width: 100%;
 }
 
-/* line 2372, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2388, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-view-list {
   padding-top: 40px;
 }
 
-/* line 2376, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2392, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .search-result-empty {
   margin-top: 5px;
   font-size: 12px;
@@ -6017,59 +6038,59 @@ input[type="search"] {
 /**********************************************
  Brand
 ***********************************************/
-/* line 2386, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2402, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-banner {
   padding: 20px 10px 40px;
   background-color: #f5f5f5;
 }
 
-/* line 2389, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2405, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-banner .slick-slide {
   padding: 0 10px;
 }
 
-/* line 2392, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2408, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-banner .slick-arrow {
   background-color: rgba(230, 231, 238, 0.5);
 }
 
-/* line 2395, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2411, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-banner .slick-dots {
   bottom: 17px;
 }
 
-/* line 2399, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2415, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-search {
   margin-top: 60px;
   font-family: "BentonSans", sans-serif;
 }
 
-/* line 2403, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2419, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-category {
   padding: 36px 0 27px;
   text-align: center;
 }
 
-/* line 2406, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2422, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-category li {
   display: inline-block;
   padding: 0 20px;
 }
 
-/* line 2409, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2425, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-category li a {
   font-size: 14px;
   text-transform: uppercase;
 }
 
-/* line 2412, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2428, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-category li a:hover, .brand-category li a.selected {
   padding-bottom: 1px;
   border-bottom: 1px solid #004689;
   color: #004689;
 }
 
-/* line 2421, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2437, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-alphabet {
   border: 1px solid #d5d5d5;
   border-width: 1px 0;
@@ -6086,7 +6107,7 @@ input[type="search"] {
   clear: both;
 }
 
-/* line 2425, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2441, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-alphabet li {
   display: block;
   float: left;
@@ -6095,21 +6116,21 @@ input[type="search"] {
   text-align: center;
 }
 
-/* line 2431, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2447, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-alphabet li a {
   display: block;
   padding: 15px 0 16px;
   font-size: 16px;
 }
 
-/* line 2435, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2451, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-alphabet li a:hover, .brand-alphabet li a.selected {
   padding-bottom: 1px;
   border-bottom: 1px solid #004689;
   color: #004689;
 }
 
-/* line 2444, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2460, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-search-result {
   padding: 15px 0 16px;
   background-color: #f5f5f5;
@@ -6118,25 +6139,25 @@ input[type="search"] {
   text-align: center;
 }
 
-/* line 2451, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2467, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-list-box {
   margin-top: 30px;
   font-family: "BentonSans", sans-serif;
 }
 
-/* line 2454, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2470, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-list-box .brand-title {
   margin-bottom: 5px;
   font-size: 24px;
   color: #000;
 }
 
-/* line 2459, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2475, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-list-box .brand-list {
   letter-spacing: 2px;
 }
 
-/* line 2461, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2477, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-list-box .brand-list .selected {
   color: #004689;
 }
@@ -6144,17 +6165,17 @@ input[type="search"] {
 /**********************************************
  Brand - View
 ***********************************************/
-/* line 2470, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2486, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-view-left {
   padding-top: 4px;
 }
 
-/* line 2472, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2488, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-view-left .item-list {
   display: block;
 }
 
-/* line 2474, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2490, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .brand-view-left .item-list > li {
   display: none;
 }
@@ -6162,33 +6183,33 @@ input[type="search"] {
 /**********************************************
  News
 ***********************************************/
-/* line 2484, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2500, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .news .news-contents {
   border-bottom: 1px solid #e5e5e5;
 }
 
-/* line 2486, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2502, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .news .news-contents .news-help-text {
   margin-bottom: 10px;
 }
 
-/* line 2489, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2505, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .news .news-contents .align-left {
   color: #000;
 }
 
-/* line 2492, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2508, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .news .news-contents .news-content {
   padding: 30px;
   text-align: left;
 }
 
-/* line 2499, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2515, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .news .search-word-box .form-group div.placeholder label {
   text-align: left;
 }
 
-/* line 2502, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2518, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .news .search-word-box .form-group div.placeholder .form-control {
   width: 270px;
 }
@@ -6196,7 +6217,7 @@ input[type="search"] {
 /**********************************************
  Popup - modal
 ***********************************************/
-/* line 2512, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2528, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap {
   display: none;
   position: absolute;
@@ -6207,7 +6228,7 @@ input[type="search"] {
   margin: auto;
 }
 
-/* line 2520, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2536, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap .modal {
   position: relative;
   z-index: 99;
@@ -6216,17 +6237,17 @@ input[type="search"] {
   background-color: #fff;
 }
 
-/* line 2526, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2542, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap .modal .in_modal {
   position: relative;
 }
 
-/* line 2528, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2544, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap .modal .in_modal .bgSection {
   padding: 20px;
 }
 
-/* line 2531, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2547, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap .modal .in_modal .modalTitle {
   position: relative;
   padding: 15px 0;
@@ -6235,7 +6256,7 @@ input[type="search"] {
   text-align: center;
 }
 
-/* line 2537, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2553, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap .modal .in_modal .modalTitle:before {
   position: absolute;
   top: 0;
@@ -6246,7 +6267,7 @@ input[type="search"] {
   content: '';
 }
 
-/* line 2546, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2562, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap .modal .in_modal .modalTitle:after {
   position: absolute;
   bottom: 0;
@@ -6257,7 +6278,7 @@ input[type="search"] {
   content: '';
 }
 
-/* line 2557, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2573, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap .modal .closeModalBtn {
   position: absolute;
   top: 20px;
@@ -6265,7 +6286,7 @@ input[type="search"] {
   color: #cccdcb;
 }
 
-/* line 2562, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2578, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap .modal .closeModalBtn i:before {
   margin: -2px;
   border: 1px solid #cccdcb;
@@ -6273,7 +6294,7 @@ input[type="search"] {
   font-size: 15px;
 }
 
-/* line 2570, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2586, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .modalWrap .overlay {
   position: fixed;
   top: 0;
@@ -6288,67 +6309,67 @@ input[type="search"] {
 /**********************************************
  Popup - New Window
 ***********************************************/
-/* line 2585, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2601, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 #wrap_popup {
   padding: 20px;
 }
 
-/* line 2587, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2603, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 #wrap_popup .container {
   width: 100% !important;
 }
 
-/* line 2590, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2606, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 #wrap_popup .table-caution {
   margin-top: 50px;
 }
 
-/* line 2595, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2611, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt {
   width: 500px;
 }
 
-/* line 2597, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2613, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt .cash-receipt-type {
   margin-top: 40px;
 }
 
-/* line 2600, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2616, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt .cash-receipt-issue {
   margin-top: 35px;
 }
 
-/* line 2604, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2620, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt-confirm {
   width: 700px;
 }
 
-/* line 2606, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2622, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt-confirm .cash-receipt-list {
   margin-top: 40px;
 }
 
-/* line 2608, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2624, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt-confirm .cash-receipt-list th {
   background-color: #fff;
 }
 
-/* line 2611, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2627, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt-confirm .cash-receipt-list .col-xs-8 {
   width: 64%;
 }
 
-/* line 2614, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2630, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt-confirm .cash-receipt-list .col-xs-2 {
   width: 18%;
 }
 
-/* line 2617, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2633, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt-confirm .cash-receipt-list .price .button {
   margin-top: 5px;
 }
 
-/* line 2621, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+/* line 2637, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt-confirm .line-left {
   border-left: 1px solid #e5e5e5;
 }

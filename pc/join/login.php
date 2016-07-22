@@ -28,7 +28,9 @@
                             </div>
                             <a href="#" class="find-id">아이디/비밀번호 찾기</a>
                         </div>
-                        <a href="#" class="button button-large button-primary button-block"><span>로그인</span></a>
+                        <div class="button-align">
+                            <a href="#" class="button button-large button-primary button-block"><span>로그인</span></a>
+                        </div>
                     </div>
                 </div>
                 <!-- 로그인 //end -->
@@ -40,7 +42,9 @@
                             Steven Alan 회원 가입을 진심으로 환영합니다.<br>
                             만 14세 이상만 회원 가입이 가능하며, 회원이 되시면 다양한 혜택을 받으실 수 있고, 서비스를 안전하고 간편하게 이용 가능합니다.
                         </p>
-                        <a href="#" class="button button-large button-primary button-block"><span>회원가입</span></a>
+                        <div class="button-align">
+                            <a href="#" class="button button-large button-primary button-block"><span>회원가입</span></a>
+                        </div>
                     </div>
                 </div>
                 <!-- 회원가입 //end -->
@@ -57,7 +61,9 @@
                             <label for="order-name">주문자명</label>
                             <input type="password" id="order-name" class="form-control">
                         </div>
-                        <a href="#" class="button button-large button-primary button-block"><span>주문 조회</span></a>
+                        <div class="button-align">
+                            <a href="#" class="button button-large button-primary button-block"><span>주문 조회</span></a>
+                        </div>
                     </div>
                 </div>
                 <!-- 비회원 주문 조회 //end -->
