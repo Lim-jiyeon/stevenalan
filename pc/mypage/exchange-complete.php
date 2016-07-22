@@ -28,7 +28,12 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>Belted Long Shirtdress</td>
+                                    <td class="product-info">
+                                        <div class="item-info">
+                                            <span class="item-brand">STEVEN ALAN</span>
+                                            <strong class="item-name">Belted Long Shirtdress</strong>
+                                        </div>
+                                    </td>
                                     <td>1</td>
                                 </tr>
                                 </tbody>

@@ -131,17 +131,26 @@
                                     <td>주미나</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="pickup_contact_number">연락처</label></th>
+                                    <th scope="row"><label for="pickup_contact_number">핸드폰 번호</label></th>
                                     <td>
-                                        <div class="form-group form-inline">
-                                            <div class="placeholder">
-                                                <label for="pickup_contact_number">핸드폰 번호</label>
-                                                <input type="text" id="pickup_contact_number" class="form-control">
-                                            </div>
-                                            <div class="placeholder">
-                                                <label for="pickup_contact_number_add">추가 연락처</label>
-                                                <input type="text" id="pickup_contact_number_add" class="form-control">
-                                            </div>
+                                        <div class="form-group input-group phone-group">
+                                            <div><input type="text" id="pickup_contact_number" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="pickup_contact_number_add">추가 연락처</label></th>
+                                    <td>
+                                        <div class="form-group input-group phone-group">
+                                            <div><input type="text" id="pickup_contact_number_add" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -182,17 +191,26 @@
                                     <td>주미나</td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="exchange_contact_number">연락처</label></th>
+                                    <th scope="row"><label for="exchange_contact_number">핸드폰 번호</label></th>
                                     <td>
-                                        <div class="form-group form-inline">
-                                            <div class="placeholder">
-                                                <label for="exchange_contact_number">핸드폰 번호</label>
-                                                <input type="text" id="exchange_contact_number" class="form-control">
-                                            </div>
-                                            <div class="placeholder">
-                                                <label for="exchange_contact_number_add">추가 연락처</label>
-                                                <input type="text" id="exchange_contact_number_add" class="form-control">
-                                            </div>
+                                        <div class="form-group input-group phone-group">
+                                            <div><input type="text" id="exchange_contact_number" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><label for="exchange_contact_number_add">추가 연락처</label></th>
+                                    <td>
+                                        <div class="form-group input-group phone-group">
+                                            <div><input type="text" id="exchange_contact_number_add" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
                                         </div>
                                     </td>
                                 </tr>

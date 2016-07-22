@@ -2,15 +2,10 @@
 
     <div class="content">
         <div class="container">
-            <ul class="order-process">
-                <li>shopping bag</li>
-                <li class="current">checkout</li>
-                <li>summary</li>
-            </ul>
             <div class="row">
                 <div class="col-xs-9">
                     <div class="box">
-                        <h2 class="box-page-title">주문 결제</h2>
+                        <h2 class="box-page-title">CHECKOUT</h2>
                         <!-- 주문 상품 확인 -->
                         <div class="checkout confirm-order-product">
                             <h3 class="table-title">주문 상품 확인</h3>
@@ -133,8 +128,12 @@
                                 <tr>
                                     <th scope="row"><label for="cellphone">휴대폰번호*</label></th>
                                     <td>
-                                        <div class="form-group form-inline">
-                                            <input type="text" id="cellphone" class="form-control">
+                                        <div class="form-group input-group phone-group">
+                                            <div><input type="text" id="cellphone" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
                                         </div>
                                     </td>
                                 </tr>
@@ -220,16 +219,24 @@
                                 <tr>
                                     <th scope="row"><label for="phone">연락처*</label></th>
                                     <td>
-                                        <div class="form-group">
-                                            <input type="text" id="phone" class="form-control">
+                                        <div class="form-group input-group phone-group">
+                                            <div><input type="text" id="phone" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
                                         </div>
                                     </td>
                                 </tr>
                                 <tr>
-                                    <th scope="row"><label for="phone-add">추가 연락처</label></th>
+                                    <th scope="row"><label for="phone_add">추가 연락처</label></th>
                                     <td>
-                                        <div class="form-group">
-                                            <input type="text" id="phone-add" class="form-control">
+                                        <div class="form-group input-group phone-group">
+                                            <div><input type="text" id="phone_add" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
                                         </div>
                                     </td>
                                 </tr>

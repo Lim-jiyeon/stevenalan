@@ -2,13 +2,8 @@
 
     <div class="content">
         <div class="container">
-            <ul class="order-process">
-                <li class="current">shopping bag</li>
-                <li>checkout</li>
-                <li>summary</li>
-            </ul>
             <div class="box">
-                <h2 class="box-page-title">쇼핑백</h2>
+                <h2 class="box-page-title">SHOPPING BAG</h2>
                 <!-- 국내 배송 상품 -->
                 <div class="shoppingbag-list">
                     <div class="table-help">

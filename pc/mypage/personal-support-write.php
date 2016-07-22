@@ -61,9 +61,15 @@
                         </td>
                     </tr>
                     <tr>
-                        <th><label for="write-form-tel">연락처</label></th>
+                        <th><label for="write_form_tel">연락처</label></th>
                         <td>
-                            <input type="tel" id="write-form-tel" class="form-control">
+                            <div class="form-group input-group phone-group">
+                                <div><input type="text" id="write_form_tel" class="form-control"></div>
+                                <div class="input-group-addon">-</div>
+                                <div><input type="text" class="form-control"></div>
+                                <div class="input-group-addon">-</div>
+                                <div><input type="text" class="form-control"></div>
+                            </div>
                         </td>
                     </tr>
                     <tr>

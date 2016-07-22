@@ -2,13 +2,8 @@
 
     <div class="content">
         <div class="container">
-            <ul class="order-process">
-                <li>shopping bag</li>
-                <li>checkout</li>
-                <li class="current">summary</li>
-            </ul>
             <div class="box">
-                <h2 class="box-page-title">주문 완료/요약</h2>
+                <h2 class="box-page-title">ORDER COMPLETE</h2>
                 <!-- 주문 완료 확인 -->
                 <div class="complete-box ordered-check">
                     <span class="washed-line-text">thankyou</span>

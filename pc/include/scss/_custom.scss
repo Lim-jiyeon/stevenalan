@@ -535,10 +535,12 @@
             width: 100px;
             height: 100px;
         }
+        & + .item-info {
+            float: left;
+            padding-left: 20px;
+        }
     }
     .item-info {
-        float: left;
-        padding-left: 20px;
         .item-badge {
             display: inline-block;
             margin-bottom: 6px;
@@ -1130,32 +1132,32 @@
 /**********************************************
  Order
 ***********************************************/
-.order-process {
-    margin-bottom: 6px;
-    @include clearfix;
-    li {
-        float: left;
-        font-size: 24px;
-        font-family: $font-family-en;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        &:after {
-            display: inline-block;
-            padding: 0 123px 0 124px;
-            font-family: "fontello";
-            font-size: 19px;
-            vertical-align: 2px;
-            content: '\e80f';
-        }
-        &:last-child:after {
-            padding: 0;
-            content: '';
-        }
-        &.current {
-            color: #064787;
-        }
-    }
-}
+//.order-process {
+//    margin-bottom: 6px;
+//    @include clearfix;
+//    li {
+//        float: left;
+//        font-size: 24px;
+//        font-family: $font-family-en;
+//        letter-spacing: 5px;
+//        text-transform: uppercase;
+//        &:after {
+//            display: inline-block;
+//            padding: 0 123px 0 124px;
+//            font-family: "fontello";
+//            font-size: 19px;
+//            vertical-align: 2px;
+//            content: '\e80f';
+//        }
+//        &:last-child:after {
+//            padding: 0;
+//            content: '';
+//        }
+//        &.current {
+//            color: #064787;
+//        }
+//    }
+//}
 
 /**********************************************
  Order - Shopping Bag
@@ -1194,6 +1196,12 @@
         .input-button-group {
             .form-control {
                 width: 206px;
+            }
+        }
+        .phone-group {
+            width: 300px;
+            .form-control {
+                width: 100%;
             }
         }
     }
@@ -1509,6 +1517,12 @@
     }
     .form-control {
         width: 300px;
+    }
+    .phone-group {
+        width: 300px;
+        .form-control {
+            width: 100%;
+        }
     }
     .selectbox {
         width: 170px;    }
@@ -1898,6 +1912,7 @@
             }
             th{
                 padding-left: 15px;
+                font-weight: 400;
                 text-align: left;
                 color: #000;
             }
@@ -1933,12 +1948,15 @@
                 margin-left: 0;
             }
         }
+        .phone-group {
+            width: 300px;
+            .form-control {
+                width: 100%;
+            }
+        }
     }
     .buttonWrap{
         padding-top: 20px;
-    }
-    #write-form-tel{
-        max-width: 300px;
     }
 }
 
