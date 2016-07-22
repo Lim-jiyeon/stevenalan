@@ -6290,7 +6290,7 @@ input[type="search"] {
 ***********************************************/
 /* line 2585, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 #wrap_popup {
-  padding: 20px;
+  padding: 20px 15px;
 }
 
 /* line 2587, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
@@ -6305,7 +6305,7 @@ input[type="search"] {
 
 /* line 2595, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt {
-  width: 500px;
+  width: 460px;
 }
 
 /* line 2597, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
@@ -6320,7 +6320,7 @@ input[type="search"] {
 
 /* line 2604, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt-confirm {
-  width: 700px;
+  width: 660px;
 }
 
 /* line 2606, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
@@ -6351,4 +6351,57 @@ input[type="search"] {
 /* line 2621, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
 .cash-receipt-confirm .line-left {
   border-left: 1px solid #e5e5e5;
+}
+
+/* line 2588, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.receipt-table {
+  width: 460px;
+}
+
+/* line 2590, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.receipt-table .table {
+  margin-top: 40px;
+  border: 1px solid #acacac;
+}
+
+/* line 2593, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.receipt-table .table .col-xs-1 {
+  width: 6.249999999975%;
+}
+
+/* line 2596, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.receipt-table .table th,
+.receipt-table .table td {
+  padding: 5px 0 5px 10px;
+  border: 1px solid #acacac;
+  border-width: 1px 1px 0;
+  background-color: #fff;
+  color: #000;
+  text-align: left;
+}
+
+/* line 2606, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.receipt-table .table thead th {
+  background-color: #f5f5f5;
+}
+
+/* line 2611, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.receipt-table .table tbody th {
+  background-color: #e5ecf3;
+}
+
+/* line 2616, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.receipt-table .table .amount.head td {
+  color: #858585;
+}
+
+/* line 2619, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.receipt-table .table .amount td {
+  padding-left: 0;
+  text-align: center;
+}
+
+/* line 2625, /Users/jyeon/project/stevenalan/pc/include/scss/_custom.scss */
+.receipt-table .button-align-center {
+  margin-top: 40px;
 }
