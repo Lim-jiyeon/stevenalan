@@ -28,7 +28,9 @@
                             </div>
                             <a href="#" class="find-id">아이디/비밀번호 찾기</a>
                         </div>
-                        <a href="#" class="button button-large button-primary button-block"><span>로그인</span></a>
+                        <div class="button-align">
+                            <a href="#" class="button button-large button-primary button-block"><span>로그인</span></a>
+                        </div>
                     </div>
                 </div>
                 <!-- 로그인 //end -->
@@ -42,7 +44,9 @@
                             혜택을 받으실 수 있고,<br>
                             서비스를 안전하고 간편하게 이용 가능합니다.
                         </p>
-                        <a href="#" class="button button-large button-primary button-block"><span>회원가입</span></a>
+                        <div class="button-align">
+                            <a href="#" class="button button-large button-primary button-block"><span>회원가입</span></a>
+                        </div>
                     </div>
                 </div>
                 <!-- 회원가입 //end -->
@@ -51,7 +55,9 @@
                     <div class="box">
                         <h3 class="box-title">비회원 주문</h3>
                         <p class="box-explain">비회원 주문 시 쿠폰 사용의 제한이 있으며 Steven Alan의<br>다양한 혜택을 받으실 수 없습니다.</p>
-                        <a href="#" class="button button-large button-primary button-block"><span>비회원 주문</span></a>
+                        <div class="button-align">
+                            <a href="#" class="button button-large button-primary button-block"><span>비회원 주문</span></a>
+                        </div>
                     </div>
                 </div>
                 <!-- 비회원 주문 //end -->

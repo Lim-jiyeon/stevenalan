@@ -49,8 +49,12 @@
                                 <tr>
                                     <th scope="row"><label for="cellphone">휴대폰번호*</label></th>
                                     <td>
-                                        <div class="form-group form-inline">
-                                            <input type="text" id="cellphone" class="form-control">
+                                        <div class="form-group input-group phone-group">
+                                            <div><input type="text" id="cellphone" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
+                                            <div class="input-group-addon">-</div>
+                                            <div><input type="text" class="form-control"></div>
                                         </div>
                                     </td>
                                 </tr>
