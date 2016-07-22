@@ -107,14 +107,27 @@
     }
 }
 .megaMenu {
+    position: relative;
     margin: 0 -25.4px;
     padding-left: 0;
     font-family: $font-family-en;
+    @include clearfix;
     .megaMenu-item {
-        position: relative;
         float: left;
         padding: 0 25.4px;
         list-style: none;
+        &.relative { // 2뎁스 메뉴 세로로 나열 (기본은 가로 나열)
+            position: relative;
+            .menu-child-box {
+                width: auto;
+            }
+            .menu-item-list > li {
+                margin-bottom: 25px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
         .menu-item-title {
             font-weight: 400;
             a {
@@ -138,11 +151,11 @@
         left: 0;
         z-index: 10;
         width: 1200px;
-        &.menu-jewelry {
-            left: -210px;
-        }
     }
     .menu-item-list {
+        position: absolute;
+        top: 0;
+        left: 0;
         display: inline-block;
         padding: 15px 20px 20px;
         background-color: #fff;
@@ -167,6 +180,12 @@
                 font-size: 11px;
                 letter-spacing: 0.5px;
             }
+        }
+    }
+    .megaMenu-item:nth-child(n+5) { // 5번째 이후 오른쪽 라인으로 맞춰지게
+        .menu-item-list {
+            left: initial;
+            right: 25.4px;
         }
     }
 }
