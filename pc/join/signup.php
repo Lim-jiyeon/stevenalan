@@ -2,14 +2,13 @@
 
     <div class="content">
         <div class="container">
-            <h2 class="page-title">signup</h2>
-            <div class="box privacy-modify">
-                <h3 class="box-page-title">가입 정보 입력</h3>
+            <h2 class="page-title">회원가입</h2>
+            <div class="box signup">
+                <!-- 회원 로그인 및 필수 정보 입력 -->
                 <div class="member-privacy">
-                    <!-- 회원 로그인 및 필수 정보 입력 -->
-                    <h4 class="table-title">로그인/필수 정보</h4>
+                    <h3 class="member-title">로그인/필수 정보</h3>
                     <table class="table table-row-list">
-                        <caption class="sr-only">로그인 정보 및 회원 필수 정보를 입력하는 목록</caption>
+                        <caption class="sr-only">회원가입을 위한 필수 정보를 입력하는 목록</caption>
                         <colgroup>
                             <col class="col-xs-2">
                             <col class="col-xs-10">
@@ -60,8 +59,12 @@
                         <tr>
                             <th scope="row"><label for="cellphone">휴대폰번호*</label></th>
                             <td>
-                                <div class="form-group form-inline">
-                                    <input type="text" id="cellphone" class="form-control">
+                                <div class="form-group input-group phone-group">
+                                    <div><input type="text" id="cellphone" class="form-control"></div>
+                                    <div class="input-group-addon">-</div>
+                                    <div><input type="text" class="form-control"></div>
+                                    <div class="input-group-addon">-</div>
+                                    <div><input type="text" class="form-control"></div>
                                 </div>
                             </td>
                         </tr>
@@ -151,11 +154,13 @@
                         </tr>
                         </tbody>
                     </table>
-                    <!-- 회원 로그인 및 필수 정보 입력 //end -->
-                    <!-- 회원 선택 정보 입력 -->
-                    <h4 class="table-title">선택 정보</h4>
+                </div>
+                <!-- 회원 로그인 및 필수 정보 입력 //end -->
+                <!-- 회원 선택 정보 입력 -->
+                <div class="member-privacy">
+                    <h3 class="member-title">선택 정보</h3>
                     <table class="table table-row-list">
-                        <caption class="sr-only">회원 선택 정보를 입력하는 목록</caption>
+                        <caption class="sr-only">회원가입을 위한 선택 정보를 입력하는 목록</caption>
                         <colgroup>
                             <col class="col-xs-2">
                             <col class="col-xs-10">
@@ -195,9 +200,11 @@
                         </tr>
                         </tbody>
                     </table>
-                    <!-- 회원 선택 정보 입력 //end -->
-                    <!-- 약관 동의 -->
-                    <h4 class="table-title">약관 동의</h4>
+                </div>
+                <!-- 회원 선택 정보 입력 //end -->
+                <!-- 약관 동의 -->
+                <div class="member-privacy">
+                    <h3 class="member-title">약관 동의</h3>
                     <div class="row signup-agree">
                         <div class="col-xs-6">
                             <h4 class="signup-agree-title">
@@ -228,8 +235,8 @@
                             </div>
                         </div>
                     </div>
-                    <!-- 약관 동의 //end -->
                 </div>
+                <!-- 약관 동의 //end -->
                 <div class="button-align-center">
                     <a href="#" class="button button-large button-primary"><span>회원가입</span></a>
                 </div>

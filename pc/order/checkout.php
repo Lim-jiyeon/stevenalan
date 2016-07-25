@@ -123,11 +123,9 @@
                                     <th scope="row"><label for="international-shipping-input">해외배송상품<br>입력정보*</label></th>
                                     <td>
                                         <div class="help-group">
-                                            <div class="input-button-group">
-                                                <div class="form-group form-inline">
-                                                    <div><input type="text" id="international-shipping-input" class="form-control"/></div>
-                                                    <div><a href="#" class="button">조회/발급</a></div>
-                                                </div>
+                                            <div class="form-group form-inline help-input">
+                                                <input type="text" id="international-shipping-input" class="form-control"/>
+                                                <a href="#" class="button">조회/발급</a>
                                             </div>
                                             <div class="help-box">
                                                 <i class="icon-help"></i>

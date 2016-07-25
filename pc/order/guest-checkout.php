@@ -149,11 +149,9 @@
                                     <th scope="row"><label for="international-shipping-input">해외배송상품<br>입력정보*</label></th>
                                     <td>
                                         <div class="help-group">
-                                            <div class="input-button-group">
-                                                <div class="form-group form-inline">
-                                                    <div><input type="text" id="international-shipping-input" class="form-control"/></div>
-                                                    <div><a href="#" class="button">조회/발급</a></div>
-                                                </div>
+                                            <div class="form-group form-inline help-input">
+                                                <input type="text" id="international-shipping-input" class="form-control"/>
+                                                <a href="#" class="button">조회/발급</a>
                                             </div>
                                             <div class="help-box">
                                                 <i class="icon-help"></i>
@@ -173,7 +171,10 @@
                         <!-- 주문자 정보 //end -->
                         <!-- 배송지 정보 -->
                         <div class="checkout checkout-input">
-                            <h3 class="table-title">배송지 정보</h3>
+                            <div class="title-group">
+                                <h3 class="title table-title">배송지 정보</h3>
+                                <a href="#" class="button button-small">주문자 정보와 동일</a>
+                            </div>
                             <table class="table table-row-list">
                                 <caption class="sr-only">배송지 정보를 입력하는 목록</caption>
                                 <colgroup>
@@ -181,18 +182,6 @@
                                     <col class="col-xs-10">
                                 </colgroup>
                                 <tbody>
-                                <tr>
-                                    <th scope="row">배송지 선택*</th>
-                                    <td>
-                                        <div class="radio-group">
-                                            <div class="radio">
-                                                <input type="radio" name="shippingAddress" id="orderer-address" checked>
-                                                <label for="orderer-address" class="radio-display"></label>
-                                                <label for="orderer-address" class="radio-label">주문자 주소</label>
-                                            </div>
-                                        </div>
-                                    </td>
-                                </tr>
                                 <tr>
                                     <th scope="row"><label for="recipient">수령인*</label></th>
                                     <td>
