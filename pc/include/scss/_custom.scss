@@ -420,6 +420,7 @@
 }
 .help-group { // 도움말이 Input 옆에 위치 할때
     @include clearfix;
+    .input-button-group,
     .help-input {
         float: left;
     }
@@ -1213,6 +1214,11 @@
             margin-bottom: 7px;
         }
     }
+    .shipping-memo {
+        .form-control {
+            width: 603px;
+        }
+    }
 }
 .coupon-info {
     .selectbox {
@@ -2000,6 +2006,11 @@
             width: 100%;
         }
     }
+    .help-group {
+        .form-control {
+            width: 150px;
+        }
+    }
 }
 .privacy-modify {
     .member-privacy {
@@ -2291,7 +2302,6 @@
             margin-bottom: 25px;
             padding-bottom: 15px;
             border-bottom: 1px solid #e5e5e5;
-            font-weight: 400;
             font-size: 16px;
             color: $brand-primary;
             letter-spacing: 1px;
@@ -2515,9 +2525,6 @@
 .news {
     .news-contents {
         border-bottom: 1px solid #e5e5e5;
-        .news-help-text {
-            margin-bottom: 10px;
-        }
         .align-left {
             color: $brand-secondary;
         }

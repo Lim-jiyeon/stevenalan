@@ -185,11 +185,9 @@
                             <th scope="row"><label for="personalCustomsCode">개인통관고유부호</label></th>
                             <td>
                                 <div class="help-group">
-                                    <div class="input-button-group">
-                                        <div class="form-group form-inline">
-                                            <div><input type="text" id="personalCustomsCode" class="form-control"/></div>
-                                            <div><a href="#" class="button">조회/발급</a></div>
-                                        </div>
+                                    <div class="form-group form-inline help-input">
+                                        <input type="text" id="personalCustomsCode" class="form-control"/>
+                                        <a href="#" class="button">조회/발급</a>
                                     </div>
                                     <div class="help-box">
                                         <i class="icon-help"></i>

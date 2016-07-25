@@ -229,17 +229,12 @@
                                         </div>
                                     </td>
                                 </tr>
-                                <tr>
-                                    <th scope="row"><label for="shipping-memo">배송 메모*</label></th>
+                                <tr class="shipping-memo">
+                                    <th scope="row"><label for="shipping_memo">배송 메모*</label></th>
                                     <td>
                                         <div class="form-group form-block placeholder">
-                                            <label for="shipping-memo">한글 20자, 영문 40자 이내</label>
-                                            <input type="text" id="shipping-memo" class="form-control"/>
-                                        </div>
-                                        <div class="checkbox checkbox-block">
-                                            <input type="checkbox" id="update-address" checked="checked">
-                                            <label for="update-address" class="checkbox-display"></label>
-                                            <label for="update-address" class="checkbox-label">주문자 주소 업데이트</label>
+                                            <label for="shipping_memo">한글 20자, 영문 40자 이내</label>
+                                            <input type="text" id="shipping_memo" class="form-control"/>
                                         </div>
                                     </td>
                                 </tr>

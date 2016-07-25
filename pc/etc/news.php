@@ -10,7 +10,6 @@
                     <div class="box news">
                         <h3 class="box-page-title">NEWS</h3>
                         <div class="news-contents">
-                            <p class="news-help-text">STEVEN ALAN의 새로운 소식을 알려드립니다.</p>
                             <table class="table table-list folding-table">
                                 <caption>Steven alan의 소식을 볼 수 있는 목록</caption>
                                 <colgroup>
