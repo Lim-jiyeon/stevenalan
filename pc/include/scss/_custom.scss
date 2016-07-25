@@ -2525,6 +2525,9 @@
 .news {
     .news-contents {
         border-bottom: 1px solid #e5e5e5;
+        .news-help-text {
+            margin-bottom: 10px;
+        }
         .align-left {
             color: $brand-secondary;
         }
