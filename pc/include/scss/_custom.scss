@@ -420,7 +420,7 @@
 }
 .help-group { // 도움말이 Input 옆에 위치 할때
     @include clearfix;
-    .input-button-group {
+    .help-input {
         float: left;
     }
     .help-box {
@@ -1061,12 +1061,8 @@
             @include clearfix;
             .sns-link {
                 float: left;
-                .icon-facebook-rect {
+                i:before {
                     font-size: 20px;
-                }
-                .icon-twitter-squared {
-                    display: inline-block;
-                    font-size: 24px;
                 }
             }
             .wishlist-link {
@@ -1209,6 +1205,12 @@
         th, td {
             padding-top: 15px;
             border-top: 1px solid #e5e5e5;
+        }
+        .form-control {
+            width: 206px;
+        }
+        .help-group {
+            margin-bottom: 7px;
         }
     }
 }
@@ -1964,17 +1966,12 @@
 /**********************************************
  My Page - 회원정보수정
 ***********************************************/
-.privacy-modify {
-    .member-privacy {
-        margin-top: -10px;
-        padding: 25px 20px 0;
-        border: 1px solid #e5e5e5;
-        border-width: 1px 0;
-        .table {
-            margin-bottom: 60px;
-            td {
-                color: #4b4b4b;
-            }
+.member-privacy {
+    margin-top: -10px;
+    padding: 25px 20px 0;
+    .table {
+        td {
+            color: #4b4b4b;
         }
     }
     label, .form-group {
@@ -2001,6 +1998,15 @@
         width: 300px;
         .form-control {
             width: 100%;
+        }
+    }
+}
+.privacy-modify {
+    .member-privacy {
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        .table {
+            margin-bottom: 60px;
         }
     }
     .privacy-modify-cancel {
@@ -2278,21 +2284,28 @@
 /**********************************************
  Join - Sign Up
 ***********************************************/
+.signup {
+    .member-privacy {
+        padding-bottom: 60px;
+        .member-title {
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e5e5e5;
+            font-weight: 400;
+            font-size: 16px;
+            color: $brand-primary;
+            letter-spacing: 1px;
+        }
+    }
+}
 .signup-agree {
     margin-bottom: 20px;
         .signup-agree-title {
             font-weight: 400;
-            @include clearfix;
-                .checkbox {
-                    float: left;
-                }
-                .button {
-                    float: right;
-                }
-                + .agree-box {
-                    display: none;
-                    margin-top: 20px;
-                }
+            + .agree-box {
+                display: none;
+                margin-top: 20px;
+            }
         }
 }
 
@@ -2404,6 +2417,9 @@
     background-color: #f5f5f5;
     .slick-slide {
         padding: 0 10px;
+        img {
+            width: 100%;
+        }
     }
     .slick-arrow {
         background-color: rgba(230,231,238,.5);

@@ -91,13 +91,13 @@
                         </div>
                         <div class="detail-button-group">
                             <div class="button-group">
-                                <div><a href="#" class="button button-large button-primary">buy now</a></div>
-                                <div><a href="#" class="button button-large">Add to Bag</a></div>
+                                <div><a href="#" class="button button-large button-primary">바로 주문하기</a></div>
+                                <div><a href="#" class="button button-large">쇼핑백 담기</a></div>
                             </div>
                             <div class="Sharing-group">
                                 <div class="sns-link">
-                                    <a href="#"><i class="icon-facebook-rect"></i></a>
-                                    <a href="#"><i class="icon-twitter-squared"></i></a>
+                                    <a href="#"><i class="icon-facebook-circled"></i></a>
+                                    <a href="#"><i class="icon-twitter-circled"></i></a>
                                 </div>
                                 <div class="wishlist-link">
                                     <a href="#" class="button button-link button-link-large button-danger">위시리스트 담기</a>
@@ -114,7 +114,7 @@
         <div class="container">
             <div class="detail-contents">
                 <ul class="detail-info-menu">
-                    <li class="seleted"><a href="#" class="button">상품상세</a></li>
+                    <li class="selected"><a href="#" class="button">상품상세</a></li>
                     <li><a href="#" class="button">배송 및 교환</a></li>
                     <li><a href="#" class="button">사이즈 가이드</a></li>
                 </ul>

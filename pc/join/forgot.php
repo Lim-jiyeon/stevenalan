@@ -46,9 +46,12 @@
                                 <label for="findId-phone-name">이름</label>
                                 <input type="text" id="findId-phone-name" class="form-control">
                             </div>
-                            <div class="form-group placeholder">
-                                <label for="findId-phone-phone">휴대폰 번호('-' 없이)</label>
-                                <input type="text" id="findId-phone-phone" class="form-control">
+                            <div class="form-group input-group">
+                                <div><input type="text" class="form-control" title="휴대폰 첫번째 자리 입력"></div>
+                                <div class="input-group-addon">-</div>
+                                <div><input type="text" class="form-control" title="휴대폰 두번째 자리 입력"></div>
+                                <div class="input-group-addon">-</div>
+                                <div><input type="text" class="form-control" title="휴대폰 세번째 자리 입력"></div>
                             </div>
                         </div>
                         <!-- 아이디 찾기 : 휴대폰 번호 //end -->
@@ -105,9 +108,12 @@
                                 <label for="findPassword-phone-name">이름</label>
                                 <input type="text" id="findPassword-phone-name" class="form-control">
                             </div>
-                            <div class="form-group placeholder">
-                                <label for="findPassword-phone-phone">휴대폰 번호('-' 없이)</label>
-                                <input type="text" id="findPassword-phone-phone" class="form-control">
+                            <div class="form-group input-group">
+                                <div><input type="text" class="form-control" title="휴대폰 첫번째 자리 입력"></div>
+                                <div class="input-group-addon">-</div>
+                                <div><input type="text" class="form-control" title="휴대폰 두번째 자리 입력"></div>
+                                <div class="input-group-addon">-</div>
+                                <div><input type="text" class="form-control" title="휴대폰 세번째 자리 입력"></div>
                             </div>
                         </div>
                         <!-- 비밀번호 찾기 : 핸드폰 번호 //end -->
