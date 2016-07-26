@@ -1652,9 +1652,7 @@
         width: 12.5%;
         color: $brand-secondary;
         text-align: center;
-        i,
-        .process-text,
-        .process-badge {
+        * {
             display: block;
         }
         i {
