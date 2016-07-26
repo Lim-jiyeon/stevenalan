@@ -1,8 +1,24 @@
+// Styles
+// --------------------------------------------------
+
+
+// Project Config
 @import "variables";
+
+// Mixins & Dependenceis (Vendor & Plugins)
 @import "mixins/mixins";
 @import "nomalize";
 @import "scaffolding";
+
+// Core Components & +
+@import "slick";
+@import "utilities";
 @import "grid";
-@import "component/button";
-@import "component/form";
+@import "button";
+@import "form";
+@import "table";
+@import "tab";
+@import "popup";
+
+// Custom Style
 @import "custom";

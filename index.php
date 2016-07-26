@@ -11,7 +11,7 @@
         .site-brand {margin:0;font-size:48px;color:#000;text-align:center;text-transform:capitalize;}
         .copyright {margin:0;padding:0;border:0;}
         .markup-list h2 {margin-bottom:10px;font-size:21px;}
-        .markup-list h3 {margin:40px 0 10px 10px;font-size:15px;}
+        .markup-list h4 {margin:40px 0 10px 10px;font-size:15px;}
         .markup-list ul li {padding:2px 0 2px 27px;font-size:14px;}
         .markup-list a:hover {font-weight:700;color:#004689;text-decoration:underline;}
     </style>
@@ -27,7 +27,21 @@
                 <div class="col-xs-12">
                     <h2>마크업 리스트</h2>
 
-                    <h3>1. Store &amp; Contents</h3>
+                    <h3>MOBILE</h3>
+
+                    <h4>4. Login &amp; Sign Up</h4>
+                    <ul>
+                        <li>4.1 <a href="./mobile/join/login.php">Login</a></li>
+                        <li>4.2 <a href="./mobile/join/signup.php">회원가입</a></li>
+                        <li>4.3 <a href="./mobile/join/signup-complete.php">회원가입 완료</a></li>
+                        <li>4.4 <a href="./mobile/join/forgot.php">아이디 / 비밀번호 찾기</a></li>
+                    </ul>
+
+                    <hr>
+
+                    <h3>PC</h3>
+
+                    <h4>1. Store &amp; Contents</h4>
                     <ul>
                         <li>1.1 <a href="./pc/main/main.php">Main</a></li>
                         <li>1.2 <a href="./pc/shop/catalog.php">Product List</a></li>
@@ -36,7 +50,7 @@
 
                     <hr>
 
-                    <h3>2. Shopping Bag &amp; Checkout</h3>
+                    <h4>2. Shopping Bag &amp; Checkout</h4>
                     <ul>
                         <li>2.1 <a href="./pc/order/shoppingbag.php">쇼핑백</a></li>
                         <li>2.1 <a href="./pc/order/shoppingbag-empty.php">쇼핑백에 상품이 없을 경우</a></li>
@@ -46,7 +60,7 @@
 
                     <hr>
 
-                    <h3>3. My Page</h3>
+                    <h4>3. My Page</h4>
                     <ul>
                         <li>3.0 <a href="./pc/mypage/dashboard.php">대시보드</a></li>
                         <li>3.1 <a href="./pc/mypage/order-track.php">주문/배송 조회</a></li>
@@ -74,7 +88,7 @@
 
                     <hr>
 
-                    <h3>4. Login &amp; Sign Up</h3>
+                    <h4>4. Login &amp; Sign Up</h4>
                     <ul>
                         <li>4.1 <a href="./pc/join/login.php">Login</a></li>
                         <li>4.2 <a href="./pc/join/signup.php">회원가입</a></li>
@@ -84,7 +98,7 @@
 
                     <hr>
 
-                    <h3>5. Etc.</h3>
+                    <h4>5. Etc.</h4>
                     <ul>
                         <li>5.1 <a href="./pc/etc/brands.php">브랜드</a></li>
                         <li>5.1.1 <a href="./pc/etc/brands-view.php">브랜드 상세</a></li>

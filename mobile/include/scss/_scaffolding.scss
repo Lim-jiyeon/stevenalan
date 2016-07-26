@@ -2,22 +2,58 @@
 // Scaffolding
 // --------------------------------------------------
 
+// Typography
+@font-face {
+  font-family: "notoSans";
+  font-weight: 400;
+  src: url("../fonts/NotoSansCJKkr-Regular.eot?") format('eot'),
+  url("../fonts/NotoSansCJKkr-Regular.woff") format('woff'),
+  url("../fonts/NotoSansCJKkr-Regular.otf")  format('opentype');
+}
+@font-face {
+  font-family: "notoSans";
+  font-weight: 700;
+  src: url("../fonts/NotoSansCJKkr-Bold.eot?") format('eot'),
+  url("../fonts/NotoSansCJKkr-Bold.woff") format('woff'),
+  url("../fonts/NotoSansCJKkr-Bold.otf")  format('opentype');
+}
+@font-face {
+  font-family: "BentonSans";
+  font-weight: 400;
+  src: url("../fonts/BentonSans-Regular.eot?") format('eot'),
+  url("../fonts/BentonSans-Regular.woff") format('woff'),
+  url("../fonts/BentonSans-Regular.otf")  format('opentype');
+}
+@font-face {
+  font-family: "BentonSans";
+  font-weight: 500;
+  src: url("../fonts/BentonSans-Medium.eot?") format('eot'),
+  url("../fonts/BentonSans-Medium.woff") format('woff'),
+  url("../fonts/BentonSans-Medium.otf")  format('opentype');
+}
+@font-face {
+  font-family: "BentonSans";
+  font-weight: 700;
+  src: url("../fonts/BentonSans-Bold.eot?") format('eot'),
+  url("../fonts/BentonSans-Bold.woff") format('woff'),
+  url("../fonts/BentonSans-Bold.otf")  format('opentype');
+}
 
 // Reset the box-sizing
 * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+  @include box-sizing(border-box);
 }
 
 
 // Body reset
+* {
+  margin: 0;
+  padding: 0;
+}
 
 html {
   font-size: 10px;
@@ -30,6 +66,12 @@ body {
   line-height: $line-height-base;
   color: $text-color;
   background-color: $body-bg;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
 }
 
 // Reset fonts for relevant elements
@@ -52,7 +94,7 @@ a {
   &:hover,
   &:focus {
     color: $link-hover-color;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   &:focus {
@@ -65,6 +107,7 @@ figure {
 }
 
 img {
+  width: 100%;
   vertical-align: middle;
 }
 

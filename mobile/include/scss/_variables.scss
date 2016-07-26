@@ -6,6 +6,10 @@
 //== Colors
 //
 //## Gray and brand colors for use across Bootstrap.
+$brand-primary:         #004689 !default;
+$brand-secondary:       #000 !default;
+$brand-danger:          #c20007 !default;
+$brand-information:     #197b30 !default;
 
 
 //== Scaffolding
@@ -13,21 +17,43 @@
 //## Settings for some of the most global styles.
 
 $body-bg:               #fff !default;
-$text-color:            #000 !default;
-$link-color:            #000 !default;
-$link-hover-color:      #000 !default;
+$text-color:            #858585 !default;
+$link-color:            #858585 !default;
+$link-hover-color:      #858585 !default;
 
 
 //== Typography
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "BentonSans", Arial, sans-serif !default;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
-$font-family-base:        $font-family-sans-serif !default;
-$font-size-base:          14px !default;
+$font-family-base:        "notoSans", sans-serif !default;
+$font-family-en:          "BentonSans", sans-serif !default;
+$font-family-ko:          "notoSans", sans-serif !default;
+$font-family-serif:       "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base:          12px !default;
 //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        20/14 !default; // 20/14
+$line-height-base:        (20)/12 !default; // 20/14
+
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+$input-bg:                       #fff !default;
+//** `<input disabled>` background color
+$input-bg-disabled:              #f5f5f5 !default;
+
+//** Text color for `<input>`s
+$input-color:                    #555 !default;
+//** `<input>` border color
+$input-border:                   #d5d5d5 !default;
+//** Placeholder text color
+$input-color-placeholder:        #999 !default;
+//** `.form-group` margin
+$form-group-margin-bottom:       10px !default;
+//** Disabled cursor for form controls and buttons.
+$cursor-disabled:                not-allowed !default;
 
 
 //== Media queries breakpoints
@@ -104,34 +130,23 @@ $container-large-desktop:      (1140px + $grid-gutter-width) !default;
 $container-lg:                 $container-large-desktop !default;
 
 
+//== Button
+//
+//##
 
-/* FONT SIZE */
-$default-font-size: 14px;
-$large-font-size: 18px;
-$small-font-size: 12px;
-$xsmall-font-size: 10px;
+// Button Size
+$default-height: 30px;//
+$large-height: 36px;
+$small-height: 24px;//
 
-/* HEIGHT */
-$default-height: 35px;
-$large-height: 42px;
-$small-height: 28px;
-$xsmall-height: 18px;
+//Button Font Size
+$button-large-size: 16px;//
+$button-small-size: 11px;//
 
-/* BORDER */
-$border-radius: 3px;
+// Font Color
+$button-default-color: #333;
+
 $border-size: 1px;
+$border-color: #d5d5d5;
 
-
-%border-radius {
-  -webkit-border-radius:$border-radius;
-  -moz-border-radius:$border-radius;
-  border-radius:$border-radius;
-}
-
-/* FORM */
-$form-control-font-size: 14px;
-$form-control-font-color: #333;
-
-$form-control-border-color: #d8d8d8;
-
-$form-control-height: 34px;
+$line-height-large: (36)/12;

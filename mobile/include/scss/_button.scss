@@ -1,0 +1,132 @@
+.button { //기본 버튼
+    position: relative;
+    display: inline-block;
+    margin: 0 3px;
+    padding: 0 30px;
+    border: 1px solid transparent;
+    @include border-radius(3px);
+    background-color: #898989;
+    font-size: $font-size-base;
+    line-height: (($default-height - 2)/$font-size-base);
+    font-family: $font-family-ko;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-appearance: none;
+    &:hover,
+    &:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+    &:first-child {
+        margin-left: 0;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+/* Purpose Definition */
+// Button Size
+.button-large { // 하단 Submit 버튼
+    padding: 0 50px;
+    @include border-radius(5px);
+    font-size: $button-large-size;
+    line-height: (($large-height - 2)/$button-large-size);
+}
+.button-small { // 게시판 용도
+    padding: 0 11px;
+    font-size: $button-small-size;
+    line-height: (($small-height - 2)/$button-small-size);
+    letter-spacing: 1px;
+}
+.button-link { // 링크 스타일 (삭제, 변경)
+    padding: 0 2px;
+    border-bottom: 1px solid #bdbdbd;
+    font-size: $font-size-base;
+    line-height: ((18 - 2)/12);
+    letter-spacing: 1px;
+}
+.button-link-large {
+    font-size: 14px;
+}
+.button-input {
+    padding: 0 15px;
+}
+
+// Button Color
+.button-primary { // 파란색 대표 버튼
+    background-color: $brand-primary;
+}
+.button-secondary { // 검정색 border 버튼
+    border-color: #000;
+    background-color: transparent;
+    color: #000;
+    &:hover,
+    &:focus {
+        color: #000;
+    }
+}
+.button-third { // 검정색 bg 버튼
+    background-color: $brand-secondary;
+}
+//.button-warning { // 회색 버튼 (취소)
+//    background-color: #898989;
+//}
+.button-danger { // 삭제, 변경 버튼
+    background-color: transparent;
+    color: #8d8d8d;
+    &:hover,
+    &:focus {
+        color: #8d8d8d;
+    }
+}
+
+// Button Layout
+.button-block{ // 버튼 100%
+    display: block;
+    width: 100%;
+    margin: 0;
+}
+
+.button-group { // 다수버튼이 붙어 있는 경우
+    font-size: 0;
+    .button {
+        margin: 0 0 0 -1px;
+        @include border-radius(0);
+        &:first-child {
+            @include border-side-radius(top,left,3px);
+            @include border-side-radius(bottom,left,3px);
+        }
+        &:last-child {
+            @include border-side-radius(top,right,3px);
+            @include border-side-radius(bottom,right,3px);
+        }
+    }
+}
+
+// Button Align
+.button-align { // 하단 양쪽 사이드 버튼
+    margin-top: 20px;
+    text-align: center;
+    @include clearfix;
+    .button-left {
+        float: left;
+    }
+    .button-right {
+        float: right;
+    }
+}
+.button-align-center { // 하단 가운데 버튼
+    margin-top: 20px;
+    text-align: center;
+    @include clearfix;
+}
+
+// ETC
+.button-calendar {
+    padding: 0 8px !important;
+    background-color: #acacac;
+}

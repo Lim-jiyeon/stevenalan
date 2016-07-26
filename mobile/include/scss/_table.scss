@@ -1,0 +1,126 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    col {
+        float: none;
+    }
+    th {
+        font-weight: normal;
+        color: $brand-secondary;
+    }
+    td {
+        text-align: center;
+        vertical-align: middle;
+        &.aline-left {
+            padding-left: 15px;
+            text-align: left;
+        }
+        &.aline-right {
+            padding-right: 15px;
+            text-align: right;
+        }
+        &.valign-top {
+            vertical-align: top;
+        }
+        .form-group {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.table-list { // Head Align Horizontal
+    th {
+        padding: 11px 0 9px;
+        border-top: 1px solid #e5e5e5;
+        background-color: #f5f5f5;
+    }
+    td {
+        padding: 15px 0;
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        background-color: #fff;
+    }
+    .table-row-list {
+        margin: -7px 0;
+        th, td {
+            padding: 7px 15px;
+            border-width: 0;
+            background-color: #fff;
+            text-align: left;
+        }
+    }
+}
+
+.table-row-list { // Head Align Vertical
+    th {
+        padding: 7px 0;
+        text-align: left;
+        vertical-align: top;
+    }
+    td {
+        padding: 7px 0;
+        text-align: left;
+        vertical-align: middle;
+    }
+}
+
+.table-condensed {
+    th, td {
+        padding: 17px 0 17px 20px;
+        border: 1px solid #e5e5e5;
+        border-width: 1px 0;
+        background-color: #fff;
+        text-align: left;
+    }
+    th {
+        color: $text-color;
+        &.border-left {
+            border-left-width: 1px;
+        }
+    }
+    td {
+        color: $brand-secondary;
+    }
+    &.color-invert {
+        th {
+            color: $brand-secondary;
+        }
+        td {
+            color: $text-color;
+        }
+    }
+}
+
+.table-empty { // 테이블 내용 없을 때
+    td {
+        padding: 60px 0;
+    }
+}
+
+.table-help { // 테이블 상단 메세지
+    @include clearfix;
+    margin-bottom: 5px;
+    font-size: 11px;
+    .help-info { // 테이블 정보
+        color: #4b4b4b;
+    }
+    .help-text { // 테이블 안내문구
+        margin-top: -20px;
+        text-align: right;
+    }
+    .table-title { // 테이블 제목
+        margin-bottom: 0;
+        padding-bottom: 3px;
+        & + .help-text {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+.table-caution { // 테이블 하단 유의사항
+    margin-top: 30px;
+    padding-left: 7px;
+    li {
+        text-indent: -7px;
+    }
+}
