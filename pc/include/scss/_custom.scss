@@ -1617,6 +1617,81 @@
 /**********************************************
  My Page - Order Track
 ***********************************************/
+.ship-circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    @include border-radius(50%);
+    background-color: #acacac;
+    vertical-align: 2px;
+}
+.process-order-track {
+    margin-top: -15px;
+    .help-text {
+        margin-bottom: 9px;
+        text-align: right;
+        .ship-circle {
+            margin-right: 6px;
+        }
+    }
+}
+.process-indicator {
+    margin-bottom: 30px;
+    padding: 18px 15px 15px;
+    background-color: #fff;
+    @include clearfix;
+    li {
+        position: relative;
+        float: left;
+        width: 12.5%;
+        color: $brand-secondary;
+        text-align: center;
+        i,
+        .process-text,
+        .process-badge {
+            display: block;
+        }
+        i {
+            font-size: 32px;
+        }
+        .icon-credit-card-big {
+            margin: 10px 0 10px -10px;
+            font-size: 20px;
+        }
+        &:after {
+            position: absolute;
+            top: 21%;
+            right: -5px;
+            font-family: 'fontello';
+            font-size: 10px;
+            color: #bababa;
+            content: '\e80f';
+        }
+        &:last-child:after {
+            content: '';
+        }
+        .ship-circle {
+            position: absolute;
+            top: -3px;
+            left: 50%;
+            margin-left: -3px;
+        }
+        .process-badge {
+            display: inline-block;
+            min-width: 24px;
+            height: 24px;
+            margin-top: 10px;
+            padding: 3px 8px 1px;
+            @include border-radius(12px);
+            background-color: #acacac;
+            font-family: $font-family-en;
+            color: #fff;
+            &.complete {
+                background-color: $brand-primary;
+            }
+        }
+    }
+}
 .order-search {
     display: table;
     width: 100%;
