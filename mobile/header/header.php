@@ -12,25 +12,23 @@
 </head>
 <body>
 <header>
-    <div class="userMenu container">
+    <div class="site-utility">
         <ul>
             <li><a href="#">login</a></li>
             <li><a href="#">mypage<i class="icon-down-dir"></i></a></li>
         </ul>
     </div>
-    <div class="gnbWrap">
-        <div class="container">
-            <h1 class="site-brand col-sx-12">
-                <a href="#" title="stevenalan" class="center-block">
-                    <img src="../images/common/brand-logo.png" alt="steven alan">
-                </a>
-            </h1>
-            <div class="mobile-menu"><i class="icon-menu"></i></div>
-            <div class="search"><i class="icon-search"></i></div>
-            <div class="shoppingBag"><i class="icon-shoppingbag"></i></div>
-        </div>
+    <div class="quick-access">
+        <h1 class="site-brand">
+            <a href="#" title="stevenalan" class="center-block">
+                <img src="../images/common/brand-logo.png" alt="steven alan">
+            </a>
+        </h1>
+        <div class="mobile-menu"><i class="icon-menu"></i></div>
+        <div class="search"><i class="icon-search"></i></div>
+        <div class="shoppingBag"><i class="icon-shoppingbag"></i></div>
     </div>
-    <div class="topBanner">
-        <div class="container">GRAND OPEN! 30%<i class="icon-right-open-big"></i></div>
+    <div class="link-sale">
+        <a href="#">GRAND OPEN! 30%<i class="icon-right-open-big"></i></a>
     </div>
 </header>
