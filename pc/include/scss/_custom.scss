@@ -1637,7 +1637,7 @@
 }
 .process-indicator {
     margin-bottom: 30px;
-    padding: 18px 15px 15px;
+    padding: 18px 0 15px;
     background-color: #fff;
     @include clearfix;
     li {
@@ -1690,6 +1690,14 @@
                 background-color: $brand-primary;
             }
         }
+    }
+    &.local-process {
+        li {
+            width: 20%;
+        }
+    }
+    & + .table-caution {
+        margin-top: -10px;
     }
 }
 .order-search {
@@ -1763,9 +1771,6 @@
     .button {
         vertical-align: initial;
     }
-}
-.shipping-process {
-    padding-top: 50px;
 }
 // Cash Receipt
 .cash-receipt-issue-box {
