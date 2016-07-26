@@ -7,9 +7,56 @@
                 <div class="col-xs-10">
                     <div class="box order-track">
                         <h2 class="box-page-title">주문/배송 조회</h2>
-                        <!-- Process 작업예정 -->
-                        <div>Process Indicator</div>
-                        <!-- Process 작업예정 //end -->
+                        <!-- 주문/배송 조회 Process -->
+                        <div class="process-order-track">
+                            <p class="help-text"><i class="ship-circle"></i>해외배송 상품의 경우</p>
+                            <ul class="process-indicator">
+                                <li>
+                                    <i class="icon-documents-big"></i>
+                                    <span class="process-text">주문접수</span>
+                                    <strong class="process-badge complete">1</strong>
+                                </li>
+                                <li>
+                                    <i class="icon-credit-card-big"></i>
+                                    <span class="process-text">결제완료</span>
+                                    <strong class="process-badge complete">1</strong>
+                                </li>
+                                <li>
+                                    <i class="icon-dropbox-big"></i>
+                                    <span class="process-text">상품준비중</span>
+                                    <strong class="process-badge complete">999</strong>
+                                </li>
+                                <li>
+                                    <i class="ship-circle"></i>
+                                    <i class="icon-globe"></i>
+                                    <span class="process-text">해외물류센터입고</span>
+                                    <strong class="process-badge complete">1</strong>
+                                </li>
+                                <li>
+                                    <i class="ship-circle"></i>
+                                    <i class="icon-plane-big"></i>
+                                    <span class="process-text">항공운송중</span>
+                                    <strong class="process-badge">1</strong>
+                                </li>
+                                <li>
+                                    <i class="ship-circle"></i>
+                                    <i class="icon-note-big"></i>
+                                    <span class="process-text">통관중</span>
+                                    <strong class="process-badge">0</strong>
+                                </li>
+                                <li>
+                                    <i class="icon-present-big"></i>
+                                    <span class="process-text">배송중</span>
+                                    <strong class="process-badge">0</strong>
+                                </li>
+                                <li>
+                                    <i class="icon-check-big"></i>
+                                    <span class="process-text">배송완료</span>
+                                    <strong class="process-badge">0</strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- 주문/배송 조회 Process //end -->
                         <!-- 조회 영역 -->
                         <div class="inner-box order-search">
                             <div class="button-group">

@@ -176,7 +176,42 @@
                             <!-- 해외배송 주문 및 발송 과정 -->
                             <div class="order-track-view">
                                 <h3 class="table-title">해외배송 주문 및 발송 과정</h3>
-                                <div></div>
+                                <!-- 해외배송 주문 및 발송 과정 Process -->
+                                <ul class="process-indicator">
+                                    <li>
+                                        <i class="icon-documents-big"></i>
+                                        <span class="process-text">주문접수</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-credit-card-big"></i>
+                                        <span class="process-text">결제완료</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-dropbox-big"></i>
+                                        <span class="process-text">상품준비중</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-globe"></i>
+                                        <span class="process-text">해외물류센터입고</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-plane-big"></i>
+                                        <span class="process-text">항공운송중</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-note-big"></i>
+                                        <span class="process-text">통관중</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-present-big"></i>
+                                        <span class="process-text">배송중</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-check-big"></i>
+                                        <span class="process-text">배송완료</span>
+                                    </li>
+                                </ul>
+                                <!-- 해외배송 주문 및 발송 과정 Process //end -->
                                 <ul class="table-caution">
                                     <li>- 주문접수 : 주문접수 후 입금을 확인하는 단계입니다. 무통장 입금의 경우 주문 후 7일 이내 입금이 확인되지 않으면 주문이 자동으로 취소됩니다.</li>
                                     <li>- 결제완료 : 결제가 완료되었거나 입금확인이 완료된 단계입니다.</li>
@@ -192,7 +227,30 @@
                             <!-- 국내배송 주문 및 발송 과정 -->
                             <div class="order-track-view">
                                 <h3 class="table-title">국내배송 주문 및 발송 과정</h3>
-                                <div></div>
+                                <!-- 국내배송 주문 및 발송 과정 Process -->
+                                <ul class="process-indicator local-process">
+                                    <li>
+                                        <i class="icon-documents-big"></i>
+                                        <span class="process-text">주문접수</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-credit-card-big"></i>
+                                        <span class="process-text">결제완료</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-dropbox-big"></i>
+                                        <span class="process-text">상품준비중</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-present-big"></i>
+                                        <span class="process-text">배송중</span>
+                                    </li>
+                                    <li>
+                                        <i class="icon-check-big"></i>
+                                        <span class="process-text">배송완료</span>
+                                    </li>
+                                </ul>
+                                <!-- 국내배송 주문 및 발송 과정 Process //end -->
                                 <ul class="table-caution">
                                     <li>- 주문접수 : 주문접수 후 입금을 확인하는 단계입니다. 무통장 입금의 경우 주문 후 7일 이내 입금이 확인되지 않으면 주문이 자동으로 취소됩니다.</li>
                                     <li>- 결제완료 : 결제가 완료되었거나 입금확인이 완료된 단계입니다.</li>
