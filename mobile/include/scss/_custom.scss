@@ -6,7 +6,7 @@
  Layout
 ***********************************************/
 .content{
-    padding: 40px 0 60px;
+    padding: 40px 0 50px;
 }
 
 /**********************************************
@@ -57,7 +57,7 @@ header{
             position: absolute;
             top: 50%;
             right: 37px;
-            margin-top: -16px;
+            margin-top: -15px;
             i {
                 font-size: 16px;
             }
@@ -68,76 +68,84 @@ header{
             right: 10px;
             margin-top: -16px;
             i {
-                font-size: 16px;
+                font-size: 17px;
             }
         }
     }
     .link-sale{
-        padding: 15px 0;
+        padding: 10px;
+        a {
+            display: block;
+        }
     }
 }
 
 /**********************************************
  Footer
 ***********************************************/
-.footer {
-    padding: 30px 0;
-    background: url(../../images/common/washed-line.png) repeat-x 0 0;
+footer{
+    background: url("../../images/common/washed-line.png") repeat-x 0 0;
     text-transform: uppercase;
-}
-.footer-menu {
-    .footer-title {
-        display: block;
-        margin-bottom: 10px;
-        color: $brand-secondary;
-    }
-    .footer-link {
-        li {
-            padding: 3px 0;
-            font-size: 10px;
+    .footer-menu {
+        margin-top: 10px;
+        font-size: 11px;
+        .footer-link{
+            display: none;
+            padding-bottom: 5px;
+            li{
+                padding: 2px 0;
+            }
         }
     }
-    .footer-sharing-link {
+    .footer-title {
+        position: relative;
+        padding: 5px 0;
+        font-size: 12px;
+        color: #000;
+        cursor: pointer;
+        &:after{
+            position: absolute;
+            right: 0;
+            font-family: fontello;
+            content:'\e802';
+        }
+        &.on:after{
+            content: '\e803';
+        }
+    }
+    .footer-sharing-link{
+        margin-bottom: 15px;
+        @include clearfix;
+        .footer-title {
+            padding-bottom: 0;
+            cursor: default;
+            &:after {
+                content: '';
+            }
+        }
         li {
             float: left;
-            font-size: 20px;
+            margin-right: 3px;
+            i {
+                font-size: 16px;
+                color: #000;
+            }
         }
     }
-}
-.business-info {
-    margin: -3px 0 0 -20px;
-    font-size: 11px;
-    text-align: right;
-    li {
-        padding: 3px 0;
-    }
-    address {
-        display: inline-block;
-        font-style: normal;
-    }
-    span:before, address:before {
-        display: inline-block;
-        width: 1px;
-        height: 10px;
-        margin: 0 6px;
-        background-color: #a6a6a6;
-        content: '';
-    }
-    span:first-child:before {
-        width: 0;
-        margin: 0;
-    }
-}
-.copyright {
-    margin-top: 30px;
-    padding-top: 15px;
-    border-top: 1px solid #ebebeb;
-    font-size: 10px;
-    a {
-        margin-left: 15px;
-        text-transform: capitalize;
-        &:first-child {
-            margin-left: 20px;
+    .copyright {
+        padding: 15px 0 25px;
+        border-top: 2px solid #ebebeb;
+        font-size: 10px;
+        text-align: center;
+        p {
+            padding-bottom: 12px;
+            text-transform: uppercase;
+        }
+        a {
+            display: inline-block;
+            &:nth-child(2) {
+                margin-right:20px;
+            }
         }
     }
 }
@@ -157,15 +165,6 @@ header{
         margin: 0;
         content: '';
     }
-}
-.align-center{
-    text-align: center !important;
-}
-.align-right{
-    text-align: right !important;
-}
-.align-left{
-    text-align: left !important;
 }
 .benton {  // 영문, 숫자 Font 정의
     font-family: $font-family-en;
@@ -193,11 +192,8 @@ header{
 }
 .page-title { // 페이지 큰 타이틀
     margin-bottom: 7px;
-    font-weight: 400;
-    font-size: 24px;
-    color: $brand-primary;
-    font-family: $font-family-en;
-    letter-spacing: 5px;
+    font-size: 16px;
+    color: $brand-secondary;
     text-transform: uppercase;
 }
 .box-page-title { // 백스 안의 파란색 타이틀

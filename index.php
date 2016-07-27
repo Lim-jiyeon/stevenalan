@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>stevenalan</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
     <link rel="stylesheet" href="./pc/include/css/fontello.css">
     <link rel="stylesheet" href="./pc/include/css/styles.css">
     <style type="text/css">
@@ -28,6 +29,16 @@
                     <h2>마크업 리스트</h2>
 
                     <h3>MOBILE</h3>
+
+                    <h4>2. Shopping Bag &amp; Checkout</h4>
+                    <ul>
+                        <li>2.1 <a href="./mobile/order/shoppingbag.php">쇼핑백</a></li>
+                        <li>2.1 <a href="./mobile/order/shoppingbag-empty.php">쇼핑백에 상품이 없을 경우</a></li>
+                        <li>2.2 <a href="./mobile/order/checkout.php">주문/결제</a></li>
+                        <li>2.3 <a href="./mobile/order/summary.php">주문 완료/요약</a></li>
+                    </ul>
+
+                    <hr>
 
                     <h4>4. Login &amp; Sign Up</h4>
                     <ul>
