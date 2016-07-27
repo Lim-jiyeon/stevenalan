@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>stevenalan</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
     <link rel="stylesheet" href="./pc/include/css/fontello.css">
     <link rel="stylesheet" href="./pc/include/css/styles.css">
     <style type="text/css">

@@ -14,7 +14,7 @@
 <body>
 <div id="wrap">
     <div class="header">
-        <h1 class="site-brand col-sx-12">
+        <h1 class="site-brand">
             <a href="#" title="stevenalan" class="center-block"><img src="../images/common/brand-logo.png" alt="stevenalan"></a>
         </h1>
         <div class="site-utility">
