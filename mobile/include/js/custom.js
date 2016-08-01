@@ -13,4 +13,10 @@ $(document).ready(function () {
         }
     });
 
+
+    // Checkout Toggle
+    $(".checkout .title-group").on("click", function() {
+       $(this).next(".box").toggle();
+    });
+
 });

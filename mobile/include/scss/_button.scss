@@ -31,7 +31,6 @@
 // Button Size
 .button-large { // 하단 Submit 버튼
     padding: 0 50px;
-    @include border-radius(5px);
     font-size: $button-large-size;
     line-height: (($large-height - 2)/$button-large-size);
     letter-spacing: 1.5px;
@@ -113,6 +112,17 @@
             @include border-side-radius(top,right,3px);
             @include border-side-radius(bottom,right,3px);
         }
+    }
+}
+
+.button-inline-group {
+    margin: 20px -5px 0;
+    .col-xs-6 {
+        padding: 0 5px;
+    }
+    .button {
+        width: 100%;
+        padding: 0;
     }
 }
 
