@@ -2,22 +2,15 @@
 // Tabs
 // --------------------------------------------------
 
-// Tab Style CSS Only - height 지정해줘야 함
+// Tab Style
 .tabs {
     clear: both;
     position: relative;
-    //min-height: 210px; /* This part sucks */
 }
 .tab {
-    display: table;
-    float: left;
-    width: 25%;
     label {
-        display: table-cell;
-        position: relative;
-        left: 1px;
         width: 100%;
-        //height: 47px;
+        margin-bottom: 0;
         border: 1px solid #000;
         border-width: 1px 1px 1px 0;
         background-color: #fff;
@@ -27,41 +20,28 @@
         vertical-align: middle;
         cursor: pointer;
     }
-    &:first-child label {
-        border-left-width: 1px;
-        @include border-side-radius(top,left,2px);
-        @include border-side-radius(bottom,left,2px);
-    }
-    &:last-child label {
-        @include border-side-radius(top,right,2px);
-        @include border-side-radius(bottom,right,2px);
-    }
+    //&:first-child label {
+    //    border-left-width: 1px;
+    //    @include border-side-radius(top,left,3px);
+    //    @include border-side-radius(bottom,left,3px);
+    //}
+    //&:last-child label {
+    //    @include border-side-radius(top,right,3px);
+    //    @include border-side-radius(bottom,right,3px);
+    //}
     [type=radio] {
         display: none;
     }
 }
 .tab-content {
-    position: absolute;
-    top: 47px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-    padding-top: 20px;
-}
-.tab-content > * {
-    opacity: 0;
+    display: none;
 }
 .tabs {
     [type=radio]:checked ~ label {
         background-color: #000;
-        color: #fff;
-        z-index: 2;
+        color: #e5e5e5;
     }
     [type=radio]:checked ~ label ~ .tab-content {
-        z-index: 1;
-    }
-    [type=radio]:checked ~ label ~ .tab-content > * {
-        opacity: 1;
+        display: block;
     }
 }

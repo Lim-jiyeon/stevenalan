@@ -6,7 +6,7 @@
  Layout
 ***********************************************/
 .content{
-    padding: 40px 0 50px;
+    padding: 10px 0 50px;
 }
 
 /**********************************************
@@ -16,7 +16,6 @@ header{
     border-bottom: 1px solid #d7d7d7;
     .site-utility{
         padding: 3px 10px 1px;
-        background: url("../../images/common/washed-line.png") repeat-x 0 100%;
         text-align: right;
         ul {
             display: inline-block;
@@ -36,7 +35,9 @@ header{
     .quick-access{
         position: relative;
         padding: 7px 0 9px;
-        background: url("../../images/common/washed-line.png") repeat-x 0 100%;
+        background:
+            url("../../images/common/washed-line.png") repeat-x 0 0,
+            url("../../images/common/washed-line.png") repeat-x 70% 100%;
         .site-brand{
             margin: 0;
             font-size: 0;
@@ -171,11 +172,7 @@ footer{
     font-style: normal;
 }
 .box { // 회색 박스
-    padding: 30px 30px 55px;
     background-color: #f5f5f5;
-}
-.box-small { // 패딩값이 다른 회색 박스 .box와 같이 씀
-    padding: 20px;
 }
 .inner-box { // 회색 박스 안에 회색 border가 있는 하얀색 박스
     padding: 20px;
@@ -196,12 +193,6 @@ footer{
     color: $brand-secondary;
     text-transform: uppercase;
 }
-.box-page-title { // 백스 안의 파란색 타이틀
-    margin-bottom: 30px;
-    font-size: 16px;
-    color: $brand-primary;
-    letter-spacing: 1px;
-}
 .box-title { // 워싱 라인이 아래쪽에 들어간 타이틀
     margin: 0 0 39px;
     padding-bottom: 16px;
@@ -211,11 +202,11 @@ footer{
     letter-spacing: 1px;
     text-align: center;
 }
-.table-title { // 테이블 위에 있는 검정색 타이틀
-    margin-bottom: 15px;
+.secondary-title { // 검정색 타이틀
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 12px;
-    letter-spacing: 2px;
+    letter-spacing: 3.5px;
     font-family: $font-family-ko;
     color: #000;
 }
@@ -223,10 +214,9 @@ footer{
     @include clearfix;
     .title {
         float: left;
-    }
-    .button,
-    .help-text {
-        float: right;
+        + * {
+            float: right;
+        }
     }
 }
 .washed-line-text { // 워싱 라인이 위아래에 있는 텍스트
@@ -292,47 +282,10 @@ footer{
         }
     }
 }
-.caption { // 제목이 있는 유의사항 리스트
-    margin-top: 30px;
-    dt {
-        margin-bottom: 5px;
-        font-weight: 700;
-        color: #000;
-        letter-spacing: 2px;
-    }
-}
-.help-group { // 도움말이 Input 옆에 위치 할때
-    @include clearfix;
-    .input-button-group,
-    .help-input {
-        float: left;
-    }
-    .help-box {
-        position: relative;
-        float: left;
-        padding: 5px 0 0 9px;
-        .icon-help {
-            cursor: help;
-            color: $text-color;
-        }
-        .help-layer {
-            display: none;
-            position: absolute;
-            top: -100%;
-            left: 35px;
-            width: 320px;
-            padding: 15px 15px 13px;
-            border: 1px solid #858585;
-            @include border-radius(3px);
-            background-color: #fff;
-        }
-    }
-    .help-box {
-        .icon-help:hover {
-            & + .help-layer {
-                display: block;
-            }
-        }
+.caption {
+    margin-top: 20px;
+    li {
+        font-size: 10px;
     }
 }
 // Paging
@@ -413,6 +366,7 @@ footer{
     color: $brand-secondary;
 }
 .product-info { // 상품 정보
+    @include clearfix;
     .product-image {
         float: left;
         img {
@@ -421,19 +375,19 @@ footer{
         }
         & + .item-info {
             float: left;
-            padding-left: 20px;
+            padding-left: 5px;
         }
     }
     .item-info {
         .item-badge {
             display: inline-block;
-            margin-bottom: 6px;
             padding: 0 10px;
             border: 1px solid $brand-secondary;
             font-size: 10px;
             line-height: (16-2)/10;
             font-family: $font-family-serif;
             color: $brand-secondary;
+            vertical-align: 3px;
             &.item-badge-secondary {
                 background-color: $brand-secondary;
                 color: #fff;
@@ -448,16 +402,22 @@ footer{
             color: $brand-secondary;
         }
         .item-option {
-            margin-top: 3px;
+            margin-top: 5px;
             li {
-                margin-top: -2px;
+                margin-top: -1px;
                 font-size: 10px;
                 font-family: $font-family-en;
+                text-transform: uppercase;
             }
         }
-        .button {
-            margin: 5px 0 0;
-        }
+    }
+}
+.item-amount {
+    font-weight: 400;
+    color: $brand-primary;
+    em {
+        font-family: $font-family-en;
+        font-style: normal;
     }
 }
 .item-option-change { // 다른영역으로 나오는 옵션 변경 영역
@@ -1050,127 +1010,172 @@ footer{
  Order - Checkout
 ***********************************************/
 .checkout {
-    margin-top: 50px;
-    &.confirm-order-product {
-        margin-top: 0;
+    margin: 10px 0;
+    .secondary-title {
+        .step {
+            margin-right: 9px;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: $brand-primary;
+        }
+    }
+    .button-circle {
+        display: block;
+        border: 1px solid #000;
+        @include border-radius(50%);
+        color: #000;
+        .icon-plus:before {
+            display: block;
+            width: 15px;
+            height: 15px;
+            margin: 0;
+            padding-top: 2px;
+        }
+    }
+}
+.confirm-order-product {
+    .box {
+        padding: 5px;
+    }
+    .order-product-list {
+        margin-top: -5px;
+        li {
+            margin-top: 5px;
+            background-color: #fff;
+        }
+        .product-info {
+            padding: 5px 5px 10px;
+        }
+        .item-amount {
+            display: block;
+            padding: 5px 10px;
+            border-top: 1px solid #e5e5e5;
+            text-align: right;
+        }
     }
 }
 .checkout-input {
-    .table {
-        th, td {
-            padding: 0 0 15px 0;
-        }
-        tr:first-child th,
-        tr:first-child td {
-            padding-top: 25px;
-            border-top: 1px solid #e5e5e5;
-        }
-        tr:last-child th,
-        tr:last-child td {
-            padding-bottom: 25px;
-            border-bottom: 1px solid #e5e5e5;
-        }
-        .form-control {
-            width: 300px;
-        }
-        .input-button-group {
-            .form-control {
-                width: 206px;
-            }
-        }
-        .phone-group {
-            width: 300px;
-            .form-control {
-                width: 100%;
+    color: $brand-secondary;
+    .box {
+        padding: 15px 10px;
+        .input-list {
+            li {
+                padding: 10px 0;
+                .form-group {
+                    margin-bottom: -10px;
+                }
+                &.text-data {
+                    padding-left: 10px;
+                }
             }
         }
     }
     .international-shipping {
-        th, td {
-            padding-top: 15px;
-            border-top: 1px solid #e5e5e5;
+        margin: 20px -10px 0;
+        padding: 15px 10px 5px;
+        border-top: 1px solid $border-color;
+        color: $text-color;
+        > label {
+            color: $brand-secondary;
         }
-        .form-control {
-            width: 206px;
+        .pcc-button {
+            width: 68px;
         }
-        .help-group {
-            margin-bottom: 7px;
-        }
+    }
+    .postcode-button {
+        width: 135px;
     }
     .shipping-memo {
         .form-control {
-            width: 603px;
+            @include placeholder($text-color);
         }
     }
 }
 .coupon-info {
-    .selectbox {
-        width: 100%;
-    }
     .apply-coupon {
-        margin: -7px 0;
-        font-family: $font-family-ko;
-        li {
-            padding: 7px 0;
-            span {
-                display: inline-block;
-                width: 50px;
-            }
-            strong {
-                display: inline-block;
-                width: 200px;
-                font-weight: 400;
-                color: #000;
-                text-align: right;
-            }
-            .button {
-                margin-left: 8px;
-            }
+        padding: 15px 10px;
+        color: #000;
+        @include clearfix;
+        span {
+            float: left;
+        }
+        strong {
+            float: right;
+            font-weight: 400;
+            text-align: right;
         }
     }
     .coupon-list {
-        display: none;
-        margin-top: 20px;
-        td {
-            color: #000;
+        padding: 15px 10px 0;
+        border-top: 1px solid $border-color;
+        li {
+            padding-bottom: 20px;
         }
+    }
+}
+.payment-info {
+    .box {
+        padding: 10px;
     }
 }
 .payment-type {
     &.tabs {
-        min-height: 230px;
         .tab {
+            width: 100%;
             label {
-                height: 47px;
+                display: table;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 50%;
+                span {
+                    display: table-cell;
+                    height: 40px;
+                    text-align: center;
+                    vertical-align: middle;
+                }
             }
+            .payment-card {
+                border-left-width: 1px;
+                @include border-side-radius(top,left,3px);
+            }
+            .payment-card2 {
+                left: 50%;
+                @include border-side-radius(top,right,3px);
+            }
+            .payment-virtual {
+                top: 40px;
+                border-left-width: 1px;
+                @include border-side-radius(bottom,left,3px);
+            }
+            .payment-transfer {
+                top: 40px;
+                left: 50%;
+                @include border-side-radius(bottom,right,3px);
+            }
+        }
+        .tab-content {
+            padding-top: 82px;
         }
     }
     .payment-choice {
-        margin-bottom: 15px;
-        .choice-card-label {
-            display: inline-block;
-            width: 140px;
-            font-weight: 400;
-            color: #000;
-        }
         .selectbox {
-            width: 95px;
-            margin-right: 5px;
-            &.choice-card {
-                width: 205px;
-            }
+            margin-top: 10px;
         }
     }
 }
-.payment-box {
+.checkout-payment-totals {
+    margin-top: -10px;
+    padding: 10px;
     .checkout-amount {
-        margin-top: 25px;
+        padding-top: 7px;
+        background-color: #e5e5e5;
         @include clearfix;
         dt {
             clear: both;
             float: left;
             width: 40%;
-            padding: 7px 0;
+            padding: 1px 0 1px 10px;
             &.checkout-total {
                 padding-top: 25px;
             }
@@ -1178,7 +1183,7 @@ footer{
         dd {
             float: right;
             width: 60%;
-            padding: 7px 0;
+            padding: 1px 10px 1px 0;
             color: #333;
             text-align: right;
             em {
@@ -1187,13 +1192,12 @@ footer{
             }
             &.checkout-total {
                 font-size: 18px;
-                color: $brand-primary;
             }
         }
         .checkout-total {
+            border-top: 1px solid #d5d5d5;
             margin-top: 15px;
-            padding-top: 20px;
-            background: url(../../images/common/box-washed-line.png) repeat-x 0 0;
+            padding: 10px;
         }
     }
     .checkout-payment {

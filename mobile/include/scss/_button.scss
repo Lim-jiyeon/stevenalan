@@ -10,7 +10,6 @@
     line-height: (($default-height - 2)/$font-size-base);
     font-family: $font-family-ko;
     color: #fff;
-    letter-spacing: 2px;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -35,6 +34,7 @@
     @include border-radius(5px);
     font-size: $button-large-size;
     line-height: (($large-height - 2)/$button-large-size);
+    letter-spacing: 1.5px;
 }
 .button-small { // 게시판 용도
     padding: 0 11px;
@@ -92,15 +92,24 @@
 }
 
 .button-group { // 다수버튼이 붙어 있는 경우
+    display: table;
+    width: 100%;
     font-size: 0;
-    .button {
+    div {
+        display: table-cell;
         margin: 0 0 0 -1px;
-        @include border-radius(0);
-        &:first-child {
+        .button {
+            width: 100%;
+            border-width: 1px 0 1px 1px;
+            @include border-radius(0);
+        }
+        &:first-child .button {
+            border-left-width: 1px;
             @include border-side-radius(top,left,3px);
             @include border-side-radius(bottom,left,3px);
         }
-        &:last-child {
+        &:last-child .button {
+            border-right-width: 1px;
             @include border-side-radius(top,right,3px);
             @include border-side-radius(bottom,right,3px);
         }
