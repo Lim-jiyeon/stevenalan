@@ -349,7 +349,9 @@ footer{
         }
         & + .item-info {
             float: left;
-            padding-left: 5px;
+            width: 100%;
+            margin-top: -100px;
+            padding-left: 105px;
         }
     }
     .item-info {
@@ -369,11 +371,38 @@ footer{
         }
         .item-brand {
             display: block;
+            margin-bottom: 4px;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: (15/11);
+            letter-spacing: 0.5px;
+            color: $brand-secondary;
+        }
+        .item-brand-group {
+            position: relative;
+            .item-brand {
+                padding-right: 23px;
+
+            }
+            .checkbox {
+                position: absolute;
+                top: -3px;
+                right: 0;
+                .checkbox-display {
+                    margin: 0;
+                }
+            }
         }
         .item-name {
             display: block;
             font-weight: 400;
-            color: $brand-secondary;
+            font-size: 10px;
+            margin-bottom: 9px;
+            line-height: (15/10);
+            letter-spacing: 0.5px;
+            a {
+                color: $brand-secondary;
+            }
         }
         .item-option {
             margin-top: 5px;
@@ -386,59 +415,37 @@ footer{
         }
     }
 }
+.item-option-button {
+    padding: 0 5px;
+    .item-amount {
+        padding: 3px 0;
+        border-top: 1px solid $border-color;
+    }
+}
 .item-amount {
+    display: block;
+    padding: 5px 10px;
+    border-top: 1px dashed #e5e5e5;
     font-weight: 400;
     color: $brand-primary;
+    text-align: right;
     em {
         font-family: $font-family-en;
         font-style: normal;
     }
 }
-.item-option-change { // 다른영역으로 나오는 옵션 변경 영역
-    display: none;
-    td {
-        padding-bottom: 0;
-        background-color: #f5f5f5;
+.confirm-order-product {
+    .box {
+        padding: 5px;
     }
-    .item-option-box {
-        padding-left: 30px;
-        text-align: left;
-        .form-group {
-            margin-bottom: 15px;
-            label {
-                width: 140px;
-                color: $brand-secondary;
-                text-transform: uppercase;
-            }
-            .selectbox {
-                width: 328px;
-            }
+    .order-product-list {
+        margin-top: -5px;
+        > li {
+            margin-top: 5px;
+            background-color: #fff;
         }
-    }
-    .item-option-change-button {
-        padding-top: 48px;
-        .button {
-            margin: 0;
-            vertical-align: bottom;
-        }
-    }
-}
-.order-button { // 테이블 내 버튼이 위아래
-    .form-group {
-        display: inline-block;
-        margin-bottom: 9px;
-        .form-control {
-            width: 40px;
-            text-align: center;
-        }
-        + .button-block {
-            margin-top: 9px;
-        }
-    }
-    .button-block {
-        margin-bottom: 9px;
-        &:last-child {
-            margin-bottom: 0;
+        .product-info {
+            padding: 5px 5px 10px;
         }
     }
 }
@@ -944,40 +951,145 @@ footer{
 }
 
 /**********************************************
- Order
-***********************************************/
-//.order-process {
-//    margin-bottom: 6px;
-//    @include clearfix;
-//    li {
-//        float: left;
-//        font-size: 24px;
-//        font-family: $font-family-en;
-//        letter-spacing: 5px;
-//        text-transform: uppercase;
-//        &:after {
-//            display: inline-block;
-//            padding: 0 123px 0 124px;
-//            font-family: "fontello";
-//            font-size: 19px;
-//            vertical-align: 2px;
-//            content: '\e80f';
-//        }
-//        &:last-child:after {
-//            padding: 0;
-//            content: '';
-//        }
-//        &.current {
-//            color: #064787;
-//        }
-//    }
-//}
-
-/**********************************************
  Order - Shopping Bag
 ***********************************************/
-.shoppingbag-list {
-    margin-bottom: 55px;
+.shoppingbag {
+    .tab {
+        .tab-label {
+            width: 50%;
+            border: 1px solid $text-color;
+            border-width: 1px 1px 1px 0;
+            @include border-radius(0);
+            background-color: #fff;
+            color: $brand-secondary;
+            font-size: $font-size-base;
+            line-height: (($default-height - 2)/$font-size-base);
+            color: $brand-secondary;
+            cursor: pointer;
+        }
+        .local-shipping {
+            border-left-width: 1px;
+            @include border-side-radius(top,left,3px);
+            @include border-side-radius(bottom,left,3px);
+        }
+        .overseas-shipping {
+            left: 49.9%;
+            @include border-side-radius(top,right,3px);
+            @include border-side-radius(bottom,right,3px);
+        }
+        .icon-amount {
+            display: inline-block;
+            min-width: 18px;
+            margin-left: 5px;
+            border: 1px solid #333;
+            @include border-radius(9px);
+            font-style: normal;
+            font-size: 9px;
+            line-height: (17-2)/9;
+        }
+    }
+    .tabs {
+        [type=radio]:checked ~ .tab-label {
+            border-color: $text-color;
+            background-color: $text-color;
+            color: #fff;
+            .icon-amount {
+                border: 1px solid #fff;
+            }
+        }
+    }
+    .tab-content {
+        padding-top: 50px;
+    }
+    .order-product-list {
+        margin-top: 0;
+        > li {
+            margin-top: 0;
+            padding-bottom: 20px;
+            &:last-child {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+.item-option-change { // 상품 옵션 변경 영역
+    display: none;
+    &.box {
+        margin-top: 15px;
+        padding: 10px 5px;
+    }
+    .item-option-text {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 12px;
+        color: $brand-secondary;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+    .input-button-group{
+        .form-control {
+            text-align: center;
+        }
+        .button {
+            padding: 0 5px;
+            border: 1px solid $border-color;
+            background-color: #fff;
+            color: $text-color;
+        }
+    }
+    .button-align-center {
+        margin-top: 0;
+    }
+}
+.shoppingbag-totals {
+    margin-top: 15px;
+    padding: 0 10px 20px;
+    .shoppingbag-amount {
+        padding: 7px 0 15px;
+        background-color: #f5f5f5;
+        font-size: 11px;
+        color: #333;
+        @include clearfix;
+        dt {
+            clear: both;
+            float: left;
+            width: 40%;
+            &.shoppingbag-total {
+                padding-top: 4px;
+                font-size: 12px;
+            }
+        }
+        dd {
+            float: right;
+            width: 60%;
+            text-align: right;
+            em {
+                font-family: $font-family-en;
+                font-style: normal;
+            }
+            &.shoppingbag-total {
+                font-size: 13px;
+            }
+        }
+        .shoppingbag-total {
+            border-top: 1px solid $brand-secondary;
+            margin-top: 5px;
+            padding-top: 3px;
+            font-weight: 500;
+        }
+    }
+    .checkout-payment {
+        margin-top: 10px;
+        .checkbox {
+            label {
+                vertical-align: top;
+            }
+        }
+        .button {
+            margin-top: 15px;
+        }
+    }
 }
 
 /**********************************************
@@ -1007,27 +1119,6 @@ footer{
             height: 15px;
             margin: 0;
             padding-top: 2px;
-        }
-    }
-}
-.confirm-order-product {
-    .box {
-        padding: 5px;
-    }
-    .order-product-list {
-        margin-top: -5px;
-        li {
-            margin-top: 5px;
-            background-color: #fff;
-        }
-        .product-info {
-            padding: 5px 5px 10px;
-        }
-        .item-amount {
-            display: block;
-            padding: 5px 10px;
-            border-top: 1px dashed #e5e5e5;
-            text-align: right;
         }
     }
 }
@@ -1098,18 +1189,10 @@ footer{
 .payment-type {
     &.tabs {
         .tab {
-            width: 100%;
-            label {
-                display: table;
-                position: absolute;
-                top: 0;
-                left: 0;
+            .tab-label {
                 width: 50%;
                 span {
-                    display: table-cell;
                     height: 40px;
-                    text-align: center;
-                    vertical-align: middle;
                 }
             }
             .payment-card {
@@ -1229,6 +1312,9 @@ footer{
         padding: 5px 5px 3px;
         border-top: 1px solid $border-color;
         @include clearfix;
+        &:first-child {
+            border-top: 0;
+        }
         &.ordered-coupon,
         &.virtual-account-info {
             border-top: 1px dashed $border-color;

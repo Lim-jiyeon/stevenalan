@@ -191,15 +191,15 @@
         <!-- 결제정보 -->
         <div class="checkout payment-info">
             <div class="title-group">
-                <h3 class="title secondary-title"><span class="step">STEP 5.</span>할인 정보</h3>
+                <h3 class="title secondary-title"><span class="step">STEP 5.</span>결제정보</h3>
                 <a href="#none" class="button-circle"><i class="icon-plus"></i></a>
             </div>
             <div class="box">
-                <ul class="tabs payment-type">
+                <ul class="tabs tab-content-unlimited payment-type">
                     <!-- 신용카드 - 안심클릭결제 -->
                     <li class="tab">
                         <input type="radio" id="payment_card" name="payment_tab_group" checked>
-                        <label for="payment_card" class="payment-card"><span>신용카드<br>안심클릭결제</span></label>
+                        <label for="payment_card" class="tab-label payment-card"><span>신용카드<br>안심클릭결제</span></label>
                         <div class="tab-content payment-choice">
                             <div class="selectbox">
                                 <strong class="selectbox-value">카드 선택</strong>
@@ -234,7 +234,7 @@
                     <!-- 신용카드 - 안전결제(국민/BC카드) -->
                     <li class="tab">
                         <input type="radio" id="payment_card2" name="payment_tab_group">
-                        <label for="payment_card2" class="payment-card2"><span>신용카드<br>안전결제(국민/BC카드)</span></label>
+                        <label for="payment_card2" class="tab-label payment-card2"><span>신용카드<br>안전결제(국민/BC카드)</span></label>
                         <div class="tab-content payment-choice">
                             <div class="selectbox">
                                 <strong class="selectbox-value">카드 선택</strong>
@@ -270,7 +270,7 @@
                     <!-- 신용카드 - 가상계좌 -->
                     <li class="tab">
                         <input type="radio" id="payment_virtual" name="payment_tab_group">
-                        <label for="payment_virtual" class="payment-virtual"><span>가상계좌</span></label>
+                        <label for="payment_virtual" class="tab-label payment-virtual"><span>가상계좌</span></label>
                         <div class="tab-content">
                             <ul class="caption">
                                 <li>※ 입금은행을 선택하시고 고객님의 전용 계좌번호를 확인하세요.</li>
@@ -285,7 +285,7 @@
                     <!-- 신용카드 - 실시간 계좌이체 -->
                     <li class="tab">
                         <input type="radio" id="payment_transfer" name="payment_tab_group">
-                        <label for="payment_transfer" class="payment-transfer"><span>실시간 계좌이체</span></label>
+                        <label for="payment_transfer" class="tab-label payment-transfer"><span>실시간 계좌이체</span></label>
                         <div class="tab-content">
                             <ul class="caption">
                                 <li>※ 공인인증서 인증을 통해 실시간계좌이체를 진행하며, 상품 대금이 즉시 이체됩니다.</li>

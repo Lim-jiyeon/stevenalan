@@ -20,3 +20,16 @@ $(document).ready(function () {
     });
 
 });
+
+
+// Shopping Bag Option Change
+function itemOptionChange(item) {
+    var $this = $(item);
+    $this.parents("div").next(".item-option-change").addClass("open").toggle();
+    return false;
+}
+function itemOptionClose(item) {
+    var $this = $(item);
+    $this.parents(".item-option-change").removeClass("open").hide();
+    return false;
+}

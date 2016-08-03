@@ -88,14 +88,14 @@ output {
 .form-control {
   display: block;
   width: 100%;
-  height: 40px;
+  height: $default-height;
   padding: 0 10px;
   border: 1px solid $input-border;
   @include border-radius(3px);
   background-color: $input-bg;
   background-image: none;
   font-size: $font-size-base;
-  line-height: (40-2)/12;
+  line-height: (($default-height)-2)/12;
   color: $input-color;
   -webkit-appearance: none;
 
@@ -194,13 +194,12 @@ input[type="search"] {
 .input-button-group{
   display: table;
   width: 100%;
-  @include clearfix;
   div {
     display: table-cell;
     padding: 0;
     vertical-align: top;
     .form-control {
-      border-right: 0;
+      border-width: 1px 0;
       @include border-radius(0);
     }
     .button {
@@ -211,12 +210,11 @@ input[type="search"] {
     }
   }
   div:first-child * {
-    margin-right: -1px;
+    border-left-width: 1px;
     @include border-side-radius(top, left, 3px);
     @include border-side-radius(bottom, left, 3px);
   }
   div:last-child * {
-    margin-left: -1px;
     @include border-side-radius(top, right, 3px);
     @include border-side-radius(bottom, right, 3px);
   }
@@ -298,16 +296,21 @@ input[type="search"] {
   .radio-display{
     position: relative;
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 13px;
+    height: 13px;
     margin: 3px 6px 5px 0;
-    background: url(../../images/common/form-checkbox.png) 0 0;
+    background-size: 13px;
     vertical-align: middle;
   }
   input[type="checkbox"]:checked + .checkbox-display,
   input[type="radio"]:checked + .radio-display{
-    background: url(../../images/common/form-checkbox-checked.png) 0 0;
     transition: all 0.3s ease;
+  }
+  .checkbox-display {
+    background-image: url(../../images/common/form-checkbox.png);
+  }
+  input[type="checkbox"]:checked + .checkbox-display {
+    background-image: url(../../images/common/form-checkbox-checked.png);
   }
   .radio-display {
     background-image: url(../../images/common/form-radio.png);

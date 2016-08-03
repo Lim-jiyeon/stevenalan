@@ -8,7 +8,7 @@
     position: relative;
 }
 .tab {
-    label {
+    .tab-label {
         width: 100%;
         margin-bottom: 0;
         border: 1px solid #000;
@@ -37,11 +37,28 @@
     display: none;
 }
 .tabs {
-    [type=radio]:checked ~ label {
+    [type=radio]:checked ~ .tab-label {
         background-color: #000;
         color: #e5e5e5;
     }
-    [type=radio]:checked ~ label ~ .tab-content {
+    [type=radio]:checked ~ .tab-label ~ .tab-content {
         display: block;
+    }
+}
+
+.tab-content-unlimited {
+    .tab {
+        width: 100%;
+        .tab-label {
+            display: table;
+            position: absolute;
+            top: 0;
+            left: 0;
+            span {
+                display: table-cell;
+                text-align: center;
+                vertical-align: middle;
+            }
+        }
     }
 }

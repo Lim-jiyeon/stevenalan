@@ -33,23 +33,12 @@
     padding: 0 50px;
     font-size: $button-large-size;
     line-height: (($large-height - 2)/$button-large-size);
-    letter-spacing: 1.5px;
 }
 .button-small { // 게시판 용도
     padding: 0 11px;
+    @include border-radius(2px);
     font-size: $button-small-size;
     line-height: (($small-height - 2)/$button-small-size);
-    letter-spacing: 1px;
-}
-.button-link { // 링크 스타일 (삭제, 변경)
-    padding: 0 2px;
-    border-bottom: 1px solid #bdbdbd;
-    font-size: $font-size-base;
-    line-height: ((18 - 2)/12);
-    letter-spacing: 1px;
-}
-.button-link-large {
-    font-size: 14px;
 }
 .button-input {
     padding: 0 15px;
@@ -59,13 +48,13 @@
 .button-primary { // 파란색 대표 버튼
     background-color: $brand-primary;
 }
-.button-secondary { // 검정색 border 버튼
-    border-color: #000;
+.button-secondary { // 파란색 border 버튼
+    border-color: $brand-primary;
     background-color: transparent;
-    color: #000;
+    color: $brand-primary;
     &:hover,
     &:focus {
-        color: #000;
+        color: $brand-primary;
     }
 }
 .button-third { // 검정색 bg 버튼
@@ -75,11 +64,12 @@
 //    background-color: #898989;
 //}
 .button-danger { // 삭제, 변경 버튼
-    background-color: transparent;
-    color: #8d8d8d;
+    border: 1px solid $text-color;
+    background-color: #fff;
+    color: $text-color;
     &:hover,
     &:focus {
-        color: #8d8d8d;
+        color: $text-color;
     }
 }
 
@@ -117,12 +107,27 @@
 
 .button-inline-group {
     margin: 20px -5px 0;
-    .col-xs-6 {
+    div {
         padding: 0 5px;
     }
     .button {
         width: 100%;
         padding: 0;
+    }
+}
+
+.button-auto-group {
+    display: table;
+    width: 100%;
+    margin: 0;
+    div {
+        display: table-cell;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
+        }
     }
 }
 
