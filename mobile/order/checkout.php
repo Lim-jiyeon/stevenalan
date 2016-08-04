@@ -105,17 +105,17 @@
                     <li>
                         <div class="form-group input-button-group">
                             <div><input type="number" value="04778" class="form-control" title="우편번호 입력"></div>
-                            <div class="postcode-button"><a href="#" class="button"><span>우편번호 찾기</span></a></div>
+                            <div class="postcode-button"><a href="#" class="button"><span>우편번호 검색</span></a></div>
                         </div>
                     </li>
                     <li>
                         <div class="form-group">
-                            <input type="text" value="서울시 성동구 뚝섬로 1길 25" class="form-control" placeholder="주소" title="주소 입력">
+                            <input type="text" value="서울시 성동구 뚝섬로 1길 25" class="form-control" placeholder="기본 주소" title="기본 주소 입력">
                         </div>
                     </li>
                     <li>
                         <div class="form-group">
-                            <input type="text" value="서울숲 한라 에코밸리 B105" class="form-control" placeholder="나머지 주소" title="나머지 주소 입력">
+                            <input type="text" value="서울숲 한라 에코밸리 B105" class="form-control" placeholder="상세 주소" title="상세 주소 입력">
                         </div>
                     </li>
                     <li>

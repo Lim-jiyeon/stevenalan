@@ -95,7 +95,6 @@ output {
   background-color: $input-bg;
   background-image: none;
   font-size: $font-size-base;
-  line-height: (($default-height)-2)/12;
   color: $input-color;
   -webkit-appearance: none;
 
@@ -207,6 +206,9 @@ input[type="search"] {
       margin: 0;
       padding: 0;
       @include border-radius(0);
+    }
+    .selectbox .selectbox-value {
+      padding: 0 10px 0 20px;
     }
   }
   div:first-child * {
@@ -322,6 +324,7 @@ input[type="search"] {
 .checkbox-block { // 동의 체크박스
   display: block;
   margin-top: 10px;
+  font-size: 10px;
 }
 .radio-group { // 한줄로 나열되는 라디오버튼
   .radio {
@@ -340,6 +343,9 @@ input[type="search"] {
   margin-top: 5px;
   margin-bottom: 10px;
   color: #858585;
+}
+.help-text {
+  font-size: 10px;
 }
 .help-success {
   color: #004689;

@@ -5,7 +5,7 @@
         <h2 class="page-title">쇼핑백</h2>
         <div class="shoppingbag">
             <!-- 쇼핑백 상품 확인 -->
-            <div class="tabs tab-content-unlimited">
+            <div class="tabs tabs-content-unlimited">
                 <!-- 국내배송 상품 -->
                 <div class="tab">
                     <input type="radio" id="local_shipping" name="shipping_type_tab_group" checked>

@@ -40,6 +40,12 @@
     font-size: $button-small-size;
     line-height: (($small-height - 2)/$button-small-size);
 }
+.button-xsmall { // 게시판 용도
+    padding: 0 11px;
+    @include border-radius(2px);
+    font-size: $button-xsmall-size;
+    line-height: (($xsmall-height - 2)/$button-xsmall-size);
+}
 .button-input {
     padding: 0 15px;
 }

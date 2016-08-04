@@ -208,7 +208,11 @@ footer{
     font-size: 12px;
     letter-spacing: 3.5px;
     font-family: $font-family-ko;
-    color: #000;
+    color: $brand-secondary;
+}
+.arrow-title {
+    font-weight: 400;
+    letter-spacing: 0;
 }
 .title-group {
     @include clearfix;
@@ -2050,44 +2054,6 @@ footer{
  My Page - 회원정보수정
 ***********************************************/
 .member-privacy {
-    margin-top: -10px;
-    padding: 25px 20px 0;
-    .table {
-        td {
-            color: #4b4b4b;
-        }
-    }
-    label, .form-group {
-        margin-bottom: 0;
-    }
-    .form-control {
-        width: 300px;
-    }
-    .selectbox {
-        width: 105px;
-    }
-    .checkbox, .radio {
-        margin-right: 60px;
-    }
-    .member-email {
-        position: relative;
-        .help-inline {
-            position: absolute;
-            top: 9px;
-            left: 303px;
-        }
-    }
-    .phone-group {
-        width: 300px;
-        .form-control {
-            width: 100%;
-        }
-    }
-    .help-group {
-        .form-control {
-            width: 150px;
-        }
-    }
 }
 .privacy-modify {
     .member-privacy {
@@ -2343,29 +2309,55 @@ footer{
         }
     }
 }
-
+// 아이디 / 패스워드 찾기
 .forgot {
-    @include clearfix;
-    .box {
-        position: relative;
-        height: 493px;
-    }
-    .findId-phone,
-    .findPassword-phone {
-        display: none;
-    }
-    .find-box {
-        padding: 15px 0 10px;
-        .radio:first-child {
-            margin-right: 30px;
+    color: $brand-secondary;
+    .tab {
+        .find-password {
+            left: 50%;
         }
     }
-    .button-align {
+    .tabs {
+        [type=radio]:checked ~ .tab-label {
+            span:before {
+                margin-right: 6px;
+                font-family: 'fontello';
+                color: $brand-primary;
+                content: '\e826';
+            }
+        }
+    }
+    .forgot-content {
+        padding-top: 33px;
+    }
+    .box {
+        padding: 10px 10px 15px;
+    }
+    .text-explain {
+        font-size: 11px;
+        line-height: (16)/11;
+    }
+}
+.forgot-box {
+    position: relative;
+    margin-top: 10px;
+    border-top: 1px solid $brand-secondary;
+    .radio {
+        display: block;
         position: absolute;
+        top: 9px;
         left: 0;
-        bottom: 40px;
-        width: 100%;
-        padding: 0 30px;
+    }
+    .find-phone {
+        left: 50%;
+    }
+    .find-input {
+        display: none;
+        padding-top: 37px;
+    }
+    .findId-email,
+    .findPassword-email {
+        display: block;
     }
 }
 
@@ -2373,15 +2365,34 @@ footer{
  Join - Sign Up
 ***********************************************/
 .signup {
-    .member-privacy {
-        padding-bottom: 60px;
-        .member-title {
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #e5e5e5;
-            font-size: 16px;
-            color: $brand-primary;
-            letter-spacing: 1px;
+    margin-bottom: 15px;
+    .box {
+        padding: 10px;
+        .input-list {
+            .help-text,
+            .checkbox-block {
+                margin: -7px 0 10px;
+            }
+        }
+    }
+}
+.input-select {
+    li {
+        padding: 1px 0;
+    }
+    .input-select-label {
+        color: $brand-secondary;
+    }
+    .birth-date {
+        margin: 0 -7px;
+        .input-select-label {
+            padding-left: 7px;
+        }
+        .input-group {
+            div {
+                width: 33.3%;
+                padding: 0 7px;
+            }
         }
     }
 }
@@ -2389,22 +2400,56 @@ footer{
     margin-bottom: 20px;
         .signup-agree-title {
             font-weight: 400;
+            color: $brand-secondary;
+            @include clearfix;
+            .checkbox {
+                float: left;
+            }
+            .button {
+                float: right;
+            }
             + .agree-box {
                 display: none;
-                margin-top: 20px;
+                margin: 5px 0 10px;
             }
         }
+}
+// Complete
+.signup-complete {
+    font-size: 10px;
+    text-align: center;
+    .welcome-message {
+        display: inline-block;
+        width: 202px;
+        height: 202px;
+        margin-bottom: 18px;
+        padding-top: 65px;
+        @include border-radius(50%);
+        background-color: $brand-primary;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #fff;
+        &:before {
+            display: block;
+            margin-bottom: 20px;
+            font-family: 'fontello';
+            font-size: 24px;
+            text-align: center;
+            content: '\e825';
+        }
+    }
 }
 
 /**********************************************
  Agree
 ***********************************************/
 .agree-box {
-    height: 200px;
-    padding: 16px 21px;
-    border: 1px solid #d5d5d5;
-    @include border-radius(2px);
+    height: 95px;
+    padding: 10px;
+    border: 5px solid #f5f5f5;
     background-color: #fff;
+    font-size: 9px;
 }
 
 /**********************************************

@@ -138,13 +138,15 @@ $container-lg:                 $container-large-desktop !default;
 //##
 
 // Button Size
-$default-height: 35px;//
+$default-height: 35px;
 $large-height: 40px;
-$small-height: 24px;//
+$small-height: 24px;
+$xsmall-height: 18px;
 
 //Button Font Size
-$button-large-size: 15px;//
-$button-small-size: 10px;//
+$button-large-size: 15px;
+$button-small-size: 10px;
+$button-xsmall-size: 9px;
 
 // Font Color
 $button-default-color: #333;

@@ -14,12 +14,31 @@ $(document).ready(function () {
     });
 
 
+    // Forgot id, password Input[Radio] Select Tab
+    $(".find-box input[name=findId]").change(function () {
+        $(".find-input").hide();
+        $("."+$(this).val()).show();
+    });
+    $(".find-box input[name=findPassword]").change(function () {
+        $(".find-input").hide();
+        $("."+$(this).val()).show();
+    });
+
+
     // Checkout Toggle
     $(".checkout .title-group").on("click", function() {
        $(this).next(".box").toggle();
     });
 
 });
+
+
+// Sign Up Agree Box View
+function agreeOpen(view) {
+    var $this = $(view);
+    $this.parents(".signup-agree-title").next(".agree-box").addClass("open").toggle();
+    return false;
+}
 
 
 // Shopping Bag Option Change
