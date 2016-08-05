@@ -107,13 +107,9 @@
                             <div><input type="number" value="04778" class="form-control" title="우편번호 입력"></div>
                             <div class="postcode-button"><a href="#" class="button"><span>우편번호 검색</span></a></div>
                         </div>
-                    </li>
-                    <li>
                         <div class="form-group">
                             <input type="text" value="서울시 성동구 뚝섬로 1길 25" class="form-control" placeholder="기본 주소" title="기본 주소 입력">
                         </div>
-                    </li>
-                    <li>
                         <div class="form-group">
                             <input type="text" value="서울숲 한라 에코밸리 B105" class="form-control" placeholder="상세 주소" title="상세 주소 입력">
                         </div>
@@ -195,7 +191,7 @@
                 <a href="#none" class="button-circle"><i class="icon-plus"></i></a>
             </div>
             <div class="box">
-                <ul class="tabs tab-content-unlimited payment-type">
+                <ul class="tabs tabs-content-unlimited payment-type">
                     <!-- 신용카드 - 안심클릭결제 -->
                     <li class="tab">
                         <input type="radio" id="payment_card" name="payment_tab_group" checked>

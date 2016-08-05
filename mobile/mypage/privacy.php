@@ -1,19 +1,17 @@
 <?php include '../header/header.php'; ?>
 
 <div class="content">
-    <div class="container">
-        <h2 class="page-title">회원가입</h2>
-        <!-- 필수 입력 정보 -->
-        <div class="signup">
-            <h3 class="secondary-title arrow-title"><i class="icon-right-open"></i>필수 입력 정보</h3>
+    <?php include './mypage-menu.php'; ?>
+    <div class="container member-privacy">
+        <h2 class="page-title">회원 정보 수정</h2>
+        <!-- 로그인 정보 -->
+        <div class="privacy-modify">
+            <h3 class="secondary-title arrow-title"><i class="icon-right-open"></i>로그인 정보</h3>
             <div class="box">
                 <ul class="input-list">
-                    <li>
-                        <div class="form-group input-button-group">
-                            <div><input type="email" class="form-control" placeholder="아이디" title="이메일 입력"></div>
-                            <div><a href="#" class="button"><span>중복확인</span></a></div>
-                        </div>
-                        <p class="help-text help-success"><i class="icon-check"></i> 사용 가능한 이메일입니다.</p>
+                    <li class="fixed-data">
+                        <label class="fixed-label">회원아이디</label>
+                        <p>member@isecommerce.co.kr</p>
                     </li>
                     <li>
                         <div class="form-group">
@@ -26,10 +24,18 @@
                         </div>
                         <p class="help-text help-danger"><i class="icon-attention"></i> 비밀번호가 일치하지 않습니다.</p>
                     </li>
-                    <li>
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="이름" title="이름 입력">
-                        </div>
+                </ul>
+            </div>
+        </div>
+        <!-- 로그인 정보 //end -->
+        <!-- 필수 정보 -->
+        <div class="privacy-modify input-select">
+            <h3 class="secondary-title arrow-title"><i class="icon-right-open"></i>필수 정보</h3>
+            <div class="box">
+                <ul class="input-list">
+                    <li class="fixed-data">
+                        <label class="fixed-label">회원명</label>
+                        <p>이영애</p>
                     </li>
                     <li>
                         <div class="form-group input-group">
@@ -101,15 +107,6 @@
                             <input type="text" value="" class="form-control" placeholder="상세 주소" title="상세 주소 입력">
                         </div>
                     </li>
-                </ul>
-            </div>
-        </div>
-        <!-- 필수 입력 정보 //end -->
-        <!-- 선택 입력 정보 -->
-        <div class="signup input-select">
-            <h3 class="secondary-title arrow-title"><i class="icon-right-open"></i>선택 입력 정보</h3>
-            <div class="box">
-                <ul class="input-list">
                     <li>
                         <label class="input-select-label">정보 수신 여부</label>
                         <div class="row">
@@ -126,6 +123,15 @@
                         </div>
                         <p class="help-text primary"><i class="icon-attention"></i> 상품 구매 정보는 수신 동의 여부와 관계없이 발송됩니다.</p>
                     </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 필수 정보 //end -->
+        <!-- 선택 정보 -->
+        <div class="privacy-modify input-select">
+            <h3 class="secondary-title arrow-title"><i class="icon-right-open"></i>선택 정보</h3>
+            <div class="box">
+                <ul class="input-list">
                     <li class="birth-date">
                         <label for="birth_date" class="input-select-label">생년월일</label>
                         <div class="form-group input-group">
@@ -160,44 +166,12 @@
                 </ul>
             </div>
         </div>
-        <!-- 선택 입력 정보 //end -->
-        <!-- 약관동의 -->
-        <div class="signup member-privacy">
-            <h3 class="secondary-title arrow-title"><i class="icon-right-open"></i>약관동의</h3>
-            <div class="row signup-agree">
-                <div class="col-xs-12">
-                    <h4 class="signup-agree-title">
-                        <div class="checkbox">
-                            <input type="checkbox" id="receive-sms" name="agree-terms" checked>
-                            <label for="agree-terms" class="checkbox-display"></label>
-                            <label for="agree-terms" class="checkbox-label">이용약관 동의 (필수)</label>
-                        </div>
-                        <a href="#none" class="button button-xsmall button-secondary" onclick="agreeOpen(this);"><span>내용보기</span></a>
-                    </h4>
-                    <div class="agree-box scroll">
-                        본 약관은 ㈜아이에스이커머스 (이하 “회사”라 한다)에서 운영하는 위즈위드 사이버 몰(www.wizwid.com)과 스마트폰 등 이동통신기기를 통해 제공되는 위즈위드 모바일 어플리케이션을 통해 제공하는 전자상거래 관련 서비스 (이하“위즈위드” 서비스 혹은 “서비스”라 한다)를 이용함에 있어 “(주) 아이에스이커머스”와 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.<br>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <h4 class="signup-agree-title">
-                        <div class="checkbox">
-                            <input type="checkbox" id="receive-sms" name="agree-privacy" checked>
-                            <label for="agree-privacy" class="checkbox-display"></label>
-                            <label for="agree-privacy" class="checkbox-label">개인정보 수집 및 이용 안내 동의(필수)</label>
-                        </div>
-                        <a href="#none" class="button button-xsmall button-secondary" onclick="agreeOpen(this);"><span>내용보기</span></a>
-                    </h4>
-                    <div class="agree-box scroll">
-                        개인정보 수집 및 이용 목적<br>
-                        개인정보 수집 및 이용 목적<br>
-                    </div>
-                </div>
-            </div>
+        <!-- 선택 정보 //end -->
+        <div class="row button-inline-group">
+            <div class="col-xs-6"><a href="#" class="button button-large button-primary"><span>정보수정</span></a></div>
+            <div class="col-xs-6"><a href="#" class="button button-large"><span>취소</span></a></div>
         </div>
-        <!-- 약관동의 //end -->
-        <div class="button-align-center">
-            <a href="#" class="button button-block button-large button-primary"><span>회원가입</span></a>
-        </div>
+        <div class="id-closed"><a href="#" class="button button-link"><span>회원 탈퇴신청</span></a></div>
     </div>
 </div>
 

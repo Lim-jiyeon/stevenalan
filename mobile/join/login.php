@@ -1,59 +1,60 @@
 <?php include '../header/header.php'; ?>
 
-<div>
-    <h2 class="a-center pageTitle">로그인/회원가입</h2>
+<div class="content">
     <div class="container">
-
-        <div class="bgSection">
-            <h3>로그인</h3>
-            <div class="form-group">
-                <div class="inputtext">
-                    <input type="text" placeholder="아이디(EMAIL)" class="form-control"/>
-                </div>
-                <div class="inputtext">
-                    <input type="password" placeholder="비밀번호" class="form-control"/>
-                </div>
-            </div>
-            <div class="checkboxWrap">
-                <div class="form-gruop">
-                    <div class="checkbox checkbox-style">
-                        <input type="checkbox" id="checkbox-design-id" name="input-name" !checked>
-                        <label for="checkbox-design-id" class="checkbox-display"></label>
-                        <label for="checkbox-design-id" class="checkbox-label">아이디 저장</label>
+        <h2 class="page-title">로그인</h2>
+        <div class="login">
+            <div class="box login-box">
+                <ul class="input-list forgot-input-list">
+                    <li>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="아이디 (EMAIL)" title="이메일 주소 입력">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="비밀번호" title="비밀번호 입력">
+                        </div>
+                    </li>
+                </ul>
+                <div class="login-find">
+                    <div class="checkbox">
+                        <input type="checkbox" id="save_id" checked>
+                        <label for="save_id" class="checkbox-display"></label>
+                        <label for="save_id" class="checkbox-label">아이디 저장</label>
                     </div>
-                    <span class="findIdPw"><a href="#">아이디/비밀번호 찾기</a></span>
+                    <a href="#" class="find-id">아이디/비밀번호 찾기</a>
                 </div>
             </div>
-            <div class="buttonWrap">
-                <span class="button button-primary button-block">
-                    <span class="button-label">로그인</span>
-                </span>
+            <div class="button-align-center">
+                <a href="#" class="button button-block button-primary">로그인</a>
+            </div>
+            <div class="row button-inline-group ordered-check-button-group">
+                <div class="col-xs-6"><a href="#" class="button button-fourth">회원가입</a></div>
+                <div class="col-xs-6"><a href="#none" onclick="guestOrderedCheck(this);" class="button button-fourth">비회원주문조회</a></div>
+            </div>
+            <div class="guest-ordered-check">
+                <h3 class="secondary-title">비회원 주문 조회</h3>
+                <div class="box">
+                    <ul class="input-list forgot-input-list">
+                        <li>
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="주문번호" title="주문번호 입력">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="주문자명" title="주문자명 입력">
+                            </div>
+                        </li>
+                    </ul>
+                    <p class="help-text help-success"><i class="icon-attention"></i> 주문 결제 완료 후 발송되는 SMS 메세지의 주문번호를 입력해주세요.</p>
+                </div>
+                <div class="button-align-center">
+                    <a href="#" class="button button-block button-primary">주문 조회</a>
+                </div>
             </div>
         </div>
-
-        <div class="bgSection">
-            <h3>회원가입</h3>
-            <p class="a-center">Steven Alan 회원 가입을 진심으로 환영합니다.<br/>
-                만 14세 이상만 회원 가입이 가능하며,<br/>
-                회원이 되시면 다양한 혜택을 받으실 수 있고,<br/>
-                서비스를 안전하고 간편하게 이용 가능합니다.</p>
-            <div class="buttonWrap">
-                <span class="button button-primary button-block">
-                    <span class="button-label">회원가입</span>
-                </span>
-            </div>
-        </div>
-
-        <div class="bgSection">
-            <h3>비회원 주문 조회</h3>
-            <p class="a-center">주문 결제 완료 후 발송되는 SMS 메세지의<br/>주문번호를 입력해주세요.</p>
-            <div class="buttonWrap">
-                <span class="button button-primary button-block">
-                    <span class="button-label">주문조회</span>
-                </span>
-            </div>
-        </div>
-
     </div>
 </div>
 

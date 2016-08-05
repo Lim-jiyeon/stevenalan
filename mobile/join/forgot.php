@@ -20,7 +20,7 @@
                                         <label for="findId_email" class="radio-display"></label>
                                         <label for="findId_email" class="radio-label">이메일 주소</label>
                                     </div>
-                                    <div class="find-input findId-email">
+                                    <div class="findId-input findId-email">
                                         <ul class="input-list forgot-input-list">
                                             <li>
                                                 <div class="form-group">
@@ -43,7 +43,7 @@
                                         <label for="findId_phone" class="radio-display"></label>
                                         <label for="findId_phone" class="radio-label">휴대폰 번호</label>
                                     </div>
-                                    <div class="find-input findId-phone">
+                                    <div class="findId-input findId-phone">
                                         <ul class="input-list forgot-input-list">
                                             <li>
                                                 <div class="form-group">
@@ -100,7 +100,7 @@
                                         <label for="findPassword_email" class="radio-display"></label>
                                         <label for="findPassword_email" class="radio-label">이메일 주소</label>
                                     </div>
-                                    <div class="find-input findPassword-email">
+                                    <div class="findPassword-input findPassword-email">
                                         <ul class="input-list forgot-input-list">
                                             <li>
                                                 <div class="form-group">
@@ -128,7 +128,7 @@
                                         <label for="findPassword_phone" class="radio-display"></label>
                                         <label for="findPassword_phone" class="radio-label">휴대폰 번호</label>
                                     </div>
-                                    <div class="find-input findPassword-phone">
+                                    <div class="findPassword-input findPassword-phone">
                                         <ul class="input-list forgot-input-list">
                                             <li>
                                                 <div class="form-group">

@@ -13,14 +13,19 @@ $(document).ready(function () {
         }
     });
 
+    // My Page Menu
+    $(".mypage-menu .mypage-menu-title").on("click", function () {
+        $(this).next("ul").slideToggle(400);
+    });
+
 
     // Forgot id, password Input[Radio] Select Tab
     $(".find-box input[name=findId]").change(function () {
-        $(".find-input").hide();
+        $(".findId-input").hide();
         $("."+$(this).val()).show();
     });
     $(".find-box input[name=findPassword]").change(function () {
-        $(".find-input").hide();
+        $(".findPassword-input").hide();
         $("."+$(this).val()).show();
     });
 
@@ -50,5 +55,10 @@ function itemOptionChange(item) {
 function itemOptionClose(item) {
     var $this = $(item);
     $this.parents(".item-option-change").removeClass("open").hide();
+    return false;
+}
+
+function guestOrderedCheck() {
+    $(".guest-ordered-check").addClass("open").toggle();
     return false;
 }

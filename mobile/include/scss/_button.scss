@@ -49,6 +49,14 @@
 .button-input {
     padding: 0 15px;
 }
+.button-link {
+    padding: 0;
+    border-bottom: 1px solid $text-color;
+    background-color: transparent;
+    line-height: 22px;
+    color: $text-color;
+
+}
 
 // Button Color
 .button-primary { // 파란색 대표 버튼
@@ -65,6 +73,15 @@
 }
 .button-third { // 검정색 bg 버튼
     background-color: $brand-secondary;
+}
+.button-fourth { // 검정색 border 버튼
+    border-color: $brand-secondary;
+    background-color: transparent;
+    color: $brand-secondary;
+    &:hover,
+    &:focus {
+        color: $brand-secondary;
+    }
 }
 //.button-warning { // 회색 버튼 (취소)
 //    background-color: #898989;
@@ -113,6 +130,7 @@
 
 .button-inline-group {
     margin: 20px -5px 0;
+
     div {
         padding: 0 5px;
     }
