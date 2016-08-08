@@ -6,7 +6,7 @@
  Layout
 ***********************************************/
 .content{
-    padding: 40px 0 50px;
+    padding: 10px 0 50px;
 }
 
 /**********************************************
@@ -15,8 +15,7 @@
 header{
     border-bottom: 1px solid #d7d7d7;
     .site-utility{
-        padding: 3px 10px 1px;
-        background: url("../../images/common/washed-line.png") repeat-x 0 100%;
+        padding: 4px 10px 0;
         text-align: right;
         ul {
             display: inline-block;
@@ -26,7 +25,7 @@ header{
                     margin-left: 25px;
                 }
                 a {
-                    font-size: 10px;
+                    font-size: 12px;
                     color: #858585;
                     text-transform: uppercase;
                 }
@@ -35,8 +34,12 @@ header{
     }
     .quick-access{
         position: relative;
+        margin-top: -2px;
         padding: 7px 0 9px;
-        background: url("../../images/common/washed-line.png") repeat-x 0 100%;
+        background:
+            url("../../images/common/washed-line.png") repeat-x 0 0,
+            url("../../images/common/washed-line.png") repeat-x 70% 100%;
+        background-size: 50% 1px;
         .site-brand{
             margin: 0;
             font-size: 0;
@@ -48,7 +51,7 @@ header{
             position: absolute;
             top: 50%;
             left: 10px;
-            margin-top: -13px;
+            margin-top: -10px;
             i {
                 font-size: 14px;
             }
@@ -57,7 +60,7 @@ header{
             position: absolute;
             top: 50%;
             right: 37px;
-            margin-top: -15px;
+            margin-top: -13px;
             i {
                 font-size: 16px;
             }
@@ -66,7 +69,7 @@ header{
             position: absolute;
             top: 50%;
             right: 10px;
-            margin-top: -16px;
+            margin-top: -14px;
             i {
                 font-size: 17px;
             }
@@ -85,6 +88,7 @@ header{
 ***********************************************/
 footer{
     background: url("../../images/common/washed-line.png") repeat-x 0 0;
+    background-size: 50% 1px;
     text-transform: uppercase;
     .footer-menu {
         margin-top: 10px;
@@ -134,7 +138,7 @@ footer{
     }
     .copyright {
         padding: 15px 0 25px;
-        border-top: 2px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
         font-size: 10px;
         text-align: center;
         p {
@@ -171,11 +175,8 @@ footer{
     font-style: normal;
 }
 .box { // 회색 박스
-    padding: 30px 30px 55px;
+    padding: 10px;
     background-color: #f5f5f5;
-}
-.box-small { // 패딩값이 다른 회색 박스 .box와 같이 씀
-    padding: 20px;
 }
 .inner-box { // 회색 박스 안에 회색 border가 있는 하얀색 박스
     padding: 20px;
@@ -191,16 +192,11 @@ footer{
     border: 1px solid #000;
 }
 .page-title { // 페이지 큰 타이틀
-    margin-bottom: 7px;
+    margin-bottom: 15px;
+    font-weight: 400;
     font-size: 16px;
     color: $brand-secondary;
     text-transform: uppercase;
-}
-.box-page-title { // 백스 안의 파란색 타이틀
-    margin-bottom: 30px;
-    font-size: 16px;
-    color: $brand-primary;
-    letter-spacing: 1px;
 }
 .box-title { // 워싱 라인이 아래쪽에 들어간 타이틀
     margin: 0 0 39px;
@@ -211,22 +207,25 @@ footer{
     letter-spacing: 1px;
     text-align: center;
 }
-.table-title { // 테이블 위에 있는 검정색 타이틀
-    margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 12px;
-    letter-spacing: 2px;
+.secondary-title { // 검정색 타이틀
+    margin-bottom: 7px;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 2.5px;
     font-family: $font-family-ko;
-    color: #000;
+    color: $brand-secondary;
+}
+.arrow-title {
+    font-weight: 400;
+    letter-spacing: 0;
 }
 .title-group {
     @include clearfix;
     .title {
         float: left;
-    }
-    .button,
-    .help-text {
-        float: right;
+        + * {
+            float: right;
+        }
     }
 }
 .washed-line-text { // 워싱 라인이 위아래에 있는 텍스트
@@ -245,32 +244,6 @@ footer{
         width: 100%;
         height: 1px;
         content: '';
-    }
-}
-.complete-box { // 완료된 페이지에서 사용되는 박스 (워싱이 들어간 위아래 타이틀 포함)
-    padding: 20px 20px 50px;
-    background-color: #fff;
-    text-align: center;
-    .washed-line-text {
-        font-weight: 400;
-        font-size: 32px;
-        font-family: $font-family-en;
-        color: $brand-primary;
-        letter-spacing: 6px;
-        text-transform: uppercase;
-        &:before {
-            margin-bottom: 13px;
-        }
-        &:after {
-            margin-top: 5px;
-        }
-    }
-    .confirm-message {
-        display: block;
-        margin: 35px 0 7px;
-        font-weight: 400;
-        font-size: 18px;
-        color: $brand-secondary;
     }
 }
 .primary { // 대표 Color
@@ -292,53 +265,17 @@ footer{
         }
     }
 }
-.caption { // 제목이 있는 유의사항 리스트
-    margin-top: 30px;
-    dt {
-        margin-bottom: 5px;
-        font-weight: 700;
-        color: #000;
-        letter-spacing: 2px;
-    }
-}
-.help-group { // 도움말이 Input 옆에 위치 할때
-    @include clearfix;
-    .input-button-group,
-    .help-input {
-        float: left;
-    }
-    .help-box {
-        position: relative;
-        float: left;
-        padding: 5px 0 0 9px;
-        .icon-help {
-            cursor: help;
-            color: $text-color;
-        }
-        .help-layer {
-            display: none;
-            position: absolute;
-            top: -100%;
-            left: 35px;
-            width: 320px;
-            padding: 15px 15px 13px;
-            border: 1px solid #858585;
-            @include border-radius(3px);
-            background-color: #fff;
-        }
-    }
-    .help-box {
-        .icon-help:hover {
-            & + .help-layer {
-                display: block;
-            }
-        }
+.caption {
+    margin-top: 18px;
+    li {
+        font-size: 10px;
     }
 }
 // Paging
 .paging{
     margin-right: 5px;
     padding: 15px 0;
+    font-family: $font-family-en;
     text-align: center;
     .prev{
         margin-right: 30px;
@@ -402,10 +339,20 @@ footer{
  Product Style
 ***********************************************/
 .discount { // 가격 할인
+    position: relative;
+    z-index: 2;
     display: block;
     font-family: $font-family-en;
     font-style: normal;
-    text-decoration: line-through;
+    &:before {
+        position: absolute;
+        top: 40.6%;
+        left: -2px;
+        z-index: 1;
+        width: 110%;
+        border-bottom: 1px solid #c9c9c9;
+        content: '';
+    }
 }
 .price { // 원 가격
     font-weight: 400;
@@ -413,27 +360,30 @@ footer{
     color: $brand-secondary;
 }
 .product-info { // 상품 정보
+    @include clearfix;
     .product-image {
         float: left;
         img {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
         }
         & + .item-info {
             float: left;
-            padding-left: 20px;
+            width: 100%;
+            margin-top: -120px;
+            padding-left: 130px;
         }
     }
     .item-info {
         .item-badge {
             display: inline-block;
-            margin-bottom: 6px;
             padding: 0 10px;
             border: 1px solid $brand-secondary;
             font-size: 10px;
             line-height: (16-2)/10;
             font-family: $font-family-serif;
             color: $brand-secondary;
+            vertical-align: 3px;
             &.item-badge-secondary {
                 background-color: $brand-secondary;
                 color: #fff;
@@ -441,70 +391,87 @@ footer{
         }
         .item-brand {
             display: block;
+            margin-bottom: 4px;
+            font-weight: 500;
+            line-height: (15/11);
+            letter-spacing: 0.5px;
+            color: $brand-secondary;
+        }
+        .item-brand-group {
+            position: relative;
+            .item-brand {
+                padding-right: 23px;
+
+            }
+            .checkbox {
+                position: absolute;
+                top: -3px;
+                right: 0;
+                .checkbox-display {
+                    margin: 0;
+                }
+            }
         }
         .item-name {
             display: block;
             font-weight: 400;
-            color: $brand-secondary;
+            font-size: 12px;
+            margin-bottom: 9px;
+            line-height: (15/10);
+            letter-spacing: 0.5px;
+            a {
+                color: $brand-secondary;
+            }
         }
         .item-option {
-            margin-top: 3px;
+            margin-top: 5px;
             li {
-                margin-top: -2px;
-                font-size: 10px;
+                margin-top: -3px;
+                font-size: 12px;
                 font-family: $font-family-en;
-            }
-        }
-        .button {
-            margin: 5px 0 0;
-        }
-    }
-}
-.item-option-change { // 다른영역으로 나오는 옵션 변경 영역
-    display: none;
-    td {
-        padding-bottom: 0;
-        background-color: #f5f5f5;
-    }
-    .item-option-box {
-        padding-left: 30px;
-        text-align: left;
-        .form-group {
-            margin-bottom: 15px;
-            label {
-                width: 140px;
-                color: $brand-secondary;
                 text-transform: uppercase;
             }
-            .selectbox {
-                width: 328px;
-            }
-        }
-    }
-    .item-option-change-button {
-        padding-top: 48px;
-        .button {
-            margin: 0;
-            vertical-align: bottom;
         }
     }
 }
-.order-button { // 테이블 내 버튼이 위아래
-    .form-group {
-        display: inline-block;
-        margin-bottom: 9px;
-        .form-control {
-            width: 40px;
-            text-align: center;
-        }
-        + .button-block {
-            margin-top: 9px;
-        }
+.item-option-button {
+    padding: 0 5px;
+    .item-amount {
+        padding: 3px 0;
+        border-top: 1px solid $border-color;
     }
-    .button-block {
-        margin-bottom: 9px;
-        &:last-child {
-            margin-bottom: 0;
+}
+.item-amount {
+    display: block;
+    padding: 5px 10px;
+    border-top: 1px dashed #e5e5e5;
+    font-weight: 400;
+
+    color: $brand-primary;
+    text-align: right;
+    em {
+        font-family: $font-family-en;
+        font-style: normal;
+    }
+}
+.confirm-order-product {
+    .box {
+        padding: 5px;
+    }
+    .order-product-list {
+        margin-top: -5px;
+        > li {
+            margin-top: 5px;
+            background-color: #fff;
+        }
+        .product-info {
+            padding: 5px 5px 10px;
+        }
+        &.empty-list {
+            > li {
+                padding: 40px 0 !important;
+                text-align: center;
+            }
         }
     }
 }
@@ -1010,176 +977,294 @@ footer{
 }
 
 /**********************************************
- Order
-***********************************************/
-//.order-process {
-//    margin-bottom: 6px;
-//    @include clearfix;
-//    li {
-//        float: left;
-//        font-size: 24px;
-//        font-family: $font-family-en;
-//        letter-spacing: 5px;
-//        text-transform: uppercase;
-//        &:after {
-//            display: inline-block;
-//            padding: 0 123px 0 124px;
-//            font-family: "fontello";
-//            font-size: 19px;
-//            vertical-align: 2px;
-//            content: '\e80f';
-//        }
-//        &:last-child:after {
-//            padding: 0;
-//            content: '';
-//        }
-//        &.current {
-//            color: #064787;
-//        }
-//    }
-//}
-
-/**********************************************
  Order - Shopping Bag
 ***********************************************/
-.shoppingbag-list {
-    margin-bottom: 55px;
+.shoppingbag {
+    .tab {
+        .tab-label {
+            width: 50%;
+            border: 1px solid $text-color;
+            border-width: 1px 1px 1px 0;
+            @include border-radius(0);
+            background-color: #fff;
+            color: $brand-secondary;
+            font-size: 13px;
+            line-height: (($default-height - 2)/$font-size-base);
+            color: $brand-secondary;
+            cursor: pointer;
+        }
+        .local-shipping {
+            border-left-width: 1px;
+            @include border-side-radius(top,left,3px);
+            @include border-side-radius(bottom,left,3px);
+        }
+        .overseas-shipping {
+            left: 49.9%;
+            @include border-side-radius(top,right,3px);
+            @include border-side-radius(bottom,right,3px);
+        }
+        .icon-amount {
+            display: inline-block;
+            min-width: 18px;
+            margin-left: 5px;
+            border: 1px solid #333;
+            @include border-radius(9px);
+            font-style: normal;
+            font-size: 9px;
+            line-height: (18-2)/9;
+            vertical-align: 1px;
+        }
+    }
+    .tabs {
+        [type=radio]:checked ~ .tab-label {
+            border-color: $text-color;
+            background-color: $text-color;
+            color: #fff;
+            .icon-amount {
+                border: 1px solid #fff;
+            }
+        }
+    }
+    .tab-content {
+        padding-top: 50px;
+    }
+    .order-product-list {
+        margin-top: 0;
+        > li {
+            margin-top: 0;
+            padding-bottom: 20px;
+            &:last-child {
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
+.item-option-change { // 상품 옵션 변경 영역
+    display: none;
+    &.box {
+        margin-top: 15px;
+        padding: 10px 5px;
+    }
+    .item-option-text {
+        display: block;
+        margin-bottom: 7px;
+        font-size: 12px;
+        color: $brand-secondary;
+    }
+    li {
+        padding-bottom: 10px;
+    }
+    .input-button-group{
+        .form-control {
+            text-align: center;
+        }
+        .button {
+            padding: 0 5px;
+            border: 1px solid $border-color;
+            background-color: #fff;
+            color: $text-color;
+        }
+    }
+    .button-align-center {
+        margin-top: 0;
+    }
+}
+.shoppingbag-totals {
+    margin-top: 15px;
+    padding: 0 10px 20px;
+    .shoppingbag-amount {
+        padding: 7px 0 15px;
+        background-color: #f5f5f5;
+        font-size: 12px;
+        color: #333;
+        @include clearfix;
+        dt {
+            clear: both;
+            float: left;
+            width: 40%;
+            &.shoppingbag-total {
+                padding-top: 4px;
+            }
+        }
+        dd {
+            float: right;
+            width: 60%;
+            text-align: right;
+            em {
+                font-family: $font-family-en;
+                font-style: normal;
+            }
+            &.shoppingbag-total {
+                font-size: 13px;
+            }
+        }
+        .shoppingbag-total {
+            border-top: 1px solid $brand-secondary;
+            margin-top: 5px;
+            padding-top: 3px;
+            font-weight: 600;
+        }
+    }
+    .checkout-payment {
+        margin-top: 10px;
+        .checkbox {
+            label {
+                vertical-align: top;
+            }
+        }
+        .button {
+            margin-top: 15px;
+        }
+    }
 }
 
 /**********************************************
  Order - Checkout
 ***********************************************/
 .checkout {
-    margin-top: 50px;
-    &.confirm-order-product {
-        margin-top: 0;
+    margin: 10px 0;
+    .title-group {
+        cursor: pointer;
+    }
+    .secondary-title {
+        .step {
+            margin-right: 9px;
+            font-weight: 400;
+            letter-spacing: 0;
+            color: $brand-primary;
+        }
+    }
+    .button-circle {
+        display: block;
+        border: 1px solid #000;
+        @include border-radius(50%);
+        color: #000;
+        .icon-plus:before {
+            display: block;
+            width: 15px;
+            height: 15px;
+            margin: 0;
+            padding-top: 2px;
+        }
     }
 }
 .checkout-input {
-    .table {
-        th, td {
-            padding: 0 0 15px 0;
-        }
-        tr:first-child th,
-        tr:first-child td {
-            padding-top: 25px;
-            border-top: 1px solid #e5e5e5;
-        }
-        tr:last-child th,
-        tr:last-child td {
-            padding-bottom: 25px;
-            border-bottom: 1px solid #e5e5e5;
-        }
-        .form-control {
-            width: 300px;
-        }
-        .input-button-group {
-            .form-control {
-                width: 206px;
-            }
-        }
-        .phone-group {
-            width: 300px;
-            .form-control {
-                width: 100%;
+    color: $brand-secondary;
+    .box {
+        padding: 15px 10px;
+        .input-list {
+            li {
+                padding: 10px 0;
+                .form-group {
+                    margin-bottom: -10px;
+                }
+                &.text-data {
+                    padding-left: 10px;
+                }
             }
         }
     }
     .international-shipping {
-        th, td {
-            padding-top: 15px;
-            border-top: 1px solid #e5e5e5;
+        margin: 20px -10px 0;
+        padding: 15px 10px 5px;
+        border-top: 1px solid $border-color;
+        color: $text-color;
+        > label {
+            color: $brand-secondary;
         }
-        .form-control {
-            width: 206px;
+        .pcc-button {
+            width: 68px;
         }
-        .help-group {
-            margin-bottom: 7px;
-        }
+    }
+    .postcode-button {
+        width: 135px;
     }
     .shipping-memo {
         .form-control {
-            width: 603px;
+            @include placeholder($text-color);
         }
     }
 }
 .coupon-info {
-    .selectbox {
-        width: 100%;
-    }
     .apply-coupon {
-        margin: -7px 0;
-        font-family: $font-family-ko;
-        li {
-            padding: 7px 0;
-            span {
-                display: inline-block;
-                width: 50px;
-            }
-            strong {
-                display: inline-block;
-                width: 200px;
-                font-weight: 400;
-                color: #000;
-                text-align: right;
-            }
-            .button {
-                margin-left: 8px;
-            }
+        padding: 15px 10px;
+        color: #000;
+        @include clearfix;
+        span {
+            float: left;
+        }
+        strong {
+            float: right;
+            font-weight: 400;
+            text-align: right;
         }
     }
     .coupon-list {
-        display: none;
-        margin-top: 20px;
-        td {
-            color: #000;
+        padding: 15px 10px 0;
+        border-top: 1px solid $border-color;
+        li {
+            padding-bottom: 20px;
         }
     }
 }
 .payment-type {
     &.tabs {
-        min-height: 230px;
         .tab {
-            label {
-                height: 47px;
+            .tab-label {
+                width: 50%;
+                span {
+                    height: 40px;
+                }
             }
+            .payment-card {
+                border-left-width: 1px;
+                @include border-side-radius(top,left,3px);
+            }
+            .payment-card2 {
+                left: 50%;
+                @include border-side-radius(top,right,3px);
+            }
+            .payment-virtual {
+                top: 40px;
+                border-left-width: 1px;
+                @include border-side-radius(bottom,left,3px);
+            }
+            .payment-transfer {
+                top: 40px;
+                left: 50%;
+                @include border-side-radius(bottom,right,3px);
+            }
+        }
+        .tab-content {
+            padding-top: 82px;
         }
     }
     .payment-choice {
-        margin-bottom: 15px;
-        .choice-card-label {
-            display: inline-block;
-            width: 140px;
-            font-weight: 400;
-            color: #000;
-        }
         .selectbox {
-            width: 95px;
-            margin-right: 5px;
-            &.choice-card {
-                width: 205px;
-            }
+            margin-top: 10px;
         }
     }
 }
-.payment-box {
+.checkout-payment-totals {
+    margin-top: -10px;
+    padding: 10px 10px 20px;
     .checkout-amount {
-        margin-top: 25px;
+        padding-top: 7px;
+        background-color: #e5e5e5;
         @include clearfix;
         dt {
             clear: both;
             float: left;
             width: 40%;
-            padding: 7px 0;
+            padding-left: 10px;
             &.checkout-total {
-                padding-top: 25px;
+                padding-top: 7px;
             }
         }
         dd {
             float: right;
             width: 60%;
-            padding: 7px 0;
-            color: #333;
+            padding-right: 10px;
             text-align: right;
             em {
                 font-family: $font-family-en;
@@ -1187,17 +1272,17 @@ footer{
             }
             &.checkout-total {
                 font-size: 18px;
-                color: $brand-primary;
             }
         }
         .checkout-total {
-            margin-top: 15px;
-            padding-top: 20px;
-            background: url(../../images/common/box-washed-line.png) repeat-x 0 0;
+            border-top: 1px solid #d5d5d5;
+            margin-top: 5px;
+            padding: 3px 10px 0;
+            color: #333;
         }
     }
     .checkout-payment {
-        margin-top: 17px;
+        margin-top: 10px;
         .checkbox {
             label {
                 vertical-align: top;
@@ -1213,55 +1298,111 @@ footer{
  Order - Summary
 ***********************************************/
 .ordered-check {
+    text-align: center;
+    .confirm-message {
+        padding: 24px 0 21px;
+        border: 2px solid $border-color;
+        font-size: 10px;
+        strong {
+            display: block;
+            margin-bottom: 13px;
+            font-size: 12px;
+            color: $brand-secondary;
+        }
+    }
     .ordered-info {
-        margin-top: 35px;
+        margin-top: 10px;
+        padding: 5px 0;
+        background-color: #e5e5e5;
         li {
-            font-size: 13px;
             color: #4b4b4b;
         }
         .ordered-num {
             font-weight: 400;
-            border-bottom: 1px solid #555;
+            color: $brand-primary;
         }
     }
 }
 .summary {
-    margin-top: 50px;
+    margin-top: 15px;
 }
-.virtual-account-info {
-    li:before {
-        border-left-color: #eee;
-        background-color: #555;
+.ordered-payment-info {
+    border: 5px solid #f5f5f5;
+    color: $brand-secondary;
+    > li {
+        padding: 5px 5px 3px;
+        border-top: 1px solid $border-color;
+        @include clearfix;
+        &:first-child {
+            border-top: 0;
+        }
+        &.ordered-coupon,
+        &.virtual-account-info {
+            border-top: 1px dashed $border-color;
+            color: $text-color;
+        }
+        &.payment-price-total {
+            .ordered-payment-title {
+                padding-top: 5px;
+            }
+            .ordered-payment-price {
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+    }
+    .ordered-payment-title {
+        float: left;
+    }
+    .ordered-payment-price {
+        float: right;
+        font-weight: 400;
+        text-align: right;
+    }
+}
+.ordered-shipping-info {
+    padding: 10px 5px;
+    border: 5px solid #f5f5f5;
+    font-size: 10px;
+    li {
+        padding: 5px 0;
+        &.pcc-code {
+            padding-top: 30px;
+        }
     }
 }
 
 /**********************************************
- My Page - Left Menu
+ My Page - Menu
 ***********************************************/
-.leftMenu{
-    float: left;
-    .subTitle{
+.mypage-menu{
+    margin: -11px -10px 13px;
+    padding: 7px 10px 5px;
+    border: 1px solid $brand-secondary;
+    border-width: 1px 0;
+    color: $brand-secondary;
+    .mypage-menu-title {
+        padding-top: 3px;
+        font-weight: 400;
+        font-family: $font-family-en;
+        font-size: 14px;
         text-transform: uppercase;
-        color: #064787;
-        font-size: 24px;
-        letter-spacing: 2px;
-        font-weight: 500;
-        margin-bottom: 35px;
+        cursor: pointer;
+        @include clearfix;
+        &:after {
+            float: right;
+            font-family: 'fontello';
+            font-size: 10px;
+            content: '\E800';
+        }
     }
-    ul{
-        li{
-            margin-bottom: 20px;
-            &:last-child{
-                margin-bottom: 0;
-            }
-            a{
-                color: $brand-secondary;
-                font-size: 14px;
-            }
-            &.current a{
-                text-decoration: underline;
-                font-weight: bold;
-            }
+    .mypage-menu-box {
+        display: none;
+        margin-top: 3px;
+        padding: 8px 0 4px;
+        border-top: 1px solid $brand-secondary;
+        a {
+            color: $brand-secondary;
         }
     }
 }
@@ -1672,15 +1813,51 @@ footer{
  My Page - Wish list
 ***********************************************/
 .wishlist {
-    .wishlist-list {
-        border-bottom: 1px solid #e5e5e5;
+    .page-title {
+        margin-bottom: 10px;
+        font-size: 13px;
     }
-    .discount, .price {
-        display: block;
+    .checkbox-label {
+        font-size: 11px;
     }
-    .wishlist-cancel {
-        margin-top: -30px;
+    .box {
+        padding: 5px;
+        .wishlist-list {
+            padding: 5px;
+            background-color: #fff;
+        }
+    }
+    .page-amount {
+        margin-top: -4px;
+        padding-bottom: 1px;
+        border-bottom: 1px solid #f5f5f5;
+        font-size: 9px;
         text-align: right;
+    }
+    .order-product-list {
+        > li {
+            padding-top: 14px;
+            &:after {
+                display: block;
+                width: 39px;
+                height: 1px;
+                margin: 14px auto 0;
+                background-color: $brand-primary;
+                content: '';
+            }
+        }
+        .discount,
+        .price {
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 10px;
+        }
+        .price {
+            font-weight: 500;
+        }
+    }
+    .paging {
+        padding: 20px 0 10px;
     }
 }
 
@@ -1933,56 +2110,32 @@ footer{
 /**********************************************
  My Page - 회원정보수정
 ***********************************************/
-.member-privacy {
-    margin-top: -10px;
-    padding: 25px 20px 0;
-    .table {
-        td {
-            color: #4b4b4b;
-        }
-    }
-    label, .form-group {
-        margin-bottom: 0;
-    }
-    .form-control {
-        width: 300px;
-    }
-    .selectbox {
-        width: 105px;
-    }
-    .checkbox, .radio {
-        margin-right: 60px;
-    }
-    .member-email {
-        position: relative;
-        .help-inline {
-            position: absolute;
-            top: 9px;
-            left: 303px;
-        }
-    }
-    .phone-group {
-        width: 300px;
-        .form-control {
-            width: 100%;
-        }
-    }
-    .help-group {
-        .form-control {
-            width: 150px;
+.privacy-modify {
+    margin-bottom: 15px;
+    .box {
+        .input-list {
+            .fixed-data {
+                margin-bottom: 15px;
+                border-bottom: 1px solid $brand-secondary;
+                font-size: 11px;
+                color: $brand-secondary;
+                @include clearfix;
+                .fixed-label {
+                    float: left;
+                    margin-right: 15px;
+                }
+            }
+            .help-text,
+            .checkbox-block {
+                margin: -7px 0 10px;
+            }
         }
     }
 }
-.privacy-modify {
-    .member-privacy {
-        border: 1px solid #e5e5e5;
-        border-width: 1px 0;
-        .table {
-            margin-bottom: 60px;
-        }
-    }
-    .privacy-modify-cancel {
-        margin-top: -30px;
+.member-privacy {
+    .id-closed {
+        display: block;
+        padding-top: 20px;
         text-align: right;
     }
 }
@@ -2195,61 +2348,80 @@ footer{
 /**********************************************
  Join - Login
 ***********************************************/
-.login-banner {
-    margin: -40px 0 30px;
-}
 .login {
-    .box {
-        position: relative;
-        height: 394px;
-        .box-explain {
-            & + .form-group {
-                margin-top: 7px;
+    .login-find {
+        font-size: 11px;
+        color: $brand-secondary;
+        .find-id {
+            float: right;
+            color: $brand-secondary;
+            &:after {
+                display: block;
+                margin-top: -2px;
+                padding-bottom: 2px;
+                border-bottom: 1.5px solid $brand-secondary;
+                content: '';
             }
         }
-        .button-align {
-            position: absolute;
-            left: 0;
-            bottom: 40px;
-            width: 100%;
-            padding: 0 30px;
-        }
     }
-}
-.login-find {
-    .find-id {
-        float: right;
-        &:after {
-            display: block;
-            margin-top: -2px;
-            border-bottom: 1px solid #bdbdbd;
-            content: '';
-        }
+    .ordered-check-button-group {
+        margin-top: 35px;
     }
-}
-
-.forgot {
-    @include clearfix;
-    .box {
-        position: relative;
-        height: 493px;
-    }
-    .findId-phone,
-    .findPassword-phone {
+    .guest-ordered-check {
         display: none;
+        margin-top: 20px;
     }
-    .find-box {
-        padding: 15px 0 10px;
-        .radio:first-child {
-            margin-right: 30px;
+}
+// 아이디 / 패스워드 찾기
+.forgot {
+    color: $brand-secondary;
+    .tab {
+        .find-password {
+            left: 50%;
         }
     }
-    .button-align {
+    .tabs {
+        [type=radio]:checked ~ .tab-label {
+            span:before {
+                margin-right: 6px;
+                font-family: 'fontello';
+                color: $brand-primary;
+                content: '\e826';
+            }
+        }
+    }
+    .forgot-content {
+        padding-top: 33px;
+    }
+    .box {
+        padding-bottom: 15px;
+    }
+    .text-explain {
+        font-size: 11px;
+        line-height: (16)/11;
+    }
+}
+.forgot-box {
+    position: relative;
+    margin-top: 10px;
+    border-top: 1px solid $brand-secondary;
+    .radio {
+        display: block;
         position: absolute;
+        top: 9px;
         left: 0;
-        bottom: 40px;
-        width: 100%;
-        padding: 0 30px;
+    }
+    .find-phone {
+        left: 50%;
+    }
+    .findId-input,
+    .findPassword-input{
+        display: none;
+        padding-top: 37px;
+    }
+    .findId-email,
+    .findPassword-email {
+        display: block;
     }
 }
 
@@ -2257,15 +2429,33 @@ footer{
  Join - Sign Up
 ***********************************************/
 .signup {
-    .member-privacy {
-        padding-bottom: 60px;
-        .member-title {
-            margin-bottom: 25px;
-            padding-bottom: 15px;
-            border-bottom: 1px solid #e5e5e5;
-            font-size: 16px;
-            color: $brand-primary;
-            letter-spacing: 1px;
+    margin-bottom: 15px;
+    .box {
+        .input-list {
+            .help-text,
+            .checkbox-block {
+                margin: -7px 0 10px;
+            }
+        }
+    }
+}
+.input-select {
+    li {
+        padding: 1px 0;
+    }
+    .input-select-label {
+        color: $brand-secondary;
+    }
+    .birth-date {
+        margin: 0 -7px;
+        .input-select-label {
+            padding-left: 7px;
+        }
+        .input-group {
+            div {
+                width: 33.3%;
+                padding: 0 7px;
+            }
         }
     }
 }
@@ -2273,22 +2463,56 @@ footer{
     margin-bottom: 20px;
         .signup-agree-title {
             font-weight: 400;
+            color: $brand-secondary;
+            @include clearfix;
+            .checkbox {
+                float: left;
+            }
+            .button {
+                float: right;
+            }
             + .agree-box {
                 display: none;
-                margin-top: 20px;
+                margin: 5px 0 10px;
             }
         }
+}
+// Complete
+.signup-complete {
+    font-size: 10px;
+    text-align: center;
+    .welcome-message {
+        display: inline-block;
+        width: 202px;
+        height: 202px;
+        margin-bottom: 18px;
+        padding-top: 65px;
+        @include border-radius(50%);
+        background-color: $brand-primary;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #fff;
+        &:before {
+            display: block;
+            margin-bottom: 20px;
+            font-family: 'fontello';
+            font-size: 24px;
+            text-align: center;
+            content: '\e825';
+        }
+    }
 }
 
 /**********************************************
  Agree
 ***********************************************/
 .agree-box {
-    height: 200px;
-    padding: 16px 21px;
-    border: 1px solid #d5d5d5;
-    @include border-radius(2px);
+    height: 95px;
+    padding: 10px;
+    border: 5px solid #f5f5f5;
     background-color: #fff;
+    font-size: 9px;
 }
 
 /**********************************************

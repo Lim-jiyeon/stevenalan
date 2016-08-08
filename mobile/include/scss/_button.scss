@@ -10,7 +10,6 @@
     line-height: (($default-height - 2)/$font-size-base);
     font-family: $font-family-ko;
     color: #fff;
-    letter-spacing: 2px;
     text-align: center;
     vertical-align: middle;
     cursor: pointer;
@@ -32,55 +31,68 @@
 // Button Size
 .button-large { // 하단 Submit 버튼
     padding: 0 50px;
-    @include border-radius(5px);
     font-size: $button-large-size;
     line-height: (($large-height - 2)/$button-large-size);
 }
 .button-small { // 게시판 용도
     padding: 0 11px;
+    @include border-radius(2px);
     font-size: $button-small-size;
     line-height: (($small-height - 2)/$button-small-size);
-    letter-spacing: 1px;
 }
-.button-link { // 링크 스타일 (삭제, 변경)
-    padding: 0 2px;
-    border-bottom: 1px solid #bdbdbd;
-    font-size: $font-size-base;
-    line-height: ((18 - 2)/12);
-    letter-spacing: 1px;
-}
-.button-link-large {
-    font-size: 14px;
+.button-xsmall { // 게시판 용도
+    padding: 0 11px;
+    @include border-radius(2px);
+    font-size: $button-xsmall-size;
+    line-height: (($xsmall-height - 2)/$button-xsmall-size);
 }
 .button-input {
     padding: 0 15px;
+}
+.button-link {
+    padding: 0;
+    border-bottom: 1px solid $text-color;
+    background-color: transparent;
+    line-height: 22px;
+    color: $text-color;
+
 }
 
 // Button Color
 .button-primary { // 파란색 대표 버튼
     background-color: $brand-primary;
 }
-.button-secondary { // 검정색 border 버튼
-    border-color: #000;
+.button-secondary { // 파란색 border 버튼
+    border-color: $brand-primary;
     background-color: transparent;
-    color: #000;
+    color: $brand-primary;
     &:hover,
     &:focus {
-        color: #000;
+        color: $brand-primary;
     }
 }
 .button-third { // 검정색 bg 버튼
     background-color: $brand-secondary;
 }
+.button-fourth { // 검정색 border 버튼
+    border-color: $brand-secondary;
+    background-color: transparent;
+    color: $brand-secondary;
+    &:hover,
+    &:focus {
+        color: $brand-secondary;
+    }
+}
 //.button-warning { // 회색 버튼 (취소)
 //    background-color: #898989;
 //}
 .button-danger { // 삭제, 변경 버튼
-    background-color: transparent;
-    color: #8d8d8d;
+    border: 1px solid $text-color;
+    background-color: #fff;
+    color: $text-color;
     &:hover,
     &:focus {
-        color: #8d8d8d;
+        color: $text-color;
     }
 }
 
@@ -92,17 +104,53 @@
 }
 
 .button-group { // 다수버튼이 붙어 있는 경우
+    display: table;
+    width: 100%;
     font-size: 0;
-    .button {
+    div {
+        display: table-cell;
         margin: 0 0 0 -1px;
-        @include border-radius(0);
-        &:first-child {
+        .button {
+            width: 100%;
+            border-width: 1px 0 1px 1px;
+            @include border-radius(0);
+        }
+        &:first-child .button {
+            border-left-width: 1px;
             @include border-side-radius(top,left,3px);
             @include border-side-radius(bottom,left,3px);
         }
-        &:last-child {
+        &:last-child .button {
+            border-right-width: 1px;
             @include border-side-radius(top,right,3px);
             @include border-side-radius(bottom,right,3px);
+        }
+    }
+}
+
+.button-inline-group {
+    margin: 20px -5px 0;
+
+    div {
+        padding: 0 5px;
+    }
+    .button {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.button-auto-group {
+    display: table;
+    width: 100%;
+    margin: 0;
+    div {
+        display: table-cell;
+        &:first-child {
+            padding-left: 0;
+        }
+        &:last-child {
+            padding-right: 0;
         }
     }
 }

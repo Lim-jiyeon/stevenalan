@@ -82,6 +82,8 @@ output {
 }
 
 
+
+
 // Common form controls
 .form-control {
   display: block;
@@ -89,12 +91,12 @@ output {
   height: $default-height;
   padding: 0 10px;
   border: 1px solid $input-border;
-  @include border-radius(2px);
+  @include border-radius(3px);
   background-color: $input-bg;
   background-image: none;
   font-size: $font-size-base;
-  line-height: $line-height-base;
   color: $input-color;
+  -webkit-appearance: none;
 
   // Disabled and read-only inputs
   &[disabled],
@@ -109,6 +111,8 @@ output {
   fieldset[disabled] & {
     cursor: $cursor-disabled;
   }
+
+  @include placeholder($brand-secondary);
 }
 
 // Reset height for `textarea`s
@@ -187,57 +191,41 @@ input[type="search"] {
 }
 
 .input-button-group{
-  @include clearfix;
-  .form-group {
-    div {
-      float: left;
-      .form-control {
-        width: auto;
-        border-right: 0;
-        @include border-radius(0);
-      }
-      .button {
-        margin: 0;
-        padding: 0 15px;
-        @include border-radius(0);
-      }
+  display: table;
+  width: 100%;
+  div {
+    display: table-cell;
+    padding: 0;
+    vertical-align: top;
+    .form-control {
+      border-width: 1px 0;
+      @include border-radius(0);
     }
-    div:first-child * {
-      margin-right: -1px;
-      @include border-side-radius(top, left, 2px);
-      @include border-side-radius(bottom, left, 2px);
+    .button {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      @include border-radius(0);
     }
-    div:last-child * {
-      margin-left: -1px;
-      @include border-side-radius(top, right, 2px);
-      @include border-side-radius(bottom, right, 2px);
+    .selectbox .selectbox-value {
+      padding: 0 10px 0 20px;
     }
   }
-}
-
-// Input 의 Placeholder 정의 (custom.js)
-.placeholder {
-  position: relative;
-  label {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    padding: 0 10px;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: (30/12);
-    font-family: $font-family-ko;
-    color: #8d8d8d;
+  div:first-child * {
+    border-left-width: 1px;
+    @include border-side-radius(top, left, 3px);
+    @include border-side-radius(bottom, left, 3px);
+  }
+  div:last-child * {
+    @include border-side-radius(top, right, 3px);
+    @include border-side-radius(bottom, right, 3px);
   }
 }
 
 // Select Box
 .selectbox {
   position: relative;
-  display: inline-block;
+  display: block;
   border: 1px solid $border-color;
   text-align: left;
   @include border-radius(2px);
@@ -310,16 +298,21 @@ input[type="search"] {
   .radio-display{
     position: relative;
     display: inline-block;
-    width: 16px;
-    height: 16px;
+    width: 13px;
+    height: 13px;
     margin: 3px 6px 5px 0;
-    background: url(../../images/common/form-checkbox.png) 0 0;
+    background-size: 13px;
     vertical-align: middle;
   }
   input[type="checkbox"]:checked + .checkbox-display,
   input[type="radio"]:checked + .radio-display{
-    background: url(../../images/common/form-checkbox-checked.png) 0 0;
     transition: all 0.3s ease;
+  }
+  .checkbox-display {
+    background-image: url(../../images/common/form-checkbox.png);
+  }
+  input[type="checkbox"]:checked + .checkbox-display {
+    background-image: url(../../images/common/form-checkbox-checked.png);
   }
   .radio-display {
     background-image: url(../../images/common/form-radio.png);
@@ -331,6 +324,7 @@ input[type="search"] {
 .checkbox-block { // 동의 체크박스
   display: block;
   margin-top: 10px;
+  font-size: 10px;
 }
 .radio-group { // 한줄로 나열되는 라디오버튼
   .radio {
@@ -349,6 +343,9 @@ input[type="search"] {
   margin-top: 5px;
   margin-bottom: 10px;
   color: #858585;
+}
+.help-text {
+  font-size: 10px;
 }
 .help-success {
   color: #004689;

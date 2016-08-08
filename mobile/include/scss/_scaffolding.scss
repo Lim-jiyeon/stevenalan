@@ -12,6 +12,13 @@
 }
 @font-face {
   font-family: "notoSans";
+  font-weight: 500;
+  src: url("../fonts/NotoSansCJKkr-Medium.eot?") format('eot'),
+  url("../fonts/NotoSansCJKkr-Medium.woff") format('woff'),
+  url("../fonts/NotoSansCJKkr-Medium.otf")  format('opentype');
+}
+@font-face {
+  font-family: "notoSans";
   font-weight: 700;
   src: url("../fonts/NotoSansCJKkr-Bold.eot?") format('eot'),
   url("../fonts/NotoSansCJKkr-Bold.woff") format('woff'),

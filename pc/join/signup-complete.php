@@ -2,9 +2,9 @@
 
     <div class="content">
         <div class="container">
-            <h2 class="page-title">signup</h2>
+            <h2 class="page-title">회원가입</h2>
             <div class="box">
-                <!-- 주문 완료 확인 -->
+                <!-- 회원가입 완료 -->
                 <div class="complete-box">
                     <span class="washed-line-text">welcome</span>
                     <strong class="confirm-message">Steven Alan의 회원이 되신 것을 환영합니다.</strong>
@@ -14,7 +14,7 @@
                         <a href="#" class="button button-large button-primary">메인으로 이동</a>
                     </div>
                 </div>
-                <!-- 주문 완료 확인 //end -->
+                <!-- 회원가입 완료 //end -->
             </div>
         </div>
     </div>
