@@ -15,7 +15,7 @@
 header{
     border-bottom: 1px solid #d7d7d7;
     .site-utility{
-        padding: 3px 10px 1px;
+        padding: 4px 10px 0;
         text-align: right;
         ul {
             display: inline-block;
@@ -25,7 +25,7 @@ header{
                     margin-left: 25px;
                 }
                 a {
-                    font-size: 10px;
+                    font-size: 12px;
                     color: #858585;
                     text-transform: uppercase;
                 }
@@ -34,10 +34,12 @@ header{
     }
     .quick-access{
         position: relative;
+        margin-top: -2px;
         padding: 7px 0 9px;
         background:
             url("../../images/common/washed-line.png") repeat-x 0 0,
             url("../../images/common/washed-line.png") repeat-x 70% 100%;
+        background-size: 50% 1px;
         .site-brand{
             margin: 0;
             font-size: 0;
@@ -49,7 +51,7 @@ header{
             position: absolute;
             top: 50%;
             left: 10px;
-            margin-top: -13px;
+            margin-top: -10px;
             i {
                 font-size: 14px;
             }
@@ -58,7 +60,7 @@ header{
             position: absolute;
             top: 50%;
             right: 37px;
-            margin-top: -15px;
+            margin-top: -13px;
             i {
                 font-size: 16px;
             }
@@ -67,7 +69,7 @@ header{
             position: absolute;
             top: 50%;
             right: 10px;
-            margin-top: -16px;
+            margin-top: -14px;
             i {
                 font-size: 17px;
             }
@@ -86,6 +88,7 @@ header{
 ***********************************************/
 footer{
     background: url("../../images/common/washed-line.png") repeat-x 0 0;
+    background-size: 50% 1px;
     text-transform: uppercase;
     .footer-menu {
         margin-top: 10px;
@@ -135,7 +138,7 @@ footer{
     }
     .copyright {
         padding: 15px 0 25px;
-        border-top: 2px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
         font-size: 10px;
         text-align: center;
         p {
@@ -191,7 +194,7 @@ footer{
 .page-title { // 페이지 큰 타이틀
     margin-bottom: 15px;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     color: $brand-secondary;
     text-transform: uppercase;
 }
@@ -207,7 +210,7 @@ footer{
 .secondary-title { // 검정색 타이틀
     margin-bottom: 7px;
     font-weight: 400;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 2.5px;
     font-family: $font-family-ko;
     color: $brand-secondary;
@@ -361,14 +364,14 @@ footer{
     .product-image {
         float: left;
         img {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
         }
         & + .item-info {
             float: left;
             width: 100%;
-            margin-top: -100px;
-            padding-left: 105px;
+            margin-top: -120px;
+            padding-left: 130px;
         }
     }
     .item-info {
@@ -390,7 +393,6 @@ footer{
             display: block;
             margin-bottom: 4px;
             font-weight: 500;
-            font-size: 11px;
             line-height: (15/11);
             letter-spacing: 0.5px;
             color: $brand-secondary;
@@ -413,7 +415,7 @@ footer{
         .item-name {
             display: block;
             font-weight: 400;
-            font-size: 10px;
+            font-size: 12px;
             margin-bottom: 9px;
             line-height: (15/10);
             letter-spacing: 0.5px;
@@ -424,8 +426,8 @@ footer{
         .item-option {
             margin-top: 5px;
             li {
-                margin-top: -1px;
-                font-size: 10px;
+                margin-top: -3px;
+                font-size: 12px;
                 font-family: $font-family-en;
                 text-transform: uppercase;
             }
@@ -444,6 +446,7 @@ footer{
     padding: 5px 10px;
     border-top: 1px dashed #e5e5e5;
     font-weight: 400;
+
     color: $brand-primary;
     text-align: right;
     em {
@@ -985,7 +988,7 @@ footer{
             @include border-radius(0);
             background-color: #fff;
             color: $brand-secondary;
-            font-size: $font-size-base;
+            font-size: 13px;
             line-height: (($default-height - 2)/$font-size-base);
             color: $brand-secondary;
             cursor: pointer;
@@ -1008,7 +1011,8 @@ footer{
             @include border-radius(9px);
             font-style: normal;
             font-size: 9px;
-            line-height: (17-2)/9;
+            line-height: (18-2)/9;
+            vertical-align: 1px;
         }
     }
     .tabs {
@@ -1071,7 +1075,7 @@ footer{
     .shoppingbag-amount {
         padding: 7px 0 15px;
         background-color: #f5f5f5;
-        font-size: 11px;
+        font-size: 12px;
         color: #333;
         @include clearfix;
         dt {
@@ -1080,7 +1084,6 @@ footer{
             width: 40%;
             &.shoppingbag-total {
                 padding-top: 4px;
-                font-size: 12px;
             }
         }
         dd {
@@ -1099,7 +1102,7 @@ footer{
             border-top: 1px solid $brand-secondary;
             margin-top: 5px;
             padding-top: 3px;
-            font-weight: 500;
+            font-weight: 600;
         }
     }
     .checkout-payment {

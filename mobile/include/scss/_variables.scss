@@ -33,9 +33,9 @@ $font-family-base:        "notoSans", sans-serif !default;
 $font-family-en:          "BentonSans", sans-serif !default;
 $font-family-ko:          "notoSans", sans-serif !default;
 $font-family-serif:       "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-size-base:          12px !default;
+$font-size-base:          13px !default;
 //** Unit-less `line-height` for use in components like buttons.
-$line-height-base:        (20)/12 !default; // 20/14
+$line-height-base:        (20)/13 !default; // 20/14
 
 
 //== Forms
@@ -140,13 +140,13 @@ $container-lg:                 $container-large-desktop !default;
 // Button Size
 $default-height: 35px;
 $large-height: 40px;
-$small-height: 24px;
+$small-height: 27px;
 $xsmall-height: 18px;
 
 //Button Font Size
 $button-large-size: 14px;
-$button-small-size: 10px;
-$button-xsmall-size: 9px;
+$button-small-size: 12px;
+$button-xsmall-size: 11px;
 
 // Font Color
 $button-default-color: #333;
