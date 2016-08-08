@@ -131,6 +131,7 @@
                                     <a href="#" class="button">3개월</a>
                                     <a href="#" class="button">6개월</a>
                                 </div>
+                                <div class="group-blank"></div>
                                 <div>
                                     <div class="input-button-group">
                                         <div class="form-group input-group">
@@ -144,6 +145,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="group-blank"></div>
                                 <div>
                                     <a href="#" class="button button-block button-primary">조회하기</a>
                                 </div>
@@ -217,6 +219,7 @@
                                     <a href="#" class="button">3개월</a>
                                     <a href="#" class="button">6개월</a>
                                 </div>
+                                <div class="group-blank"></div>
                                 <div>
                                     <div class="input-button-group">
                                         <div class="form-group input-group">
@@ -230,6 +233,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="group-blank"></div>
                                 <div>
                                     <a href="#" class="button button-block button-primary">조회하기</a>
                                 </div>

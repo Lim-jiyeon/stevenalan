@@ -9,7 +9,7 @@
     <style type="text/css">
         .markup-list {font-family:'notoSans',sans-serif;}
         .header {padding:20px 0;background: url('./pc/images/common/washed-line.png') repeat-x 0 100%;}
-        .site-brand {margin:0;font-size:25px;color:#000;text-align:center;text-transform:capitalize;}
+        .site-brand {width:100%;margin:0;font-size:25px;color:#000;text-align:center;text-transform:capitalize;}
         .site-brand span {font-size:16px;}
         .copyright {margin:0;padding:0;border:0;}
         .markup-list h2 {margin-bottom:10px;font-size:21px;}
