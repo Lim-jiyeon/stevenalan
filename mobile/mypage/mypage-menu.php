@@ -1,8 +1,8 @@
 <!-- My Page Menu -->
 <div class="container">
-    <div class="mypage-menu">
-        <h2 class="mypage-menu-title">my page</h2>
-        <ul class="mypage-menu-box">
+    <div class="category-menu">
+        <h2 class="category-menu-title">my page</h2>
+        <ul class="category-menu-box">
             <li><a href="#">주문/배송 조회</a></li>
             <li><a href="#">취소/교환/반품</a></li>
             <li><a href="#">위시리스트</a></li>

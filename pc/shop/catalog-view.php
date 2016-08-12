@@ -8,7 +8,7 @@
             <a href="#">DRESSES</a>
         </div>
         <!-- breadcrumb //end -->
-        <!-- 상품 상세 //end -->
+        <!-- 상품 상세 -->
         <div class="container">
             <div class="row">
                 <!-- 상품 이미지 -->

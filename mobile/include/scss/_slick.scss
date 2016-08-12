@@ -93,12 +93,12 @@
 .slick-dots {
     display: block;
     position: absolute;
-    bottom: 6px;
+    bottom: -20px;
     width: 100%;
     text-align: center;
     li {
         display: inline-block;
-        margin: 0 4px;
+        margin: 0 3px;
         button {
             display: block;
             height: 8px;

@@ -31,6 +31,16 @@
                 <div id="mobile" class="col-xs-12">
                     <h2>MOBILE 마크업 리스트</h2>
 
+                    <h3>1. Store &amp; Contents</h3>
+                    <ul>
+<!--                        <li>1.1 <a href="./mobile/main/main.php">Main</a></li>-->
+                        <li>1.2 <a href="./mobile/shop/catalog.php">Product List</a></li>
+                        <li>1.2 <a href="./mobile/shop/catalog-listViewType.php">Product List - View Type (마크업 확인용)</a></li>
+                        <li>1.3 <a href="./mobile/shop/catalog-view.php">Product View</a></li>
+                    </ul>
+
+                    <hr>
+
                     <h3>2. Shopping Bag &amp; Checkout</h3>
                     <ul>
                         <li>2.1 <a href="./mobile/order/shoppingbag.php">쇼핑백</a></li>

@@ -13,9 +13,38 @@ $(document).ready(function () {
         }
     });
 
-    // My Page Menu
-    $(".mypage-menu .mypage-menu-title").on("click", function () {
-        $(this).next("ul").slideToggle(400);
+    // Category Menu
+    $(".category-menu .category-menu-title").on("click", function () {
+        $(this).toggleClass("open").next(".category-menu-box").slideToggle(400);
+    });
+
+
+    // Detail slider
+    $('.product-images').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        dots: true
+    });
+
+    // Detail Contents
+    $(".detail-info-title").on("click", function() {
+        $(this).siblings().removeClass("open").next().slideUp();
+        $(this).toggleClass("open").next().slideToggle();
+        $(this).parent().siblings().children().removeClass("open").next().slideUp();
+        return false;
+    });
+
+    // You May Also Like
+    $('.you-like-slider').slick({
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        speed: 500,
+        arrows: false,
+        dots: true
     });
 
 
@@ -36,6 +65,14 @@ $(document).ready(function () {
     });
 
 });
+
+
+// Select Box
+function selectboxEvent(target){
+    var $this = $(target),
+        str = $this.val();
+    $this.parent().children(".selectbox-value").text(str);
+}
 
 
 // Sign Up Agree Box View
