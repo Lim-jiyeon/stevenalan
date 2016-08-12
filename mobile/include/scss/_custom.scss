@@ -180,14 +180,9 @@ footer{
     padding: 10px;
     background-color: #f5f5f5;
 }
-.inner-box { // 회색 박스 안에 회색 border가 있는 하얀색 박스
-    padding: 20px;
-    border: 1px solid #e5e5e5;
-    border-width: 1px 0;
+.inner-box { // 회색 박스 안에 하얀색 박스
+    padding: 10px;
     background-color: #fff;
-    &.noLine { // 위아래 라인이 없는 경우
-        border-width: 0;
-    }
 }
 .border-box { // 검정색 border 박스
     padding: 20px;
@@ -2135,87 +2130,32 @@ footer{
 /**********************************************
  My Page - AddressBook
 ***********************************************/
-.bgSection{
-    background-color: #f5f5f5;
-    padding: 30px 30px 60px 30px;
-}
-.address-manage-wrap{
-    > p{
-        margin-bottom: 10px;
-    }
-    .address-manage-table{
-        td{
-            color: #000;
-        }
-        .order-button{
-            .button-block:first-child{
-                .button{
-                    width: 54px;
-                }
-            }
-        }
-    }
-    .buttonWrap{
-        margin-top: 20px;
-    }
-}
-.address_modify_add_modal {
-    width: 740px;
-    input {
-        display: inline-block;
-        width: 180px;
-    }
-    .address-modify-add-table {
-        padding: 30px 0;
-        margin-top: 20px;
-        border-top: 1px solid #e5e5e5;
-        tr {
-            th {
-                text-align: left;
-                width: 23%;
-                color: #000;
-                font-weight: normal;
-            }
-            td {
-                padding-bottom: 15px;
-                &.address-modify-add-table-address {
-                    .input-group {
-                        input {
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-            &:last-child td {
-                padding-bottom: 0;
-            }
-            .form-group {
-                margin-bottom: 0;
-            }
-        }
-    }
-    .buttonWrap {
-        padding-top: 20px;
-        border-top: 1px solid #e5e5e5;
-    }
-}
-.address_list_modal{
-    width: 740px;
-    .modalTitle{
+.address-manage {
+    .address-item {
         margin-bottom: 20px;
-    }
-    .table{
-        tr{
-            th{
-                background-color: #fff;
-            }
-            td{
-                color: #000;
-            }
+        padding: 10px 5px 15px 5px;
+        border: 5px solid #f5f5f5;
+        background-color: #fff;
+        font-size: 11px;
+        .address-group {
+            padding: 0 5px;
         }
-    }
-    .buttonWrap{
-        padding-top: 20px;
+        .address-title {
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #f5f5f5;
+            font-weight: 400;
+            font-size: 12px;
+            color: $brand-secondary;
+        }
+        .button-inline-group {
+            margin-top: 20px;
+        }
+        &.empty {
+            padding: 40px 0;
+            font-size: $font-size-base;
+            text-align: center;
+        }
     }
 }
 
