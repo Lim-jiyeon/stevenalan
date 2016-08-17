@@ -64,7 +64,7 @@
 }
 .button-secondary { // 파란색 border 버튼
     border-color: $brand-primary;
-    background-color: transparent;
+    background-color: #fff;
     color: $brand-primary;
     &:hover,
     &:focus {
@@ -76,7 +76,7 @@
 }
 .button-fourth { // 검정색 border 버튼
     border-color: $brand-secondary;
-    background-color: transparent;
+    background-color: #fff;
     color: $brand-secondary;
     &:hover,
     &:focus {

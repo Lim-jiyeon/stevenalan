@@ -9,41 +9,39 @@
                 <h3 class="title secondary-title"><span class="step">STEP 1.</span>주문상품 확인</h3>
                 <a href="#none" class="button-circle"><i class="icon-plus"></i></a>
             </div>
-            <div class="box">
-                <ul class="order-product-list">
-                    <li>
-                        <div class="product-info">
-                            <div class="product-image"><img src="../images/temp/temp-product.jpg" alt=""></div>
-                            <div class="item-info">
-                                <span class="item-badge">NEW</span>
-                                <span class="item-brand">STEVEN ALAN</span>
-                                <strong class="item-name">Belted Long Shirtdress</strong>
-                                <ul class="item-option">
-                                    <li>컬러 : INDIGO</li>
-                                    <li>사이즈 : P</li>
-                                    <li>수량 : 1</li>
-                                </ul>
-                            </div>
+            <ul class="product-list order-product-list">
+                <li class="list-item">
+                    <div class="product-info">
+                        <div class="product-image"><img src="../images/temp/temp-product.jpg" alt=""></div>
+                        <div class="item-info">
+                            <span class="item-badge">NEW</span>
+                            <span class="item-brand">STEVEN ALAN</span>
+                            <strong class="item-name">Belted Long Shirtdress</strong>
+                            <ul class="item-option">
+                                <li>컬러 : INDIGO</li>
+                                <li>사이즈 : P</li>
+                                <li>수량 : 1</li>
+                            </ul>
                         </div>
-                        <strong class="item-amount"><em>1,234,000</em>원</strong>
-                    </li>
-                    <li>
-                        <div class="product-info">
-                            <div class="product-image"><img src="../images/temp/temp-product.jpg" alt=""></div>
-                            <div class="item-info">
-                                <span class="item-brand">STEVEN ALAN</span>
-                                <strong class="item-name">Belted Long Shirtdress</strong>
-                                <ul class="item-option">
-                                    <li>컬러 : INDIGO</li>
-                                    <li>사이즈 : P</li>
-                                    <li>수량 : 1</li>
-                                </ul>
-                            </div>
+                    </div>
+                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                </li>
+                <li class="list-item">
+                    <div class="product-info">
+                        <div class="product-image"><img src="../images/temp/temp-product.jpg" alt=""></div>
+                        <div class="item-info">
+                            <span class="item-brand">STEVEN ALAN</span>
+                            <strong class="item-name">Belted Long Shirtdress</strong>
+                            <ul class="item-option">
+                                <li>컬러 : INDIGO</li>
+                                <li>사이즈 : P</li>
+                                <li>수량 : 1</li>
+                            </ul>
                         </div>
-                        <strong class="item-amount"><em>1,234,000</em>원</strong>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                </li>
+            </ul>
         </div>
         <!-- 주문상품 확인 //end -->
         <!-- 주문자 정보 -->
@@ -102,7 +100,7 @@
                             <input type="text" class="form-control" placeholder="수령인" title="수령인 입력">
                         </div>
                     </li>
-                    <li>
+                    <li class="address">
                         <div class="form-group input-button-group">
                             <div><input type="number" value="04778" class="form-control" title="우편번호 입력"></div>
                             <div class="postcode-button"><a href="#" class="button"><span>우편번호 검색</span></a></div>

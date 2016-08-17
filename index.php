@@ -53,9 +53,9 @@
 
                     <h3>3. My Page</h3>
                     <ul>
-<!--                        <li>3.0 <a href="./mobile/mypage/dashboard.php">대시보드</a></li>-->
+                        <li>3.0 <a href="./mobile/mypage/dashboard.php">대시보드</a></li>
 <!--                        <li>3.1 <a href="./mobile/mypage/order-track.php">주문/배송 조회</a></li>-->
-<!--                        <li>3.1.1 <a href="./mobile/mypage/order-track-view.php">주문/배송 조회 - 주문 상세</a></li>-->
+                        <li>3.1.1 <a href="./mobile/mypage/order-track-view.php">주문/배송 조회 - 주문 상세</a></li>
 <!--                        <li>3.1.2 <a href="./mobile/mypage/order-track-popup.php">[팝업1] 영수증 발급 - 현금영수증(신청이 필요한 경우)</a></li>-->
 <!--                        <li>3.1.2 <a href="./mobile/mypage/order-track-popup2.php">[팝업2] 영수증 발급</a></li>-->
 <!--                        <li>3.1.2 <a href="./mobile/mypage/order-track-popup3.php">[팝업3] 팝업2에서 카드영수증 버튼 클릭 시 나오는 팝업</a></li>-->

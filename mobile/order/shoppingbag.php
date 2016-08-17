@@ -11,150 +11,148 @@
                     <input type="radio" id="local_shipping" name="shipping_type_tab_group" checked>
                     <label for="local_shipping" class="tab-label local-shipping"><span>국내배송<i class="icon-amount">2</i></span></label>
                     <div class="tab-content confirm-order-product">
-                        <div class="box">
-                            <ul class="order-product-list">
-                                <li>
-                                    <div class="product-info">
-                                        <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
-                                        <div class="item-info">
-                                            <div class="item-brand-group">
-                                                <span class="item-brand">COMME DES GARÇONS PLAY BY STEVEN</span>
-                                                <div class="checkbox">
-                                                    <input type="checkbox" id="local_select_brand1" checked>
-                                                    <label for="local_select_brand1" class="checkbox-display"></label>
+                        <ul class="product-list order-product-list">
+                            <li class="list-item">
+                                <div class="product-info">
+                                    <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                                    <div class="item-info">
+                                        <div class="item-brand-group">
+                                            <span class="item-brand">COMME DES GARÇONS PLAY BY STEVEN</span>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="local_select_brand1" checked>
+                                                <label for="local_select_brand1" class="checkbox-display"></label>
+                                            </div>
+                                        </div>
+                                        <strong class="item-name"><a href="#">Aldama Embroidered Bib Top</a></strong>
+                                        <ul class="item-option">
+                                            <li>컬러 : INDIGO</li>
+                                            <li>사이즈 : P</li>
+                                            <li>수량 : 1</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item-option-button">
+                                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                                    <div class="button-inline-group button-auto-group">
+                                        <div><a href="#" class="button button-small button-primary">바로구매</a></div>
+                                        <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
+                                        <div><a href="#" class="button button-small button-danger">삭제</a></div>
+                                    </div>
+                                    <div class="box item-option-change">
+                                        <span class="item-option-text">옵션 / 수량 변경</span>
+                                        <ul>
+                                            <li>
+                                                <div class="selectbox">
+                                                    <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
+                                                    <select onchange="selectboxEvent(this);">
+                                                        <option value="쿠폰 선택">쿠폰 선택</option>
+                                                        <option value="선택1">선택1</option>
+                                                        <option value="선택2">선택2</option>
+                                                        <option value="선택3">선택3</option>
+                                                        <option value="선택4">선택4</option>
+                                                        <option value="선택5">선택5</option>
+                                                    </select>
                                                 </div>
-                                            </div>
-                                            <strong class="item-name"><a href="#">Aldama Embroidered Bib Top</a></strong>
-                                            <ul class="item-option">
-                                                <li>컬러 : INDIGO</li>
-                                                <li>사이즈 : P</li>
-                                                <li>수량 : 1</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="item-option-button">
-                                        <strong class="item-amount"><em>1,234,000</em>원</strong>
-                                        <div class="button-inline-group button-auto-group">
-                                            <div><a href="#" class="button button-small button-primary">바로구매</a></div>
-                                            <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
-                                            <div><a href="#" class="button button-small button-danger">삭제</a></div>
-                                        </div>
-                                        <div class="box item-option-change">
-                                            <span class="item-option-text">옵션 / 수량 변경</span>
-                                            <ul>
-                                                <li>
-                                                    <div class="selectbox">
-                                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                                        <select onchange="selectboxEvent(this);">
-                                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                                            <option value="선택1">선택1</option>
-                                                            <option value="선택2">선택2</option>
-                                                            <option value="선택3">선택3</option>
-                                                            <option value="선택4">선택4</option>
-                                                            <option value="선택5">선택5</option>
-                                                        </select>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="selectbox">
-                                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                                        <select onchange="selectboxEvent(this);">
-                                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                                            <option value="선택1">선택1</option>
-                                                            <option value="선택2">선택2</option>
-                                                            <option value="선택3">선택3</option>
-                                                            <option value="선택4">선택4</option>
-                                                            <option value="선택5">선택5</option>
-                                                        </select>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input-button-group">
-                                                        <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
-                                                        <div><input type="number" value="1" class="form-control"></div>
-                                                        <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="button-align-center">
-                                                <a href="#" class="button button-small button-third">업데이트</a>
-                                                <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="product-info">
-                                        <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
-                                        <div class="item-info">
-                                            <div class="item-brand-group">
-                                                <span class="item-brand">STEVEN ALAN</span>
-                                                <div class="checkbox">
-                                                    <input type="checkbox" id="local_select_brand2" checked>
-                                                    <label for="local_select_brand2" class="checkbox-display"></label>
+                                            </li>
+                                            <li>
+                                                <div class="selectbox">
+                                                    <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
+                                                    <select onchange="selectboxEvent(this);">
+                                                        <option value="쿠폰 선택">쿠폰 선택</option>
+                                                        <option value="선택1">선택1</option>
+                                                        <option value="선택2">선택2</option>
+                                                        <option value="선택3">선택3</option>
+                                                        <option value="선택4">선택4</option>
+                                                        <option value="선택5">선택5</option>
+                                                    </select>
                                                 </div>
-                                            </div>
-                                            <strong class="item-name"><a href="#">Belted Long Shirtdress Belted Long Shirtdress</a></strong>
-                                            <ul class="item-option">
-                                                <li>컬러 : INDIGO</li>
-                                                <li>사이즈 : P</li>
-                                                <li>수량 : 1</li>
-                                            </ul>
+                                            </li>
+                                            <li>
+                                                <div class="input-button-group">
+                                                    <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
+                                                    <div><input type="number" value="1" class="form-control"></div>
+                                                    <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="button-align-center">
+                                            <a href="#" class="button button-small button-third">업데이트</a>
+                                            <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
                                         </div>
                                     </div>
-                                    <div class="item-option-button">
-                                        <strong class="item-amount"><em>1,234,000</em>원</strong>
-                                        <div class="button-inline-group button-auto-group">
-                                            <div><a href="#" class="button button-small button-primary">바로구매</a></div>
-                                            <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
-                                            <div><a href="#" class="button button-small button-danger">삭제</a></div>
-                                        </div>
-                                        <div class="box item-option-change">
-                                            <span class="item-option-text">옵션 / 수량 변경</span>
-                                            <ul>
-                                                <li>
-                                                    <div class="selectbox">
-                                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                                        <select onchange="selectboxEvent(this);">
-                                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                                            <option value="선택1">선택1</option>
-                                                            <option value="선택2">선택2</option>
-                                                            <option value="선택3">선택3</option>
-                                                            <option value="선택4">선택4</option>
-                                                            <option value="선택5">선택5</option>
-                                                        </select>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="selectbox">
-                                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                                        <select onchange="selectboxEvent(this);">
-                                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                                            <option value="선택1">선택1</option>
-                                                            <option value="선택2">선택2</option>
-                                                            <option value="선택3">선택3</option>
-                                                            <option value="선택4">선택4</option>
-                                                            <option value="선택5">선택5</option>
-                                                        </select>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input-button-group">
-                                                        <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
-                                                        <div><input type="number" value="1" class="form-control"></div>
-                                                        <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="button-align-center">
-                                                <a href="#" class="button button-small button-third">업데이트</a>
-                                                <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="product-info">
+                                    <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                                    <div class="item-info">
+                                        <div class="item-brand-group">
+                                            <span class="item-brand">STEVEN ALAN</span>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="local_select_brand2" checked>
+                                                <label for="local_select_brand2" class="checkbox-display"></label>
                                             </div>
                                         </div>
+                                        <strong class="item-name"><a href="#">Belted Long Shirtdress Belted Long Shirtdress</a></strong>
+                                        <ul class="item-option">
+                                            <li>컬러 : INDIGO</li>
+                                            <li>사이즈 : P</li>
+                                            <li>수량 : 1</li>
+                                        </ul>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
+                                </div>
+                                <div class="item-option-button">
+                                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                                    <div class="button-inline-group button-auto-group">
+                                        <div><a href="#" class="button button-small button-primary">바로구매</a></div>
+                                        <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
+                                        <div><a href="#" class="button button-small button-danger">삭제</a></div>
+                                    </div>
+                                    <div class="box item-option-change">
+                                        <span class="item-option-text">옵션 / 수량 변경</span>
+                                        <ul>
+                                            <li>
+                                                <div class="selectbox">
+                                                    <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
+                                                    <select onchange="selectboxEvent(this);">
+                                                        <option value="쿠폰 선택">쿠폰 선택</option>
+                                                        <option value="선택1">선택1</option>
+                                                        <option value="선택2">선택2</option>
+                                                        <option value="선택3">선택3</option>
+                                                        <option value="선택4">선택4</option>
+                                                        <option value="선택5">선택5</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="selectbox">
+                                                    <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
+                                                    <select onchange="selectboxEvent(this);">
+                                                        <option value="쿠폰 선택">쿠폰 선택</option>
+                                                        <option value="선택1">선택1</option>
+                                                        <option value="선택2">선택2</option>
+                                                        <option value="선택3">선택3</option>
+                                                        <option value="선택4">선택4</option>
+                                                        <option value="선택5">선택5</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-button-group">
+                                                    <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
+                                                    <div><input type="number" value="1" class="form-control"></div>
+                                                    <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="button-align-center">
+                                            <a href="#" class="button button-small button-third">업데이트</a>
+                                            <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <!-- 국내배송 상품 //end -->
@@ -163,150 +161,148 @@
                     <input type="radio" id="overseas_shipping" name="shipping_type_tab_group">
                     <label for="overseas_shipping" class="tab-label overseas-shipping"><span>해외배송<i class="icon-amount">5</i></span></label>
                     <div class="tab-content confirm-order-product">
-                        <div class="box">
-                            <ul class="order-product-list">
-                                <li>
-                                    <div class="product-info">
-                                        <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
-                                        <div class="item-info">
-                                            <div class="item-brand-group">
-                                                <span class="item-brand">STEVEN ALAN</span>
-                                                <div class="checkbox">
-                                                    <input type="checkbox" id="overseas_select_brand1" checked>
-                                                    <label for="overseas_select_brand1" class="checkbox-display"></label>
+                        <ul class="product-list order-product-list">
+                            <li class="list-item">
+                                <div class="product-info">
+                                    <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                                    <div class="item-info">
+                                        <div class="item-brand-group">
+                                            <span class="item-brand">STEVEN ALAN</span>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="overseas_select_brand1" checked>
+                                                <label for="overseas_select_brand1" class="checkbox-display"></label>
+                                            </div>
+                                        </div>
+                                        <strong class="item-name"><a href="#">Belted Long Shirtdress</a></strong>
+                                        <ul class="item-option">
+                                            <li>컬러 : INDIGO</li>
+                                            <li>사이즈 : P</li>
+                                            <li>수량 : 1</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="item-option-button">
+                                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                                    <div class="button-inline-group button-auto-group">
+                                        <div><a href="#" class="button button-small button-primary">바로구매</a></div>
+                                        <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
+                                        <div><a href="#" class="button button-small button-danger">삭제</a></div>
+                                    </div>
+                                    <div class="box item-option-change">
+                                        <span class="item-option-text">옵션 / 수량 변경</span>
+                                        <ul>
+                                            <li>
+                                                <div class="selectbox">
+                                                    <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
+                                                    <select onchange="selectboxEvent(this);">
+                                                        <option value="쿠폰 선택">쿠폰 선택</option>
+                                                        <option value="선택1">선택1</option>
+                                                        <option value="선택2">선택2</option>
+                                                        <option value="선택3">선택3</option>
+                                                        <option value="선택4">선택4</option>
+                                                        <option value="선택5">선택5</option>
+                                                    </select>
                                                 </div>
-                                            </div>
-                                            <strong class="item-name"><a href="#">Belted Long Shirtdress</a></strong>
-                                            <ul class="item-option">
-                                                <li>컬러 : INDIGO</li>
-                                                <li>사이즈 : P</li>
-                                                <li>수량 : 1</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="item-option-button">
-                                        <strong class="item-amount"><em>1,234,000</em>원</strong>
-                                        <div class="button-inline-group button-auto-group">
-                                            <div><a href="#" class="button button-small button-primary">바로구매</a></div>
-                                            <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
-                                            <div><a href="#" class="button button-small button-danger">삭제</a></div>
-                                        </div>
-                                        <div class="box item-option-change">
-                                            <span class="item-option-text">옵션 / 수량 변경</span>
-                                            <ul>
-                                                <li>
-                                                    <div class="selectbox">
-                                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                                        <select onchange="selectboxEvent(this);">
-                                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                                            <option value="선택1">선택1</option>
-                                                            <option value="선택2">선택2</option>
-                                                            <option value="선택3">선택3</option>
-                                                            <option value="선택4">선택4</option>
-                                                            <option value="선택5">선택5</option>
-                                                        </select>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="selectbox">
-                                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                                        <select onchange="selectboxEvent(this);">
-                                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                                            <option value="선택1">선택1</option>
-                                                            <option value="선택2">선택2</option>
-                                                            <option value="선택3">선택3</option>
-                                                            <option value="선택4">선택4</option>
-                                                            <option value="선택5">선택5</option>
-                                                        </select>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input-button-group">
-                                                        <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
-                                                        <div><input type="number" value="1" class="form-control"></div>
-                                                        <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="button-align-center">
-                                                <a href="#" class="button button-small button-third">업데이트</a>
-                                                <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="product-info">
-                                        <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
-                                        <div class="item-info">
-                                            <div class="item-brand-group">
-                                                <span class="item-brand">STEVEN ALAN</span>
-                                                <div class="checkbox">
-                                                    <input type="checkbox" id="overseas_select_brand2" checked>
-                                                    <label for="overseas_select_brand2" class="checkbox-display"></label>
+                                            </li>
+                                            <li>
+                                                <div class="selectbox">
+                                                    <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
+                                                    <select onchange="selectboxEvent(this);">
+                                                        <option value="쿠폰 선택">쿠폰 선택</option>
+                                                        <option value="선택1">선택1</option>
+                                                        <option value="선택2">선택2</option>
+                                                        <option value="선택3">선택3</option>
+                                                        <option value="선택4">선택4</option>
+                                                        <option value="선택5">선택5</option>
+                                                    </select>
                                                 </div>
-                                            </div>
-                                            <strong class="item-name"><a href="#">Belted Long Shirtdress Belted Long Shirtdress</a></strong>
-                                            <ul class="item-option">
-                                                <li>컬러 : INDIGO</li>
-                                                <li>사이즈 : P</li>
-                                                <li>수량 : 1</li>
-                                            </ul>
+                                            </li>
+                                            <li>
+                                                <div class="input-button-group">
+                                                    <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
+                                                    <div><input type="number" value="1" class="form-control"></div>
+                                                    <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="button-align-center">
+                                            <a href="#" class="button button-small button-third">업데이트</a>
+                                            <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
                                         </div>
                                     </div>
-                                    <div class="item-option-button">
-                                        <strong class="item-amount"><em>1,234,000</em>원</strong>
-                                        <div class="button-inline-group button-auto-group">
-                                            <div><a href="#" class="button button-small button-primary">바로구매</a></div>
-                                            <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
-                                            <div><a href="#" class="button button-small button-danger">삭제</a></div>
-                                        </div>
-                                        <div class="box item-option-change">
-                                            <span class="item-option-text">옵션 / 수량 변경</span>
-                                            <ul>
-                                                <li>
-                                                    <div class="selectbox">
-                                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                                        <select onchange="selectboxEvent(this);">
-                                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                                            <option value="선택1">선택1</option>
-                                                            <option value="선택2">선택2</option>
-                                                            <option value="선택3">선택3</option>
-                                                            <option value="선택4">선택4</option>
-                                                            <option value="선택5">선택5</option>
-                                                        </select>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="selectbox">
-                                                        <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
-                                                        <select onchange="selectboxEvent(this);">
-                                                            <option value="쿠폰 선택">쿠폰 선택</option>
-                                                            <option value="선택1">선택1</option>
-                                                            <option value="선택2">선택2</option>
-                                                            <option value="선택3">선택3</option>
-                                                            <option value="선택4">선택4</option>
-                                                            <option value="선택5">선택5</option>
-                                                        </select>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div class="input-button-group">
-                                                        <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
-                                                        <div><input type="number" value="1" class="form-control"></div>
-                                                        <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="button-align-center">
-                                                <a href="#" class="button button-small button-third">업데이트</a>
-                                                <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="product-info">
+                                    <div class="product-image"><a href="#"><img src="../images/temp/temp-product.jpg" alt=""></a></div>
+                                    <div class="item-info">
+                                        <div class="item-brand-group">
+                                            <span class="item-brand">STEVEN ALAN</span>
+                                            <div class="checkbox">
+                                                <input type="checkbox" id="overseas_select_brand2" checked>
+                                                <label for="overseas_select_brand2" class="checkbox-display"></label>
                                             </div>
                                         </div>
+                                        <strong class="item-name"><a href="#">Belted Long Shirtdress Belted Long Shirtdress</a></strong>
+                                        <ul class="item-option">
+                                            <li>컬러 : INDIGO</li>
+                                            <li>사이즈 : P</li>
+                                            <li>수량 : 1</li>
+                                        </ul>
                                     </div>
-                                </li>
-                            </ul>
-                        </div>
+                                </div>
+                                <div class="item-option-button">
+                                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                                    <div class="button-inline-group button-auto-group">
+                                        <div><a href="#" class="button button-small button-primary">바로구매</a></div>
+                                        <div><a href="#none" onclick="itemOptionChange(this);" class="button button-small button-secondary">옵션/수량 변경</a></div>
+                                        <div><a href="#" class="button button-small button-danger">삭제</a></div>
+                                    </div>
+                                    <div class="box item-option-change">
+                                        <span class="item-option-text">옵션 / 수량 변경</span>
+                                        <ul>
+                                            <li>
+                                                <div class="selectbox">
+                                                    <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
+                                                    <select onchange="selectboxEvent(this);">
+                                                        <option value="쿠폰 선택">쿠폰 선택</option>
+                                                        <option value="선택1">선택1</option>
+                                                        <option value="선택2">선택2</option>
+                                                        <option value="선택3">선택3</option>
+                                                        <option value="선택4">선택4</option>
+                                                        <option value="선택5">선택5</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="selectbox">
+                                                    <strong class="selectbox-value">BLUE AQUA STRIPE</strong>
+                                                    <select onchange="selectboxEvent(this);">
+                                                        <option value="쿠폰 선택">쿠폰 선택</option>
+                                                        <option value="선택1">선택1</option>
+                                                        <option value="선택2">선택2</option>
+                                                        <option value="선택3">선택3</option>
+                                                        <option value="선택4">선택4</option>
+                                                        <option value="선택5">선택5</option>
+                                                    </select>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="input-button-group">
+                                                    <div><a href="#" class="button"><i class="icon-minus"></i></a></div>
+                                                    <div><input type="number" value="1" class="form-control"></div>
+                                                    <div><a href="#" class="button"><i class="icon-plus"></i></a></div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <div class="button-align-center">
+                                            <a href="#" class="button button-small button-third">업데이트</a>
+                                            <a href="#none" onclick="itemOptionClose(this);" class="button button-small button-danger">취소</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <!-- 해외배송 상품 //end -->

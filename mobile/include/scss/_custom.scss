@@ -208,7 +208,6 @@ footer{
     margin-bottom: 7px;
     font-weight: 400;
     font-size: 14px;
-    letter-spacing: 2.5px;
     font-family: $font-family-ko;
     color: $brand-secondary;
 }
@@ -339,9 +338,9 @@ footer{
     position: relative;
     z-index: 2;
     display: inline-block;
-    margin-right: 10px;
+    margin-left: 10px;
     font-family: $font-family-en;
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     &:before {
         position: absolute;
@@ -356,10 +355,17 @@ footer{
 .price { // 원 가격
     font-weight: 500;
     font-family: $font-family-en;
-    font-size: 10px;
+    font-size: 12px;
     color: $brand-secondary;
 }
+.product-list {
+    border: 5px solid #f5f5f5;
+    .list-item {
+        padding: 5px;
+    }
+}
 .product-info { // 상품 정보
+    padding-bottom: 10px;
     @include clearfix;
     .product-image {
         float: left;
@@ -391,9 +397,9 @@ footer{
         }
         .item-brand {
             display: block;
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             font-weight: 500;
-            line-height: (15/11);
+            line-height: (15/13);
             letter-spacing: 0.5px;
             color: $brand-secondary;
         }
@@ -416,8 +422,8 @@ footer{
             display: block;
             font-weight: 400;
             font-size: 12px;
-            margin-bottom: 9px;
-            line-height: (15/10);
+            margin-bottom: 10px;
+            line-height: (15/12);
             letter-spacing: 0.5px;
             a {
                 color: $brand-secondary;
@@ -435,7 +441,6 @@ footer{
     }
 }
 .item-option-button {
-    padding: 0 5px;
     .item-amount {
         padding: 3px 0;
         border-top: 1px solid $border-color;
@@ -444,7 +449,7 @@ footer{
 .item-amount {
     display: block;
     padding: 5px 10px;
-    border-top: 1px dashed #e5e5e5;
+    border-top: 1px solid #e5e5e5;
     font-weight: 400;
 
     color: $brand-primary;
@@ -455,18 +460,7 @@ footer{
     }
 }
 .confirm-order-product {
-    .box {
-        padding: 5px;
-    }
     .order-product-list {
-        margin-top: -5px;
-        > li {
-            margin-top: 5px;
-            background-color: #fff;
-        }
-        .product-info {
-            padding: 5px 5px 10px;
-        }
         &.empty-list {
             > li {
                 padding: 40px 0 !important;
@@ -881,6 +875,9 @@ footer{
         .item-info {
             padding-top: 10px;
             text-align: center;
+            .discount {
+                margin: 0 10px 0 0;
+            }
         }
     }
     .slick-dots {
@@ -1040,6 +1037,7 @@ footer{
         cursor: pointer;
     }
     .secondary-title {
+        width: 80%;
         .step {
             margin-right: 9px;
             font-weight: 400;
@@ -1073,6 +1071,12 @@ footer{
                 }
                 &.text-data {
                     padding-left: 10px;
+                }
+                &.address {
+                    margin-bottom: -20px;
+                    .form-group {
+                        margin-bottom: 10px;
+                    }
                 }
             }
         }
@@ -1288,56 +1292,109 @@ footer{
 /**********************************************
  My Page - Dashboard
 ***********************************************/
-.dashboard {
-    .mypage-info {
-        padding: 35px 20px 30px;
-        .member-name {
-            font-size: 18px;
-            color: $brand-primary;
-            letter-spacing: 2px;
-            .email {
+.member-name {
+    @include clearfix;
+    .member {
+        float: left;
+        font-size: 13px;
+        color: $brand-secondary;
+    }
+    .button {
+        float: right;
+    }
+}
+.mypage-info {
+    .member-info-title {
+        margin: 20px 0 12px;
+        font-weight: 400;
+        font-size: 13px;
+        color: $brand-secondary;
+        i {
+            vertical-align: 1px;
+        }
+    }
+    .member-info {
+        border-top: 1px solid #d5d5d5;
+        li {
+            float: left;
+            width: 33.3%;
+            padding: 10px 0 9px;
+            border: 1px solid #d5d5d5;
+            border-width: 0 0 1px 1px;
+            text-align: center;
+            &:nth-child(3n+1) {
+                padding-left: 15px;
+                border-left-width: 0;
+                text-align: left;
+            }
+            &:nth-child(3n+3) {
+                padding-right: 15px;
+                text-align: right;
+            }
+            a {
                 display: block;
-                margin-top: 4px;
-                font-family: $font-family-en;
-                font-size: 14px;
-            }
-        }
-        .member-info {
-            li {
-                border-left: 1px solid #e5e5e5;
-                text-align: center;
                 color: $brand-secondary;
-                letter-spacing: 1.5px;
-                &:first-child {
-                    border-left: 0;
-                }
-                b {
-                    display: block;
-                    font-family: $font-family-en;
-                    font-size: 24px;
-                }
             }
         }
+        .coupon-count {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-left: 5px;
+            @include border-radius(50%);
+            background-color: $brand-primary;
+            font-size: 10px;
+            line-height: (16/10);
+            color: #fff;
+            text-align: center;
+            vertical-align: 1px;
+        }
     }
-    .recent-order-list {
-        .col-xs-1 {
-            width: 11%;
-        }
-        .col-xs-6 {
-            width: 34%;
-        }
-        .state {
-            color: $brand-primary;
+}
+.recent-order-list {
+    margin-top: 24px;
+}
+.ordered-number {
+    margin: 5px 0 10px;
+    padding: 8px 11px 10px;
+    @include border-radius(3px);
+    background-color: #e5e5e5;
+    font-size: 11px;
+    color: $brand-secondary;
+    strong {
+        font-weight: 400;
+    }
+    .benton {
+        font-weight: 500;
+    }
+    .date {
+        display: block;
+        margin-top: -17px;
+        font-size: 10px;
+        text-align: right;
+    }
+}
+.shipping-state {
+    padding: 6px 0 10px 0;
+    border-top: 1px solid #e5e5e5;
+    @include clearfix;
+    .item-state {
+        float: left;
+        font-size: 11px;
+        color: $brand-secondary;
+        .icon-flight {
+            width: 14px;
+            height: 14px;
+            margin-right: 6px;
+            border: 1px solid $brand-secondary;
+            @include border-radius(50%);
+            font-size: 10px;
         }
     }
-    .recent-order-list,
-    .dashboard-list {
-        margin-top: 45px;
-        .title-group {
-            .button {
-                background-color: #acacac;
-            }
-        }
+    .item-amount {
+        float: right;
+        padding: 0;
+        border-top: 0;
     }
 }
 
@@ -1673,9 +1730,85 @@ footer{
     }
 }
 .order-track-view {
-    margin-top: 50px;
-    .button {
-        vertical-align: initial;
+    margin-top: 15px;
+    .ordered-payment-info{
+        > li {
+            margin: 3px 10px;
+            padding: 0;
+            border-top: 0;
+            font-size: 12px;
+            &:first-child {
+                padding-top: 5px;
+            }
+            &.ordered-coupon {
+                padding: 7px 0 0;
+                border-top: 1px solid #e1e1e1;
+                font-size: 10px;
+                color: $brand-primary;
+                .ordered-payment-title.payment-coupon {
+                    padding: 0 9px;
+                    border: 1px solid $brand-primary;
+                    line-height: (16/10);
+                }
+            }
+            &.payment-price-total {
+                padding: 15px 0 5px;
+                font-size: 15px;
+                .ordered-payment-title {
+                    padding-top: 0;
+                }
+                .ordered-payment-price {
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+            &.virtual-account-info {
+                padding: 8px 0 17px;
+                border-top: 1px solid $brand-primary;
+                font-size: 10px;
+                color: $brand-primary;
+                .ordered-payment-title {
+                    float: none;
+                }
+                .ordered-payment-state {
+                    float: right;
+                    padding: 0 9px;
+                    background-color: $brand-primary;
+                    font-weight: 400;
+                    line-height: (16/10);
+                    color: #fff;
+                    vertical-align: bottom;
+                }
+            }
+        }
+    }
+    .ordered-shipping-info {
+        padding: 10px;
+        border: 5px solid #f5f5f5;
+        font-size: 11px;
+        .shipping-name {
+            font-size: 12px;
+            color: $brand-secondary;
+        }
+        li {
+            padding: 0;
+            &.shipping-memo {
+                margin-top: 5px;
+                padding: 5px 0;
+                border-top: 1px solid $border-color;
+            }
+            &.pcc-code {
+                padding: 10px 0 15px;
+                border-top: 1px solid $border-color;
+                color: $brand-primary;
+                span {
+                    margin-right: 10px;
+                    padding: 0 9px;
+                    border: 1px solid $brand-primary;
+                    line-height: (16/10);
+                }
+            }
+        }
     }
 }
 // Cash Receipt

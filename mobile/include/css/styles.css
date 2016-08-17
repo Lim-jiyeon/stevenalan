@@ -1615,7 +1615,7 @@ hr {
 
 .button-secondary {
   border-color: #004689;
-  background-color: transparent;
+  background-color: #fff;
   color: #004689;
 }
 
@@ -1629,7 +1629,7 @@ hr {
 
 .button-fourth {
   border-color: #000;
-  background-color: transparent;
+  background-color: #fff;
   color: #000;
 }
 
@@ -2647,7 +2647,6 @@ footer .copyright a:nth-child(2) {
   margin-bottom: 7px;
   font-weight: 400;
   font-size: 14px;
-  letter-spacing: 2.5px;
   font-family: "notoSans", sans-serif;
   color: #000;
 }
@@ -2802,9 +2801,9 @@ footer .copyright a:nth-child(2) {
   position: relative;
   z-index: 2;
   display: inline-block;
-  margin-right: 10px;
+  margin-left: 10px;
   font-family: "BentonSans", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   font-style: normal;
 }
 
@@ -2821,8 +2820,20 @@ footer .copyright a:nth-child(2) {
 .price {
   font-weight: 500;
   font-family: "BentonSans", sans-serif;
-  font-size: 10px;
+  font-size: 12px;
   color: #000;
+}
+
+.product-list {
+  border: 5px solid #f5f5f5;
+}
+
+.product-list .list-item {
+  padding: 5px;
+}
+
+.product-info {
+  padding-bottom: 10px;
 }
 
 .product-info:before, .product-info:after {
@@ -2868,9 +2879,9 @@ footer .copyright a:nth-child(2) {
 
 .product-info .item-info .item-brand {
   display: block;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
   font-weight: 500;
-  line-height: 1.3636363636;
+  line-height: 1.1538461538;
   letter-spacing: 0.5px;
   color: #000;
 }
@@ -2897,8 +2908,8 @@ footer .copyright a:nth-child(2) {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  margin-bottom: 9px;
-  line-height: 1.5;
+  margin-bottom: 10px;
+  line-height: 1.25;
   letter-spacing: 0.5px;
 }
 
@@ -2917,10 +2928,6 @@ footer .copyright a:nth-child(2) {
   text-transform: uppercase;
 }
 
-.item-option-button {
-  padding: 0 5px;
-}
-
 .item-option-button .item-amount {
   padding: 3px 0;
   border-top: 1px solid #e5e5e5;
@@ -2929,7 +2936,7 @@ footer .copyright a:nth-child(2) {
 .item-amount {
   display: block;
   padding: 5px 10px;
-  border-top: 1px dashed #e5e5e5;
+  border-top: 1px solid #e5e5e5;
   font-weight: 400;
   color: #004689;
   text-align: right;
@@ -2938,23 +2945,6 @@ footer .copyright a:nth-child(2) {
 .item-amount em {
   font-family: "BentonSans", sans-serif;
   font-style: normal;
-}
-
-.confirm-order-product .box {
-  padding: 5px;
-}
-
-.confirm-order-product .order-product-list {
-  margin-top: -5px;
-}
-
-.confirm-order-product .order-product-list > li {
-  margin-top: 5px;
-  background-color: #fff;
-}
-
-.confirm-order-product .order-product-list .product-info {
-  padding: 5px 5px 10px;
 }
 
 .confirm-order-product .order-product-list.empty-list > li {
@@ -3467,6 +3457,10 @@ footer .copyright a:nth-child(2) {
   text-align: center;
 }
 
+.you-like-list .item .item-info .discount {
+  margin: 0 10px 0 0;
+}
+
 .you-like-list .slick-dots {
   top: -30px;
   bottom: inherit;
@@ -3664,6 +3658,10 @@ footer .copyright a:nth-child(2) {
   cursor: pointer;
 }
 
+.checkout .secondary-title {
+  width: 80%;
+}
+
 .checkout .secondary-title .step {
   margin-right: 9px;
   font-weight: 400;
@@ -3707,6 +3705,14 @@ footer .copyright a:nth-child(2) {
 
 .checkout-input .box .input-list li.text-data {
   padding-left: 10px;
+}
+
+.checkout-input .box .input-list li.address {
+  margin-bottom: -20px;
+}
+
+.checkout-input .box .input-list li.address .form-group {
+  margin-bottom: 10px;
 }
 
 .checkout-input .international-shipping {
@@ -3988,60 +3994,149 @@ footer .copyright a:nth-child(2) {
 /**********************************************
  My Page - Dashboard
 ***********************************************/
-.dashboard .mypage-info {
-  padding: 35px 20px 30px;
+.member-name:before, .member-name:after {
+  content: " ";
+  display: table;
 }
 
-.dashboard .mypage-info .member-name {
-  font-size: 18px;
-  color: #004689;
-  letter-spacing: 2px;
+.member-name:after {
+  clear: both;
 }
 
-.dashboard .mypage-info .member-name .email {
-  display: block;
-  margin-top: 4px;
-  font-family: "BentonSans", sans-serif;
-  font-size: 14px;
-}
-
-.dashboard .mypage-info .member-info li {
-  border-left: 1px solid #e5e5e5;
-  text-align: center;
+.member-name .member {
+  float: left;
+  font-size: 13px;
   color: #000;
-  letter-spacing: 1.5px;
 }
 
-.dashboard .mypage-info .member-info li:first-child {
-  border-left: 0;
+.member-name .button {
+  float: right;
 }
 
-.dashboard .mypage-info .member-info li b {
+.mypage-info .member-info-title {
+  margin: 20px 0 12px;
+  font-weight: 400;
+  font-size: 13px;
+  color: #000;
+}
+
+.mypage-info .member-info-title i {
+  vertical-align: 1px;
+}
+
+.mypage-info .member-info {
+  border-top: 1px solid #d5d5d5;
+}
+
+.mypage-info .member-info li {
+  float: left;
+  width: 33.3%;
+  padding: 10px 0 9px;
+  border: 1px solid #d5d5d5;
+  border-width: 0 0 1px 1px;
+  text-align: center;
+}
+
+.mypage-info .member-info li:nth-child(3n+1) {
+  padding-left: 15px;
+  border-left-width: 0;
+  text-align: left;
+}
+
+.mypage-info .member-info li:nth-child(3n+3) {
+  padding-right: 15px;
+  text-align: right;
+}
+
+.mypage-info .member-info li a {
   display: block;
-  font-family: "BentonSans", sans-serif;
-  font-size: 24px;
+  color: #000;
 }
 
-.dashboard .recent-order-list .col-xs-1 {
-  width: 11%;
+.mypage-info .member-info .coupon-count {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #004689;
+  font-size: 10px;
+  line-height: 1.6;
+  color: #fff;
+  text-align: center;
+  vertical-align: 1px;
 }
 
-.dashboard .recent-order-list .col-xs-6 {
-  width: 34%;
+.recent-order-list {
+  margin-top: 24px;
 }
 
-.dashboard .recent-order-list .state {
-  color: #004689;
+.ordered-number {
+  margin: 5px 0 10px;
+  padding: 8px 11px 10px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #e5e5e5;
+  font-size: 11px;
+  color: #000;
 }
 
-.dashboard .recent-order-list,
-.dashboard .dashboard-list {
-  margin-top: 45px;
+.ordered-number strong {
+  font-weight: 400;
 }
 
-.dashboard .recent-order-list .title-group .button,
-.dashboard .dashboard-list .title-group .button {
-  background-color: #acacac;
+.ordered-number .benton {
+  font-weight: 500;
+}
+
+.ordered-number .date {
+  display: block;
+  margin-top: -17px;
+  font-size: 10px;
+  text-align: right;
+}
+
+.shipping-state {
+  padding: 6px 0 10px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.shipping-state:before, .shipping-state:after {
+  content: " ";
+  display: table;
+}
+
+.shipping-state:after {
+  clear: both;
+}
+
+.shipping-state .item-state {
+  float: left;
+  font-size: 11px;
+  color: #000;
+}
+
+.shipping-state .item-state .icon-flight {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  border: 1px solid #000;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.shipping-state .item-amount {
+  float: right;
+  padding: 0;
+  border-top: 0;
 }
 
 /**********************************************
@@ -4447,11 +4542,100 @@ footer .copyright a:nth-child(2) {
 }
 
 .order-track-view {
-  margin-top: 50px;
+  margin-top: 15px;
 }
 
-.order-track-view .button {
-  vertical-align: initial;
+.order-track-view .ordered-payment-info > li {
+  margin: 3px 10px;
+  padding: 0;
+  border-top: 0;
+  font-size: 12px;
+}
+
+.order-track-view .ordered-payment-info > li:first-child {
+  padding-top: 5px;
+}
+
+.order-track-view .ordered-payment-info > li.ordered-coupon {
+  padding: 7px 0 0;
+  border-top: 1px solid #e1e1e1;
+  font-size: 10px;
+  color: #004689;
+}
+
+.order-track-view .ordered-payment-info > li.ordered-coupon .ordered-payment-title.payment-coupon {
+  padding: 0 9px;
+  border: 1px solid #004689;
+  line-height: 1.6;
+}
+
+.order-track-view .ordered-payment-info > li.payment-price-total {
+  padding: 15px 0 5px;
+  font-size: 15px;
+}
+
+.order-track-view .ordered-payment-info > li.payment-price-total .ordered-payment-title {
+  padding-top: 0;
+}
+
+.order-track-view .ordered-payment-info > li.payment-price-total .ordered-payment-price {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.order-track-view .ordered-payment-info > li.virtual-account-info {
+  padding: 8px 0 17px;
+  border-top: 1px solid #004689;
+  font-size: 10px;
+  color: #004689;
+}
+
+.order-track-view .ordered-payment-info > li.virtual-account-info .ordered-payment-title {
+  float: none;
+}
+
+.order-track-view .ordered-payment-info > li.virtual-account-info .ordered-payment-state {
+  float: right;
+  padding: 0 9px;
+  background-color: #004689;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #fff;
+  vertical-align: bottom;
+}
+
+.order-track-view .ordered-shipping-info {
+  padding: 10px;
+  border: 5px solid #f5f5f5;
+  font-size: 11px;
+}
+
+.order-track-view .ordered-shipping-info .shipping-name {
+  font-size: 12px;
+  color: #000;
+}
+
+.order-track-view .ordered-shipping-info li {
+  padding: 0;
+}
+
+.order-track-view .ordered-shipping-info li.shipping-memo {
+  margin-top: 5px;
+  padding: 5px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.order-track-view .ordered-shipping-info li.pcc-code {
+  padding: 10px 0 15px;
+  border-top: 1px solid #e5e5e5;
+  color: #004689;
+}
+
+.order-track-view .ordered-shipping-info li.pcc-code span {
+  margin-right: 10px;
+  padding: 0 9px;
+  border: 1px solid #004689;
+  line-height: 1.6;
 }
 
 .cash-receipt-issue-box {
