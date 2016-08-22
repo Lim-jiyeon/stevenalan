@@ -2356,7 +2356,7 @@ input[type="search"] {
 .site-utility {
   padding: 10px 0;
   background: url(../../images/common/washed-line.png) repeat-x 0 100%;
-  margin: -137px 0 135px;
+  margin: -124px 0 135px;
 }
 
 .site-utility:before, .site-utility:after {
@@ -3661,6 +3661,51 @@ input[type="search"] {
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
+}
+
+.modalWrap.shoppingbag_add_modal,
+.modalWrap.wishlist_add_modal {
+  top: 0;
+}
+
+.modalWrap.shoppingbag_add_modal .modal,
+.modalWrap.wishlist_add_modal .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 550px;
+  margin: -150px 0 0 -275px;
+  padding-bottom: 40px;
+}
+
+.modalWrap.shoppingbag_add_modal .button-group,
+.modalWrap.wishlist_add_modal .button-group {
+  padding-top: 15px;
+}
+
+.modalWrap.shoppingbag_add_modal .button-group .button,
+.modalWrap.wishlist_add_modal .button-group .button {
+  line-height: 2.8333333333;
+}
+
+.modalWrap.shoppingbag_add_modal .button-group .button:first-child,
+.modalWrap.wishlist_add_modal .button-group .button:first-child {
+  border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px;
+  -webkit-border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  -moz-border-radius-bottomleft: 8px;
+  -webkit-border-bottom-left-radius: 8px;
+}
+
+.modalWrap.shoppingbag_add_modal .button-group .button:last-child,
+.modalWrap.wishlist_add_modal .button-group .button:last-child {
+  border-top-right-radius: 8px;
+  -moz-border-radius-topright: 8px;
+  -webkit-border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  -moz-border-radius-bottomright: 8px;
+  -webkit-border-bottom-right-radius: 8px;
 }
 
 /**********************************************
