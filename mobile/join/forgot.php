@@ -50,7 +50,7 @@
                                                     <input type="text" class="form-control" placeholder="이름" title="이름 입력">
                                                 </div>
                                             </li>
-                                            <li>
+                                            <li class="phone-group">
                                                 <div class="form-group input-group">
                                                     <div>
                                                         <div class="selectbox">
@@ -135,7 +135,7 @@
                                                     <input type="text" class="form-control" placeholder="이름" title="이름 입력">
                                                 </div>
                                             </li>
-                                            <li>
+                                            <li class="phone-group">
                                                 <div class="form-group input-group">
                                                     <div>
                                                         <div class="selectbox">

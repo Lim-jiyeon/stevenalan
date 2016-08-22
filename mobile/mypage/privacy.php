@@ -37,7 +37,7 @@
                         <label class="fixed-label">회원명</label>
                         <p>이영애</p>
                     </li>
-                    <li>
+                    <li class="phone-group">
                         <div class="form-group input-group">
                             <div>
                                 <div class="selectbox">
@@ -62,7 +62,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="email-group">
                         <div class="form-group input-group">
                             <div>
                                 <input type="email" class="form-control" placeholder="이메일" title="이메일 입력">

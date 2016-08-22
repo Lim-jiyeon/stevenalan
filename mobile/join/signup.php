@@ -31,7 +31,7 @@
                             <input type="text" class="form-control" placeholder="이름" title="이름 입력">
                         </div>
                     </li>
-                    <li>
+                    <li class="phone-group">
                         <div class="form-group input-group">
                             <div>
                                 <div class="selectbox">
@@ -56,7 +56,7 @@
                             </div>
                         </div>
                     </li>
-                    <li>
+                    <li class="email-group">
                         <div class="form-group input-group">
                             <div>
                                 <input type="email" class="form-control" placeholder="이메일" title="이메일 입력">

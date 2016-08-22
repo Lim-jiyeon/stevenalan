@@ -64,6 +64,15 @@ $(document).ready(function () {
        $(this).next(".box").toggle();
     });
 
+
+    // My Page Personal Support View
+    $(".question-title").on("click", function() {
+        $(this).siblings().removeClass("open").next().slideUp();
+        $(this).toggleClass("open").next().slideToggle();
+        $(this).parent().siblings().children().removeClass("open").next().slideUp();
+        return false;
+    });
+
 });
 
 

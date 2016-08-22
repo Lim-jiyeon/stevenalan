@@ -28,7 +28,7 @@
                         <input type="text" value="" class="form-control" placeholder="상세 주소" title="상세 주소 입력">
                     </div>
                 </li>
-                <li>
+                <li class="phone-group">
                     <div class="form-group input-group">
                         <div>
                             <div class="selectbox">
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                 </li>
-                <li>
+                <li class="phone-group">
                     <div class="form-group input-group">
                         <div>
                             <div class="selectbox">

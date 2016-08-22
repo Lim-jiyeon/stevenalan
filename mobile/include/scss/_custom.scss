@@ -1375,7 +1375,7 @@ footer{
     }
 }
 .shipping-state {
-    padding: 6px 0 10px 0;
+    padding: 6px 0 3px 0;
     border-top: 1px solid #e5e5e5;
     @include clearfix;
     .item-state {
@@ -1399,321 +1399,12 @@ footer{
 }
 
 /**********************************************
- My Page - Return / Refund / Exchange
-***********************************************/
-.return-refund-exchange {
-    .return-button {
-        padding-top: 20px;
-        text-align: center;
-    }
-}
-.return-content {
-    display: none;
-    margin-top: 20px;
-    border-bottom: 1px solid #e5e5e5;
-    &.return-list1 {
-        display: block;
-        .col-xs-1 {
-            width: 11%;
-        }
-        .col-xs-6 {
-            width: 34%;
-        }
-        .button-link {
-            margin: 0;
-        }
-    }
-    &.return-list2,
-    &.return-list3 {
-        .order-search {
-            margin-bottom: 20px;
-        }
-        .col-xs-1 {
-            width: 12%;
-        }
-        .col-xs-7 {
-            width: 40%;
-        }
-    }
-}
-.private-option {
-    .col-xs-1 {
-        width: 11%;
-    }
-    .col-xs-6 {
-        width: 39.3333333333%
-    }
-    .col-xs-8 {
-        width: 56%;
-    }
-    .product-option {
-        .selectbox {
-            margin: 5px 0;
-        }
-    }
-    .order-button {
-        .form-control {
-            width: 30px;
-        }
-    }
-    .private-detail-reasons {
-        .selectbox {
-            width: 150px;
-        }
-        textarea.form-control {
-            width: 600px;
-        }
-    }
-}
-.private-info {
-    margin-top: 45px;
-    .table-row-list {
-        tr:first-child th,
-        tr:first-child td {
-            padding-top: 15px;
-            border-top: 1px solid #e5e5e5;
-        }
-        tr:last-child th,
-        tr:last-child td {
-            padding-bottom: 15px;
-            border-bottom: 1px solid #e5e5e5;
-        }
-    }
-    .form-inline .placeholder {
-        display: inline-block;
-    }
-    .form-control {
-        width: 300px;
-    }
-    .phone-group {
-        width: 300px;
-        .form-control {
-            width: 100%;
-        }
-    }
-    .selectbox {
-        width: 170px;    }
-    span + .selectbox {
-        margin-left: 20px;
-    }
-}
-// Refund View
-.refund-amount {
-    padding: 0;
-    @include clearfix;
-    .amount-box {
-        position: relative;
-        float: left;
-        width: 50%;
-        padding: 10px 20px;
-        .refund-label,
-        .refund-price {
-            padding: 6px 0;
-        }
-        .refund-label {
-            clear: both;
-            float: left;
-        }
-        .refund-price {
-            float: right;
-            color: $brand-secondary;
-        }
-        .total-price {
-            font-size: 18px;
-            color: $brand-primary;
-            &:before {
-                position: absolute;
-                top: 52px;
-                left: 0;
-                width: 100%;
-                height: 1px;
-                background-color: #e5e5e5;
-                content: '';
-            }
-        }
-        .total-label,
-        .total-price {
-            padding-top: 25px;
-
-        }
-        .refund-text {
-            clear: both;
-            padding-top: 12px;
-        }
-        &.left {
-            border-right: 1px solid #e5e5e5;
-        }
-    }
-}
-.form-control {
-    &.account-number {
-        width: 200px;
-    }
-    &.account-holder {
-        width: 130px;
-    }
-}
-// Return View
-.return-select-box {
-    display: none;
-    th, td {
-        padding: 7px 20px !important;
-        border: 0 !important;
-    }
-    .form-control {
-        width: 170px;
-    }
-    .input-button-group .form-group div .form-control {
-        width: 139px;
-    }
-    .information {
-        margin: 0 -20px 10px;
-    }
-    &.return-no {
-        .form-control[disabled] {
-            width: 600px;
-        }
-        .form-control[disabled].return-name {
-            width: 200px;
-        }
-    }
-}
-
-/**********************************************
  My Page - Order Track
 ***********************************************/
-.ship-circle {
-    display: inline-block;
-    width: 6px;
-    height: 6px;
-    @include border-radius(50%);
-    background-color: #acacac;
-    vertical-align: 2px;
-}
-.process-order-track {
-    margin-top: -15px;
-    .help-text {
-        margin-bottom: 9px;
-        text-align: right;
-        .ship-circle {
-            margin-right: 6px;
-        }
-    }
-}
-.process-indicator {
-    margin-bottom: 30px;
-    padding: 18px 0 15px;
-    background-color: #fff;
-    @include clearfix;
-    li {
-        position: relative;
-        float: left;
-        width: 12.5%;
-        color: $brand-secondary;
-        text-align: center;
-        * {
-            display: block;
-        }
-        i {
-            font-size: 32px;
-        }
-        .icon-credit-card-big {
-            margin: 10px 0 10px -10px;
-            font-size: 20px;
-        }
-        &:after {
-            position: absolute;
-            top: 21%;
-            right: -5px;
-            font-family: 'fontello';
-            font-size: 10px;
-            color: #bababa;
-            content: '\e80f';
-        }
-        &:last-child:after {
-            content: '';
-        }
-        .ship-circle {
-            position: absolute;
-            top: -3px;
-            left: 50%;
-            margin-left: -3px;
-        }
-        .process-badge {
-            display: inline-block;
-            min-width: 24px;
-            height: 24px;
-            margin-top: 10px;
-            padding: 3px 8px 1px;
-            @include border-radius(12px);
-            background-color: #acacac;
-            font-family: $font-family-en;
-            color: #fff;
-            &.complete {
-                background-color: $brand-primary;
-            }
-        }
-    }
-    &.local-process {
-        li {
-            width: 20%;
-        }
-    }
-    & + .table-caution {
-        margin-top: -10px;
-    }
-}
-.order-search {
-    display: table;
-    width: 100%;
-    border: 0;
-    .button-group {
-        .button {
-            padding: 0 27px;
-            border-color: #acacac;
-            background-color: transparent;
-            color: #acacac;
-            &.selected {
-                background-color: #acacac;
-                color: #fff;
-            }
-        }
-    }
-    .input-button-group {
-        display: table;
-        width: 100%;
-        > div {
-            display: table-cell;
-            width: auto;
-            vertical-align: middle;
-            &.input-group-addon {
-                padding: 0 7px 0 0;
-            }
-            .button {
-                background-color: #acacac;
-            }
-        }
-    }
-    > div {
-        display: table-cell;
-        vertical-align: top;
-    }
-}
 .order-track-list {
-    margin-top: 20px;
-    border-bottom: 1px solid #e5e5e5;
-    &.guest {
-        border-bottom: 0;
-    }
-    .col-xs-1 {
-        width: 12%;
-    }
-    .col-xs-7 {
-        width: 40%;
-    }
-    .product-image img {
-        width: 65px;
-        height: 65px;
+    margin-top: -10px;
+    > li {
+        margin-top: 25px;
     }
 }
 // Order Track View
@@ -1866,245 +1557,111 @@ footer{
 /**********************************************
  My Page - 1:1문의 리스트
 ***********************************************/
-.folding-table{
-    .master{
-        cursor: pointer;
-    }
-    .slave{
-        display: none;
-    }
+.personal-support {
+
 }
-.personal-support-wrap{
-    display: inline-block;
-    width: 100%;
-    .bgSection{
-        float: right;
-        background-color: #f5f5f5;
-        position: relative;
-        h4{
-            color: #064787;
-            font-size: 14px;
-            padding-bottom: 40px;
-        }
-        .personal-support-table{
-            border-collapse: collapse;
-            th{
-                color: $brand-secondary;
-                border-top: 1px solid #e5e5e5;
-                border-bottom: 1px solid #e5e5e5;
-                padding: 10px;
-            }
-            tr {
-                >  td{
-                    text-align: center;
-                    border-bottom: 1px solid #e5e5e5;
-                    padding: 10px;
-                    background-color: #fff;
-                    color: #858585;
-                }
-            }
-        }
-        .master{
-            > td:nth-child(2){
-                color: $brand-secondary;
-            }
-            .reply-complete{
-                color: #004689;
-            }
-            .delete{
-                a{
-                    text-decoration: underline;
-                }
-            }
-        }
-        .slave{
-            > td{
-                padding: 0 !important;
-            }
-            td{
-                color: #858585;
-                font-size: 12px;
-                text-align: left !important;
-                &:first-child{
-                    font-size: 27px;
-                    color: #4b4b4b;
-                    text-align: center !important;
-                    vertical-align: top;
-                }
-                .date{
-                    color: #4b4b4b;
-                    font-size: 11px;
-                }
-            }
-            table{
-                tr:last-child td{
-                    border-bottom: 0;
-                }
-                td{
-                    padding: 20px;
-                }
-                .in_slave{
-                    > p{
-                        color: #4b4b4b;
-                        span{
-                            text-decoration: underline;
-                        }
-                    }
-                }
+.support-list {
+    border: 5px solid #f5f5f5;
+    li {
+        padding: 5px;
+        &:last-child {
+            .question-title {
+                border-bottom: 0;
             }
         }
     }
-    .buttonWrap{
-        text-align: center;
-        padding-top: 20px;
-        border-top: 1px solid #e5e5e5;
-    }
-}
-.orderList_modal{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 740px;
-    .modal{
-        .bgSection{
-            float: none;
-            margin-top: 20px;
-            .selWrap{
-                display: inline-block;
-                width: 100%;
-                .monthSel{
-                    float: left;
-                    ul{
-                        display: inline-block;
-                        li{
-                            border-top: 1px solid #000;
-                            border-bottom: 1px solid #000;
-                            border-right: 1px solid #000;
-                            width: 80px;
-                            height: 30px;
-                            line-height: (($default-height - $border-size*2)/$font-size-base);
-                            text-align: center;
-                            float: left;
-                            a{
-                                color: #000;
-                            }
-                            &:first-child{
-                                border-top-left-radius: 3px;
-                                border-bottom-left-radius: 3px;
-                                border-left: 1px solid #000;
-                            }
-                            &:last-child{
-                                border-top-right-radius: 3px;
-                                border-bottom-right-radius: 3px;
-                            }
-                            &.current{
-                                background-color: #000;
-                                a{
-                                    color: #fff;
-                                }
-                            }
-                        }
-                    }
-                }
-                .dateSel{
-                    float: right;
-                    .input-button-group .form-group div {
-                        float: none;
-                        .form-control {
-                            width: 100px;
-                        }
-                        .button {
-                            padding: 0 10px;
-                        }
-                    }
-                }
+    .question-title {
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e1e1e1;
+        > div {
+            padding: 0;
+            &.col-xs-1 {
+                text-align: right;
             }
         }
-    }
-    .table-list{
-        margin-top: 20px;
-        td{
+        .checkbox {
             vertical-align: top;
-            padding-top: 15px;
-            &:first-child{
-                p:last-child{
-                    margin-top: 10px;
-                    a{
-                        text-decoration: underline;
+            .checkbox-display {
+                margin: 0;
+            }
+        }
+        .date {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 10px;
+        }
+        .item-badge {
+            float: left;
+            padding: 0 10px;
+            border: 1px solid $brand-primary;
+            @include border-radius(2px);
+            font-size: 9px;
+            line-height: (13/9);
+            color: $brand-primary;
+        }
+        .item-title {
+            display: block;
+            padding-left: 65px;
+            font-size: 12px;
+            color: $brand-secondary;
+            vertical-align: top;
+        }
+    }
+    .support-box {
+        display: none;
+        margin: -1px -5px;
+        padding: 7px 5px 15px;
+        background-color: #f5f5f5;
+        font-size: 12px;
+        .question {
+            color: $brand-secondary;
+            .question-content {
+                padding-left: 56px;
+                text-indent: -56px;
+            }
+            .question-product-info {
+                display: block;
+                margin-top: 15px;
+                font-size: 11px;
+                color: $text-color;
+            }
+        }
+        .answer {
+            margin-top: 7px;
+            padding-top: 7px;
+            border-top: 1px solid #fff;
+            color: $brand-primary;
+            .answer-title {
+                display: block;
+                margin-bottom: 6px;
+                color: $brand-secondary;
+                i {
+                    display: inline-block;
+                    width: 11px;
+                    height: 11px;
+                    margin-right: 4px;
+                    @include border-radius(50%);
+                    background-color: $brand-secondary;
+                    font-size: 0;
+                    color: #fff;
+                    vertical-align: 1px;
+                    &:before {
+                        margin: 1px 0 0 1px;
+                        font-size: 10px;
                     }
                 }
             }
-            &:nth-child(4){
-                color: #000;
-            }
-            &:last-child span{
-                color: #004689;
-            }
         }
-    }
-    .paging{
-        border-bottom: 1px solid #e5e5e5;
     }
 }
 
 /**********************************************
  My Page - 1:1문의 쓰기 폼
 ***********************************************/
-.personal-support-write-wrap{
-    .personal-support-write-table{
-        border-top: 1px solid #e5e5e5;
-        padding-top: 13px;
-        tr{
-            > td{
-                padding: 7px 0;
-            }
-            th{
-                padding-left: 15px;
-                font-weight: 400;
-                text-align: left;
-                color: #000;
-            }
-            .input-button-group{
-                .form-control {
-                    width: 300px;
-                }
-            }
-        }
-        .selectbox{
-            width: 150px;
-        }
-        .file_input_textbox{
-            width: 85%;
-        }
-        .email-wrap{
-            .input-group{
-                max-width: 565px;
-                .form-control {
-                    width: 190px;
-                }
-                .selectbox{
-                    margin-left: 10px;
-                }
-            }
-        }
-        .form-group{
-            margin-bottom: 0;
-            #orderNumSearch{
-                width: 280px;
-            }
-            .button{
-                margin-left: 0;
-            }
-        }
-        .phone-group {
-            width: 300px;
-            .form-control {
-                width: 100%;
-            }
-        }
-    }
-    .buttonWrap{
-        padding-top: 20px;
+.personal-support-write {
+    .file-input .button {
+        padding: 0 16px;
     }
 }
 

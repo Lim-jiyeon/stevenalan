@@ -9,7 +9,7 @@
     <style type="text/css">
         .markup-list {font-family:'notoSans',sans-serif;}
         .header {padding:20px 0;background: url('./pc/images/common/washed-line.png') repeat-x 0 100%;}
-        .site-brand {margin:0;font-size:25px;color:#000;text-align:center;text-transform:capitalize;}
+        .site-brand {width:100%;margin:0;font-size:25px;color:#000;text-align:center;text-transform:capitalize;}
         .site-brand span {font-size:16px;}
         .copyright {margin:0;padding:0;border:0;}
         .markup-list h2 {margin-bottom:10px;font-size:21px;}
@@ -54,23 +54,11 @@
                     <h3>3. My Page</h3>
                     <ul>
                         <li>3.0 <a href="./mobile/mypage/dashboard.php">대시보드</a></li>
-<!--                        <li>3.1 <a href="./mobile/mypage/order-track.php">주문/배송 조회</a></li>-->
+                        <li>3.1 <a href="./mobile/mypage/order-track.php">주문/배송 조회</a></li>
                         <li>3.1.1 <a href="./mobile/mypage/order-track-view.php">주문/배송 조회 - 주문 상세</a></li>
-<!--                        <li>3.1.2 <a href="./mobile/mypage/order-track-popup.php">[팝업1] 영수증 발급 - 현금영수증(신청이 필요한 경우)</a></li>-->
-<!--                        <li>3.1.2 <a href="./mobile/mypage/order-track-popup2.php">[팝업2] 영수증 발급</a></li>-->
-<!--                        <li>3.1.2 <a href="./mobile/mypage/order-track-popup3.php">[팝업3] 팝업2에서 카드영수증 버튼 클릭 시 나오는 팝업</a></li>-->
-<!--                        <li>3.1.2 <a href="./mobile/mypage/order-track-popup4.php">[팝업4] 팝업2에서 현금영수증 버튼 클릭 시 나오는 팝업</a></li>-->
-<!--                        <li>3.2/3.2.3/3.2.9 <a href="./mobile/mypage/return-refund-exchange.php">취소/교환/반품 현황</a></li>-->
-<!--                        <li>3.2.1 <a href="./mobile/mypage/refund-view.php">취소 신청</a></li>-->
-<!--                        <li>3.2.2 <a href="./mobile/mypage/refund-complete.php">취소 신청 완료</a></li>-->
-<!--                        <li>3.2.4 <a href="./mobile/mypage/exchange-view.php">교환 신청</a></li>-->
-<!--                        <li>3.2.5 <a href="./mobile/mypage/exchange-complete.php">교환 신청 완료</a></li>-->
-<!--                        <li>3.2.6 <a href="./mobile/mypage/return-view-step1.php">반품 신청 - 사유 선택</a></li>-->
-<!--                        <li>3.2.7 <a href="./mobile/mypage/return-view-step2.php">반품 신청 - 정보 입력</a></li>-->
-<!--                        <li>3.2.8 <a href="./mobile/mypage/return-complete.php">반품 신청 완료</a></li>-->
                         <li>3.3 <a href="./mobile/mypage/wishlist.php">위시리스트</a></li>
-<!--                        <li>3.4.1 <a href="./mobile/mypage/personal-support-write.php">1:1 문의하기 - Write</a></li>-->
-<!--                        <li>3.4.2 <a href="./mobile/mypage/personal-support.php">1:1 문의하기 - View</a></li>-->
+                        <li>3.4.1 <a href="./mobile/mypage/personal-support-write.php">1:1 문의하기 - Write</a></li>
+                        <li>3.4.2 <a href="./mobile/mypage/personal-support.php">1:1 문의하기 - View</a></li>
                         <li>3.5 <a href="./mobile/mypage/privacy.php">회원 정보 수정</a></li>
 <!--                        <li>3.5.1 <a href="./mobile/mypage/quit.php">회원탈퇴</a></li>-->
                         <li>3.6 <a href="./mobile/mypage/address-add.php">배송지 관리 - 배송지 추가</a></li>
