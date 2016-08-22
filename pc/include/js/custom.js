@@ -216,6 +216,19 @@ $(document).ready(function() {
         arrows: true
     });
 
+
+    // Calendar
+    $(".calendar-box .button").on("click", function() {
+        var calDisplay = $(this).next(".calendar").css("display");
+        if(calDisplay == "none") {
+            $(this).parents().find(".calendar-box").children(".calendar").removeClass("open").hide();
+            $(this).next(".calendar").addClass("open").show();
+        } else {
+            $(this).next(".calendar").removeClass("open").hide();
+        }
+        return false;
+    });
+
 });
 
 

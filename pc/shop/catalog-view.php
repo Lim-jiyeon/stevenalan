@@ -92,7 +92,7 @@
                         <div class="detail-button-group">
                             <div class="button-group">
                                 <div><a href="#" class="button button-large button-primary">바로 주문하기</a></div>
-                                <div><a href="#" class="button button-large">쇼핑백 담기</a></div>
+                                <div><a href="#" class="button button-large" onclick="modalOpen('.shoppingbag_add_modal'); return false;">쇼핑백 담기</a></div>
                             </div>
                             <div class="Sharing-group">
                                 <div class="sns-link">
@@ -100,7 +100,7 @@
                                     <a href="#"><i class="icon-twitter-circled"></i></a>
                                 </div>
                                 <div class="wishlist-link">
-                                    <a href="#" class="button button-link button-link-large button-danger">위시리스트 담기</a>
+                                    <a href="#" class="button button-link button-link-large button-danger" onclick="modalOpen('.wishlist_add_modal'); return false;">위시리스트 담기</a>
                                 </div>
                             </div>
                         </div>
@@ -261,6 +261,42 @@
             </div>
         </div>
         <!-- You May Also Like //end -->
+        <!-- 쇼핑백 담기 팝업 -->
+        <div class="modalWrap shoppingbag_add_modal">
+            <div class="modal">
+                <div class="in_modal">
+                    <p class="washed-line-text">
+                        <b>선택하신 상품을 쇼핑백에 담았습니다.<br>
+                        확인 하시겠습니까?</b>
+                    </p>
+                    <div class="button-align-center button-group">
+                        <a href="#" class="button button-primary">바로 주문하기</a>
+                        <a href="#" class="button">쇼핑백 담기</a>
+                    </div>
+                </div>
+                <a href="#none" class="closeModalBtn" onclick="modalClose(this);"><i class="icon-cancel"></i></a>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <!-- 쇼핑백 담기 팝업 //end -->
+        <!-- 위시리스트 담기 팝업 -->
+        <div class="modalWrap wishlist_add_modal">
+            <div class="modal">
+                <div class="in_modal">
+                    <p class="washed-line-text">
+                        <b>선택하신 상품을 위시리스트에 담았습니다.<br>
+                            확인 하시겠습니까?</b>
+                    </p>
+                    <div class="button-align-center button-group">
+                        <a href="#" class="button button-primary">계속 쇼핑하기</a>
+                        <a href="#" class="button">위시리스트 가기</a>
+                    </div>
+                </div>
+                <a href="#none" class="closeModalBtn" onclick="modalClose(this);"><i class="icon-cancel"></i></a>
+            </div>
+            <div class="overlay"></div>
+        </div>
+        <!-- 위시리스트 팝업 //end -->
     </div>
 
 <?php include '../footer/footer.php'; ?>

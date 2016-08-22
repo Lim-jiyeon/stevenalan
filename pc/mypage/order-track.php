@@ -64,19 +64,139 @@
                                 <a href="#" class="button">3개월</a>
                                 <a href="#" class="button">6개월</a>
                             </div>
+                            <div class="group-blank"></div>
                             <div>
                                 <div class="input-button-group">
                                     <div class="form-group input-group">
                                         <div><input type="text" class="form-control"></div>
-                                        <div><a href="#" class="button"><i class="icon-calendar"></i></a></div>
+                                        <div class="calendar-box"><!-- [D] 달력 스타일 적용시 class="calendar-box" 같이 써줘야 함 -->
+                                            <a href="#" class="button"><i class="icon-calendar"></i></a>
+                                            <!-- Calendar -->
+                                            <div class="calendar" style="display:block;"><!-- [D] style은 마크업 확인용으로 개발시 삭제 -->
+                                                <div class="calendar-head">
+                                                    <a href="#" class="month-left"><i class="icon-left"></i></a>
+                                                    <span>SEPTEMBER</span>
+                                                    <a href="#" class="month-right"><i class="icon-right"></i></a>
+                                                </div>
+                                                <div class="calendar-body">
+                                                    <ul class="week">
+                                                        <li class="holiday">Sun</li>
+                                                        <li>Mon</li>
+                                                        <li>Tue</li>
+                                                        <li>Wed</li>
+                                                        <li>Thu</li>
+                                                        <li>Fri</li>
+                                                        <li class="holiday">Sat</li>
+                                                    </ul>
+                                                    <ul class="date">
+                                                        <li class="holiday">1</li>
+                                                        <li>2</li>
+                                                        <li>3</li>
+                                                        <li>4</li>
+                                                        <li>5</li>
+                                                        <li>6</li>
+                                                        <li class="holiday">7</li>
+                                                        <li class="holiday">8</li>
+                                                        <li>9</li>
+                                                        <li>10</li>
+                                                        <li>11</li>
+                                                        <li>12</li>
+                                                        <li>13</li>
+                                                        <li class="holiday">14</li>
+                                                        <li class="holiday">15</li>
+                                                        <li>16</li>
+                                                        <li>17</li>
+                                                        <li>18</li>
+                                                        <li>19</li>
+                                                        <li class="today">20</li>
+                                                        <li class="holiday">21</li>
+                                                        <li class="holiday">22</li>
+                                                        <li>23</li>
+                                                        <li>24</li>
+                                                        <li>25</li>
+                                                        <li>26</li>
+                                                        <li>27</li>
+                                                        <li class="holiday">28</li>
+                                                        <li class="holiday">29</li>
+                                                        <li>30</li>
+                                                        <li>31</li>
+                                                        <li>&nbsp;</li>
+                                                        <li>&nbsp;</li>
+                                                        <li>&nbsp;</li>
+                                                        <li>&nbsp;</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Calendar //end -->
+                                        </div>
                                     </div>
                                     <div class="input-group-addon">~</div>
                                     <div class="form-group input-group">
                                         <div><input type="text" class="form-control"></div>
-                                        <div><a href="#" class="button"><i class="icon-calendar"></i></a></div>
+                                        <div class="calendar-box"><!-- [D] 달력 스타일 적용시 class="calendar-box" 같이 써줘야 함 -->
+                                            <a href="#" class="button"><i class="icon-calendar"></i></a>
+                                            <!-- Calendar -->
+                                            <div class="calendar">
+                                                <div class="calendar-head">
+                                                    <a href="#" class="month-left"><i class="icon-left"></i></a>
+                                                    <span>SEPTEMBER</span>
+                                                    <a href="#" class="month-right"><i class="icon-right"></i></a>
+                                                </div>
+                                                <div class="calendar-body">
+                                                    <ul class="week">
+                                                        <li class="holiday">Sun</li>
+                                                        <li>Mon</li>
+                                                        <li>Tue</li>
+                                                        <li>Wed</li>
+                                                        <li>Thu</li>
+                                                        <li>Fri</li>
+                                                        <li class="holiday">Sat</li>
+                                                    </ul>
+                                                    <ul class="date">
+                                                        <li class="holiday">1</li>
+                                                        <li>2</li>
+                                                        <li>3</li>
+                                                        <li>4</li>
+                                                        <li>5</li>
+                                                        <li>6</li>
+                                                        <li class="holiday">7</li>
+                                                        <li class="holiday">8</li>
+                                                        <li>9</li>
+                                                        <li>10</li>
+                                                        <li>11</li>
+                                                        <li>12</li>
+                                                        <li>13</li>
+                                                        <li class="holiday">14</li>
+                                                        <li class="holiday">15</li>
+                                                        <li>16</li>
+                                                        <li>17</li>
+                                                        <li>18</li>
+                                                        <li>19</li>
+                                                        <li class="today">20</li>
+                                                        <li class="holiday">21</li>
+                                                        <li class="holiday">22</li>
+                                                        <li>23</li>
+                                                        <li>24</li>
+                                                        <li>25</li>
+                                                        <li>26</li>
+                                                        <li>27</li>
+                                                        <li class="holiday">28</li>
+                                                        <li class="holiday">29</li>
+                                                        <li>30</li>
+                                                        <li>31</li>
+                                                        <li>&nbsp;</li>
+                                                        <li>&nbsp;</li>
+                                                        <li>&nbsp;</li>
+                                                        <li>&nbsp;</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <!-- Calendar //end -->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="group-blank"></div>
                             <div>
                                 <a href="#" class="button button-block button-primary">조회하기</a>
                             </div>
