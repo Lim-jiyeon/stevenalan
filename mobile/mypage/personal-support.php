@@ -23,8 +23,24 @@
                         </div>
                     </div>
                     <div class="support-box">
-                        <div class="question"></div>
-                        <div class="answer"></div>
+                        <div class="question">
+                            <span>질문 유형 : 주문문의</span>
+                            <p class="question-content">
+                                질문 내용 : 주문 후 몇 일 후 면 수령가능 한가요?
+                            </p>
+                            <span class="question-product-info">
+                                주문상품 : [상품] 300142207<br>
+                                첨부파일 : attachment.jpg
+                            </span>
+                        </div>
+                        <dl class="answer">
+                            <dt class="answer-title"><i class="icon-right-dir"></i>답변내용</dt>
+                            <dd>
+                                안녕하세요. 스티븐알란 운영자입니다.<br>
+                                보유 재고에 한해서는 결제 완료 후 3~5일 정도 소요됩니다.<br>
+                                세일 기간 동안의 주문 폭주로 인한 상품 수급의 어려움을 배송이 지연될 수 있으며, 수량 부족이나 배송 누락 등 특이 사항으로 배송이 지연될 경우에는 개별적으로 연락을 드립니다.
+                            </dd>
+                        </dl>
                     </div>
                 </li>
                 <li class="support-item">
@@ -55,12 +71,14 @@
                                 첨부파일 : attachment.jpg
                             </span>
                         </div>
-                        <div class="answer">
-                            <span class="answer-title"><i class="icon-right-dir"></i>답변내용</span>
-                            안녕하세요. 스티븐알란 운영자입니다.<br>
-                            보유 재고에 한해서는 결제 완료 후 3~5일 정도 소요됩니다.<br>
-                            세일 기간 동안의 주문 폭주로 인한 상품 수급의 어려움을 배송이 지연될 수 있으며, 수량 부족이나 배송 누락 등 특이 사항으로 배송이 지연될 경우에는 개별적으로 연락을 드립니다.
-                        </div>
+                        <dl class="answer">
+                            <dt class="answer-title"><i class="icon-right-dir"></i>답변내용</dt>
+                            <dd>
+                                안녕하세요. 스티븐알란 운영자입니다.<br>
+                                보유 재고에 한해서는 결제 완료 후 3~5일 정도 소요됩니다.<br>
+                                세일 기간 동안의 주문 폭주로 인한 상품 수급의 어려움을 배송이 지연될 수 있으며, 수량 부족이나 배송 누락 등 특이 사항으로 배송이 지연될 경우에는 개별적으로 연락을 드립니다.
+                            </dd>
+                        </dl>
                     </div>
                 </li>
                 <li class="support-item">
@@ -74,14 +92,10 @@
                         </div>
                         <div class="col-xs-1">
                             <div class="checkbox">
-                                <input type="checkbox" id="select_question3" checked>
+                                <input type="checkbox" id="select_question3">
                                 <label for="select_question3" class="checkbox-display"></label>
                             </div>
                         </div>
-                    </div>
-                    <div class="support-box">
-                        <div class="question"></div>
-                        <div class="answer"></div>
                     </div>
                 </li>
                 <li class="support-item">
@@ -95,14 +109,10 @@
                         </div>
                         <div class="col-xs-1">
                             <div class="checkbox">
-                                <input type="checkbox" id="select_question4" checked>
+                                <input type="checkbox" id="select_question4">
                                 <label for="select_question4" class="checkbox-display"></label>
                             </div>
                         </div>
-                    </div>
-                    <div class="support-box">
-                        <div class="question"></div>
-                        <div class="answer"></div>
                     </div>
                 </li>
             </ul>

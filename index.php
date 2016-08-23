@@ -33,7 +33,7 @@
 
                     <h3>1. Store &amp; Contents</h3>
                     <ul>
-<!--                        <li>1.1 <a href="./mobile/main/main.php">Main</a></li>-->
+                        <li>1.1 <a href="./mobile/main/main.php">Main</a></li>
                         <li>1.2 <a href="./mobile/shop/catalog.php">Product List</a></li>
                         <li>1.2 <a href="./mobile/shop/catalog-listViewType.php">Product List - View Type (마크업 확인용)</a></li>
                         <li>1.3 <a href="./mobile/shop/catalog-view.php">Product View</a></li>
@@ -60,11 +60,11 @@
                         <li>3.4.1 <a href="./mobile/mypage/personal-support-write.php">1:1 문의하기 - Write</a></li>
                         <li>3.4.2 <a href="./mobile/mypage/personal-support.php">1:1 문의하기 - View</a></li>
                         <li>3.5 <a href="./mobile/mypage/privacy.php">회원 정보 수정</a></li>
-<!--                        <li>3.5.1 <a href="./mobile/mypage/quit.php">회원탈퇴</a></li>-->
+                        <li>3.5.1 <a href="./mobile/mypage/quit.php">회원탈퇴</a></li>
                         <li>3.6 <a href="./mobile/mypage/address-add.php">배송지 관리 - 배송지 추가</a></li>
                         <li>3.6 <a href="./mobile/mypage/address.php">배송지 관리 - 주소지가 등록되어 있는 경우</a></li>
                         <li>3.6 <a href="./mobile/mypage/address-empty.php">배송지 관리 - 주소지가 등록되어 있지 않은 경우</a></li>
-<!--                        <li>3.7 <a href="./mobile/mypage/coupon.php">Coupon</a></li>-->
+                        <li>3.7 <a href="./mobile/mypage/coupon.php">Coupon</a></li>
                     </ul>
 
                     <hr>

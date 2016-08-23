@@ -2661,16 +2661,6 @@ footer .copyright a:nth-child(2) {
   text-transform: uppercase;
 }
 
-.box-title {
-  margin: 0 0 39px;
-  padding-bottom: 16px;
-  background: url(../../images/common/box-washed-line.png) no-repeat 0 100%;
-  font-size: 14px;
-  color: #000;
-  letter-spacing: 1px;
-  text-align: center;
-}
-
 .secondary-title {
   margin-bottom: 7px;
   font-weight: 400;
@@ -2699,25 +2689,6 @@ footer .copyright a:nth-child(2) {
 
 .title-group .title + * {
   float: right;
-}
-
-.washed-line-text {
-  display: block;
-  margin: -10px 0;
-  font-weight: bold;
-  font-size: 14px;
-  color: #000;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.washed-line-text:before, .washed-line-text:after {
-  display: block;
-  margin: 10px 0;
-  background: url(../../images/common/box-washed-line.png) repeat-x;
-  width: 100%;
-  height: 1px;
-  content: '';
 }
 
 .primary {
@@ -2750,6 +2721,40 @@ footer .copyright a:nth-child(2) {
 
 .caption li {
   font-size: 10px;
+}
+
+.notice {
+  font-size: 10px;
+}
+
+.notice .icon-right-dir {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #000;
+  font-size: 0;
+  color: #fff;
+  vertical-align: 1px;
+}
+
+.notice .icon-right-dir:before {
+  margin: 1px 0 0 1px;
+  font-size: 10px;
+}
+
+.notice dt {
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.notice dd {
+  padding-left: 5px;
+  text-indent: -5px;
 }
 
 .paging {
@@ -3034,6 +3039,16 @@ footer .copyright a:nth-child(2) {
 /**********************************************
  Main
 ***********************************************/
+.main {
+  margin-top: -1px;
+  padding: 0 0 40px;
+  border-top: 1px solid #000;
+}
+
+.main .container {
+  padding: 0;
+}
+
 .main img {
   width: 100%;
 }
@@ -3042,42 +3057,99 @@ footer .copyright a:nth-child(2) {
   display: block;
 }
 
-.main .container {
-  margin-bottom: 20px;
+.main .main-banner .slick-dots {
+  bottom: 8px;
 }
 
-.main .bisection a {
-  margin-bottom: 20px;
+.main .second-banner {
+  margin-top: 14px;
 }
 
-.main .bisection a:last-child {
-  margin-bottom: 0;
+.main .second-banner .slick-slide {
+  position: relative;
+  padding: 0 7px;
 }
 
-.main .main-product-title {
+.main .second-banner .slick-slide .banner-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 12px 7px 8px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font: 500 11px "BentonSans", sans-serif;
+  color: #494949;
+  text-align: center;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.main .second-banner .slick-slide.slick-current .banner-text {
+  opacity: 1;
+}
+
+.main .shop-banner {
+  margin-top: 30px;
+}
+
+.main .shop-collection-title {
+  margin: 32px 0 -5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #004689;
+  font-family: "BentonSans", sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main .shop-collection {
+  padding: 5px;
+}
+
+.main .shop-collection:before, .main .shop-collection:after {
+  content: " ";
+  display: table;
+}
+
+.main .shop-collection:after {
+  clear: both;
+}
+
+.main .shop-collection > div {
+  padding: 5px;
+}
+
+.main .shop-collection .collection-title {
   display: block;
   width: 100%;
-  height: 50px;
-  font-size: 13px;
-  line-height: 3.8461538462;
+  height: 35px;
+  background-color: #000;
   font-family: "BentonSans", sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 3.1818181818;
+  color: #fff;
   letter-spacing: 1px;
   text-align: center;
 }
 
-.main .shop-collection .main-product-title {
-  background-color: #e5e5e5;
+.main .shop-collection .bisection {
+  margin-top: 20px;
 }
 
-.main .shop-collection-title {
-  margin: 32px 0 16px;
-  font-weight: 400;
-  font-size: 24px;
-  color: #004689;
-  font-family: "BentonSans", sans-serif;
-  letter-spacing: 4px;
-  text-align: center;
-  text-transform: uppercase;
+.main .shop-collection .bisection .collection-title {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  width: 120px;
+  margin-top: -17px;
+  border: 2px solid #000;
+  background-color: transparent;
+  line-height: 2.8181818182;
+  color: #000;
 }
 
 /**********************************************
@@ -4515,98 +4587,26 @@ footer .copyright a:nth-child(2) {
 /**********************************************
  My Page - 회원탈퇴
 ***********************************************/
-.member-quit {
-  margin-top: -10px;
-  padding: 40px 20px;
-  border: 1px solid #e5e5e5;
-  border-width: 1px 0;
+.member-quit-notice {
+  padding-top: 13px;
 }
 
-.member-quit .selectbox {
-  width: 334px;
-}
-
-.member-quit-input {
-  margin-top: 35px;
-}
-
-.member-quit-input dt {
-  margin-bottom: 15px;
-}
-
-.member-quit-input textarea.form-control {
-  width: 700px;
-}
-
-/**********************************************
- My Page - Coupon
-***********************************************/
-.coupon .coupon-register {
-  padding: 20px;
-  border-top: 1px solid #e5e5e5;
-}
-
-.coupon .coupon-register strong {
-  margin-bottom: 0;
-  line-height: 2.5;
-}
-
-.coupon .coupon-register .form-group .form-control {
-  width: 400px;
-}
-
-.coupon .button-group {
-  padding: 40px 0 20px;
-  border-top: 1px solid #e5e5e5;
-  text-align: center;
-}
-
-.coupon-content {
-  display: none;
-}
-
-.coupon-content.coupon-list1 {
-  display: block;
-}
-
-.coupon-type {
-  display: inline-block;
-  width: 110px;
-  border: 2px solid #004689;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 2.4375;
-  font-family: "notoSans", sans-serif;
-  color: #004689;
-  text-align: center;
-}
-
-.coupon-num {
-  display: block;
-  margin-top: 8px;
-}
-
-.coupon-purpose strong {
-  display: block;
-  font-weight: 400;
+.member-quit-notice p {
+  font-size: 11px;
   color: #000;
 }
 
+.member-quit-notice .notice {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #000;
+}
+
 /**********************************************
  My Page - Coupon
 ***********************************************/
-.coupon .coupon-register {
-  padding: 20px;
-  border-top: 1px solid #e5e5e5;
-}
-
-.coupon .coupon-register strong {
-  margin-bottom: 0;
-  line-height: 2.5;
+.coupon .coupon-register .input-button-group > div:last-child {
+  width: 70px;
 }
 
 .coupon .button-group {
@@ -4615,35 +4615,105 @@ footer .copyright a:nth-child(2) {
   text-align: center;
 }
 
-.coupon-type {
-  display: inline-block;
-  width: 110px;
-  border: 2px solid #004689;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  border-radius: 3px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 2.4375;
-  font-family: "notoSans", sans-serif;
-  color: #004689;
-  text-align: center;
+.coupon-box {
+  position: relative;
+  margin-top: 10px;
 }
 
-.coupon-type em {
-  font-style: normal;
-  font-family: "BentonSans", sans-serif;
-}
-
-.coupon-num {
+.coupon-box .radio {
   display: block;
-  margin-top: 8px;
+  position: absolute;
+  top: 9px;
+  left: 3%;
 }
 
-.coupon-purpose strong {
+.coupon-box .pass-coupon {
+  left: 53%;
+}
+
+.coupon-box .coupon-content {
+  display: none;
+  padding-top: 37px;
+}
+
+.coupon-box .have-coupon {
   display: block;
+}
+
+.coupon-list {
+  border: 5px solid #f5f5f5;
+}
+
+.coupon-list > li {
+  padding: 10px;
+}
+
+.coupon-list > li:last-child .coupon-info-content {
+  border-bottom: 0;
+}
+
+.coupon-price {
   font-weight: 400;
+  font-size: 15px;
+  color: #004689;
+}
+
+.button-coupon {
+  margin-top: 4px;
+  padding: 0 10px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
+  background-color: #004689;
+  font-size: 9px;
+  line-height: 1.4444444444;
+  color: #fff;
+}
+
+.coupon-info-content {
+  margin-bottom: -10px;
+  padding: 7px 0 15px;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 11px;
+}
+
+.coupon-info-content .coupon-num {
+  color: #004689;
+}
+
+.coupon-info-content .coupon-num .item-badge {
+  float: left;
+  margin-right: 7px;
+  padding: 0 10px;
+  border: 1px solid #004689;
+  font-size: 9px;
+  line-height: 1.4444444444;
+}
+
+.coupon-info-content .coupon-type {
+  margin: 14px 0 6px;
+  color: #000;
+}
+
+.coupon-info-content .coupon-purpose:before, .coupon-info-content .coupon-purpose:after {
+  content: " ";
+  display: table;
+}
+
+.coupon-info-content .coupon-purpose:after {
+  clear: both;
+}
+
+.coupon-info-content .coupon-purpose span,
+.coupon-info-content .coupon-purpose p {
+  float: left;
+}
+
+.coupon-info-content .coupon-purpose span {
+  clear: both;
+  width: 41px;
+  margin-right: 15px;
   color: #000;
 }
 

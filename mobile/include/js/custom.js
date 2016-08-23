@@ -13,6 +13,24 @@ $(document).ready(function () {
         }
     });
 
+    // Main - Main Banner Slick Slider
+    $(".main-banner").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        arrows: false
+    });
+
+    // Main - Second Banner Slick Slider
+    $(".second-banner").slick({
+        dots: false,
+        infinite: true,
+        slidesToShow: 1,
+        arrows: false,
+        centerMode: true,
+        centerPadding: '37px'
+    });
+
     // Category Menu
     $(".category-menu .category-menu-title").on("click", function () {
         $(this).toggleClass("open").next(".category-menu-box").slideToggle(400);
@@ -71,6 +89,13 @@ $(document).ready(function () {
         $(this).toggleClass("open").next().slideToggle();
         $(this).parent().siblings().children().removeClass("open").next().slideUp();
         return false;
+    });
+
+
+    // My Page Coupon Input[Radio] Select Tab
+    $(".coupon-box input[name=couponList]").change(function () {
+        $(".coupon-content").hide();
+        $("."+$(this).val()).show();
     });
 
 });
