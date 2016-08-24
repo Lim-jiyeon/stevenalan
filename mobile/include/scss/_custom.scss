@@ -93,14 +93,6 @@ header{
             top: 50%;
             right: 45px;
             margin-top: -13px;
-            i:before {
-                width: 17px;
-                height: 16px;
-                background: url(../../images/common/icon-search.png) no-repeat 0 0;
-                background-size: 17px 16px;
-                font-size: 11px;
-                color: transparent;
-            }
         }
         .shoppingBag{
             position: absolute;
@@ -498,6 +490,14 @@ footer{
 }
 .scroll { // 스크롤
     overflow-y: scroll;
+}
+.icon-search:before {
+    width: 17px;
+    height: 16px;
+    background: url(../../images/common/icon-search.png) no-repeat 0 0;
+    background-size: 17px 16px;
+    font-size: 11px;
+    color: transparent;
 }
 
 /**********************************************
@@ -2427,185 +2427,69 @@ footer{
  News
 ***********************************************/
 .news {
-    .news-contents {
-        border-bottom: 1px solid #e5e5e5;
-        .news-help-text {
-            margin-bottom: 10px;
-        }
-        .align-left {
-            color: $brand-secondary;
-        }
-        .news-content {
-            padding: 30px;
-            text-align: left;
-        }
-    }
     .search-word-box {
-        .form-group div.placeholder {
-            label {
-                text-align: left;
-            }
-            .form-control {
-                width: 270px;
-            }
-        }
-    }
-}
-
-/**********************************************
- Popup - modal
-***********************************************/
-.modalWrap{
-    display: none;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    .modal{
         position: relative;
-        z-index: 99;
-        padding: 50px 30px;
-        border: 1px solid #858585;
-        background-color: #fff;
-        .in_modal{
-            position: relative;
-            .bgSection{
-                padding: 20px;
-            }
-            .modalTitle{
-                position: relative;
-                padding: 15px 0;
-                font-weight: bold;
-                color: #000;
-                text-align: center;
-                &:before{
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 1px;
-                    background: url("../../images/common/box-washed-line.png") repeat-x;
-                    content: '';
-                }
-                &:after{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    width: 100%;
-                    height: 1px;
-                    background: url("../../images/common/box-washed-line.png") repeat-x;
-                    content: '';
-                }
-            }
+        margin-bottom: 20px;
+        .form-control {
+            height: 30px;
+            border-bottom: 1px solid $brand-secondary;
+            border-width: 0 0 1px;
+            @include border-radius(0);
         }
-        .closeModalBtn{
+        .button-search {
             position: absolute;
-            top: 20px;
-            right: 20px;
-            color: #cccdcb;
-            i:before{
-                margin: -2px;
-                border: 1px solid #cccdcb;
-                vertical-align: middle;
-                font-size: 15px;
+            right: 10px;
+            bottom: 8px;
+        }
+    }
+    .news-list {
+        border: 5px solid #f5f5f5;
+        li {
+            padding: 2px 10px 10px;
+            &:first-child {
+                padding-top: 10px;
+            }
+            &:last-child {
+                padding-bottom: 0;
+                .question-title {
+                    border-bottom: 0;
+                }
             }
         }
-    }
-    .overlay{
-        position: fixed;
-        top: 0;
-        left: 0;
-        z-index: 9;
-        width: 100%;
-        height: 100%;
-        background: #fff;
-        opacity: 0.7;
-    }
-}
-
-/**********************************************
- Popup - New Window
-***********************************************/
-#wrap_popup {
-    padding: 20px 15px;
-    .container {
-        width: 100% !important;
-    }
-    .table-caution {
-        margin-top: 50px;
-    }
-}
-// Cash Receipt
-.cash-receipt {
-    width: 460px;
-    .cash-receipt-type {
-        margin-top: 40px;
-    }
-    .cash-receipt-issue {
-        margin-top: 35px;
-    }
-}
-.cash-receipt-confirm {
-    width: 660px;
-    .cash-receipt-list {
-        margin-top: 40px;
-        th {
-            background-color: #fff;
-        }
-        .col-xs-8 {
-            width: 64%;
-        }
-        .col-xs-2 {
-            width: 18%;
-        }
-        .price .button {
-            margin-top: 5px;
-        }
-    }
-    .line-left {
-        border-left: 1px solid #e5e5e5;
-    }
-}
-.receipt-table {
-    width: 460px;
-    .table {
-        margin-top: 40px;
-        border: 1px solid #acacac;
-        .col-xs-1 {
-            width: 6.249999999975%;
-        }
-        th,
-        td {
-            padding: 5px 0 5px 10px;
-            border: 1px solid #acacac;
-            border-width: 1px 1px 0;
-            background-color: #fff;
-            color: #000;
-            text-align: left;
-        }
-        thead {
-            th {
-                background-color: #f5f5f5;
+        .news-title {
+            margin: 0;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #e1e1e1;
+            .item-badge {
+                float: left;
+                padding: 0 10px;
+                border: 2px solid $brand-primary;
+                @include border-radius(3px);
+                font-size: 9px;
+                line-height: (13/9);
+                color: $brand-primary;
+            }
+            .date {
+                float: right;
+                margin-top: 3px;
+                font-size: 11px;
+            }
+            .item-title {
+                clear: both;
+                display: block;
+                width: 100%;
+                padding-top: 5px;
+                font-size: 12px;
+                color: $brand-secondary;
+                vertical-align: top;
             }
         }
-        tbody {
-            th {
-                background-color: #e5ecf3;
-            }
+        .news-contents {
+            display: none;
+            margin: -1px -10px;
+            padding: 7px 10px 15px;
+            background-color: #f5f5f5;
+            font-size: 12px;
         }
-        .amount {
-            &.head td {
-                color: $text-color;
-            }
-            td {
-                padding-left: 0;
-                text-align: center;
-            }
-        }
-    }
-    .button-align-center {
-        margin-top: 40px;
     }
 }

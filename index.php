@@ -76,6 +76,22 @@
                         <li>4.3 <a href="./mobile/join/signup-complete.php">회원가입 완료</a></li>
                         <li>4.4 <a href="./mobile/join/forgot.php">아이디 / 비밀번호 찾기</a></li>
                     </ul>
+
+                    <hr>
+
+                    <h3>5. Etc.</h3>
+                    <ul>
+<!--                        <li>5.1 <a href="./mobile/etc/brands.php">브랜드</a></li>-->
+<!--                        <li>5.1.1 <a href="./mobile/etc/brands-view.php">브랜드 상세</a></li>-->
+<!--                        <li>5.2 <a href="./mobile/join/guest-login.php">비회원 주문 로그인</a></li>-->
+<!--                        <li>5.2.1 <a href="./mobile/order/guest-checkout.php">비회원 주문/결제</a></li>-->
+<!--                        <li>5.2.2 <a href="./mobile/order/guest-summary.php">비회원 주문 완료/요약</a></li>-->
+<!--                        <li>5.2.3 <a href="./mobile/mypage/guest-order-track.php">비회원 주문/배송 조회</a></li>-->
+<!--                        <li>5.2.4 <a href="./mobile/mypage/guest-order-track-view.php">비회원 주문/배송 조회 - 주문 상세</a></li>-->
+                        <li>5.3/5.3.1 <a href="./mobile/etc/news.php">News</a></li>
+<!--                        <li>5.4 <a href="./mobile/etc/search.php">검색 결과</a></li>-->
+<!--                        <li>5.4.1 <a href="./mobile/etc/search-empty.php">검색 결과 없을 경우</a></li>-->
+                    </ul>
                 </div>
 
                 <div id="pc" class="col-xs-12">

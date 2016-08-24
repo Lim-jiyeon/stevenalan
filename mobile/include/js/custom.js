@@ -162,6 +162,15 @@ $(document).ready(function () {
         $("."+$(this).val()).show();
     });
 
+
+    // News List
+    $(".news-title").on("click", function() {
+        $(this).siblings().removeClass("open").next().slideUp();
+        $(this).toggleClass("open").next().slideToggle();
+        $(this).parent().siblings().children().removeClass("open").next().slideUp();
+        return false;
+    });
+
 });
 
 
