@@ -55,7 +55,7 @@ $(document).ready(function () {
     })(window.jQuery || window.Zepto);
     $(".sidebar-menu").sideMenu();
     // Mobile Side Bar Menu Close
-    $(".menu-overlay").on("click", function() {
+    $(".menu-close, .menu-overlay").on("click", function() {
         $("body").removeClass("menu-open");
     });
 

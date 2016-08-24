@@ -113,9 +113,10 @@ header{
     .sidebar-menu {
         position: absolute;
         top: 0;
-        left: -310px;
+        left: -300px;
         z-index: 1010;
         width: 243px;
+        height: 100%;
         padding: 25px;
         background-color: $brand-secondary;
         font-family: $font-family-en;
@@ -185,7 +186,7 @@ header{
     .menu-close {
         position: absolute;
         top: 25px;
-        left: -310px;
+        left: -300px;
         z-index: 1001;
         .icon-left {
             font-size: 18px;
@@ -209,7 +210,6 @@ header{
     overflow: hidden;
     .sidebar-menu {
         left: 0;
-        height: 100%;
         overflow-y: scroll;
         -webkit-overflow-scrolling: touch;
     }
