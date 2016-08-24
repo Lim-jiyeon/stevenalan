@@ -40,6 +40,9 @@ header{
             url("../../images/common/washed-line.png") repeat-x 0 0,
             url("../../images/common/washed-line.png") repeat-x 70% 100%;
         background-size: 50% 1px;
+        a {
+            color: $brand-secondary;
+        }
         .site-brand{
             margin: 0;
             font-size: 0;
@@ -59,19 +62,39 @@ header{
         .search{
             position: absolute;
             top: 50%;
-            right: 37px;
+            right: 45px;
             margin-top: -13px;
-            i {
-                font-size: 16px;
+            i:before {
+                width: 17px;
+                height: 16px;
+                background: url(../../images/common/icon-search.png) no-repeat 0 0;
+                background-size: 17px 16px;
+                font-size: 11px;
+                color: transparent;
             }
         }
         .shoppingBag{
             position: absolute;
             top: 50%;
-            right: 10px;
+            right: 16px;
             margin-top: -14px;
             i {
                 font-size: 17px;
+            }
+            .total-badge {
+                position: absolute;
+                top: 8px;
+                right: -6px;
+                display: block;
+                width: 15px;
+                height: 15px;
+                padding-left: 1px;
+                @include border-radius(50%);
+                background-color: $brand-primary;
+                font-size: 10px;
+                line-height: 14px;
+                color: #fff;
+                text-align: center;
             }
         }
     }
@@ -80,6 +103,124 @@ header{
         a {
             display: block;
         }
+    }
+}
+.mobile-menu-wrap {
+    > * {
+        @include transition(all 0.3s ease-out);
+        @include translate3d(0,0,0);
+    }
+    .sidebar-menu {
+        position: absolute;
+        top: 0;
+        left: -310px;
+        z-index: 1010;
+        width: 243px;
+        padding: 25px;
+        background-color: $brand-secondary;
+        font-family: $font-family-en;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        .menu-item {
+            padding: 7px 0;
+            font-size: 17px;
+            a {
+                display: block;
+            }
+            &.child-item > a:after {
+                float: right;
+                margin-top: 3px;
+                font-family: 'fontello';
+                font-size: 12px;
+                content: '\E82E';
+            }
+            &.active {
+                a {
+                    color: #fff;
+                }
+                &.child-item > a:after {
+                    margin-top: 4px;
+                    font-size: 10px;
+                    content: '\E82D';
+                }
+            }
+        }
+        .level-2 {
+            display: none;
+            padding: 3px 0 0 13px;
+            font-size: 14px;
+            > li {
+                padding: 5px 0;
+                &.child-item > a:after {
+                    float: right;
+                    margin-right: 14px;
+                    font-family: 'fontello';
+                    font-size: 10px;
+                    content: '\E800';
+                }
+                &.active {
+                    &.child-item > a:after {
+                        content: '\E827';
+                    }
+                }
+            }
+        }
+        .level-3 {
+            display: none;
+            padding: 5px 0 0 20px;
+            font-size: 11px;
+            li {
+                &:before {
+                    margin-right: 5px;
+                    content: '-';
+                }
+                padding: 7px 0;
+                text-indent: -10px;
+                a {
+                    display: inline;
+                }
+            }
+        }
+    }
+    .menu-close {
+        position: absolute;
+        top: 25px;
+        left: -310px;
+        z-index: 1001;
+        .icon-left {
+            font-size: 18px;
+            color: #fff;
+        }
+    }
+    .menu-overlay {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        width: 100%;
+        height: 100%;
+        background-color: $brand-secondary;
+        opacity: 0;
+    }
+}
+.menu-open {
+    height: 100%;
+    overflow: hidden;
+    .sidebar-menu {
+        left: 0;
+        height: 100%;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
+    }
+    .menu-close {
+        left: 268px;
+        opacity: 1;
+    }
+    .menu-overlay {
+        visibility: visible;
+        opacity: .8;
+        cursor: pointer;
     }
 }
 

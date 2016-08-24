@@ -1,5 +1,64 @@
 $(document).ready(function () {
 
+    // Mobile Side Bar Menu Open
+    $(".mobile-menu > a").click(function(e) {
+        e.preventDefault();
+        $("body").toggleClass("menu-open");
+    });
+    // Mobile Side Bar Menu Accordion
+    (function($) {
+        $.fn.sideMenu = function(option) {
+            var obj,
+                item;
+            var options = $.extend({
+                    Speed: 300,
+                    autostart: false,
+                    autohide: 1
+                },
+                option);
+            obj = $(this);
+
+            item = obj.find("ul").parent("li").children("a");
+            item.attr("data-option", "off");
+
+            item.unbind('click').on("click", function() {
+                var a = $(this);
+                if (options.autohide) {
+                    a.parent().parent().find("a[data-option='on']").parent("li").children("ul").slideUp(options.Speed / 1.2,
+                        function() {
+                            $(this).parent("li").removeClass("active").children("a").attr("data-option", "off");
+                        })
+                }
+                if (a.attr("data-option") == "off") {
+                    a.parent("li").children("ul").slideDown(options.Speed,
+                        function() {
+                            a.attr("data-option", "on");
+                            a.parent("li").addClass("active");
+                        });
+                }
+                if (a.attr("data-option") == "on") {
+                    a.attr("data-option", "off");
+                    a.parent("li").removeClass("active").children("ul").slideUp(options.Speed);
+                }
+            });
+            if (options.autostart) {
+                obj.find("a").each(function() {
+
+                    $(this).parent("li").parent("ul").slideDown(options.Speed,
+                        function() {
+                            $(this).parent("li").addClass("active").children("a").attr("data-option", "on");
+                        })
+                })
+            }
+
+        }
+    })(window.jQuery || window.Zepto);
+    $(".sidebar-menu").sideMenu();
+    // Mobile Side Bar Menu Close
+    $(".menu-overlay").on("click", function() {
+        $("body").removeClass("menu-open");
+    });
+
     // Footer Accordion Menu
     $(".footer-menu > li h3").on("click", function () {
         if ($(this).hasClass("on")) {

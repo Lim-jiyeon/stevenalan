@@ -2468,6 +2468,10 @@ header .quick-access {
   background-size: 50% 1px;
 }
 
+header .quick-access a {
+  color: #000;
+}
+
 header .quick-access .site-brand {
   margin: 0;
   font-size: 0;
@@ -2491,23 +2495,47 @@ header .quick-access .mobile-menu i {
 header .quick-access .search {
   position: absolute;
   top: 50%;
-  right: 37px;
+  right: 45px;
   margin-top: -13px;
 }
 
-header .quick-access .search i {
-  font-size: 16px;
+header .quick-access .search i:before {
+  width: 17px;
+  height: 16px;
+  background: url(../../images/common/icon-search.png) no-repeat 0 0;
+  background-size: 17px 16px;
+  font-size: 11px;
+  color: transparent;
 }
 
 header .quick-access .shoppingBag {
   position: absolute;
   top: 50%;
-  right: 10px;
+  right: 16px;
   margin-top: -14px;
 }
 
 header .quick-access .shoppingBag i {
   font-size: 17px;
+}
+
+header .quick-access .shoppingBag .total-badge {
+  position: absolute;
+  top: 8px;
+  right: -6px;
+  display: block;
+  width: 15px;
+  height: 15px;
+  padding-left: 1px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #004689;
+  font-size: 10px;
+  line-height: 14px;
+  color: #fff;
+  text-align: center;
 }
 
 header .link-sale {
@@ -2516,6 +2544,143 @@ header .link-sale {
 
 header .link-sale a {
   display: block;
+}
+
+.mobile-menu-wrap > * {
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.mobile-menu-wrap .sidebar-menu {
+  position: absolute;
+  top: 0;
+  left: -310px;
+  z-index: 1010;
+  width: 243px;
+  padding: 25px;
+  background-color: #000;
+  font-family: "BentonSans", sans-serif;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+
+.mobile-menu-wrap .sidebar-menu .menu-item {
+  padding: 7px 0;
+  font-size: 17px;
+}
+
+.mobile-menu-wrap .sidebar-menu .menu-item a {
+  display: block;
+}
+
+.mobile-menu-wrap .sidebar-menu .menu-item.child-item > a:after {
+  float: right;
+  margin-top: 3px;
+  font-family: 'fontello';
+  font-size: 12px;
+  content: '\E82E';
+}
+
+.mobile-menu-wrap .sidebar-menu .menu-item.active a {
+  color: #fff;
+}
+
+.mobile-menu-wrap .sidebar-menu .menu-item.active.child-item > a:after {
+  margin-top: 4px;
+  font-size: 10px;
+  content: '\E82D';
+}
+
+.mobile-menu-wrap .sidebar-menu .level-2 {
+  display: none;
+  padding: 3px 0 0 13px;
+  font-size: 14px;
+}
+
+.mobile-menu-wrap .sidebar-menu .level-2 > li {
+  padding: 5px 0;
+}
+
+.mobile-menu-wrap .sidebar-menu .level-2 > li.child-item > a:after {
+  float: right;
+  margin-right: 14px;
+  font-family: 'fontello';
+  font-size: 10px;
+  content: '\E800';
+}
+
+.mobile-menu-wrap .sidebar-menu .level-2 > li.active.child-item > a:after {
+  content: '\E827';
+}
+
+.mobile-menu-wrap .sidebar-menu .level-3 {
+  display: none;
+  padding: 5px 0 0 20px;
+  font-size: 11px;
+}
+
+.mobile-menu-wrap .sidebar-menu .level-3 li {
+  padding: 7px 0;
+  text-indent: -10px;
+}
+
+.mobile-menu-wrap .sidebar-menu .level-3 li:before {
+  margin-right: 5px;
+  content: '-';
+}
+
+.mobile-menu-wrap .sidebar-menu .level-3 li a {
+  display: inline;
+}
+
+.mobile-menu-wrap .menu-close {
+  position: absolute;
+  top: 25px;
+  left: -310px;
+  z-index: 1001;
+}
+
+.mobile-menu-wrap .menu-close .icon-left {
+  font-size: 18px;
+  color: #fff;
+}
+
+.mobile-menu-wrap .menu-overlay {
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0;
+}
+
+.menu-open {
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu-open .sidebar-menu {
+  left: 0;
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menu-open .menu-close {
+  left: 268px;
+  opacity: 1;
+}
+
+.menu-open .menu-overlay {
+  visibility: visible;
+  opacity: .8;
+  cursor: pointer;
 }
 
 /**********************************************
