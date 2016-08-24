@@ -21,13 +21,42 @@ header{
             display: inline-block;
             li {
                 float: left;
-                &:last-child{
-                    margin-left: 25px;
-                }
                 a {
                     font-size: 12px;
                     color: #858585;
                     text-transform: uppercase;
+                }
+            }
+        }
+        .menu-mypage {
+            position: relative;
+            margin-left: 25px;
+            .mypage-dropdown {
+                display: none;
+            }
+            .link-mypage.open {
+                position: inherit;
+                z-index: 110;
+                +
+                .mypage-dropdown {
+                    display: block;
+                    position: absolute;
+                    top: -7px;
+                    right: -10px;
+                    z-index: 100;
+                    width: 90px;
+                    padding: 30px 0 6px;
+                    background-color: #fff;
+                    @include box-shadow(0 0 14px rgba(0,0,0,.1));
+                    .mypage-item {
+                        padding: 3px 8px;
+                        list-style: none;
+                        font-size: 11px;
+                        &:first-child {
+                            padding-top: 8px;
+                            border-top: 1px solid #ccc;
+                        }
+                    }
                 }
             }
         }

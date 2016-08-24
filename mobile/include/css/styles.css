@@ -2450,14 +2450,48 @@ header .site-utility ul li {
   float: left;
 }
 
-header .site-utility ul li:last-child {
-  margin-left: 25px;
-}
-
 header .site-utility ul li a {
   font-size: 12px;
   color: #858585;
   text-transform: uppercase;
+}
+
+header .site-utility .menu-mypage {
+  position: relative;
+  margin-left: 25px;
+}
+
+header .site-utility .menu-mypage .mypage-dropdown {
+  display: none;
+}
+
+header .site-utility .menu-mypage .link-mypage.open {
+  position: inherit;
+  z-index: 110;
+}
+
+header .site-utility .menu-mypage .link-mypage.open + .mypage-dropdown {
+  display: block;
+  position: absolute;
+  top: -7px;
+  right: -10px;
+  z-index: 100;
+  width: 90px;
+  padding: 30px 0 6px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+}
+
+header .site-utility .menu-mypage .link-mypage.open + .mypage-dropdown .mypage-item {
+  padding: 3px 8px;
+  list-style: none;
+  font-size: 11px;
+}
+
+header .site-utility .menu-mypage .link-mypage.open + .mypage-dropdown .mypage-item:first-child {
+  padding-top: 8px;
+  border-top: 1px solid #ccc;
 }
 
 header .quick-access {

@@ -15,7 +15,14 @@
     <div class="site-utility">
         <ul>
             <li><a href="#">login</a></li>
-            <li><a href="#">mypage<i class="icon-down-dir"></i></a></li>
+            <li class="menu-mypage">
+                <a href="#" class="link-mypage">mypage<i class="icon-down-dir"></i></a>
+                <ul class="mypage-dropdown">
+                    <li class="mypage-item"><a href="#">주문/배송 조회</a></li>
+                    <li class="mypage-item"><a href="#">위시리스트</a></li>
+                    <li class="mypage-item"><a href="#">1:1문의</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
     <div class="quick-access">
@@ -37,6 +44,8 @@
             </a>
         </div>
     </div>
+    <!-- Sidebar Menu -->
+    <!-- [D] 2뎁스 메뉴가 있을 경우 child-item 클래스 추가 -->
     <div class="mobile-menu-wrap">
         <ul class="sidebar-menu level-1">
             <li class="menu-item"><a href="#">collection</a></li>
@@ -76,6 +85,7 @@
         <a href="#" class="menu-close"><i class="icon-left"></i></a>
         <div class="menu-overlay"></div>
     </div>
+    <!-- Sidebar Menu //end -->
     <div class="link-sale">
         <a href="#">GRAND OPEN! 30%<i class="icon-right-open-big"></i></a>
     </div>
