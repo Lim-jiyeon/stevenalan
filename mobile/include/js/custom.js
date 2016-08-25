@@ -3,12 +3,13 @@ $(document).ready(function () {
     // Header My Page Dropdown
     $(".link-mypage").on("click", function() {
         $(this).toggleClass("open");
+        return false;
     });
 
     // Mobile Side Bar Menu Open
     $(".mobile-menu > a").click(function(e) {
         e.preventDefault();
-        $("body").toggleClass("menu-open");
+        $("body").addClass("menu-open");
     });
     // Mobile Side Bar Menu Accordion
     (function($) {

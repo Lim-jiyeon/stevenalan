@@ -2582,8 +2582,10 @@ header .link-sale a {
 .mobile-menu-wrap .sidebar-menu {
   position: absolute;
   top: 0;
-  left: -300px;
+  left: -100%;
   z-index: 1010;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   width: 243px;
   height: 100%;
   padding: 25px;
@@ -2679,10 +2681,9 @@ header .link-sale a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: #000;
   opacity: 0;
 }
 
@@ -2693,8 +2694,6 @@ header .link-sale a {
 
 .menu-open .sidebar-menu {
   left: 0;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
 }
 
 .menu-open .menu-close {
@@ -2704,6 +2703,9 @@ header .link-sale a {
 
 .menu-open .menu-overlay {
   visibility: visible;
+  left: 0;
+  z-index: 1000;
+  background-color: #000;
   opacity: .8;
   cursor: pointer;
 }
@@ -3401,6 +3403,8 @@ footer .copyright a:nth-child(2) {
 }
 
 .category-menu .category-menu-box a {
+  display: block;
+  padding: 2px;
   color: #000;
 }
 
@@ -4682,7 +4686,7 @@ footer .copyright a:nth-child(2) {
 
 .support-list .support-box {
   display: none;
-  margin: -1px -5px;
+  margin: -1px -5px 0;
   padding: 7px 5px 15px;
   background-color: #f5f5f5;
   font-size: 12px;
@@ -5410,7 +5414,7 @@ footer .copyright a:nth-child(2) {
   padding-bottom: 0;
 }
 
-.news .news-list li:last-child .question-title {
+.news .news-list li:last-child .news-title {
   border-bottom: 0;
 }
 
@@ -5451,7 +5455,7 @@ footer .copyright a:nth-child(2) {
 
 .news .news-list .news-contents {
   display: none;
-  margin: -1px -10px;
+  margin: -1px -10px 0;
   padding: 7px 10px 15px;
   background-color: #f5f5f5;
   font-size: 12px;

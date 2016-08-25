@@ -168,9 +168,9 @@
                 <div class="col-xs-12">
                     <h4 class="signup-agree-title">
                         <div class="checkbox">
-                            <input type="checkbox" id="receive-sms" name="agree-terms" checked>
-                            <label for="agree-terms" class="checkbox-display"></label>
-                            <label for="agree-terms" class="checkbox-label">이용약관 동의 (필수)</label>
+                            <input type="checkbox" id="agree_terms" name="agree_terms" checked>
+                            <label for="agree_terms" class="checkbox-display"></label>
+                            <label for="agree_terms" class="checkbox-label">이용약관 동의 (필수)</label>
                         </div>
                         <a href="#none" class="button button-xsmall button-secondary" onclick="agreeOpen(this);"><span>내용보기</span></a>
                     </h4>
@@ -181,9 +181,9 @@
                 <div class="col-xs-12">
                     <h4 class="signup-agree-title">
                         <div class="checkbox">
-                            <input type="checkbox" id="receive-sms" name="agree-privacy" checked>
-                            <label for="agree-privacy" class="checkbox-display"></label>
-                            <label for="agree-privacy" class="checkbox-label">개인정보 수집 및 이용 안내 동의(필수)</label>
+                            <input type="checkbox" id="agree_privacy" name="agree_privacy" checked>
+                            <label for="agree_privacy" class="checkbox-display"></label>
+                            <label for="agree_privacy" class="checkbox-label">개인정보 수집 및 이용 안내 동의(필수)</label>
                         </div>
                         <a href="#none" class="button button-xsmall button-secondary" onclick="agreeOpen(this);"><span>내용보기</span></a>
                     </h4>
