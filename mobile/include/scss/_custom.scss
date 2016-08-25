@@ -322,7 +322,7 @@ footer{
  Common
 ***********************************************/
 .breadcrumb {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     font-family: $font-family-en;
     font-size: 10px;
     letter-spacing: 0.8px;
@@ -836,6 +836,7 @@ footer{
  Category List
 ***********************************************/
 .sort-by-options {
+    margin-top: 10px;
     .sort-by {
         .selectbox-value {
             font-size: 11px;
@@ -1425,11 +1426,28 @@ footer{
         .checkbox {
             label {
                 vertical-align: top;
+                &.checkbox-label {
+                    width: 91.2%;
+                    font-size: 12px;
+                }
             }
         }
         .button {
             margin-top: 15px;
         }
+    }
+}
+.guest-checkbox-agree {
+    &.box {
+        padding-bottom: 10px;
+    }
+    .agree-box {
+        border: 0;
+        margin: -5px 0 10px;
+    }
+    .checkbox-label {
+        margin-bottom: 0;
+        font-size: 11px;
     }
 }
 
@@ -1602,6 +1620,7 @@ footer{
     @include clearfix;
     .item-state {
         float: left;
+        padding-top: 3px;
         font-size: 11px;
         color: $brand-secondary;
         .icon-flight {
@@ -2242,35 +2261,36 @@ footer{
  Search
 ***********************************************/
 .search-box {
-    padding-top: 40px;
-    text-align: center;
-    .input-button-group {
-        display: inline-block;
-        div .form-control {
-            width: 490px;
-            height: 50px;
-            font-size: 14px;
-            text-align: center;
-        }
-        .button {
-            line-height: (50-2)/12;
-            .icon-search-bold:before {
-                font-size: 20px;
-            }
-        }
+    position: relative;
+    margin-bottom: 20px;
+    .form-control {
+        height: 30px;
+        padding: 10px 10px 5px;
+        border-bottom: 1px solid $brand-secondary;
+        border-width: 0 0 1px;
+        @include border-radius(0);
+        @include placeholder($brand-secondary);
     }
-    .checkbox-block {
-        margin-top: 5px;
+    .button-search {
+        position: absolute;
+        right: 10px;
+        bottom: 8px;
     }
 }
 .search-result {
-    margin-top: 30px;
-    padding-top: 35px;
-    background: url(../../images/common/box-washed-line.png) repeat-x 0 0;
-    font-size: 18px;
-    color: $brand-secondary;
-    strong {
-        color: $brand-primary;
+    padding: 10px;
+    background-color: #f5f5f5;
+    font-family: $font-family-ko;
+    font-size: 12px;
+    color: #4b4b4b;
+    &.empty {// 일치하는 검색정보가 없는 경우
+        padding: 10px 10px 20px;
+        font-weight: 500;
+        p {
+            margin-top: 15px;
+            font-size: 10px;
+            color: $text-color;
+        }
     }
 }
 .search-category-left {
@@ -2319,82 +2339,61 @@ footer{
 .search-view-list {
     padding-top: 40px;
 }
-// 일치하는 검색정보가 없는 경우
-.search-result-empty {
-    margin-top: 5px;
-    font-size: 12px;
-    color: $text-color;
-}
 
 /**********************************************
  Brand
 ***********************************************/
 // 상단 롤링 배너
 .brand-banner {
-    padding: 20px 10px 40px;
-    background-color: #f5f5f5;
-    .slick-slide {
-        padding: 0 10px;
-        img {
-            width: 100%;
-        }
-    }
-    .slick-arrow {
-        background-color: rgba(230,231,238,.5);
-    }
     .slick-dots {
-        bottom: 17px;
+        bottom: 10px;
     }
 }
 .brand-search {
-    margin-top: 60px;
+    margin-top: 17px;
     font-family: $font-family-en;
-}
-.brand-category {
-    padding: 36px 0 27px;
-    text-align: center;
-    li {
-        display: inline-block;
-        padding: 0 20px;
-        a {
-            font-size: 14px;
-            text-transform: uppercase;
-            &:hover,
-            &.selected {
-                padding-bottom: 1px;
-                border-bottom: 1px solid $brand-primary;
-                color: $brand-primary;
-            }
+    .search-box {
+        margin-bottom: 30px;
+        .form-control {
+            letter-spacing: 2px;
         }
     }
 }
+.brand-category {
+    .selectbox-value {
+        line-height: ((30px - $border-size*2)/$font-size-base);
+    }
+}
 .brand-alphabet {
-    border: 1px solid #d5d5d5;
-    border-width: 1px 0;
+    margin: 8px -2px 0;
     @include clearfix;
     li {
         display: block;
         float: left;
-        width: 3.7037037037037%;
-        padding: 0 12px;
+        width: 11.11111111111111%;
+        padding: 2px;
         text-align: center;
         a {
             display: block;
-            padding: 15px 0 16px;
-            font-size: 16px;
+            padding: 6px 0 3px;
+            border: 1px solid #e5e5e5;
+            @include border-radius(3px);
+            font-size: 12px;
             &:hover,
             &.selected {
-                padding-bottom: 1px;
-                border-bottom: 1px solid $brand-primary;
-                color: $brand-primary;
+                background-color: $brand-primary;
+                color: #fff;
             }
         }
     }
 }
 .brand-search-result {
-    padding: 15px 0 16px;
+    margin-top: 18px;
+    padding: 7px 0;
+    @include border-radius(3px);
     background-color: #f5f5f5;
     font-family: $font-family-ko;
+    font-size: 11px;
     color: $brand-secondary;
     text-align: center;
 }
@@ -2402,12 +2401,13 @@ footer{
     margin-top: 30px;
     font-family: $font-family-en;
     .brand-title {
-        margin-bottom: 5px;
-        font-size: 24px;
+        margin-bottom: 8px;
+        font-weight: 400;
+        font-size: 16px;
         color: $brand-secondary;
     }
     .brand-list {
-        letter-spacing: 2px;
+        font-size: 12px;
         .selected {
             color: $brand-primary;
         }
@@ -2417,13 +2417,11 @@ footer{
 /**********************************************
  Brand - View
 ***********************************************/
-.brand-view-left {
-    padding-top: 4px;
-    .item-list {
-        display: block;
-        > li {
-            display: none;
-        }
+.brand-view-list {
+    .brand-category {
+        margin: 10px 0 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #d5d5d5;
     }
 }
 
@@ -2431,21 +2429,6 @@ footer{
  News
 ***********************************************/
 .news {
-    .search-word-box {
-        position: relative;
-        margin-bottom: 20px;
-        .form-control {
-            height: 30px;
-            border-bottom: 1px solid $brand-secondary;
-            border-width: 0 0 1px;
-            @include border-radius(0);
-        }
-        .button-search {
-            position: absolute;
-            right: 10px;
-            bottom: 8px;
-        }
-    }
     .news-list {
         border: 5px solid #f5f5f5;
         li {

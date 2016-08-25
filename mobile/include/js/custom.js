@@ -164,6 +164,15 @@ $(document).ready(function () {
     });
 
 
+    // Brand Banner
+    $(".brand-banner").slick({
+        dots: true,
+        infinite: true,
+        slidesToShow: 1,
+        arrows: false
+    });
+
+
     // News List
     $(".news-title").on("click", function() {
         $(this).siblings().removeClass("open").next().slideUp();

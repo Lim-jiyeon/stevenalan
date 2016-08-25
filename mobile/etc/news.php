@@ -4,7 +4,7 @@
     <div class="container">
         <h2 class="page-title">NEWS</h2>
         <div class="news">
-            <div class="search-word-box form-group">
+            <div class="search-box form-group">
                 <input type="text" class="form-control" placeholder="Search" title="뉴스 검색어 입력">
                 <a href="#" class="button-search"><i class="icon-search"></i></a>
             </div>
