@@ -181,7 +181,59 @@ $(document).ready(function () {
         return false;
     });
 
+
+    // Mobile Side Bar Filter Open
+    $(".filter-button").click(function(e) {
+        e.preventDefault();
+        $("body").addClass("search-filter-open");
+    });
+    // Mobile Side Bar Filter Close
+    $(".filter-close, .filter-overlay").on("click", function() {
+        $("body").removeClass("search-filter-open");
+    });
+    //$(".filter-title").on("click", function() {
+    //    $(this).siblings().removeClass("open").next().slideUp();
+    //    $(this).toggleClass("open").next().slideToggle();
+    //    $(this).parent().siblings().children().removeClass("open").next().slideUp();
+    //    return false;
+    //});
+    $(".category-all").on("click", function() {
+        $(this).parent().siblings().find(".item-title").addClass("open").next().slideDown();
+        return false;
+    });
+    // Category View More Button
+    var sizeItem = $(".filter-category-list .item-list > li").size();
+    var item = 6;
+    $('.filter-category-list .item-list > li:lt('+item+')').show();
+    $('.filter-category-list .view-more').click(function () {
+        var x = (item+20 <= sizeItem) ? item+20 : sizeItem;
+        $('.filter-category-list .item-list > li:lt('+x+')').show();
+        return false;
+    });
+
+
+    // Placeholder
+    $(".placeholder input").focusin(function() {
+        $(this).siblings("label").hide();
+    });
+    $(".placeholder input").blur(function() {
+        if($(this).val() == ''){
+            $(this).siblings("label").show();
+        }
+    });
+
 });
+
+
+// Layer
+function layerOpen(target) {
+    var $this = $(target);
+    $this.show();
+}
+function layerClose(target) {
+    var $this = $(target);
+    $this.parent().hide();
+}
 
 
 // Select Box

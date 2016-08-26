@@ -35,7 +35,7 @@
             <a href="#"><i class="icon-menu"></i></a>
         </div>
         <div class="search">
-            <a href="#"><i class="icon-search"></i></a>
+            <a href="#" onclick="layerOpen('.form-search');"><i class="icon-search"></i></a>
         </div>
         <div class="shoppingBag">
             <a href="#">
@@ -86,6 +86,15 @@
         <div class="menu-overlay"></div>
     </div>
     <!-- Sidebar Menu //end -->
+    <!-- Search Form Layer -->
+    <div class="form-search">
+        <div class="placeholder">
+            <label for="search_word" class="search-word form-label">SEARCH<i class="icon-search"></i></label>
+            <input type="text" id="search_word" class="form-control">
+        </div>
+        <a href="#" class="form-search-close" onclick="layerClose(this);"><i class="icon-cancel-thin"></i></a>
+    </div>
+    <!-- Search Form Layer //end -->
     <div class="link-sale">
         <a href="#">GRAND OPEN! 30%<i class="icon-right-open-big"></i></a>
     </div>
