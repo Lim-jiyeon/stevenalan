@@ -167,6 +167,23 @@
                         <li>5.4 <a href="./pc/etc/search.php">검색 결과</a></li>
                         <li>5.4.1 <a href="./pc/etc/search-empty.php">검색 결과 없을 경우</a></li>
                     </ul>
+
+                    <hr>
+
+                    <h3>6. Email.</h3>
+                    <ul>
+                        <li>6.1 <a href="./pc/email/member-confirm.html">회원가입인증</a></li>
+                        <li>6.2 <a href="./pc/email/member.html">회원가입완료</a></li>
+                        <li>6.3 <a href="./pc/email/member-confirm.html">회원탈퇴</a></li>
+                        <li>6.4 <a href="./pc/email/member-confirm.html">비밀번호변경</a></li>
+                        <li>6.5 <a href="./pc/email/member-confirm.html">주문완료</a></li>
+                        <li>6.6 <a href="./pc/email/member-confirm.html">배송시작</a></li>
+                        <li>6.7 <a href="./pc/email/member-confirm.html">취소신청</a></li>
+                        <li>6.8 <a href="./pc/email/member-confirm.html">교환신청</a></li>
+                        <li>6.9 <a href="./pc/email/member-confirm.html">반품신청</a></li>
+                        <li>6.10 <a href="./pc/email/member-confirm.html">1:1 문의 답변</a></li>
+                        <li>6.11 <a href="./pc/email/member-confirm.html">이메일 수신거부</a></li>
+                    </ul>
                 </div>
             </div>
             <a href="#" class="top">TOP</a>

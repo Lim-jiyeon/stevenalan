@@ -263,11 +263,11 @@
     margin-bottom: 20px;
     font-family: $font-family-en;
     font-size: 10px;
-    a:after {
-        margin: 0 7px 0 9px;
+    a:before {
+        margin: 0 9px 0 7px;
         content: '/';
     }
-    a:last-child:after {
+    a:first-child:before {
         margin: 0;
         content: '';
     }
@@ -945,8 +945,10 @@
             text-transform: uppercase;
         }
         .product-name {
+            margin: 10px 0;
             font-weight: 400;
             font-size: 26px;
+            line-height: 30px;
         }
         .sku-number {
             font-size: 10px;

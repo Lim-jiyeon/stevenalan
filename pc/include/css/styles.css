@@ -2103,6 +2103,7 @@ input[type="search"] {
 .table {
   border-collapse: collapse;
   width: 100%;
+  border: 0;
 }
 
 .table col {
@@ -2639,12 +2640,12 @@ input[type="search"] {
   font-size: 10px;
 }
 
-.breadcrumb a:after {
-  margin: 0 7px 0 9px;
+.breadcrumb a:before {
+  margin: 0 9px 0 7px;
   content: '/';
 }
 
-.breadcrumb a:last-child:after {
+.breadcrumb a:first-child:before {
   margin: 0;
   content: '';
 }
@@ -3426,8 +3427,10 @@ input[type="search"] {
 }
 
 .product-option-info .detail-info .product-name {
+  margin: 10px 0;
   font-weight: 400;
   font-size: 26px;
+  line-height: 30px;
 }
 
 .product-option-info .detail-info .sku-number {
