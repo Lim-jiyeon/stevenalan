@@ -1975,7 +1975,7 @@ input[type="search"] {
   font-size: 12px;
   line-height: 2.3333333333;
   font-family: "notoSans", sans-serif;
-  color: #858585 !important;
+  color: #000 !important;
 }
 
 .selectbox .selectbox-value:after {
@@ -2637,7 +2637,7 @@ input[type="search"] {
 .breadcrumb {
   margin-bottom: 20px;
   font-family: "BentonSans", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .breadcrumb a:before {
@@ -3305,11 +3305,23 @@ input[type="search"] {
 /**********************************************
  Category List
 ***********************************************/
+.result-options {
+  margin: 0;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.result-options .sort-by {
+  padding: 0;
+}
+
 .result-options .sort-by .selectbox {
   width: 100%;
 }
 
 .result-options .results-hits {
+  margin-top: 10px;
+  padding: 0;
   text-align: right;
 }
 
@@ -3341,8 +3353,9 @@ input[type="search"] {
 .category-list .product-info .brand-name {
   display: block;
   margin-bottom: 5px;
-  font-weight: 700;
   line-height: 14px;
+  color: #000;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
@@ -3357,7 +3370,6 @@ input[type="search"] {
 
 .category-list .product-info .product-price .discount {
   display: inline-block;
-  font-size: 10px;
 }
 
 .category-list .product-info .product-price .price {
@@ -3366,11 +3378,19 @@ input[type="search"] {
 }
 
 .category-list .more-color {
+  display: block;
+  margin: 10px 0 0 -1px;
+  font-size: 11px;
+  color: #004689;
+}
+
+.category-list .more-color:before {
   display: inline-block;
-  margin-top: 10px;
-  border-bottom: 1px solid #bfbfbf;
-  line-height: 11px;
-  color: #000;
+  margin-right: 3px;
+  font-size: 10px;
+  vertical-align: -1px;
+  font-family: 'fontello';
+  content: '\e829';
 }
 
 .category-list.list5 .col-xs-2 {

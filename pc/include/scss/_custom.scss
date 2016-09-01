@@ -262,7 +262,7 @@
 .breadcrumb {
     margin-bottom: 20px;
     font-family: $font-family-en;
-    font-size: 10px;
+    font-size: 11px;
     a:before {
         margin: 0 9px 0 7px;
         content: '/';
@@ -838,12 +838,18 @@
  Category List
 ***********************************************/
 .result-options {
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border-color;
     .sort-by {
+        padding: 0;
         .selectbox {
             width: 100%;
         }
     }
     .results-hits {
+        margin-top: 10px;
+        padding: 0;
         text-align: right;
     }
 }
@@ -869,8 +875,9 @@
         .brand-name {
             display: block;
             margin-bottom: 5px;
-            font-weight: 700;
             line-height: 14px;
+            color: $brand-secondary;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
         .product-name {
@@ -881,7 +888,6 @@
             margin-top: 2px;
             .discount {
                 display: inline-block;
-                font-size: 10px;
             }
             .price {
                 display: inline-block;
@@ -890,11 +896,18 @@
         }
     }
     .more-color {
-        display: inline-block;
-        margin-top: 10px;
-        border-bottom: 1px solid #bfbfbf;
-        line-height: 11px;
-        color: #000;
+        display: block;
+        margin: 10px 0 0 -1px;
+        font-size: 11px;
+        color: $brand-primary;
+        &:before {
+            display: inline-block;
+            margin-right: 3px;
+            font-size: 10px;
+            vertical-align: -1px;
+            font-family: 'fontello';
+            content: '\e829';
+        }
     }
     &.list5 {
         .col-xs-2 {
