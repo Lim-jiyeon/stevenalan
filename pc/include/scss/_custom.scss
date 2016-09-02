@@ -6,8 +6,6 @@
  Layout
 ***********************************************/
 .content{
-    width: 1140px;
-    margin: 0 auto;
     padding: 40px 0 60px;
 }
 .container {
@@ -109,13 +107,13 @@
 }
 .megaMenu {
     position: relative;
-    margin: 0 -25.4px;
+    margin: 0 -18px;
     padding-left: 0;
     font-family: $font-family-en;
     @include clearfix;
     .megaMenu-item {
         float: left;
-        padding: 0 25.4px;
+        padding: 0 18px;
         list-style: none;
         &.relative { // 2뎁스 메뉴 세로로 나열 (기본은 가로 나열)
             position: relative;
@@ -930,6 +928,15 @@
 /**********************************************
  Category Detail
 ***********************************************/
+.category-detail {
+    .breadcrumb {
+        margin-bottom: 40px;
+        padding-bottom: 18px;
+        border-bottom: 1px solid #ebebeb;
+        font-size: 12px;
+        text-align: center;
+    }
+}
 .product-images {
     .product-images-for {
         padding: 35px 0 75px 69px;
@@ -953,18 +960,19 @@
         .brand-name {
             font-weight: 700;
             font-size: 18px;
-            color: #000;
+            color: $brand-secondary;
             letter-spacing: 1px;
             text-transform: uppercase;
         }
         .product-name {
-            margin: 10px 0;
+            margin: 10px 0 2px;
             font-weight: 400;
-            font-size: 26px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 26px;
+            color: $brand-secondary;
         }
         .sku-number {
-            font-size: 10px;
+            font-size: 11px;
         }
         .product-price {
             margin-top: 30px;
@@ -1045,7 +1053,13 @@
                     text-align: center;
                 }
                 .button {
-                    background-color: #acacac;
+                    background-color: #d7d7d7;
+                    .icon-minus:before {
+                        margin-right: .1em;
+                    }
+                    .icon-plus:before {
+                        margin: 0 0 0 .3em;
+                    }
                 }
             }
         }
@@ -1061,15 +1075,23 @@
                     width: 100%;
                     padding: 0;
                     @include border-radius(0);
+                    line-height: ((50 - 2)/16);
+                    font-family: $font-family-ko;
                     text-transform: uppercase;
                 }
                 &:first-child .button {
+                    border-right-width: 0;
                     @include border-side-radius(top, left, 8px);
                     @include border-side-radius(bottom, left, 8px);
                 }
                 &:last-child .button {
                     @include border-side-radius(top, right, 8px);
                     @include border-side-radius(bottom, right, 8px);
+                }
+                .button-primary:hover {
+                    border-color: $brand-primary;
+                    background-color: #fff;
+                    color: $brand-primary;
                 }
             }
         }
@@ -1086,6 +1108,11 @@
                 float: right;
                 a {
                     border-bottom: 0;
+                    &:before {
+                        margin-right: 5px;
+                        font-family: 'fontello';
+                        content: '\E825';
+                    }
                 }
             }
         }
@@ -1106,14 +1133,16 @@
                 border: 1px solid #d5d5d5;
                 @include border-radius(0);
                 background-color: transparent;
-                line-height: (40-2)/12;
+                font-size: 16px;
+                line-height: (40-2)/16;
                 color: $text-color;
                 letter-spacing: 0;
             }
             &:hover,
             &.selected {
                 .button {
-                    color: $brand-primary;
+                    background-color: #d5d5d5;
+                    color: #fff;
                 }
             }
         }
@@ -1128,6 +1157,7 @@
         .table-title {
             display: block;
             margin-top: 35px;
+            font-size: 14px;
         }
     }
 }

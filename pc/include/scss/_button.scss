@@ -72,6 +72,15 @@
 .button-third { // 검정색 bg 버튼
     background-color: $brand-secondary;
 }
+.button-fourth { // 파란색 border 버튼
+    border-color: $brand-primary;
+    background-color: #fff;
+    color: $brand-primary;
+    &:hover,
+    &:focus {
+        color: $brand-primary;
+    }
+}
 //.button-warning { // 회색 버튼 (취소)
 //    background-color: #898989;
 //}

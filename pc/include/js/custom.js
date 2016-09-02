@@ -131,8 +131,8 @@ $(document).ready(function() {
     // Detail Tab
     $(".detail-info-menu li").on("click", function() {
         var index = $(this).index() + 1;
-        $(this).siblings("li").removeClass("seleted");
-        $(this).addClass("seleted");
+        $(this).siblings("li").removeClass("selected");
+        $(this).addClass("selected");
         $(".detail-info-content").hide();
         $(".detail-info-box" + index).show();
         return false;

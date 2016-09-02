@@ -1,6 +1,6 @@
 <?php include '../header/header.php'; ?>
 
-    <div class="content">
+    <div class="content category-detail">
         <!-- breadcrumb -->
         <div class="breadcrumb line">
             <a href="#">HOME</a>
@@ -92,7 +92,7 @@
                         <div class="detail-button-group">
                             <div class="button-group">
                                 <div><a href="#" class="button button-large button-primary">바로 주문하기</a></div>
-                                <div><a href="#" class="button button-large" onclick="modalOpen('.shoppingbag_add_modal'); return false;">쇼핑백 담기</a></div>
+                                <div><a href="#" class="button button-large button-fourth" onclick="modalOpen('.shoppingbag_add_modal'); return false;">쇼핑백 담기</a></div>
                             </div>
                             <div class="Sharing-group">
                                 <div class="sns-link">
