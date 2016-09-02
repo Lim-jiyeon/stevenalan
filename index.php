@@ -172,13 +172,13 @@
 
                     <h3>6. Email.</h3>
                     <ul>
-                        <li>6.1 <a href="./pc/email/member-confirm.html">회원가입인증</a></li>
-                        <li>6.2 <a href="./pc/email/member.html">회원가입완료</a></li>
+                        <li>6.1 <a href="./pc/email/signup-confirm.html">회원가입인증</a></li>
+                        <li>6.2 <a href="./pc/email/signup-complete.html">회원가입완료</a></li>
                         <li>6.3 <a href="./pc/email/quit.html">회원탈퇴</a></li>
                         <li>6.4 <a href="./pc/email/temporary-password.html">비밀번호변경</a></li>
-                        <li>6.5 <a href="./pc/email/order-complete.html">주문완료</a></li>
+                        <li>6.5 <a href="./pc/email/summary.html">주문완료</a></li>
                         <li>6.6 <a href="./pc/email/member-confirm.html">배송시작</a></li>
-                        <li>6.7 <a href="./pc/email/member-confirm.html">취소신청</a></li>
+                        <li>6.7 <a href="./pc/email/refund.html">취소신청</a></li>
                         <li>6.8 <a href="./pc/email/member-confirm.html">교환신청</a></li>
                         <li>6.9 <a href="./pc/email/member-confirm.html">반품신청</a></li>
                         <li>6.10 <a href="./pc/email/member-confirm.html">1:1 문의 답변</a></li>
