@@ -96,6 +96,6 @@
     </div>
     <!-- Search Form Layer //end -->
     <div class="link-sale">
-        <a href="#">GRAND OPEN! 30%<i class="icon-right-open-big"></i></a>
+        <a href="#">GRAND OPEN! 30%</a>
     </div>
 </header>

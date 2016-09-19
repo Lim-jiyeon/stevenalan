@@ -20,8 +20,8 @@
                 </div>
             </div>
             <div class="col-xs-6 view-type"><!-- [D] 선택한 view type 에 class="current" 추가 -->
-                <a href="#" class="current"><i class="icon-th-large"></i></a>
-                <a href="#"><i class="icon-blank"></i></a>
+                <a href="#" class="current"><i class="icon-grid"></i></a>
+                <a href="#"><i class="icon-full-list"></i></a>
                 <a href="#"><i class="icon-list"></i></a>
             </div>
         </div>
@@ -116,8 +116,8 @@
                 </div>
             </div>
             <div class="col-xs-6 view-type"><!-- [D] 선택한 view type 에 class="current" 추가 -->
-                <a href="#"><i class="icon-th-large"></i></a>
-                <a href="#" class="current"><i class="icon-blank"></i></a>
+                <a href="#"><i class="icon-grid"></i></a>
+                <a href="#" class="current"><i class="icon-full-list"></i></a>
                 <a href="#"><i class="icon-list"></i></a>
             </div>
         </div>
@@ -212,8 +212,8 @@
                 </div>
             </div>
             <div class="col-xs-6 view-type"><!-- [D] 선택한 view type 에 class="current" 추가 -->
-                <a href="#"><i class="icon-th-large"></i></a>
-                <a href="#"><i class="icon-blank"></i></a>
+                <a href="#"><i class="icon-grid"></i></a>
+                <a href="#"><i class="icon-full-list"></i></a>
                 <a href="#" class="current"><i class="icon-list"></i></a>
             </div>
         </div>

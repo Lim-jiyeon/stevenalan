@@ -1,6 +1,6 @@
 <!-- My Page Menu -->
 <div class="container">
-    <div class="category-menu">
+    <div class="category-menu mypage-menu">
         <h2 class="category-menu-title">my page</h2>
         <ul class="category-menu-box">
             <li><a href="#">주문/배송 조회</a></li>
