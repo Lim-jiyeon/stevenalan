@@ -180,7 +180,7 @@
                         <li>6.6 <a href="./pc/email/shipping.html">배송시작</a></li>
                         <li>6.7 <a href="./pc/email/refund.html">취소신청</a></li>
                         <li>6.8 <a href="./pc/email/exchange.html">교환신청</a></li>
-                        <li>6.9 <a href="./pc/email/member-confirm.html">반품신청</a></li>
+                        <li>6.9 <a href="./pc/email/return.html">반품신청</a></li>
                         <li>6.10 <a href="./pc/email/member-confirm.html">1:1 문의 답변</a></li>
                         <li>6.11 <a href="./pc/email/member-confirm.html">이메일 수신거부</a></li>
                     </ul>
