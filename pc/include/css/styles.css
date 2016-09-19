@@ -2122,6 +2122,7 @@ input[type="search"] {
 
 .table th {
   font-weight: normal;
+  font-size: 13px;
   color: #000;
 }
 
@@ -2712,7 +2713,8 @@ input[type="search"] {
 
 .box-page-title {
   margin-bottom: 30px;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 20px;
   color: #004689;
   letter-spacing: 1px;
 }
@@ -2729,8 +2731,8 @@ input[type="search"] {
 
 .table-title {
   margin-bottom: 15px;
-  font-weight: 700;
-  font-size: 12px;
+  font-weight: 400;
+  font-size: 13px;
   letter-spacing: 2px;
   font-family: "notoSans", sans-serif;
   color: #000;

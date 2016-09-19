@@ -13,9 +13,10 @@
  Header
 ***********************************************/
 header{
-    border-bottom: 1px solid #d7d7d7;
+    padding-top: 27px;
+    //border-bottom: 1px solid #d7d7d7;
     .site-utility{
-        padding: 4px 10px 0;
+        padding: 11px 10px 3px;
         text-align: right;
         ul {
             display: inline-block;
@@ -76,14 +77,14 @@ header{
             margin: 0;
             font-size: 0;
             a {
-                width: 103px;
+                width: 122px;
             }
         }
         .mobile-menu{
             position: absolute;
             top: 50%;
             left: 10px;
-            margin-top: -10px;
+            margin-top: -12px;
             i {
                 font-size: 14px;
             }
@@ -92,13 +93,13 @@ header{
             position: absolute;
             top: 50%;
             right: 45px;
-            margin-top: -13px;
+            margin-top: -15px;
         }
         .shoppingBag{
             position: absolute;
             top: 50%;
             right: 16px;
-            margin-top: -14px;
+            margin-top: -16px;
             i {
                 font-size: 17px;
             }
@@ -119,10 +120,17 @@ header{
             }
         }
     }
-    .link-sale{
-        padding: 10px;
+    .link-sale {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 8px 10px;
+        background-color: #e2e2e2;
         a {
             display: block;
+            font-size: 11px;
+            color: #282828;
         }
     }
 }
@@ -718,9 +726,9 @@ footer{
  Main
 ***********************************************/
 .main {
-    margin-top: -1px;
+    //margin-top: -1px;
     padding: 0 0 40px;
-    border-top: 1px solid $brand-secondary;
+    //border-top: 1px solid $brand-secondary;
     .container {
         padding: 0;
     }
@@ -733,6 +741,14 @@ footer{
     .main-banner {
         .slick-dots {
             bottom: 8px;
+            li {
+                button {
+                    opacity: .6;
+                }
+                &.slick-active button {
+                    opacity: 1;
+                }
+            }
         }
     }
     .second-banner {
@@ -815,10 +831,16 @@ footer{
 .category-menu{
     margin: -11px -10px 13px;
     padding: 7px 10px 5px;
-    border: 1px solid $brand-secondary;
-    border-width: 1px 0;
-    color: $brand-secondary;
+    background-color: #b4b4b4;
+    color: #fff;
     text-transform: uppercase;
+    &.mypage-menu {
+        background-color: #525252;
+        .category-menu-box {
+            border-top: 1px solid #fff;
+            background: none;
+        }
+    }
     .category-menu-title {
         padding-top: 3px;
         font-weight: 400;
@@ -846,7 +868,7 @@ footer{
         a {
             display: block;
             padding: 2px;
-            color: $brand-secondary;
+            color: #fff;
         }
         .current {
             text-decoration: underline;
@@ -883,11 +905,35 @@ footer{
     }
     .view-type {
         text-align: right;
-        .icon-list {
-            font-size: 11px;
-        }
-        .current {
-            color: $brand-secondary;
+        a {
+            > i {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin: 2px 0 0 7px;
+                background: url(../../images/common/icon-view-type.png) no-repeat 0 0;
+                background-size: 65px 30px;
+            }
+            .icon-grid {
+                background-position: 0 0;
+            }
+            .icon-full-list {
+                background-position: -25px 0;
+            }
+            .icon-list {
+                background-position: -50px 0;
+            }
+            &.current {
+                .icon-grid {
+                    background-position: 0 -15px;
+                }
+                .icon-full-list {
+                    background-position: -25px -15px;
+                }
+                .icon-list {
+                    background-position: -50px -15px;
+                }
+            }
         }
     }
 }

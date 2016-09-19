@@ -314,7 +314,8 @@
 }
 .box-page-title { // 백스 안의 파란색 타이틀
     margin-bottom: 30px;
-    font-size: 16px;
+    font-weight: 400;
+    font-size: 20px;
     color: $brand-primary;
     letter-spacing: 1px;
 }
@@ -329,8 +330,8 @@
 }
 .table-title { // 테이블 위에 있는 검정색 타이틀
     margin-bottom: 15px;
-    font-weight: 700;
-    font-size: 12px;
+    font-weight: 400;
+    font-size: 13px;
     letter-spacing: 2px;
     font-family: $font-family-ko;
     color: #000;
