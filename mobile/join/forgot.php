@@ -79,6 +79,7 @@
                                     </div>
                                 </div>
                                 <p class="help-text help-danger"><i class="icon-attention"></i> 아이디를 찾을 수 없습니다. 정확히 입력해 주세요.</p>
+                                <a href="#" class="button button-primary button-block button-align-center">확인</a>
                                 <!-- 아이디 찾기 : 휴대폰 번호 //end -->
                             </div>
                         </div>
@@ -165,6 +166,7 @@
                                 </div>
                                 <!-- 패스워드 찾기 : 핸드폰 번호 //end -->
                                 <p class="help-text help-danger"><i class="icon-attention"></i> 일치하는 회원 정보를 찾을 수 없습니다. 정확히 입력해 주세요.</p>
+                                <a href="#" class="button button-primary button-block button-align-center">확인</a>
                             </div>
                         </div>
                     </div>
