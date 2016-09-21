@@ -132,6 +132,11 @@
                                         <ul class="input-list forgot-input-list">
                                             <li>
                                                 <div class="form-group">
+                                                    <input type="email" class="form-control" placeholder="이메일 주소" title="이메일 주소 입력">
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="form-group">
                                                     <input type="text" class="form-control" placeholder="이름" title="이름 입력">
                                                 </div>
                                             </li>
