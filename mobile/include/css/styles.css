@@ -4,6 +4,7 @@
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -406,24 +407,6 @@ textarea {
 }
 
 @font-face {
-  font-family: "notoSans";
-  font-weight: 400;
-  src: url("../fonts/NotoSansCJKkr-Regular.eot?") format("eot"), url("../fonts/NotoSansCJKkr-Regular.woff") format("woff"), url("../fonts/NotoSansCJKkr-Regular.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "notoSans";
-  font-weight: 500;
-  src: url("../fonts/NotoSansCJKkr-Medium.eot?") format("eot"), url("../fonts/NotoSansCJKkr-Medium.woff") format("woff"), url("../fonts/NotoSansCJKkr-Medium.otf") format("opentype");
-}
-
-@font-face {
-  font-family: "notoSans";
-  font-weight: 700;
-  src: url("../fonts/NotoSansCJKkr-Bold.eot?") format("eot"), url("../fonts/NotoSansCJKkr-Bold.woff") format("woff"), url("../fonts/NotoSansCJKkr-Bold.otf") format("opentype");
-}
-
-@font-face {
   font-family: "BentonSans";
   font-weight: 400;
   src: url("../fonts/BentonSans-Regular.eot?") format("eot"), url("../fonts/BentonSans-Regular.woff") format("woff"), url("../fonts/BentonSans-Regular.otf") format("opentype");
@@ -465,7 +448,7 @@ html {
 }
 
 body {
-  font-family: "notoSans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 13px;
   line-height: 1.5384615385;
   color: #858585;
@@ -1549,7 +1532,7 @@ hr {
   background-color: #898989;
   font-size: 13px;
   line-height: 2.5384615385;
-  font-family: "notoSans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #fff;
   text-align: center;
   vertical-align: middle;
@@ -2061,7 +2044,7 @@ input[type="search"] {
   font-weight: normal;
   font-size: 13px;
   line-height: 2.5384615385;
-  font-family: "notoSans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #858585 !important;
 }
 
@@ -2907,7 +2890,7 @@ footer .copyright a:nth-child(2) {
   margin-bottom: 7px;
   font-weight: 400;
   font-size: 14px;
-  font-family: "notoSans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   color: #000;
 }
 
@@ -3243,7 +3226,7 @@ footer .copyright a:nth-child(2) {
 
 .payment-totals li {
   padding: 5px 0;
-  font-family: "notoSans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .payment-totals li:before, .payment-totals li:after {
@@ -5299,7 +5282,7 @@ footer .copyright a:nth-child(2) {
 
 .search-result {
   padding: 0 0 12px;
-  font: 500 12px "notoSans", sans-serif;
+  font: 500 12px "Noto Sans KR", sans-serif;
   color: #000;
 }
 
@@ -5352,7 +5335,7 @@ footer .copyright a:nth-child(2) {
   padding: 8px 10px 7px;
   border: 1px solid #000;
   border-width: 1px 0;
-  font: 400 15px "notoSans", sans-serif;
+  font: 400 15px "Noto Sans KR", sans-serif;
 }
 
 .search-filter .filter-title a {
@@ -5551,7 +5534,7 @@ footer .copyright a:nth-child(2) {
   -ms-border-radius: 3px;
   border-radius: 3px;
   background-color: #f5f5f5;
-  font-family: "notoSans", sans-serif;
+  font-family: "Noto Sans KR", sans-serif;
   font-size: 11px;
   color: #000;
   text-align: center;
