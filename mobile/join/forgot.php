@@ -171,6 +171,7 @@
                 </div>
                 <!-- 패스워드 찾기 //end -->
             </div>
+            <a href="#" class="button button-primary button-block button-align-center">확인</a>
         </div>
     </div>
 </div>
