@@ -2569,6 +2569,10 @@ input[type="search"] {
   text-transform: uppercase;
 }
 
+.footer-menu {
+  font-family: "BentonSans", sans-serif;
+}
+
 .footer-menu .footer-title {
   display: block;
   margin-bottom: 10px;
