@@ -2094,14 +2094,24 @@ footer{
     font-size: 15px;
     color: $brand-primary;
 }
-.button-coupon {
-    margin-top: 4px;
-    padding: 0 10px;
+.select-coupon {
     @include border-radius(0);
-    background-color: $brand-primary;
-    font-size: 9px;
-    line-height: (13/9);
-    color: #fff;
+    &.selectbox {
+        border: 0;
+        select {
+            min-height: 15px;
+        }
+        .selectbox-value {
+            padding: 0 10px;
+            background-color: $brand-primary;
+            font-size: 9px;
+            line-height: (13/9);
+            color: #fff !important;
+            &:after {
+                border: 0;
+            }
+        }
+    }
 }
 .coupon-info-content {
     margin-bottom: -10px;
