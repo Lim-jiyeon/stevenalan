@@ -55,7 +55,17 @@
                         <dl>
                             <dt class="title-group">
                                 <strong class="title coupon-price">10%</strong>
-                                <a href="#" class="button button-coupon">적용대상보기</a>
+                                <div class="selectbox select-coupon">
+                                    <strong class="selectbox-value">적용대상보기</strong>
+                                    <select onchange="selectboxEvent(this);">
+                                        <option value="적용대상보기">적용대상보기</option>
+                                        <option value="선택1">선택1</option>
+                                        <option value="선택2">선택2</option>
+                                        <option value="선택3">선택3</option>
+                                        <option value="선택4">선택4</option>
+                                        <option value="선택5">선택5</option>
+                                    </select>
+                                </div>
                             </dt>
                             <dd class="coupon-info-content">
                                 <ul>
