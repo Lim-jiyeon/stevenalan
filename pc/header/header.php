@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>stevenalan</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="../images/common/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../include/css/fontello.css">
     <script type="text/javascript" src="../include/js/min/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../include/js/min/jquery.sticky.min.js"></script>
