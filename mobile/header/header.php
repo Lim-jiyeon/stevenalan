@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>stevenalan</title>
     <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+    <link rel="icon" href="../images/common/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="../images/common/favicon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="../images/common/favicon.png">
     <link rel="stylesheet" href="../include/css/fontello.css">
     <script type="text/javascript" src="../include/js/min/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" src="../include/js/min/slick.min.js"></script>
@@ -15,14 +18,7 @@
     <div class="site-utility">
         <ul>
             <li><a href="#">login</a></li>
-            <li class="menu-mypage">
-                <a href="#" class="link-mypage">mypage<i class="icon-down-dir"></i></a>
-                <ul class="mypage-dropdown">
-                    <li class="mypage-item"><a href="#">주문/배송 조회</a></li>
-                    <li class="mypage-item"><a href="#">위시리스트</a></li>
-                    <li class="mypage-item"><a href="#">1:1문의</a></li>
-                </ul>
-            </li>
+            <li class="menu-mypage"><a href="#" class="link-mypage">mypage</a></li>
         </ul>
     </div>
     <div class="quick-access">
@@ -88,9 +84,9 @@
     <!-- Sidebar Menu //end -->
     <!-- Search Form Layer -->
     <div class="form-search">
-        <div class="placeholder">
-            <label for="search_word" class="search-word form-label">SEARCH<i class="icon-search"></i></label>
-            <input type="text" id="search_word" class="form-control">
+        <div class="form-group input-button-group">
+            <div><input type="text" id="search_word" class="form-control" title="검색어 입력"></div>
+            <div><a href="#" class="button button-primary button-small"><span>SEARCH</span></a></div>
         </div>
         <a href="#" class="form-search-close" onclick="layerClose(this);"><i class="icon-cancel-thin"></i></a>
     </div>
