@@ -10,7 +10,6 @@
     <script type="text/javascript" src="../include/js/min/slick.min.js"></script>
     <script type="text/javascript" src="../include/js/custom.js"></script>
     <link rel="stylesheet" href="../include/css/styles.css">
-    <link href="../images/common/favicon.png" rel="shortcut icon" />
 </head>
 <body>
 <div id="wrap">
