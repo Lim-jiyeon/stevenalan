@@ -27,7 +27,7 @@
     }
 }
 .site-utility {
-    padding: 10px 0;
+    padding: 11px 0 10px;
     background: url(../../images/common/washed-line.png) repeat-x 0 100%;
     margin: -124px 0 135px;
     @include clearfix;
@@ -39,6 +39,7 @@
     }
     .link {
         float: right;
+        letter-spacing: 0.4px;
         .link-login {
             float: left;
         }
@@ -61,9 +62,11 @@
                     left: -10px;
                     z-index: 100;
                     width: 90px;
-                    padding: 30px 0 6px;
+                    padding: 35px 0 6px;
                     background-color: #fff;
                     @include box-shadow(0 0 14px rgba(0,0,0,.1));
+                    font-family: $font-family-ko;
+                    letter-spacing: 0;
                     .mypage-item {
                         padding: 4px 10px;
                         list-style: none;
@@ -81,6 +84,11 @@
         position: absolute;
         top: 85px;
         right: 33px;
+        .head-search {
+            .icon-search:before {
+                vertical-align: -4px;
+            }
+        }
         .link-shoppingbag {
             margin-left: 12px;
             .total-badge {
@@ -97,6 +105,7 @@
                 line-height: 14px;
                 color: #fff;
                 text-align: center;
+                font-family: $font-family-ko;
             }
         }
         i:before {
@@ -110,9 +119,11 @@
     margin: 0 -18px;
     padding-left: 0;
     font-family: $font-family-en;
+    text-align: center;
     @include clearfix;
     .megaMenu-item {
-        float: left;
+        //float: left;
+        display: inline-block;
         padding: 0 18px;
         list-style: none;
         &.relative { // 2뎁스 메뉴 세로로 나열 (기본은 가로 나열)
@@ -515,6 +526,14 @@
 }
 .scroll { // 스크롤
     overflow-y: scroll;
+}
+.icon-search:before {
+    width: 19px;
+    height: 19px;
+    background: url(../../images/common/icon-search.png) no-repeat 0 0;
+    background-size: 19px 19px;
+    color: transparent;
+    content: '';
 }
 
 /**********************************************
@@ -1109,13 +1128,16 @@
             }
             .wishlist-link {
                 float: right;
-                a {
-                    border-bottom: 0;
-                    &:before {
-                        margin-right: 5px;
-                        font-family: 'fontello';
-                        content: '\E825';
-                    }
+                .button {
+                    padding: 0 2px;
+                    line-height: 1.3333333333;
+                    letter-spacing: 1px;
+                }
+                &:before {
+                    margin-right: 3px;
+                    font-size: 14px;
+                    font-family: 'fontello';
+                    content: '\E825';
                 }
             }
         }
@@ -2173,6 +2195,15 @@
             width: 150px;
         }
     }
+    .input-button-group {
+        .form-group {
+            div {
+                input[id=email].form-control {
+                    width: 214px;
+                }
+            }
+        }
+    }
 }
 .privacy-modify {
     .member-privacy {
@@ -2471,7 +2502,7 @@
     }
 }
 .signup-agree {
-    margin-bottom: 20px;
+    margin: 10px -10px 20px;
         .signup-agree-title {
             font-weight: 400;
             + .agree-box {

@@ -100,7 +100,7 @@
                                     <a href="#"><i class="icon-twitter-circled"></i></a>
                                 </div>
                                 <div class="wishlist-link">
-                                    <a href="#" class="button button-link button-link-large button-danger" onclick="modalOpen('.wishlist_add_modal'); return false;">위시리스트 담기</a>
+                                    <input type="submit" name="" value="위시리스트 담기" class="button button-small button-link-large button-danger" onclick="modalOpen('.wishlist_add_modal'); return false;">
                                 </div>
                             </div>
                         </div>

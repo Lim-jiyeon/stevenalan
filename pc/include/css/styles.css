@@ -448,7 +448,7 @@ html {
 }
 
 body {
-  font-family: "Noto Sans KR", sans-serif;
+  font-family: "BentonSans", "Noto Sans KR", sans-serif;
   font-size: 12px;
   line-height: 1.6666666667;
   color: #858585;
@@ -2353,7 +2353,7 @@ input[type="search"] {
 }
 
 .site-utility {
-  padding: 10px 0;
+  padding: 11px 0 10px;
   background: url(../../images/common/washed-line.png) repeat-x 0 100%;
   margin: -124px 0 135px;
 }
@@ -2377,6 +2377,7 @@ input[type="search"] {
 
 .site-utility .link {
   float: right;
+  letter-spacing: 0.4px;
 }
 
 .site-utility .link .link-login {
@@ -2405,10 +2406,12 @@ input[type="search"] {
   left: -10px;
   z-index: 100;
   width: 90px;
-  padding: 30px 0 6px;
+  padding: 35px 0 6px;
   background-color: #fff;
   -webkit-box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+  font-family: "Noto Sans KR", sans-serif;
+  letter-spacing: 0;
 }
 
 .site-utility .link .menu-mypage.open .mypage-dropdown .mypage-item {
@@ -2426,6 +2429,10 @@ input[type="search"] {
   position: absolute;
   top: 85px;
   right: 33px;
+}
+
+.site-utility .quick-access .head-search .icon-search:before {
+  vertical-align: -4px;
 }
 
 .site-utility .quick-access .link-shoppingbag {
@@ -2449,6 +2456,7 @@ input[type="search"] {
   line-height: 14px;
   color: #fff;
   text-align: center;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .site-utility .quick-access i:before {
@@ -2461,6 +2469,7 @@ input[type="search"] {
   margin: 0 -18px;
   padding-left: 0;
   font-family: "BentonSans", sans-serif;
+  text-align: center;
 }
 
 .megaMenu:before, .megaMenu:after {
@@ -2473,7 +2482,7 @@ input[type="search"] {
 }
 
 .megaMenu .megaMenu-item {
-  float: left;
+  display: inline-block;
   padding: 0 18px;
   list-style: none;
 }
@@ -2946,6 +2955,15 @@ input[type="search"] {
 
 .scroll {
   overflow-y: scroll;
+}
+
+.icon-search:before {
+  width: 19px;
+  height: 19px;
+  background: url(../../images/common/icon-search.png) no-repeat 0 0;
+  background-size: 19px 19px;
+  color: transparent;
+  content: '';
 }
 
 /**********************************************
@@ -3653,12 +3671,15 @@ input[type="search"] {
   float: right;
 }
 
-.product-option-info .detail-button-group .Sharing-group .wishlist-link a {
-  border-bottom: 0;
+.product-option-info .detail-button-group .Sharing-group .wishlist-link .button {
+  padding: 0 2px;
+  line-height: 1.3333333333;
+  letter-spacing: 1px;
 }
 
-.product-option-info .detail-button-group .Sharing-group .wishlist-link a:before {
-  margin-right: 5px;
+.product-option-info .detail-button-group .Sharing-group .wishlist-link:before {
+  margin-right: 3px;
+  font-size: 14px;
   font-family: 'fontello';
   content: '\E825';
 }
@@ -4857,6 +4878,10 @@ input[type="search"] {
   width: 150px;
 }
 
+.member-privacy .input-button-group .form-group div input[id=email].form-control {
+  width: 214px;
+}
+
 .privacy-modify .member-privacy {
   border: 1px solid #e5e5e5;
   border-width: 1px 0;
@@ -5180,7 +5205,7 @@ input[type="search"] {
 }
 
 .signup-agree {
-  margin-bottom: 20px;
+  margin: 10px -10px 20px;
 }
 
 .signup-agree .signup-agree-title {
