@@ -3681,6 +3681,7 @@ input[type="search"] {
   margin-right: 3px;
   font-size: 14px;
   font-family: 'fontello';
+  vertical-align: -3px;
   content: '\E825';
 }
 
@@ -3727,6 +3728,12 @@ input[type="search"] {
 
 .detail-contents .detail-info-content.detail-info-box1 {
   display: block;
+}
+
+.detail-contents .detail-info-content.detail-info-box1 .table-condensed td * {
+  width: 80% !important;
+  height: auto !important;
+  margin: 0 auto;
 }
 
 .detail-contents .detail-info-content .table-title {

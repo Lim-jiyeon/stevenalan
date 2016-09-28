@@ -1137,6 +1137,7 @@
                     margin-right: 3px;
                     font-size: 14px;
                     font-family: 'fontello';
+                    vertical-align: -3px;
                     content: '\E825';
                 }
             }
@@ -1178,6 +1179,13 @@
         border: 1px solid #d5d5d5;
         &.detail-info-box1 {
             display: block;
+            .table-condensed td {
+                * {
+                    width: 80% !important;
+                    height: auto !important;
+                    margin: 0 auto;
+                }
+            }
         }
         .table-title {
             display: block;

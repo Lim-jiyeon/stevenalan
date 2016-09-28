@@ -120,6 +120,40 @@
                 </ul>
                 <!-- 상품상세 -->
                 <div class="detail-info-content detail-info-box1">
+                    <div id="ContentPlaceHolder1_dvProductDetail2">
+                        <strong class="table-title">상품 정보</strong>
+                        <table class="table table-condensed color-invert">
+                            <caption class="sr-only">상품에 대한 상세 정보</caption>
+                            <colgroup>
+                                <col class="col-xs-2">
+                                <col class="col-xs-10">
+                            </colgroup>
+                            <tbody>
+                            <tr>
+                                <td><p style="text-align: center;"><strong><span style="font-size: 13px;">COLOR : BURGUNDY</span></strong>
+                                    </p><br>
+                                    <p style="text-align: center;"><img src="http://img.isecream.net/PImg/250243/02/250243664_001_1.jpg">&nbsp;<img src="http://img.isecream.net/PImg/250243/02/250243664_001_2.jpg"></p><br>
+                                    <p style="text-align: center;"><img src="http://img.isecream.net/PImg/250243/02/250243664_001_3.jpg">&nbsp;<img src="http://img.isecream.net/PImg/250243/02/250243664_001_4.jpg"></p>
+                                    <br><br><br><br>
+                                    <p style="text-align: center;"><strong><span style="font-size: 13px;">COLOR : PALE BLUE</span></strong></p><br>
+                                    <p style="text-align: center;"><img src="http://img.isecream.net/PImg/250243/02/250243664_006_1.jpg">&nbsp;<img src="http://img.isecream.net/PImg/250243/02/250243664_006_2.jpg"></p><br>
+                                    <p style="text-align: center;"><img src="http://img.isecream.net/PImg/250243/02/250243664_006_3.jpg">&nbsp;<img src="http://img.isecream.net/PImg/250243/02/250243664_006_4.jpg"></p>
+                                    <br><br><br><br>
+                                    <p style="text-align: center;"><strong><span style="font-size: 13px;">COLOR : NAVY</span></strong></p><br>
+                                    <p style="text-align: center;"><img src="http://img.isecream.net/PImg/250243/02/250243664_011_1.jpg">&nbsp;<img src="http://img.isecream.net/PImg/250243/02/250243664_011_2.jpg"></p><br>
+                                    <p style="text-align: center;"><img src="http://img.isecream.net/PImg/250243/02/250243664_011_3.jpg">&nbsp;<img src="http://img.isecream.net/PImg/250243/02/250243664_011_4.jpg"></p>
+                                    <br><br><br><br><!-- END --> <br>
+                                    A plush crewneck sweater from Steven Alan in fuzzy
+                                    wool-alpaca out of Italy with delicate pointelle detailing throughout. <br> <br>*
+                                    bracelet sleeves <br> <br>* contrast color stitch at back neck <br> <br>* 50%
+                                    extrafine wool, 30% polyamide, 20% alpaca <br> <br>* dry clean <br> <br>* imported
+                                    <br>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br><br><br><br>
                     <p>A crisp poplin dress with a V neckline, kimono-style sleeves and an interwoven cord that cinches and<br> gathers the waist.<br><br></p>
                     <p><img src="../images/temp/temp-product.jpg" alt=""><br><br></p>
                     <p>
