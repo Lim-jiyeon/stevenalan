@@ -2435,7 +2435,8 @@ header .site-utility ul li {
 
 header .site-utility ul li a {
   font-size: 12px;
-  color: #858585;
+  font-family: "BentonSans", sans-serif;
+  color: #000;
   text-transform: uppercase;
 }
 
@@ -2481,7 +2482,7 @@ header .quick-access {
   position: relative;
   margin-top: -2px;
   padding: 7px 0 9px;
-  background: url("../../images/common/washed-line.png") repeat-x 0 0, url("../../images/common/washed-line.png") repeat-x 70% 100%;
+  background: url("../../images/common/washed-line.png") repeat-x 70% 100%;
   background-size: 50% 1px;
 }
 
@@ -2552,7 +2553,8 @@ header .link-sale {
   left: 0;
   width: 100%;
   padding: 8px 10px;
-  background-color: #e2e2e2;
+  background: #fff url("../../images/common/washed-line.png") repeat-x 0 100%;
+  background-size: 50% 1px;
 }
 
 header .link-sale a {
@@ -2702,34 +2704,26 @@ header .link-sale a {
 
 .form-search {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: relative;
   width: 100%;
-  padding: 30px 5px 10px;
-  background-color: #f5f5f5;
+  padding: 15px 33px 5px 10px;
+  background-color: #fff;
 }
 
-.form-search .form-control {
-  height: 30px;
+.form-search .form-group div:nth-child(2) {
+  width: 70px;
 }
 
-.form-search .search-word {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  margin: 0 0 0 -35px;
-  line-height: 2.3333333333;
-}
-
-.form-search .search-word .icon-search:before {
-  vertical-align: middle;
+.form-search .form-group .form-control {
+  height: 27px;
+  border: 1px solid #014689;
+  color: #014689;
 }
 
 .form-search .form-search-close {
   position: absolute;
-  top: 4px;
-  right: 5px;
+  top: 18px;
+  right: 10px;
   z-index: 1020;
 }
 
@@ -2738,9 +2732,8 @@ header .link-sale a {
   height: 15px;
   margin: 0;
   padding: 1px;
-  border: 1px solid #cccdcb;
   font-size: 12px;
-  color: #cccdcb;
+  color: #014689;
 }
 
 /**********************************************
@@ -3396,20 +3389,28 @@ footer .copyright a:nth-child(2) {
  Category - Menu
 ***********************************************/
 .category-menu {
-  margin: -11px -10px 13px;
-  padding: 7px 10px 5px;
-  background-color: #b4b4b4;
-  color: #fff;
+  position: relative;
+  margin: -10px 0 13px;
+  padding: 7px 0 5px;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
+  color: #000;
   text-transform: uppercase;
 }
 
-.category-menu.mypage-menu {
-  background-color: #525252;
+.category-menu.mypage-menu .category-menu-box {
+  overflow: hidden;
+  max-height: none;
 }
 
-.category-menu.mypage-menu .category-menu-box {
-  border-top: 1px solid #fff;
-  background: none;
+.category-menu.mypage-menu .category-menu-box .current {
+  text-decoration: none;
+}
+
+.category-menu.mypage-menu .category-menu-box .current a {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  font-weight: 500;
 }
 
 .category-menu .category-menu-title {
@@ -3442,17 +3443,25 @@ footer .copyright a:nth-child(2) {
 
 .category-menu .category-menu-box {
   display: none;
+  position: absolute;
+  top: 34px;
+  left: 0;
+  z-index: 9;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  max-height: 275px;
   margin-top: 3px;
-  padding: 8px 0 4px;
-  background: url(../../images/common/washed-line.png) repeat-x 0 0;
-  background-size: 50% 1px;
+  padding: 8px 0 4px 17px;
+  border-bottom: 1px solid #000;
+  background-color: #fff;
   font-size: 12px;
 }
 
 .category-menu .category-menu-box a {
   display: block;
   padding: 2px;
-  color: #fff;
+  color: #000;
 }
 
 .category-menu .category-menu-box .current {
@@ -3473,7 +3482,7 @@ footer .copyright a:nth-child(2) {
 }
 
 .category-menu .category-menu-box .item-title + .item-list li {
-  padding: 2px 0;
+  padding: 2px 0 2px 13px;
   font-size: 11px;
   line-height: 14px;
 }

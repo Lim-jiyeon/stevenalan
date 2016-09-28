@@ -24,7 +24,8 @@ header{
                 float: left;
                 a {
                     font-size: 12px;
-                    color: #858585;
+                    font-family: $font-family-en;
+                    color: $brand-secondary;
                     text-transform: uppercase;
                 }
             }
@@ -66,9 +67,7 @@ header{
         position: relative;
         margin-top: -2px;
         padding: 7px 0 9px;
-        background:
-            url("../../images/common/washed-line.png") repeat-x 0 0,
-            url("../../images/common/washed-line.png") repeat-x 70% 100%;
+        background: url("../../images/common/washed-line.png") repeat-x 70% 100%;
         background-size: 50% 1px;
         a {
             color: $brand-secondary;
@@ -126,7 +125,8 @@ header{
         left: 0;
         width: 100%;
         padding: 8px 10px;
-        background-color: #e2e2e2;
+        background: #fff url("../../images/common/washed-line.png") repeat-x 0 100%;
+        background-size: 50% 1px;
         a {
             display: block;
             font-size: 11px;
@@ -256,38 +256,32 @@ header{
 }
 .form-search {
     display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    padding: 30px 5px 10px;
-    background-color: #f5f5f5;
-    .form-control {
-        height: 30px;
-    }
-    .search-word {
-        position: absolute;
-        top:30px;
-        left: 50%;
-        margin: 0 0 0 -35px;
-        line-height: (28/12);
-        .icon-search:before {
-            vertical-align: middle;
+    padding: 15px 33px 5px 10px;
+    background-color: #fff;
+    .form-group {
+        div:nth-child(2) {
+            width: 70px;
+        }
+        .form-control {
+            height: 27px;
+            border: 1px solid #014689;
+            color: #014689;
         }
     }
     .form-search-close {
         position: absolute;
-        top: 4px;
-        right: 5px;
+        top: 18px;
+        right: 10px;
         z-index: 1020;
         i:before {
             width: 15px;
             height: 15px;
             margin: 0;
             padding: 1px;
-            border: 1px solid #cccdcb;
             font-size: 12px;
-            color: #cccdcb;
+            color: #014689;
         }
     }
 }
@@ -829,16 +823,25 @@ footer{
  Category - Menu
 ***********************************************/
 .category-menu{
-    margin: -11px -10px 13px;
-    padding: 7px 10px 5px;
-    background-color: #b4b4b4;
-    color: #fff;
+    position: relative;
+    margin: -10px 0 13px;
+    padding: 7px 0 5px;
+    border-bottom: 1px solid $brand-secondary;
+    background-color: #fff;
+    color: $brand-secondary;
     text-transform: uppercase;
     &.mypage-menu {
-        background-color: #525252;
         .category-menu-box {
-            border-top: 1px solid #fff;
-            background: none;
+            overflow: hidden;
+            max-height: none;
+            .current {
+                text-decoration: none;
+                a {
+                    display: inline-block;
+                    border-bottom: 1px solid $brand-secondary;
+                    font-weight: 500;
+                }
+            }
         }
     }
     .category-menu-title {
@@ -860,15 +863,23 @@ footer{
     }
     .category-menu-box {
         display: none;
+        position: absolute;
+        top: 34px;
+        left: 0;
+        z-index: 9;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 100%;
+        max-height: 275px;
         margin-top: 3px;
-        padding: 8px 0 4px;
-        background: url(../../images/common/washed-line.png) repeat-x 0 0;
-        background-size: 50% 1px;
+        padding: 8px 0 4px 17px;
+        border-bottom: 1px solid $brand-secondary;
+        background-color: #fff;
         font-size: 12px;
         a {
             display: block;
             padding: 2px;
-            color: #fff;
+            color: $brand-secondary;
         }
         .current {
             text-decoration: underline;
@@ -882,7 +893,7 @@ footer{
             & + .item-list {
                 margin-top: 5px;
                 li {
-                    padding: 2px 0;
+                    padding: 2px 0 2px 13px;
                     font-size: 11px;
                     line-height: 14px;
                 }

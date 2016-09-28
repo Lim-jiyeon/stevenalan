@@ -101,7 +101,6 @@ $(document).ready(function () {
         $(this).toggleClass("open").next(".category-menu-box").slideToggle(400);
     });
 
-
     // Detail slider
     $('.product-images').slick({
         slidesToShow: 1,
