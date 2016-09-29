@@ -2679,7 +2679,8 @@ header .link-sale a {
   opacity: 0;
 }
 
-.menu-open {
+.menu-open,
+.menu-open body {
   height: 100%;
   overflow: hidden;
 }
@@ -2834,10 +2835,11 @@ footer .copyright a:nth-child(2) {
  Common
 ***********************************************/
 .breadcrumb {
-  margin-bottom: 10px;
+  margin: 5px 0 15px;
   font-family: "BentonSans", sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.8px;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -3611,7 +3613,7 @@ footer .copyright a:nth-child(2) {
  Category Detail
 ***********************************************/
 .product-images {
-  margin: -10px -10px 0;
+  margin: 0 -10px 0;
   padding-bottom: 18px;
 }
 
@@ -3631,8 +3633,8 @@ footer .copyright a:nth-child(2) {
 .product-option-info .detail-info .brand-name {
   display: block;
   margin-bottom: 5px;
-  font-weight: 400;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: 16px;
   color: #000;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -3643,9 +3645,41 @@ footer .copyright a:nth-child(2) {
   font-size: 14px;
 }
 
-.product-option-info .detail-info .sku-number {
-  display: block;
+.product-option-info .detail-info .sku-shipping-group {
+  margin-top: 10px;
+}
+
+.product-option-info .detail-info .sku-shipping-group .sku-number {
   margin-top: 5px;
+  font-size: 10px;
+}
+
+.product-option-info .detail-info .sku-shipping-group .shipping-type {
+  width: 100%;
+  font-size: 10px;
+}
+
+.product-option-info .detail-info .sku-shipping-group .shipping-type:before {
+  margin: 0 7px;
+  content: '|';
+}
+
+.product-option-info .detail-info .sku-shipping-group .shipping-type .icon-flight {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  border: 1px solid #888;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  line-height: 15px;
+  text-align: center;
+}
+
+.product-option-info .detail-info .sku-shipping-group .shipping-type .icon-flight:before {
+  margin: 0;
   font-size: 10px;
 }
 
@@ -3654,7 +3688,7 @@ footer .copyright a:nth-child(2) {
 }
 
 .product-option-info .detail-info .product-price .discount {
-  margin: 0 15px 0 0;
+  margin: 0 0 0 15px;
   font-size: 14px;
 }
 
@@ -3665,14 +3699,6 @@ footer .copyright a:nth-child(2) {
 .product-option-info .detail-info .product-price .price {
   font-weight: 700;
   font-size: 16px;
-}
-
-.product-option-info .detail-info .shipping-download-group .shipping-type {
-  display: inline-block;
-  width: 100%;
-  background-color: #f5f5f5;
-  line-height: 2.25;
-  text-align: center;
 }
 
 .product-option-info .detail-option {
@@ -3727,8 +3753,21 @@ footer .copyright a:nth-child(2) {
   margin: 0;
 }
 
-.product-option-info .Sharing-group .wishlist-link {
+.product-option-info .Sharing-group li.wishlist-link .button {
+  padding: 0;
+  border: 0;
   font-size: 14px;
+  vertical-align: -1px;
+}
+
+.product-option-info .Sharing-group li.wishlist-link:before {
+  width: 12px;
+  margin-right: 7px;
+  background-color: #fff;
+  font-size: 14px;
+  font-family: 'fontello';
+  vertical-align: -1px;
+  content: '\E825';
 }
 
 .product-option-info .Sharing-group .sns-link a {
@@ -3777,7 +3816,9 @@ footer .copyright a:nth-child(2) {
 }
 
 .detail-contents .detail-info-title.open {
-  color: #004689;
+  background-color: #eeeff1;
+  font-size: 14px;
+  color: #000;
 }
 
 .detail-contents .detail-info-title.open:after {
@@ -3795,9 +3836,24 @@ footer .copyright a:nth-child(2) {
   display: block;
 }
 
+.detail-contents .detail-info-content .table-title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.detail-contents .detail-info-content .table-condensed {
+  margin-bottom: 10px;
+}
+
+.detail-contents .detail-info-content .table-condensed th,
+.detail-contents .detail-info-content .table-condensed td {
+  padding: 17px 0;
+}
+
 .detail-contents .detail-info-content img {
-  width: auto;
+  width: auto !important;
   max-width: 100%;
+  height: auto !important;
 }
 
 .detail-contents .detail-info-content .product-detail-info {
@@ -5652,4 +5708,70 @@ footer .copyright a:nth-child(2) {
   padding: 7px 10px 15px;
   background-color: #f5f5f5;
   font-size: 12px;
+}
+
+/**********************************************
+ Modal
+***********************************************/
+.scroll-lock,
+.scroll-lock body {
+  overflow-y: hidden;
+  height: 100%;
+}
+
+.scroll-lock .modal-wrap {
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.modal-wrap {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.modal-wrap .modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: #fff;
+}
+
+.modal-wrap .modal .container {
+  position: relative;
+}
+
+.modal-wrap .modal .container .page-title {
+  margin: 15px 0;
+}
+
+.modal-wrap .modal .container .closeModalBtn {
+  position: absolute;
+  top: 16px;
+  right: 10px;
+  color: #cccdcb;
+}
+
+.modal-wrap .modal .container .closeModalBtn i:before {
+  margin: -2px;
+  border: 1px solid #cccdcb;
+  vertical-align: middle;
+  font-size: 15px;
+}
+
+.modal-wrap .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: 0.7;
 }

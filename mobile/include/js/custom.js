@@ -9,7 +9,7 @@ $(document).ready(function () {
     // Mobile Side Bar Menu Open
     $(".mobile-menu > a").click(function(e) {
         e.preventDefault();
-        $("body").addClass("menu-open");
+        $("html").addClass("menu-open");
     });
     // Mobile Side Bar Menu Accordion
     (function($) {
@@ -62,7 +62,7 @@ $(document).ready(function () {
     $(".sidebar-menu").sideMenu();
     // Mobile Side Bar Menu Close
     $(".menu-close, .menu-overlay").on("click", function() {
-        $("body").removeClass("menu-open");
+        $("html").removeClass("menu-open");
     });
 
     // Footer Accordion Menu
@@ -221,6 +221,18 @@ $(document).ready(function () {
         }
     });
 
+
+    // 체크아웃 배송지버튼 클릭시 버튼 컬러 변경
+    $(".shipping-button-group a").on("click", function() {
+        $(this).parent().siblings().children("a").addClass("button-secondary");
+        return false;
+    });
+    $(".shipping-button-group a.select-address").on("click", function() {
+        $(this).parent().siblings().children("a").addClass("button-secondary");
+        $(this).removeClass("button-secondary");
+        return false;
+    });
+
 });
 
 
@@ -231,7 +243,14 @@ function layerOpen(target) {
 }
 function layerClose(target) {
     var $this = $(target);
-    $this.parent().hide();
+    $this.hide();
+}
+// 레이어 띄울 시 body 스크롤 안되도록 막음
+function addLock() {
+    $("html").addClass("scroll-lock");
+}
+function removeLock() {
+    $("html").removeClass("scroll-lock");
 }
 
 

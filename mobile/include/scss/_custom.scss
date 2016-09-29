@@ -236,8 +236,11 @@ header{
     }
 }
 .menu-open {
-    height: 100%;
-    overflow: hidden;
+    &,
+    body {
+        height: 100%;
+        overflow: hidden;
+    }
     .sidebar-menu {
         left: 0;
     }
@@ -361,10 +364,11 @@ footer{
  Common
 ***********************************************/
 .breadcrumb {
-    margin-bottom: 10px;
+    margin: 5px 0 15px;
     font-family: $font-family-en;
-    font-size: 10px;
+    font-size: 11px;
     letter-spacing: 0.8px;
+    text-align: center;
     text-transform: uppercase;
     a:after {
         margin: 0 7px 0 9px;
@@ -1006,7 +1010,7 @@ footer{
  Category Detail
 ***********************************************/
 .product-images {
-    margin: -10px -10px 0;
+    margin: 0 -10px 0;
     padding-bottom: 18px;
     .slick-dots {
         bottom: -1px;
@@ -1020,8 +1024,8 @@ footer{
         .brand-name {
             display: block;
             margin-bottom: 5px;
-            font-weight: 400;
-            font-size: 14px;
+            font-weight: 500;
+            font-size: 16px;
             color: #000;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -1030,15 +1034,39 @@ footer{
             font-weight: 400;
             font-size: 14px;
         }
-        .sku-number {
-            display: block;
-            margin-top: 5px;
-            font-size: 10px;
+        .sku-shipping-group {
+            margin-top: 10px;
+            .sku-number {
+                margin-top: 5px;
+                font-size: 10px;
+            }
+            .shipping-type {
+                width: 100%;
+                font-size: 10px;
+                &:before {
+                    margin: 0 7px;
+                    content: '|';
+                }
+                .icon-flight {
+                    display: inline-block;
+                    width: 14px;
+                    height: 14px;
+                    margin-right: 5px;
+                    border: 1px solid #888;
+                    @include border-radius(50%);
+                    line-height: 15px;
+                    text-align: center;
+                    &:before {
+                        margin: 0;
+                        font-size: 10px;
+                    }
+                }
+            }
         }
         .product-price {
             margin-top: 15px;
             .discount {
-                margin: 0 15px 0 0;
+                margin: 0 0 0 15px;
                 font-size: 14px;
                 &:before {
                     top: 34%;
@@ -1047,15 +1075,6 @@ footer{
             .price {
                 font-weight: 700;
                 font-size: 16px;
-            }
-        }
-        .shipping-download-group {
-            .shipping-type {
-                display: inline-block;
-                width: 100%;
-                background-color: #f5f5f5;
-                line-height: (27)/12;
-                text-align: center;
             }
         }
     }
@@ -1100,9 +1119,23 @@ footer{
                 width: 0;
                 margin: 0;
             }
-        }
-        .wishlist-link {
-            font-size: 14px;
+            &.wishlist-link {
+                .button {
+                    padding: 0;
+                    border: 0;
+                    font-size: 14px;
+                    vertical-align: -1px;
+                }
+                &:before {
+                    width: 12px;
+                    margin-right: 7px;
+                    background-color: #fff;
+                    font-size: 14px;
+                    font-family: 'fontello';
+                    vertical-align: -1px;
+                    content: '\E825';
+                }
+            }
         }
         .sns-link {
             a {
@@ -1137,7 +1170,9 @@ footer{
             content: '\e82e';
         }
         &.open {
-            color: $brand-primary;
+            background-color: #eeeff1;
+            font-size: 14px;
+            color: $brand-secondary;
             &:after {
                 content: '\e82d';
             }
@@ -1151,9 +1186,21 @@ footer{
         &.description {
             display: block;
         }
+        .table-title {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .table-condensed {
+            margin-bottom: 10px;
+            th,
+            td {
+                padding: 17px 0;
+            }
+        }
         img {
-            width: auto;
+            width: auto !important;
             max-width: 100%;
+            height: auto !important;
         }
         .product-detail-info {
             padding-top: 30px;
@@ -2677,5 +2724,65 @@ footer{
             background-color: #f5f5f5;
             font-size: 12px;
         }
+    }
+}
+
+/**********************************************
+ Modal
+***********************************************/
+.scroll-lock {
+    &,
+    body {
+        overflow-y: hidden;
+        height: 100%;
+    }
+    .modal-wrap {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+.modal-wrap {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    .modal {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        background-color: #fff;
+        .container {
+            position: relative;
+            .page-title {
+                margin: 15px 0;
+            }
+            .closeModalBtn{
+                position: absolute;
+                top: 16px;
+                right: 10px;
+                color: #cccdcb;
+                i:before{
+                    margin: -2px;
+                    border: 1px solid #cccdcb;
+                    vertical-align: middle;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0.7;
     }
 }
