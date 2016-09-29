@@ -88,7 +88,7 @@
             <div><input type="text" id="search_word" class="form-control" title="검색어 입력"></div>
             <div><a href="#" class="button button-primary button-small"><span>SEARCH</span></a></div>
         </div>
-        <a href="#" class="form-search-close" onclick="layerClose(this);"><i class="icon-cancel-thin"></i></a>
+        <a href="#" class="form-search-close" onclick="layerClose('.form-search');"><i class="icon-cancel-thin"></i></a>
     </div>
     <!-- Search Form Layer //end -->
     <div class="link-sale">

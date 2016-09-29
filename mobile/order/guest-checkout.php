@@ -107,10 +107,10 @@
             <div class="box">
                 <ul class="input-list">
                     <li>
-                        <div class="button-group">
-                            <div><a href="#" class="button button-small button-secondary"><span>주문자 주소</span></a></div>
-                            <div><a href="#" class="button button-small button-secondary"><span>신규 주소</span></a></div>
-                            <div><a href="#none" class="button button-small button-secondary" onclick="modalOpen('.address_list_modal'); return false;"><span>배송지 목록</span></a></div>
+                        <div class="radio">
+                            <input type="radio" id="orderer_address" checked="checked">
+                            <label for="orderer_address" class="radio-display"></label>
+                            <label for="orderer_address" class="radio-label">주문자 주소</label>
                         </div>
                     </li>
                     <li>

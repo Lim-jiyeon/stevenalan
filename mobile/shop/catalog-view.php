@@ -31,13 +31,15 @@
                     <div class="detail-info">
                         <strong class="brand-name">steven alan</strong>
                         <h2 class="product-name">Oversized Stand Collar Dress</h2>
-                        <span class="sku-number">#ES0232311</span>
-                        <div class="product-price">
-                            <em class="discount">498,000원</em>
-                            <strong class="price">380,000원</strong>
+                        <div class="sku-shipping-group">
+                            <span class="sku-number">#ES0232311</span>
+                            <span class="shipping-type"><i class="icon-flight"></i>해외배송</span>
                         </div>
-                        <div class="row button-inline-group shipping-download-group">
-                            <div class="col-xs-6"><span class="shipping-type"><i class="icon-plane"></i>해외배송</span></div>
+                        <div class="product-price">
+                            <strong class="price">380,000원</strong>
+                            <em class="discount">498,000원</em>
+                        </div>
+                        <div class="row button-inline-group">
                             <div class="col-xs-6"><a href="#" class="button button-small button-secondary"><em class="benton">5%</em> 할인쿠폰 다운 <i class="icon-download"></i></a></div>
                         </div>
                     </div>
@@ -79,7 +81,7 @@
                         <div class="col-xs-6"><a href="#" class="button button-large button-primary">쇼핑백 담기</a></div>
                     </div>
                     <ul class="Sharing-group delimiter">
-                        <li class="wishlist-link"><a href="#">위시리스트 담기</a></li>
+                        <li class="wishlist-link"><input type="submit" name="" value="위시리스트 담기" id="" class="button button-small button-link-large button-danger"></li>
                         <li class="sns-link">
                             <a href="#"><i class="icon-facebook-circled"></i></a>
                             <a href="#"><i class="icon-pinterest-circled"></i></a>

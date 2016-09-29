@@ -89,10 +89,10 @@
             <div class="box">
                 <ul class="input-list">
                     <li>
-                        <div class="button-group">
-                            <div><a href="#" class="button button-small button-secondary"><span>주문자 주소</span></a></div>
-                            <div><a href="#" class="button button-small button-secondary"><span>신규 주소</span></a></div>
-                            <div><a href="#none" class="button button-small button-secondary" onclick="modalOpen('.address_list_modal'); return false;"><span>배송지 목록</span></a></div>
+                        <div class="button-group shipping-button-group">
+                            <div><a href="#" class="select-address button button-small button-primary button-secondary"><span>주문자 주소</span></a></div>
+                            <div><a href="#" class="select-address button button-small button-primary button-secondary"><span>신규 주소</span></a></div>
+                            <div><a href="#none" class="button button-small button-secondary" onclick="layerOpen('.address_list_modal');addLock();return false;"><span>배송지 목록</span></a></div>
                         </div>
                     </li>
                     <li>
@@ -317,6 +317,43 @@
         </div>
         <!-- 최종 결제 금액 //end -->
     </div>
+    <!-- 배송지 목록 팝업 -->
+    <div class="modal-wrap address_list_modal">
+        <div class="modal">
+            <div class="container">
+                <h2 class="page-title">배송지 관리</h2>
+                <!-- 배송지 관리 - 주소지가 등록되어 있는 경우 -->
+                <ul class="address-manage">
+                    <li class="address-item">
+                        <div class="address-group">
+                            <h3 class="address-title">우리집</h3>
+                            <p>[04778] 서울특별시 성동구 뚝섬로길 25(성수동1가,서울숲 한라에코밸리)B105</p>
+                            <p>010-1234-1234 / 02-123-8522</p>
+                        </div>
+                        <div class="button-inline-group button-auto-group">
+                            <div><a href="#" class="button button-small button-secondary">삭제</a></div>
+                            <div><a href="#" class="button button-small button-primary">선택</a></div>
+                        </div>
+                    </li>
+                    <li class="address-item">
+                        <div class="address-group">
+                            <h3 class="address-title">회사 - 삼안빌딩</h3>
+                            <p>[04778] 서울특별시 성동구 뚝섬로길 25(성수동1가,서울숲 한라에코밸리)B105</p>
+                            <p>010-1234-1234 / 02-123-8522</p>
+                        </div>
+                        <div class="button-inline-group button-auto-group">
+                            <div><a href="#" class="button button-small button-secondary">삭제</a></div>
+                            <div><a href="#" class="button button-small button-primary">선택</a></div>
+                        </div>
+                    </li>
+                </ul>
+                <!-- 배송지 관리 - 주소지가 등록되어 있는 경우 //end -->
+                <a href="#none" class="closeModalBtn" onclick="layerClose('.address_list_modal');removeLock();"><i class="icon-cancel"></i></a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- 배송지 목록 팝업 //end -->
 </div>
 
 <?php include '../footer/footer.php'; ?>
