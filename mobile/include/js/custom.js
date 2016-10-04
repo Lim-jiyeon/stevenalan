@@ -118,6 +118,11 @@ $(document).ready(function () {
         $(this).parent().siblings().children().removeClass("open").next().slideUp();
         return false;
     });
+    // Detail Contents - Size Guide
+    $(".size-button-toggle input[name=size_switch]").change(function () {
+        $(".size-guide-content").hide();
+        $("."+$(this).val()).show();
+    });
 
     // You May Also Like
     $('.you-like-slider').slick({

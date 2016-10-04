@@ -137,6 +137,11 @@ $(document).ready(function() {
         $(".detail-info-box" + index).show();
         return false;
     });
+    // Detail Tab - Size Guide
+    $(".size-button-toggle input[name=size_switch]").change(function () {
+        $(".size-guide-content").hide();
+        $("."+$(this).val()).show();
+    });
 
 
     // Placeholder

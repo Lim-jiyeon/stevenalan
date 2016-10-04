@@ -161,6 +161,7 @@
         left: 0;
         z-index: 10;
         width: 1200px;
+        text-align: left;
     }
     .menu-item-list {
         position: absolute;
@@ -1187,10 +1188,53 @@
                 }
             }
         }
+        &.detail-info-box2 {
+            ul {
+                margin-bottom: 20px;
+            }
+        }
         .table-title {
             display: block;
             margin-top: 35px;
             font-size: 14px;
+        }
+        .size-button-toggle {
+            width: 268px;
+            height: 41px;
+            padding: 2px;
+            border: 1px solid $brand-primary;
+            border-radius: 20px;
+            @include clearfix;
+            input[type="radio"]{
+                position: fixed;
+                top: -9999px;
+                left: -9999px;
+                visibility: hidden;
+            }
+            .radio-toggle-display {
+                float: left;
+                width: 50%;
+                border-radius: 17px;
+                background-color: #fff;
+                font-size: 16px;
+                line-height: (35)/16;
+                color: $brand-primary;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            input[type="radio"]:checked + .radio-toggle-display{
+                border-radius: 17px;
+                background-color: $brand-primary;
+                color: #fff;
+                transition: all 0.3s ease;
+            }
+        }
+        .size-guide-content {
+            display: none;
+            padding-top: 55px;
+            &.size-women {
+                display: block;
+            }
         }
     }
 }

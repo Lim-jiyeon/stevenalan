@@ -2526,6 +2526,7 @@ input[type="search"] {
   left: 0;
   z-index: 10;
   width: 1200px;
+  text-align: left;
 }
 
 .megaMenu .menu-item-list {
@@ -3736,10 +3737,66 @@ input[type="search"] {
   margin: 0 auto;
 }
 
+.detail-contents .detail-info-content.detail-info-box2 ul {
+  margin-bottom: 20px;
+}
+
 .detail-contents .detail-info-content .table-title {
   display: block;
   margin-top: 35px;
   font-size: 14px;
+}
+
+.detail-contents .detail-info-content .size-button-toggle {
+  width: 268px;
+  height: 41px;
+  padding: 2px;
+  border: 1px solid #004689;
+  border-radius: 20px;
+}
+
+.detail-contents .detail-info-content .size-button-toggle:before, .detail-contents .detail-info-content .size-button-toggle:after {
+  content: " ";
+  display: table;
+}
+
+.detail-contents .detail-info-content .size-button-toggle:after {
+  clear: both;
+}
+
+.detail-contents .detail-info-content .size-button-toggle input[type="radio"] {
+  position: fixed;
+  top: -9999px;
+  left: -9999px;
+  visibility: hidden;
+}
+
+.detail-contents .detail-info-content .size-button-toggle .radio-toggle-display {
+  float: left;
+  width: 50%;
+  border-radius: 17px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 2.1875;
+  color: #004689;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.detail-contents .detail-info-content .size-button-toggle input[type="radio"]:checked + .radio-toggle-display {
+  border-radius: 17px;
+  background-color: #004689;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.detail-contents .detail-info-content .size-guide-content {
+  display: none;
+  padding-top: 55px;
+}
+
+.detail-contents .detail-info-content .size-guide-content.size-women {
+  display: block;
 }
 
 .you-like-title {
