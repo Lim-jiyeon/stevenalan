@@ -5238,6 +5238,85 @@ input[type="search"] {
   background-color: #fff;
 }
 
+.agreement {
+  padding: 0 30px;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+}
+
+.agreement .box {
+  margin: 0 -30px;
+  padding: 30px;
+}
+
+.agreement .box dt {
+  margin-top: 0;
+}
+
+.agreement dt {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.agreement dd {
+  font-size: 12px;
+}
+
+.agreement .privacy-manager {
+  margin: 15px 0;
+}
+
+.agreement .col-table {
+  width: auto;
+  margin: 22px 0;
+}
+
+.agreement .col-table th,
+.agreement .col-table td {
+  padding: 0 0 0 52px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.agreement .col-table th:nth-child(1),
+.agreement .col-table td:nth-child(1) {
+  padding: 0;
+}
+
+.agreement .col-table th {
+  padding-bottom: 3px;
+  font-size: 16px;
+}
+
+.agreement .col-table tr:first-child td span {
+  display: block;
+  width: 100%;
+  padding-top: 7px;
+  border-top: 1px solid #848484;
+}
+
+.agreement .row-table {
+  margin: 22px 0;
+}
+
+.agreement .row-table th,
+.agreement .row-table td {
+  padding: 11px 0;
+  text-align: left;
+  vertical-align: top;
+}
+
+.agreement .row-table td {
+  padding: 11px 7px;
+}
+
+.agreement .row-table td ul {
+  display: inline-block;
+  width: 100%;
+  border-left: 1px solid #848484;
+  padding-left: 17px;
+}
+
 /**********************************************
  Search
 ***********************************************/

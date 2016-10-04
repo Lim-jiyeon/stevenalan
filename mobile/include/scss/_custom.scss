@@ -2407,6 +2407,70 @@ footer{
     background-color: #fff;
     font-size: 9px;
 }
+.agreement {
+    font-family: $font-family-ko;
+    font-size: 10px;
+    color: #000;
+    .box {
+        padding: 13px 7px;
+        dt {
+            margin-top: 0;
+        }
+    }
+    dt {
+        margin-top: 12px;
+        font-size: 12px;
+    }
+    .privacy-manager {
+        margin: 15px 0;
+    }
+    .col-table {
+        width: auto;
+        margin: 22px 0;
+        th,
+        td {
+            padding: 2px 0 2px 25px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th:nth-child(1),
+        td:nth-child(1) {
+            padding-left: 0;
+        }
+        th {
+            padding-bottom: 3px;
+            font-size: 12px;
+        }
+        tr:first-child {
+            td {
+                span {
+                    display: block;
+                    width: 100%;
+                    padding-top: 7px;
+                    border-top: 1px solid #848484;
+                }
+            }
+        }
+    }
+    .row-table {
+        margin: 22px 0;
+        th,
+        td {
+            padding: 11px 0;
+            text-align: left;
+            vertical-align: top;
+        }
+        td {
+            padding: 11px 7px;
+            ul {
+                display: inline-block;
+                width: 100%;
+                border-left: 1px solid #848484;
+                padding-left: 12px;
+            }
+        }
+    }
+}
 
 /**********************************************
  Search

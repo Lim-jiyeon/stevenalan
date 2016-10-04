@@ -2530,6 +2530,74 @@
     @include border-radius(2px);
     background-color: #fff;
 }
+.agreement {
+    padding: 0 30px;
+    font-family: $font-family-ko;
+    color: #000;
+    .box {
+        margin: 0 -30px;
+        padding: 30px;
+        dt {
+            margin-top: 0;
+        }
+    }
+    dt {
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    dd {
+        font-size: 12px;
+    }
+    .privacy-manager {
+        margin: 15px 0;
+    }
+    .col-table {
+        width: auto;
+        margin: 22px 0;
+        th,
+        td {
+            padding: 0 0 0 52px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th:nth-child(1),
+        td:nth-child(1) {
+            padding: 0;
+        }
+        th {
+            padding-bottom: 3px;
+            font-size: 16px;
+        }
+        tr:first-child {
+            td {
+                span {
+                    display: block;
+                    width: 100%;
+                    padding-top: 7px;
+                    border-top: 1px solid #848484;
+                }
+            }
+        }
+    }
+    .row-table {
+        margin: 22px 0;
+        th,
+        td {
+            padding: 11px 0;
+            text-align: left;
+            vertical-align: top;
+        }
+        td {
+            padding: 11px 7px;
+            ul {
+                display: inline-block;
+                width: 100%;
+                border-left: 1px solid #848484;
+                padding-left: 17px;
+            }
+        }
+    }
+}
 
 /**********************************************
  Search

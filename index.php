@@ -83,7 +83,6 @@
                     <ul>
                         <li>5.1 <a href="./mobile/etc/brands.php">브랜드</a></li>
                         <li>5.1.1 <a href="./mobile/etc/brands-view.php">브랜드 상세</a></li>
-<!--                        <li>5.2 <a href="./mobile/join/guest-login.php">비회원 주문 로그인</a></li>-->
                         <li>5.2.1 <a href="./mobile/order/guest-checkout.php">비회원 주문/결제</a></li>
                         <li>5.2.2 <a href="./mobile/order/guest-summary.php">비회원 주문 완료/요약</a></li>
                         <li>5.2.3 <a href="./mobile/mypage/guest-order-track.php">비회원 주문/배송 조회</a></li>
@@ -91,6 +90,9 @@
                         <li>5.3/5.3.1 <a href="./mobile/etc/news.php">News</a></li>
                         <li>5.4 <a href="./mobile/etc/search.php">검색 결과</a></li>
                         <li>5.4.1 <a href="./mobile/etc/search-empty.php">검색 결과 없을 경우</a></li>
+                        <li>5.5 <a href="./mobile/etc/privacy-policy.php">개인정보보호정책</a></li>
+                        <li>5.5.1 <a href="./mobile/etc/guest-privacy-policy.php">비회원 개인정보보호정책</a></li>
+                        <li>5.6 <a href="./mobile/etc/terms-of-use.php">이용약관</a></li>
                     </ul>
                 </div>
 
@@ -166,6 +168,9 @@
                         <li>5.3/5.3.1 <a href="./pc/etc/news.php">News</a></li>
                         <li>5.4 <a href="./pc/etc/search.php">검색 결과</a></li>
                         <li>5.4.1 <a href="./pc/etc/search-empty.php">검색 결과 없을 경우</a></li>
+                        <li>5.5 <a href="./pc/etc/privacy-policy.php">개인정보보호정책</a></li>
+                        <li>5.5.1 <a href="./pc/etc/guest-privacy-policy.php">비회원 개인정보보호정책</a></li>
+                        <li>5.6 <a href="./pc/etc/terms-of-use.php">이용약관</a></li>
                     </ul>
 
                     <hr>
