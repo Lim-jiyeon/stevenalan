@@ -224,7 +224,7 @@
             </li>
             <!-- 배송 및 교환 //end -->
             <!-- 사이즈 가이드 -->
-            <li >
+            <li>
                 <h3 class="detail-info-title">사이즈 가이드</h3>
                 <div class="detail-info-content size-guide">
                     <div class="size-button-toggle">
