@@ -2607,6 +2607,7 @@ input[type="search"] {
 
 .business-info li {
   padding: 3px 0;
+  letter-spacing: -0.2px;
 }
 
 .business-info address {
