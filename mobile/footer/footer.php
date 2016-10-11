@@ -37,8 +37,8 @@
     <div class="copyright">
         <div class="container">
             <p>COPYRIGHT © 2016 ISE COMMERCE. ALL RIGHTS RESERVED.</p>
-            <a href="#">Privacy Policy <i class="icon-right-open-big"></i></a>
-            <a href="#">Terms of Use <i class="icon-right-open-big"></i></a>
+            <a href="#">개인정보 보호정책 <i class="icon-right-open-big"></i></a>
+            <a href="#">이용약관 <i class="icon-right-open-big"></i></a>
         </div>
     </div>
 </footer>
