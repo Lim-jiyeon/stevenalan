@@ -66,8 +66,8 @@
                                     <span class="item-brand">STEVEN ALAN</span>
                                     <strong class="item-name">Belted Long Shirtdress</strong>
                                     <ul class="item-option">
-                                        <li>Color : INDIGO</li>
-                                        <li>Size : P</li>
+                                        <li>컬러 : INDIGO</li>
+                                        <li>사이즈 : P</li>
                                     </ul>
                                     <a href="#none" class="button button-small" onclick="itemOptionChange(this);">옵션변경</a>
                                 </div>
@@ -86,7 +86,7 @@
                                 <strong class="price">275,000</strong>
                             </td>
                             <td class="order-button">
-                                <span class="button-block"><a href="#" class="button button-small button-primary"><span>바로주문</span></a></span>
+                                <span class="button-block"><a href="#" class="button button-small button-primary"><span>바로구매</span></a></span>
                                 <span class="button-block"><a href="#" class="button button-link button-danger"><span>삭제</span></a></span>
                             </td>
                         </tr>
@@ -142,7 +142,7 @@
                                     <span class="item-brand">STEVEN ALAN</span>
                                     <strong class="item-name">Belted Long Shirtdress</strong>
                                     <ul class="item-option">
-                                        <li>Size : P</li>
+                                        <li>사이즈 : P</li>
                                     </ul>
                                     <a href="#none" class="button button-small" onclick="itemOptionChange(this);">옵션변경</a>
                                 </div>
@@ -161,7 +161,7 @@
                                 <strong class="price">275,000</strong>
                             </td>
                             <td class="order-button">
-                                <span class="button-block"><a href="#" class="button button-small button-primary"><span>바로주문</span></a></span>
+                                <span class="button-block"><a href="#" class="button button-small button-primary"><span>바로구매</span></a></span>
                                 <span class="button-block"><a href="#" class="button button-link button-danger"><span>삭제</span></a></span>
                             </td>
                         </tr>
@@ -279,8 +279,8 @@
                                     <span class="item-brand">STEVEN ALAN</span>
                                     <strong class="item-name">Belted Long Shirtdress</strong>
                                     <ul class="item-option">
-                                        <li>Color : INDIGO</li>
-                                        <li>Size : P</li>
+                                        <li>컬러 : INDIGO</li>
+                                        <li>사이즈 : P</li>
                                     </ul>
                                     <a href="#none" class="button button-small" onclick="itemOptionChange(this);">옵션변경</a>
                                 </div>
@@ -299,7 +299,7 @@
                                 <strong class="price">275,000</strong>
                             </td>
                             <td class="order-button">
-                                <span class="button-block"><a href="#" class="button button-small button-primary"><span>바로주문</span></a></span>
+                                <span class="button-block"><a href="#" class="button button-small button-primary"><span>바로구매</span></a></span>
                                 <span class="button-block"><a href="#" class="button button-link button-danger"><span>삭제</span></a></span>
                             </td>
                         </tr>
@@ -355,7 +355,7 @@
                                     <span class="item-brand">STEVEN ALAN</span>
                                     <strong class="item-name">Belted Long Shirtdress</strong>
                                     <ul class="item-option">
-                                        <li>Size : P</li>
+                                        <li>사이즈 : P</li>
                                     </ul>
                                     <a href="#none" class="button button-small" onclick="itemOptionChange(this);">옵션변경</a>
                                 </div>
@@ -374,7 +374,7 @@
                                 <strong class="price">275,000</strong>
                             </td>
                             <td class="order-button">
-                                <span class="button-block"><a href="#" class="button button-small button-primary"><span>바로주문</span></a></span>
+                                <span class="button-block"><a href="#" class="button button-small button-primary"><span>바로구매</span></a></span>
                                 <span class="button-block"><a href="#" class="button button-link button-danger"><span>삭제</span></a></span>
                             </td>
                         </tr>

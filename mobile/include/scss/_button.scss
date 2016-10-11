@@ -52,6 +52,7 @@
 .button-link {
     padding: 0;
     border-bottom: 1px solid $text-color;
+    @include border-radius(0);
     background-color: transparent;
     line-height: 22px;
     color: $text-color;

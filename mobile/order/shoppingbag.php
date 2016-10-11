@@ -315,8 +315,6 @@
                     <dd><em>1,000,000</em>원</dd>
                     <dt>배송비</dt>
                     <dd><em>22,000</em>원</dd>
-                    <dt>할인쿠폰</dt>
-                    <dd><em>-5,000</em>원</dd>
                     <dt class="shoppingbag-total">결제금액</dt>
                     <dd class="shoppingbag-total"><em>9,999,000</em>원</dd>
                 </dl>

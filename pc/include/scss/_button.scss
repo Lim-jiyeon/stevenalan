@@ -45,6 +45,7 @@
 .button-link { // 링크 스타일 (삭제, 변경)
     padding: 0 2px;
     border-bottom: 1px solid #bdbdbd;
+    @include border-radius(0);
     font-size: $font-size-base;
     line-height: ((18 - 2)/12);
     letter-spacing: 1px;

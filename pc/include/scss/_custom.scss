@@ -747,6 +747,9 @@
 .category-menu {
     margin-top: 36px;
     text-transform: uppercase;
+    a {
+        outline: 0;
+    }
     .item-list {
         display: none;
         padding-bottom: 30px;

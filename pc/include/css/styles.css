@@ -1573,6 +1573,10 @@ hr {
 .button-link {
   padding: 0 2px;
   border-bottom: 1px solid #bdbdbd;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
   font-size: 12px;
   line-height: 1.3333333333;
   letter-spacing: 1px;
@@ -3215,6 +3219,10 @@ input[type="search"] {
 .category-menu {
   margin-top: 36px;
   text-transform: uppercase;
+}
+
+.category-menu a {
+  outline: 0;
 }
 
 .category-menu .item-list {
