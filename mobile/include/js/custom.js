@@ -11,6 +11,7 @@ $(document).ready(function () {
         e.preventDefault();
         $("html").addClass("menu-open");
     });
+    $(".sidebar-menu .child-item").append("<i class='collapse'></i>");
     // Mobile Side Bar Menu Accordion
     (function($) {
         $.fn.sideMenu = function(option) {
@@ -24,15 +25,15 @@ $(document).ready(function () {
                 option);
             obj = $(this);
 
-            item = obj.find("ul").parent("li").children("a");
+            item = obj.find("ul").parent("li").children("i");
             item.attr("data-option", "off");
 
             item.unbind('click').on("click", function() {
                 var a = $(this);
                 if (options.autohide) {
-                    a.parent().parent().find("a[data-option='on']").parent("li").children("ul").slideUp(options.Speed / 1.2,
+                    a.parent().parent().find("i[data-option='on']").parent("li").children("ul").slideUp(options.Speed / 1.2,
                         function() {
-                            $(this).parent("li").removeClass("active").children("a").attr("data-option", "off");
+                            $(this).parent("li").removeClass("active").children("i").attr("data-option", "off");
                         })
                 }
                 if (a.attr("data-option") == "off") {
@@ -52,7 +53,7 @@ $(document).ready(function () {
 
                     $(this).parent("li").parent("ul").slideDown(options.Speed,
                         function() {
-                            $(this).parent("li").addClass("active").children("a").attr("data-option", "on");
+                            $(this).parent("li").addClass("active").children("i").attr("data-option", "on");
                         })
                 })
             }

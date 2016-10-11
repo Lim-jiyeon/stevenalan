@@ -2592,20 +2592,29 @@ header .link-sale a {
   text-transform: uppercase;
 }
 
+.mobile-menu-wrap .sidebar-menu li {
+  position: relative;
+}
+
+.mobile-menu-wrap .sidebar-menu li a {
+  display: block;
+}
+
+.mobile-menu-wrap .sidebar-menu li .collapse:after {
+  position: absolute;
+  right: 0;
+  font-style: normal;
+  font-family: 'fontello';
+}
+
 .mobile-menu-wrap .sidebar-menu .menu-item {
   padding: 10px 0 8px;
   border-bottom: 1px solid #848484;
   font-size: 15px;
 }
 
-.mobile-menu-wrap .sidebar-menu .menu-item a {
-  display: block;
-}
-
-.mobile-menu-wrap .sidebar-menu .menu-item.child-item > a:after {
-  float: right;
-  margin-top: 3px;
-  font-family: 'fontello';
+.mobile-menu-wrap .sidebar-menu .menu-item.child-item > .collapse:after {
+  top: 12px;
   font-size: 12px;
   content: '\E82E';
 }
@@ -2618,8 +2627,7 @@ header .link-sale a {
   color: #fff;
 }
 
-.mobile-menu-wrap .sidebar-menu .menu-item.active.child-item > a:after {
-  margin-top: 4px;
+.mobile-menu-wrap .sidebar-menu .menu-item.active.child-item > .collapse:after {
   font-size: 10px;
   content: '\E82D';
 }
@@ -2634,14 +2642,13 @@ header .link-sale a {
   padding: 5px 0;
 }
 
-.mobile-menu-wrap .sidebar-menu .level-2 > li.child-item > a:after {
-  float: right;
+.mobile-menu-wrap .sidebar-menu .level-2 > li.child-item > .collapse:after {
+  top: 4px;
   margin-right: 11px;
-  font-family: 'fontello';
   content: '\E816';
 }
 
-.mobile-menu-wrap .sidebar-menu .level-2 > li.active.child-item > a:after {
+.mobile-menu-wrap .sidebar-menu .level-2 > li.active.child-item > .collapse:after {
   content: '\E817';
 }
 

@@ -153,17 +153,24 @@ header{
         font-family: $font-family-en;
         letter-spacing: 1.3px;
         text-transform: uppercase;
+        li {
+            position: relative;
+            a {
+                display: block;
+            }
+            .collapse:after {
+                position: absolute;
+                right: 0;
+                font-style: normal;
+                font-family: 'fontello';
+            }
+        }
         .menu-item {
             padding: 10px 0 8px;
             border-bottom: 1px solid #848484;
             font-size: 15px;
-            a {
-                display: block;
-            }
-            &.child-item > a:after {
-                float: right;
-                margin-top: 3px;
-                font-family: 'fontello';
+            &.child-item > .collapse:after {
+                top: 12px;
                 font-size: 12px;
                 content: '\E82E';
             }
@@ -174,8 +181,7 @@ header{
                 a {
                     color: #fff;
                 }
-                &.child-item > a:after {
-                    margin-top: 4px;
+                &.child-item > .collapse:after {
                     font-size: 10px;
                     content: '\E82D';
                 }
@@ -187,14 +193,13 @@ header{
             font-size: 13px;
             > li {
                 padding: 5px 0;
-                &.child-item > a:after {
-                    float: right;
+                &.child-item > .collapse:after {
+                    top: 4px;
                     margin-right: 11px;
-                    font-family: 'fontello';
                     content: '\E816';
                 }
                 &.active {
-                    &.child-item > a:after {
+                    &.child-item > .collapse:after {
                         content: '\E817';
                     }
                 }
