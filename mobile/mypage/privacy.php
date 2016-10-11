@@ -69,23 +69,19 @@
                             </div>
                             <div class="input-group-addon">@</div>
                             <div>
-                                <div class="input-button-group">
-                                    <div>
-                                        <input type="email" class="form-control" placeholder="직접입력" title="직접입력">
-                                    </div>
-                                    <div>
-                                        <div class="selectbox">
-                                            <strong class="selectbox-value"></strong>
-                                            <select onchange="selectboxEvent(this);">
-                                                <option value="직접입력">직접입력</option>
-                                                <option value="선택1">선택1</option>
-                                                <option value="선택2">선택2</option>
-                                                <option value="선택3">선택3</option>
-                                                <option value="선택4">선택4</option>
-                                                <option value="선택5">선택5</option>
-                                            </select>
-                                        </div>
-                                    </div>
+                                <div class="selectbox">
+                                    <strong class="selectbox-value">선택</strong>
+                                    <select onchange="selectboxEvent(this);">
+                                        <option value="선택">선택</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="mail.com">gmail.com</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="hotmail.com">hotmail.com</option>
+                                        <option value="yahoo.com">yahoo.com</option>
+                                        <option value="lycos.co.kr">lycos.co.kr</option>
+                                        <option value="직접입력">직접입력</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>

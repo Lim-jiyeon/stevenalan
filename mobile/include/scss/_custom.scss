@@ -6,7 +6,7 @@
  Layout
 ***********************************************/
 .content{
-    padding: 10px 0 50px;
+    padding: 10px 0 25px;
 }
 
 /**********************************************
@@ -361,18 +361,23 @@ footer{
         margin-bottom: 15px;
         @include clearfix;
         .footer-title {
+            float: left;
             padding-bottom: 0;
             cursor: default;
             &:after {
                 content: '';
             }
         }
-        li {
+        ul {
             float: left;
-            margin-right: 3px;
-            i {
-                font-size: 16px;
-                color: #000;
+            margin-left: 10px;
+            li {
+                display: inline-block;
+                margin-right: 3px;
+                i {
+                    font-size: 16px;
+                    color: #000;
+                }
             }
         }
     }
@@ -380,6 +385,7 @@ footer{
         padding: 15px 0 25px;
         border-top: 1px solid #ebebeb;
         font-size: 10px;
+        font-family: $font-family-en;
         text-align: center;
         p {
             padding-bottom: 12px;
@@ -402,15 +408,18 @@ footer{
     font-family: $font-family-en;
     font-size: 11px;
     letter-spacing: 0.8px;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
-    a:after {
-        margin: 0 7px 0 9px;
+    a:before {
+        margin: 0 9px 0 7px;
         content: '/';
     }
-    a:last-child:after {
+    a:first-child:before {
         margin: 0;
         content: '';
+    }
+    &.detail-breadcrumb {
+        text-align: center;
     }
 }
 .benton {  // 영문, 숫자 Font 정의
@@ -774,7 +783,7 @@ footer{
 ***********************************************/
 .main {
     //margin-top: -1px;
-    padding: 0 0 40px;
+    padding: 0 0 20px;
     //border-top: 1px solid $brand-secondary;
     .container {
         padding: 0;
@@ -887,6 +896,12 @@ footer{
         .category-menu-box {
             overflow: hidden;
             max-height: none;
+            padding: 11px 0 9px 17px;
+            a {
+                margin-bottom: 1px;
+                padding: 2px 2px 1px;
+                font-size: 13px;
+            }
             .current {
                 text-decoration: none;
                 a {
@@ -1234,6 +1249,12 @@ footer{
         font-size: 12px;
         &.description {
             display: block;
+            .table-title {
+                display: none;
+            }
+            .table-condensed td {
+                border-top: 1px;
+            }
         }
         &.shipping-exchange {
             overflow-y: auto;
@@ -1243,6 +1264,9 @@ footer{
             }
             ul {
                 margin-bottom: 15px;
+                li strong {
+                    font-weight: 400;
+                }
             }
         }
         .table-title {
@@ -2011,26 +2035,21 @@ footer{
     }
     .page-amount {
         margin-top: -4px;
-        padding-bottom: 1px;
+        padding: 10px 0 1px;
         border-bottom: 1px solid #f5f5f5;
-        font-size: 9px;
+        font-size: 10px;
         text-align: right;
     }
     .order-product-list {
         > li {
-            padding-top: 14px;
-            &:after {
-                display: block;
-                width: 39px;
-                height: 1px;
-                margin: 14px auto 0;
-                background-color: $brand-primary;
-                content: '';
+            padding-top: 5px;
+            &:first-child {
+                padding-top: 14px;
             }
         }
     }
     .paging {
-        padding: 20px 0 10px;
+        padding: 20px 0;
     }
 }
 
@@ -2082,7 +2101,10 @@ footer{
         }
         .item-title {
             display: block;
-            padding-left: 65px;
+            float: left;
+            margin-top: -2px;
+            padding-left: 8px;
+            width: 81%;
             font-size: 12px;
             color: $brand-secondary;
             vertical-align: top;
@@ -2156,7 +2178,7 @@ footer{
             .fixed-data {
                 margin-bottom: 15px;
                 border-bottom: 1px solid $brand-secondary;
-                font-size: 11px;
+                font-size: 13px;
                 color: $brand-secondary;
                 @include clearfix;
                 .fixed-label {
@@ -2313,7 +2335,7 @@ footer{
         padding: 10px 5px 15px 5px;
         border: 5px solid #f5f5f5;
         background-color: #fff;
-        font-size: 11px;
+        font-size: 12px;
         .address-group {
             padding: 0 5px;
         }
@@ -2322,7 +2344,7 @@ footer{
             padding-bottom: 8px;
             border-bottom: 1px solid #f5f5f5;
             font-weight: 400;
-            font-size: 12px;
+            font-size: 13px;
             color: $brand-secondary;
         }
         .button-inline-group {
@@ -2428,6 +2450,11 @@ footer{
                 margin: -7px 0 10px;
             }
         }
+        .input-button-group {
+            div:last-child {
+                width: 90px;
+            }
+        }
     }
 }
 .input-select {
@@ -2499,7 +2526,7 @@ footer{
  Agree
 ***********************************************/
 .agree-box {
-    height: 95px;
+    height: 190px;
     padding: 10px;
     border: 5px solid #f5f5f5;
     background-color: #fff;

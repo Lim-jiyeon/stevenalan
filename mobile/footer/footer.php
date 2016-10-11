@@ -1,15 +1,15 @@
 <footer>
     <div class="container">
         <ul class="footer-menu">
-            <li>
-                <h3 class="footer-title">general</h3>
-                <ul class="footer-link">
-                    <li><a href="#">store locator</a></li>
-                    <li><a href="#">showroom</a></li>
-                    <li><a href="#">careers</a></li>
-                    <li><a href="#">trade in</a></li>
-                </ul>
-            </li>
+<!--            <li>-->
+<!--                <h3 class="footer-title">general</h3>-->
+<!--                <ul class="footer-link">-->
+<!--                    <li><a href="#">store locator</a></li>-->
+<!--                    <li><a href="#">showroom</a></li>-->
+<!--                    <li><a href="#">careers</a></li>-->
+<!--                    <li><a href="#">trade in</a></li>-->
+<!--                </ul>-->
+<!--            </li>-->
             <li>
                 <h3 class="footer-title">customer care</h3>
                 <ul class="footer-link">

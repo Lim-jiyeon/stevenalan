@@ -29,6 +29,7 @@
                     </div>
                 </li>
                 <li class="phone-group">
+                    <label for="" class="form-label">핸드폰번호 (필수)</label>
                     <div class="form-group input-group">
                         <div>
                             <div class="selectbox">
@@ -54,6 +55,7 @@
                     </div>
                 </li>
                 <li class="phone-group">
+                    <label for="" class="form-label">추가연락처 (선택)</label>
                     <div class="form-group input-group">
                         <div>
                             <div class="selectbox">

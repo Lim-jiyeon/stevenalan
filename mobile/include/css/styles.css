@@ -1824,6 +1824,7 @@ output {
 }
 
 .form-label {
+  font-size: 12px;
   color: #000;
 }
 
@@ -2414,7 +2415,7 @@ input[type="search"] {
  Layout
 ***********************************************/
 .content {
-  padding: 10px 0 50px;
+  padding: 10px 0 25px;
 }
 
 /**********************************************
@@ -2832,6 +2833,7 @@ footer .footer-sharing-link:after {
 }
 
 footer .footer-sharing-link .footer-title {
+  float: left;
   padding-bottom: 0;
   cursor: default;
 }
@@ -2840,12 +2842,17 @@ footer .footer-sharing-link .footer-title:after {
   content: '';
 }
 
-footer .footer-sharing-link li {
+footer .footer-sharing-link ul {
   float: left;
+  margin-left: 10px;
+}
+
+footer .footer-sharing-link ul li {
+  display: inline-block;
   margin-right: 3px;
 }
 
-footer .footer-sharing-link li i {
+footer .footer-sharing-link ul li i {
   font-size: 16px;
   color: #000;
 }
@@ -2854,6 +2861,7 @@ footer .copyright {
   padding: 15px 0 25px;
   border-top: 1px solid #ebebeb;
   font-size: 10px;
+  font-family: "BentonSans", sans-serif;
   text-align: center;
 }
 
@@ -2878,18 +2886,22 @@ footer .copyright a:nth-child(2) {
   font-family: "BentonSans", sans-serif;
   font-size: 11px;
   letter-spacing: 0.8px;
-  text-align: center;
+  text-align: left;
   text-transform: uppercase;
 }
 
-.breadcrumb a:after {
-  margin: 0 7px 0 9px;
+.breadcrumb a:before {
+  margin: 0 9px 0 7px;
   content: '/';
 }
 
-.breadcrumb a:last-child:after {
+.breadcrumb a:first-child:before {
   margin: 0;
   content: '';
+}
+
+.breadcrumb.detail-breadcrumb {
+  text-align: center;
 }
 
 .benton {
@@ -3325,7 +3337,7 @@ footer .copyright a:nth-child(2) {
  Main
 ***********************************************/
 .main {
-  padding: 0 0 40px;
+  padding: 0 0 20px;
 }
 
 .main .container {
@@ -3459,6 +3471,13 @@ footer .copyright a:nth-child(2) {
 .category-menu.mypage-menu .category-menu-box {
   overflow: hidden;
   max-height: none;
+  padding: 11px 0 9px 17px;
+}
+
+.category-menu.mypage-menu .category-menu-box a {
+  margin-bottom: 1px;
+  padding: 2px 2px 1px;
+  font-size: 13px;
 }
 
 .category-menu.mypage-menu .category-menu-box .current {
@@ -3892,6 +3911,14 @@ footer .copyright a:nth-child(2) {
   display: block;
 }
 
+.detail-contents .detail-info-content.description .table-title {
+  display: none;
+}
+
+.detail-contents .detail-info-content.description .table-condensed td {
+  border-top: 1px;
+}
+
 .detail-contents .detail-info-content.shipping-exchange {
   overflow-y: auto;
   max-height: 233px;
@@ -3903,6 +3930,10 @@ footer .copyright a:nth-child(2) {
 
 .detail-contents .detail-info-content.shipping-exchange ul {
   margin-bottom: 15px;
+}
+
+.detail-contents .detail-info-content.shipping-exchange ul li strong {
+  font-weight: 400;
 }
 
 .detail-contents .detail-info-content .table-title {
@@ -4880,27 +4911,22 @@ footer .copyright a:nth-child(2) {
 
 .wishlist .page-amount {
   margin-top: -4px;
-  padding-bottom: 1px;
+  padding: 10px 0 1px;
   border-bottom: 1px solid #f5f5f5;
-  font-size: 9px;
+  font-size: 10px;
   text-align: right;
 }
 
 .wishlist .order-product-list > li {
+  padding-top: 5px;
+}
+
+.wishlist .order-product-list > li:first-child {
   padding-top: 14px;
 }
 
-.wishlist .order-product-list > li:after {
-  display: block;
-  width: 39px;
-  height: 1px;
-  margin: 14px auto 0;
-  background-color: #004689;
-  content: '';
-}
-
 .wishlist .paging {
-  padding: 20px 0 10px;
+  padding: 20px 0;
 }
 
 /**********************************************
@@ -4961,7 +4987,10 @@ footer .copyright a:nth-child(2) {
 
 .support-list .question-title .item-title {
   display: block;
-  padding-left: 65px;
+  float: left;
+  margin-top: -2px;
+  padding-left: 8px;
+  width: 81%;
   font-size: 12px;
   color: #000;
   vertical-align: top;
@@ -5041,7 +5070,7 @@ footer .copyright a:nth-child(2) {
 .privacy-modify .box .input-list .fixed-data {
   margin-bottom: 15px;
   border-bottom: 1px solid #000;
-  font-size: 11px;
+  font-size: 13px;
   color: #000;
 }
 
@@ -5225,7 +5254,7 @@ footer .copyright a:nth-child(2) {
   padding: 10px 5px 15px 5px;
   border: 5px solid #f5f5f5;
   background-color: #fff;
-  font-size: 11px;
+  font-size: 12px;
 }
 
 .address-manage .address-item .address-group {
@@ -5237,7 +5266,7 @@ footer .copyright a:nth-child(2) {
   padding-bottom: 8px;
   border-bottom: 1px solid #f5f5f5;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 13px;
   color: #000;
 }
 
@@ -5349,6 +5378,10 @@ footer .copyright a:nth-child(2) {
   margin: -7px 0 10px;
 }
 
+.signup .box .input-button-group div:last-child {
+  width: 90px;
+}
+
 .input-select li {
   padding: 1px 0;
 }
@@ -5436,7 +5469,7 @@ footer .copyright a:nth-child(2) {
  Agree
 ***********************************************/
 .agree-box {
-  height: 95px;
+  height: 190px;
   padding: 10px;
   border: 5px solid #f5f5f5;
   background-color: #fff;

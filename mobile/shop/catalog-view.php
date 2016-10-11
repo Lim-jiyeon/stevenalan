@@ -3,7 +3,7 @@
 <div class="content">
     <!-- breadcrumb -->
     <div class="container">
-        <div class="breadcrumb">
+        <div class="breadcrumb detail-breadcrumb">
             <a href="#">home</a>
             <a href="#">WOMEN'S</a>
             <a href="#">dresses</a>
