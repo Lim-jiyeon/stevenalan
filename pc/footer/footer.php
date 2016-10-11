@@ -1,14 +1,14 @@
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-xs-2 footer-menu">
-                    <strong class="footer-title">general</strong>
-                    <ul class="footer-link">
-                        <li><a href="#">store locator</a></li>
-                        <li><a href="#">news</a></li>
-                        <li><a href="#">q&amp;A</a></li>
-                    </ul>
-                </div>
+<!--                <div class="col-xs-2 footer-menu">-->
+<!--                    <strong class="footer-title">general</strong>-->
+<!--                    <ul class="footer-link">-->
+<!--                        <li><a href="#">store locator</a></li>-->
+<!--                        <li><a href="#">news</a></li>-->
+<!--                        <li><a href="#">q&amp;A</a></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
                 <div class="col-xs-2 footer-menu">
                     <strong class="footer-title">customer care</strong>
                     <ul class="footer-link">
@@ -31,7 +31,7 @@
                         <li><a href="#"><i class="icon-instagram"></i></a></li>
                     </ul>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-xs-6">
                     <ul class="business-info">
                         <li>
                             <span>company name</span>
@@ -53,8 +53,8 @@
         <div class="container">
             <div class="copyright">
                 COPYRIGHT © 2016 ISE COMMERCE. ALL RIGHTS RESERVED.
-                <a href="#">Privacy Policy<i class="icon-right-open-big"></i></a>
-                <a href="#">Terms of Use<i class="icon-right-open-big"></i></a>
+                <a href="#">개인정보 보호정책<i class="icon-right-open-big"></i></a>
+                <a href="#">이용약관<i class="icon-right-open-big"></i></a>
             </div>
         </div>
     </div>

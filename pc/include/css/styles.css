@@ -2585,6 +2585,7 @@ input[type="search"] {
 
 .footer-menu {
   font-family: "BentonSans", sans-serif;
+  letter-spacing: 0.6px;
 }
 
 .footer-menu .footer-title {
@@ -2595,7 +2596,7 @@ input[type="search"] {
 
 .footer-menu .footer-link li {
   padding: 3px 0;
-  font-size: 10px;
+  font-size: 11px;
 }
 
 .footer-menu .footer-sharing-link li {
@@ -2605,13 +2606,13 @@ input[type="search"] {
 
 .business-info {
   margin: -3px 0 0 -20px;
-  font-size: 11px;
+  font-size: 12px;
   text-align: right;
 }
 
 .business-info li {
   padding: 3px 0;
-  letter-spacing: -0.2px;
+  letter-spacing: 0.2px;
 }
 
 .business-info address {
@@ -2642,6 +2643,7 @@ input[type="search"] {
 
 .copyright a {
   margin-left: 15px;
+  font-size: 12px;
   text-transform: capitalize;
 }
 
@@ -2656,6 +2658,7 @@ input[type="search"] {
   margin-bottom: 20px;
   font-family: "BentonSans", sans-serif;
   font-size: 11px;
+  letter-spacing: 0.7px;
 }
 
 .breadcrumb a:before {
@@ -3182,6 +3185,7 @@ input[type="search"] {
   font-size: 13px;
   line-height: 3.8461538462;
   font-family: "BentonSans", sans-serif;
+  color: #535353;
   letter-spacing: 1px;
   text-align: center;
 }
@@ -3354,6 +3358,7 @@ input[type="search"] {
 .result-options .results-hits {
   margin-top: 10px;
   padding: 0;
+  letter-spacing: 0.7px;
   text-align: right;
 }
 
@@ -3394,10 +3399,12 @@ input[type="search"] {
 .category-list .product-info .product-name {
   display: block;
   font-weight: 400;
+  letter-spacing: 1px;
 }
 
 .category-list .product-info .product-price {
   margin-top: 2px;
+  letter-spacing: 0.5px;
 }
 
 .category-list .product-info .product-price .discount {
@@ -3480,7 +3487,7 @@ input[type="search"] {
 
 .product-option-info .detail-info .brand-name {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 19px;
   color: #000;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -3738,6 +3745,14 @@ input[type="search"] {
 
 .detail-contents .detail-info-content.detail-info-box1 {
   display: block;
+}
+
+.detail-contents .detail-info-content.detail-info-box1 .table-title {
+  display: none;
+}
+
+.detail-contents .detail-info-content.detail-info-box1 .table-condensed td {
+  border-top: 0;
 }
 
 .detail-contents .detail-info-content.detail-info-box1 .table-condensed td * {
@@ -4152,6 +4167,10 @@ input[type="search"] {
   border-left: 0;
 }
 
+.dashboard .mypage-info .member-info li a {
+  color: #000;
+}
+
 .dashboard .mypage-info .member-info li b {
   display: block;
   font-family: "BentonSans", sans-serif;
@@ -4486,7 +4505,7 @@ input[type="search"] {
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   border-radius: 12px;
-  background-color: #acacac;
+  background-color: #004689;
   font-family: "BentonSans", sans-serif;
   color: #fff;
 }
@@ -4619,8 +4638,22 @@ input[type="search"] {
   border-bottom: 1px solid #e5e5e5;
 }
 
+.wishlist .wishlist-list .amount {
+  font-size: 12px;
+}
+
+.wishlist .item-info .item-brand,
+.wishlist .item-info .item-name {
+  letter-spacing: 1px;
+}
+
+.wishlist .item-info .item-option li {
+  letter-spacing: 0.5px;
+}
+
 .wishlist .discount, .wishlist .price {
   display: block;
+  letter-spacing: 0.5px;
 }
 
 .wishlist .wishlist-cancel {
@@ -5671,7 +5704,8 @@ input[type="search"] {
 .modalWrap .modal .in_modal .modalTitle {
   position: relative;
   padding: 15px 0;
-  font-weight: bold;
+  font-weight: normal;
+  font-size: 15px;
   color: #000;
   text-align: center;
 }

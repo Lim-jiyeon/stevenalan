@@ -125,7 +125,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th><label for="address-modify-form-phone">휴대폰 번호</label>*</th>
+                            <th><label for="address-modify-form-phone">휴대폰 번호 (필수)</label></th>
                             <td>
                                 <div class="form-group placeholder">
                                     <input type="text" id="address-modify-form-phone" class="form-control">
@@ -133,7 +133,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <th><label for="address-modify-form-phone2">추가 연락처</label></th>
+                            <th><label for="address-modify-form-phone2">추가 연락처 (선택)</label></th>
                             <td>
                                 <div class="form-group placeholder">
                                     <input type="text" id="address-modify-form-phone" class="form-control">
