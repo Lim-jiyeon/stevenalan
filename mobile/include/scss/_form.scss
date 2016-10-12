@@ -183,6 +183,17 @@ input[type="search"] {
         .input-group-addon {
             width: 25px;
         }
+        .selectbox {
+            .form-control {
+                border: 0;
+                &[disabled],
+                &[readonly],
+                fieldset[disabled] & {
+                    border: 0;
+                    background-color: #fff;
+                }
+            }
+        }
     }
     .input-button-group {
         > div:last-child {

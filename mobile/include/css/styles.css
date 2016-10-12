@@ -1935,6 +1935,16 @@ input[type="search"] {
   width: 25px;
 }
 
+.email-group .input-group .selectbox .form-control {
+  border: 0;
+}
+
+.email-group .input-group .selectbox .form-control[disabled], .email-group .input-group .selectbox .form-control[readonly],
+fieldset[disabled] .email-group .input-group .selectbox .form-control {
+  border: 0;
+  background-color: #fff;
+}
+
 .email-group .input-button-group > div:last-child {
   width: 30px;
 }
