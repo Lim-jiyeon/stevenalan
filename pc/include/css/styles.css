@@ -3543,6 +3543,12 @@ input[type="search"] {
   line-height: 2.0833333333;
 }
 
+.product-option-info .detail-info .shipping-type-group .customs-message {
+  margin-top: 15px;
+  font-size: 11px;
+  color: #004689;
+}
+
 .product-option-info .detail-info .coupon-download a {
   display: inline-block;
   padding: 0 12px;
@@ -5611,8 +5617,15 @@ input[type="search"] {
 }
 
 .brand-list-box {
+  float: left;
+  width: 25%;
   margin-top: 30px;
+  padding: 0 10px;
   font-family: "BentonSans", sans-serif;
+}
+
+.brand-list-box:nth-child(4n+1) {
+  clear: left;
 }
 
 .brand-list-box .brand-title {

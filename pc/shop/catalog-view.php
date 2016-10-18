@@ -53,6 +53,7 @@
                             <div class="shipping-type-group">
                                 <span class="shipping-type"><i class="icon-plane"></i>해외배송</span>
                                 <span class="shipping-type">국내배송</span>
+                                <p class="customs-message">이 상품은 통관시 관부가세가 고객님께 개별 부과되는 상품입니다.</p>
                             </div>
                             <div class="coupon-download"><a href="#"><em class="benton">5%</em> 할인쿠폰 다운 <i class="icon-download"></i></a></div>
                         </div>

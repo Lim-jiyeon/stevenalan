@@ -1919,6 +1919,11 @@ input[type="search"] {
   padding: 0;
 }
 
+.phone-group label {
+  font-size: 12px;
+  color: #000;
+}
+
 .phone-group .input-group > div:first-child {
   width: 83px;
 }
@@ -3784,6 +3789,12 @@ footer .copyright a:nth-child(2) {
 .product-option-info .detail-info .product-price .price {
   font-weight: 700;
   font-size: 16px;
+}
+
+.product-option-info .detail-info .customs-message {
+  margin-top: 8px;
+  font-size: 10px;
+  color: #004689;
 }
 
 .product-option-info .detail-option {

@@ -69,7 +69,7 @@
         <!-- 브랜드 리스트 -->
         <div class="container">
             <div class="row">
-                <ul class="col-xs-3">
+                <ul class="col-xs-12">
                     <li class="brand-list-box">
                         <h3 class="brand-title">A</h3>
                         <ul class="brand-list">
@@ -119,8 +119,6 @@
                             <li><a href="#">ETOILE ISABEL MARANT</a></li>
                         </ul>
                     </li>
-                </ul>
-                <ul class="col-xs-3">
                     <li class="brand-list-box">
                         <h3 class="brand-title">F</h3>
                         <ul class="brand-list">
@@ -173,8 +171,6 @@
                             <li><a href="#">ELUISA ET LA LUNA</a></li>
                         </ul>
                     </li>
-                </ul>
-                <ul class="col-xs-3">
                     <li class="brand-list-box">
                         <h3 class="brand-title">M</h3>
                         <ul class="brand-list">
@@ -233,8 +229,6 @@
                             <li><a href="#">SYLVAIN LE HEN</a></li>
                         </ul>
                     </li>
-                </ul>
-                <ul class="col-xs-3">
                     <li class="brand-list-box">
                         <h3 class="brand-title">T</h3>
                         <ul class="brand-list">
