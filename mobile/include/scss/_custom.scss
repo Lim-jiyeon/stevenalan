@@ -1257,8 +1257,17 @@ footer{
             .table-title {
                 display: none;
             }
-            .table-condensed td {
-                border-top: 1px;
+            .table-condensed {
+                border: 0;
+            }
+            #ContentPlaceHolder1_dvProductDetail2 {
+                border-top: 0;
+                .table-condensed {
+                    th,
+                    td {
+                        border: 0;
+                    }
+                }
             }
         }
         &.shipping-exchange {

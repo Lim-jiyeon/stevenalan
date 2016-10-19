@@ -3936,8 +3936,17 @@ footer .copyright a:nth-child(2) {
   display: none;
 }
 
-.detail-contents .detail-info-content.description .table-condensed td {
-  border-top: 1px;
+.detail-contents .detail-info-content.description .table-condensed {
+  border: 0;
+}
+
+.detail-contents .detail-info-content.description #ContentPlaceHolder1_dvProductDetail2 {
+  border-top: 0;
+}
+
+.detail-contents .detail-info-content.description #ContentPlaceHolder1_dvProductDetail2 .table-condensed th,
+.detail-contents .detail-info-content.description #ContentPlaceHolder1_dvProductDetail2 .table-condensed td {
+  border: 0;
 }
 
 .detail-contents .detail-info-content.shipping-exchange {
