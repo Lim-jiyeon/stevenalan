@@ -5106,6 +5106,67 @@ footer .copyright a:nth-child(2) {
   padding: 0 16px;
 }
 
+.orderList_modal .box {
+  padding: 20px 10px;
+}
+
+.orderList_modal .order-button-group {
+  margin-bottom: 20px;
+}
+
+.orderList_modal .order-button-group div .ordered-date {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #000;
+  border-width: 1px 0 1px 1px;
+  background-color: #fff;
+  font-size: 13px;
+  line-height: 2.5384615385;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+}
+
+.orderList_modal .order-button-group div .ordered-date:hover, .orderList_modal .order-button-group div .ordered-date:focus {
+  color: #000;
+}
+
+.orderList_modal .order-button-group div:first-child .ordered-date {
+  border-left-width: 1px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+}
+
+.orderList_modal .order-button-group div:last-child .ordered-date {
+  border-right-width: 1px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+}
+
+.orderList_modal .order-button-group div input[type=radio]:checked ~ .ordered-date {
+  background-color: #000;
+  color: #f5f5f5;
+}
+
+.orderList_modal .ordered-number {
+  display: block;
+}
+
+.orderList_modal .ordered-number .checkbox-label {
+  display: block;
+  margin: -19px 0 2px;
+  padding-left: 20px;
+}
+
 /**********************************************
  My Page - 회원정보수정
 ***********************************************/
@@ -6020,6 +6081,7 @@ footer .copyright a:nth-child(2) {
 
 .modal-wrap .modal .container {
   position: relative;
+  padding-bottom: 15px;
 }
 
 .modal-wrap .modal .container .page-title {
@@ -6033,11 +6095,9 @@ footer .copyright a:nth-child(2) {
   color: #cccdcb;
 }
 
-.modal-wrap .modal .container .closeModalBtn i:before {
-  margin: -2px;
-  border: 1px solid #cccdcb;
-  vertical-align: middle;
-  font-size: 15px;
+.modal-wrap .modal .container .closeModalBtn .icon-cancel:before {
+  color: #000;
+  content: '\E82D';
 }
 
 .modal-wrap .overlay {

@@ -2194,7 +2194,55 @@ footer{
         padding: 0 16px;
     }
 }
-
+.orderList_modal {
+    .box {
+        padding: 20px 10px;
+    }
+    .order-button-group {
+        margin-bottom: 20px;
+        div {
+            .ordered-date {
+                display: inline-block;
+                width: 100%;
+                border: 1px solid $brand-secondary;
+                border-width: 1px 0 1px 1px;
+                background-color: #fff;
+                font-size: $font-size-base;
+                line-height: (($default-height - 2)/$font-size-base);
+                font-family: $font-family-ko;
+                color: $brand-secondary;
+                text-align: center;
+                cursor: pointer;
+                &:hover,
+                &:focus {
+                    color: $brand-secondary;
+                }
+            }
+            &:first-child .ordered-date {
+                border-left-width: 1px;
+                @include border-side-radius(top,left,3px);
+                @include border-side-radius(bottom,left,3px);
+            }
+            &:last-child .ordered-date {
+                border-right-width: 1px;
+                @include border-side-radius(top,right,3px);
+                @include border-side-radius(bottom,right,3px);
+            }
+            input[type=radio]:checked ~ .ordered-date {
+                background-color: $brand-secondary;
+                color: #f5f5f5;
+            }
+        }
+    }
+    .ordered-number {
+        display: block;
+        .checkbox-label {
+            display: block;
+            margin: -19px 0 2px;
+            padding-left: 20px;
+        }
+    }
+}
 
 /**********************************************
  My Page - 회원정보수정
@@ -2975,6 +3023,7 @@ footer{
         background-color: #fff;
         .container {
             position: relative;
+            padding-bottom: 15px;
             .page-title {
                 margin: 15px 0;
             }
@@ -2983,11 +3032,11 @@ footer{
                 top: 16px;
                 right: 10px;
                 color: #cccdcb;
-                i:before{
-                    margin: -2px;
-                    border: 1px solid #cccdcb;
-                    vertical-align: middle;
-                    font-size: 15px;
+                .icon-cancel {
+                    &:before{
+                        color: #000;
+                        content: '\E82D';
+                    }
                 }
             }
         }

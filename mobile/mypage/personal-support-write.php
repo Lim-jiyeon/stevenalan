@@ -24,7 +24,7 @@
                 <li>
                     <div class="form-group input-button-group">
                         <div><input type="number" value="" class="form-control" title="주문번호 입력"></div>
-                        <div><a href="#" class="button"><span>주문번호 조회</span></a></div>
+                        <div><a href="#" class="button" onclick="layerOpen('.orderList_modal');addLock();return false;"><span>주문번호 조회</span></a></div>
                     </div>
                 </li>
                 <li>
@@ -109,6 +109,139 @@
             <div class="col-xs-6"><a href="#" class="button button-large"><span>취소</span></a></div>
         </div>
     </div>
+    <!-- 주문번호 조회 팝업 -->
+    <div class="modal-wrap orderList_modal">
+        <div class="modal">
+            <div class="container">
+                <h2 class="page-title">1:1 문의 | 주문번호 조회</h2>
+                <!-- 주문 조회 -->
+                <div class="box">
+                    <div class="button-group order-button-group">
+                        <div class="radio">
+                            <input type="radio" id="ordered_month1" name="select_order_date" checked>
+                            <label for="ordered_month1" class="ordered-date"><span>1개월</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="ordered_month3" name="select_order_date">
+                            <label for="ordered_month3" class="ordered-date"><span>3개월</span></label>
+                        </div>
+                        <div class="radio">
+                            <input type="radio" id="ordered_month6" name="select_order_date">
+                            <label for="ordered_month6" class="ordered-date"><span>6개월</span></label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="주문 상품명 입력" title="주문 상품명 입력">
+                    </div>
+                    <div class="button-align-center"><a href="#" class="button button-primary"><span>조회하기</span></a></div>
+                </div>
+                <!-- 주문 조회 //end -->
+                <!-- 주문 내역 -->
+                <ul class="order-track-list">
+                    <li>
+                        <div class="checkbox ordered-number">
+                            <input type="checkbox" id="ordered-number1">
+                            <label for="ordered-number1" class="checkbox-display"></label>
+                            <label for="ordered-number1" class="checkbox-label">
+                                <strong>주문번호 / <em class="benton">Q00003744</em></strong>
+                                <span class="date">2016-05-13</span>
+                            </label>
+                        </div>
+                        <ul class="product-list">
+                            <li class="list-item">
+                                <div class="product-info">
+                                    <div class="product-image"><img src="../images/temp/temp-product.jpg" alt=""></div>
+                                    <div class="item-info">
+                                        <span class="item-brand">STEVEN ALAN</span>
+                                        <strong class="item-name">Belted Long Shirtdress</strong>
+                                        <ul class="item-option">
+                                            <li>컬러 : INDIGO</li>
+                                            <li>사이즈 : P</li>
+                                            <li>수량 : 1</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shipping-state">
+                                    <span class="item-state"><i class="icon-flight"></i>배송중</span>
+                                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="product-info">
+                                    <div class="product-image"><img src="../images/temp/temp-product.jpg" alt=""></div>
+                                    <div class="item-info">
+                                        <span class="item-brand">STEVEN ALAN</span>
+                                        <strong class="item-name">Belted Long Shirtdress</strong>
+                                        <ul class="item-option">
+                                            <li>컬러 : INDIGO</li>
+                                            <li>사이즈 : P</li>
+                                            <li>수량 : 1</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shipping-state">
+                                    <span class="item-state"><i class="icon-flight"></i>배송중</span>
+                                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="checkbox ordered-number">
+                            <input type="checkbox" id="ordered-number2">
+                            <label for="ordered-number2" class="checkbox-display"></label>
+                            <label for="ordered-number2" class="checkbox-label">
+                                <strong>주문번호 / <em class="benton">Q00003744</em></strong>
+                                <span class="date">2016-05-13</span>
+                            </label>
+                        </div>
+                        <ul class="product-list">
+                            <li class="list-item">
+                                <div class="product-info">
+                                    <div class="product-image"><img src="../images/temp/temp-product.jpg" alt=""></div>
+                                    <div class="item-info">
+                                        <span class="item-brand">STEVEN ALAN</span>
+                                        <strong class="item-name">Belted Long Shirtdress</strong>
+                                        <ul class="item-option">
+                                            <li>컬러 : INDIGO</li>
+                                            <li>사이즈 : P</li>
+                                            <li>수량 : 1</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shipping-state">
+                                    <span class="item-state"><i class="icon-flight"></i>배송중</span>
+                                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                                </div>
+                            </li>
+                            <li class="list-item">
+                                <div class="product-info">
+                                    <div class="product-image"><img src="../images/temp/temp-product.jpg" alt=""></div>
+                                    <div class="item-info">
+                                        <span class="item-brand">STEVEN ALAN</span>
+                                        <strong class="item-name">Belted Long Shirtdress</strong>
+                                        <ul class="item-option">
+                                            <li>컬러 : INDIGO</li>
+                                            <li>사이즈 : P</li>
+                                            <li>수량 : 1</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="shipping-state">
+                                    <span class="item-state"><i class="icon-flight"></i>배송중</span>
+                                    <strong class="item-amount"><em>1,234,000</em>원</strong>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 주문 내역 //end -->
+                <a href="#none" class="closeModalBtn" onclick="layerClose('.orderList_modal');removeLock();"><i class="icon-cancel"></i></a>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <!-- 주문번호 조회 팝업 //end -->
 </div>
 
 <?php include '../footer/footer.php'; ?>

@@ -2470,6 +2470,7 @@ input[type="search"] {
 
 .megaMenu {
   position: relative;
+  z-index: 1000;
   margin: 0 -18px;
   padding-left: 0;
   font-family: "BentonSans", sans-serif;
@@ -5712,7 +5713,7 @@ input[type="search"] {
 
 .modalWrap .modal {
   position: relative;
-  z-index: 99;
+  z-index: 1002;
   padding: 50px 30px;
   border: 1px solid #858585;
   background-color: #fff;
@@ -5773,7 +5774,7 @@ input[type="search"] {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 1001;
   width: 100%;
   height: 100%;
   background: #fff;
