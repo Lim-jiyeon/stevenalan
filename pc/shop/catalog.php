@@ -92,6 +92,7 @@
                                             <span class="price">380,000</span>
                                         </div>
                                     </div>
+                                    <span class="soldout">sold out</span>
                                 </a>
                             </div>
                         </li>
@@ -125,6 +126,7 @@
                                             <span class="price">380,000</span>
                                         </div>
                                     </div>
+                                    <span class="soldout">sold out</span>
                                 </a>
                                 <a href="#" class="more-color">more color</a>
                             </div>

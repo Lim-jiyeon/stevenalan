@@ -80,6 +80,7 @@
                             <strong class="item-name">Aldama Embroidered Bib Top</strong>
                             <strong class="price">275,000</strong>
                             <em class="discount">298,000</em>
+                            <span class="soldout"><span>sold out</span></span>
                             <span class="more-color"><i class="icon-th"></i>more color</span>
                         </div>
                     </div>
@@ -96,6 +97,7 @@
                             <strong class="item-name">Belted Long Shirtdress Belted Long Shirtdress</strong>
                             <strong class="price">275,000</strong>
                             <em class="discount">298,000</em>
+                            <span class="soldout"><span>sold out</span></span>
                         </div>
                     </div>
                 </a>

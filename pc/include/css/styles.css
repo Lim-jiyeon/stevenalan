@@ -3368,7 +3368,7 @@ input[type="search"] {
 
 .category-list .item {
   position: relative;
-  height: 309px;
+  height: 355px;
   margin-bottom: 10px;
 }
 
@@ -3416,9 +3416,21 @@ input[type="search"] {
   color: #000;
 }
 
+.category-list .soldout {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 12px 1px;
+  border-radius: 3px;
+  background-color: #c5c5c5;
+  font-size: 10px;
+  font-family: "BentonSans", sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+}
+
 .category-list .more-color {
   display: block;
-  margin: 10px 0 0 -1px;
+  margin: 5px 0 0 0;
   font-size: 11px;
   color: #004689;
 }
